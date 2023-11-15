@@ -12,14 +12,32 @@ function App() {
 
     const [mostrarBotao, setMostrarBotao] = useState(false)
     const [animar, setAnimar] = useState(false)
+
     const [nome, setNome] = useState('Digite o seu nome aqui...')
     const [email, setEmail] = useState('Digite o seu e-mail aqui...')
     const [mensagem, setMensagem] = useState('Digite a sua mensagem aqui...')
 
+    const [facebook, setFacebook] = useState('#FFF')
+    const [twitter, setTwitter] = useState('#FFF')
+    const [github, setGithub] = useState('#FFF')
+    const [linkedin, setLinkedin] = useState('#FFF')
+    const [instagram, setInstagram] = useState('#FFF')
+
     return (
         <main>
             <EstilosGlobais />
-            <Header />
+            <Header
+                facebook={facebook}
+                twitter={twitter}
+                github={github}
+                linkedin={linkedin}
+                instagram={instagram}
+                setFacebook={setFacebook}
+                setTwitter={setTwitter}
+                setGithub={setGithub}
+                setLinkedin={setLinkedin}
+                setInstagram={setInstagram}
+            />
             <About />
             <Formacao />
             <Projetos />

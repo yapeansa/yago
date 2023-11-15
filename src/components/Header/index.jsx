@@ -1,57 +1,28 @@
-import { styled } from "styled-components"
+import Cabecalho from "./Cabecalho"
 import Logo from "../Logo"
 import Menu from "../Menu"
 import Intro from "../../pages/Intro"
 import Social from "../Social"
-import bg from "/src/images/bg.jpg"
 
-const Cabecalho = styled.header`
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    background: url(${bg}) center / cover no-repeat fixed;
-    aside {
-        flex: 50%;
-        background: rgba(0, 0, 0, .8);
-        display: flex;
-        gap: 4.5rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0;
-    }
-    .introducao {
-        flex: 50%;
-        color: var(--branco);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0;
-    }
-
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-        min-height: auto;
-        aside {
-            height: 100vh;
-            min-height: 100vh;
-            gap: 2.4rem;
-        }
-        .introducao {
-            padding: 4rem 0;
-            height: auto;
-        }
-    }
-`
-
-function Header() {
+function Header(props) {
     return (
         <>
             <Cabecalho>
                 <aside>
                     <Logo />
                     <Menu />
-                    <Social />
+                    <Social
+                        facebook={props.facebook}
+                        twitter={props.twitter}
+                        github={props.github}
+                        linkedin={props.linkedin}
+                        instagram={props.instagram}
+                        setFacebook={props.setFacebook}
+                        setTwitter={props.setTwitter}
+                        setGithub={props.setGithub}
+                        setLinkedin={props.setLinkedin}
+                        setInstagram={props.setInstagram}
+                    />
                 </aside>
                 <div className="introducao">
                     <Intro />
