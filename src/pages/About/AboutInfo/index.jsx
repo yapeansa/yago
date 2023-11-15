@@ -7,7 +7,7 @@ const AboutInfo = styled.div`
     margin-top: 112px;
     p {
         text-align: justify;
-        width: 55%;
+        max-width: 55%;
         font-size: 1.2rem;
         background-color: var(--branco-secundario);
         padding: 2.5rem;
@@ -29,6 +29,19 @@ const AboutInfo = styled.div`
         border: 2px solid var(--cor-primaria);
         border-radius: 100%;
         padding: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 3rem;
+        p {
+            order: 2;
+            max-width: 95%;
+        }
+        img {
+            order: 1;
+        }
     }
 `
 

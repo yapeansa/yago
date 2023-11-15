@@ -22,7 +22,7 @@ const ContainerContato = styled.div`
         }
     }
     form {
-        width: 50%;
+        max-width: 50%;
         margin: 60px auto 0;
         display: flex;
         flex-direction: column;
@@ -67,6 +67,12 @@ const ContainerContato = styled.div`
             justify-content: center;
             flex: 1;
             gap: 1.2rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        form {
+            max-width: 100%;
         }
     }
 `

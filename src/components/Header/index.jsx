@@ -28,6 +28,17 @@ const Cabecalho = styled.header`
         align-items: center;
         padding: 2rem 0;
     }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+        aside {
+            min-height: 100vh;
+        }
+        .introducao {
+            padding: 4rem 0;
+        }
+    }
 `
 
 function Header() {

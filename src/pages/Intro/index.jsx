@@ -17,6 +17,12 @@ const SecaoIntro = styled.section`
             font-weight: 700;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        p {
+            text-align: left;
+        }
+    }
 `
 
 function Intro() {

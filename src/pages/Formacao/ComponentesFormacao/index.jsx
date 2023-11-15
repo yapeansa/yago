@@ -32,6 +32,10 @@ const Formacoes = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 `
 
 const Subtitulo = styled.h3`
