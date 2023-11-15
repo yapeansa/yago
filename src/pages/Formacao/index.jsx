@@ -1,8 +1,8 @@
-import { Formacoes, Subtitulo, Stacks } from "./ComponentesFormacao"
+import { Formacoes, Subtitulo, TextoCompetencias, Stacks } from "./ComponentesFormacao"
 import Container from "../../components/Container"
 import Secao from "../../components/ContainerSecao"
 import Titulo from "../../components/Titulo"
-import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoSass, IoLogoNodejs, IoLogoReact } from "react-icons/io5";
+import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoSass, IoLogoNodejs, IoLogoReact } from "react-icons/io5"
 
 function Formacao() {
 
@@ -36,7 +36,9 @@ function Formacao() {
                         )}
                     </Formacoes>
                     <Subtitulo>Competências</Subtitulo>
-                    <p style={{ color: 'var(--branco)', fontSize: '1.5rem', width: '60%', margin: '0 auto' }}>Como desenvolvedor Front-end, possuo competência nas seguintes tecnologias:</p>
+                    <TextoCompetencias>
+                        Como desenvolvedor Front-end, possuo competência nas seguintes tecnologias:
+                    </TextoCompetencias>
                     <Stacks>
                         <IoLogoHtml5 size={70} color="#f06529" />
                         <IoLogoCss3 size={70} color="#2965f1" />

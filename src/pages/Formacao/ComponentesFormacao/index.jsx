@@ -50,6 +50,17 @@ const Subtitulo = styled.h3`
     color: var(--branco);
 `
 
+const TextoCompetencias = styled.p`
+    max-width: 60%;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    color: var(--branco);
+
+    @media screen and (max-width: 768px) {
+        max-width: 90%;
+    }
+`
+
 const Stacks = styled.div`
     display: flex;
     justify-content: center;
@@ -58,4 +69,4 @@ const Stacks = styled.div`
     margin-top: 84px;
 `
 
-export { Formacoes, Subtitulo, Stacks }
+export { Formacoes, Subtitulo, TextoCompetencias, Stacks }

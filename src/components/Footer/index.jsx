@@ -12,6 +12,14 @@ const Rodape = styled.footer`
         margin-bottom: 1rem;
         display: inline-block;
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 0 7rem;
+        p {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
 `
 
 function Footer() {

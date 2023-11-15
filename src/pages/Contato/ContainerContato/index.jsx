@@ -43,6 +43,7 @@ const ContainerContato = styled.div`
             }
             &::placeholder {
                 opacity: 1;
+                color: #999;
             }
         }
         textarea {
@@ -71,6 +72,9 @@ const ContainerContato = styled.div`
     }
 
     @media screen and (max-width: 768px) {
+        p {
+            max-width: 90%;
+        }
         form {
             max-width: 90%;
         }
