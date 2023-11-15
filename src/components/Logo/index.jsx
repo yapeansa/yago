@@ -1,4 +1,5 @@
 import { styled } from "styled-components"
+import logo from "/src/images/logo.svg"
 
 const ImagemLogo = styled.img`
     max-width: 10.6rem;
@@ -7,7 +8,7 @@ const ImagemLogo = styled.img`
 function Logo() {
     return (
         <>
-            <ImagemLogo src="/public/images/logo.svg" alt="Logo Yago Pereira" />
+            <ImagemLogo src={logo} alt="Logo Yago Pereira" />
         </>
     )
 }
