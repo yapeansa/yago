@@ -37,7 +37,10 @@ const AboutInfo = styled.div`
         margin-top: 3rem;
         p {
             order: 2;
-            max-width: 95%;
+            max-width: 90%;
+            background-color: var(--branco);
+            border-radius: 0;
+            padding: 0;
         }
         img {
             order: 1;

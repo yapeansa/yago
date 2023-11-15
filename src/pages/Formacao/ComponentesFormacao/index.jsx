@@ -35,6 +35,7 @@ const Formacoes = styled.div`
 
     @media screen and (max-width: 768px) {
         text-align: center;
+        max-width: 80%;
     }
 `
 

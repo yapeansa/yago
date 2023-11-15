@@ -31,12 +31,14 @@ const Cabecalho = styled.header`
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        height: auto;
+        min-height: auto;
         aside {
+            height: 100vh;
             min-height: 100vh;
         }
         .introducao {
             padding: 4rem 0;
+            height: auto;
         }
     }
 `

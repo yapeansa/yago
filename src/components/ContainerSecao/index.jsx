@@ -6,7 +6,7 @@ const ContainerSecao = styled.section`
     background: ${props => props.$cordefundo};
 
     @media screen and (max-width: 768px) {
-        padding: 4rem;
+        padding: 4rem 0;
     }
 `
 

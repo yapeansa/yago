@@ -19,8 +19,10 @@ const SecaoIntro = styled.section`
     }
 
     @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
         p {
             text-align: left;
+            max-width: 80%;
         }
     }
 `

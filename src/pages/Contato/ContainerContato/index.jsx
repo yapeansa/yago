@@ -72,7 +72,7 @@ const ContainerContato = styled.div`
 
     @media screen and (max-width: 768px) {
         form {
-            max-width: 100%;
+            max-width: 90%;
         }
     }
 `
