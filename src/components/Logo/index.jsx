@@ -7,7 +7,7 @@ const ImagemLogo = styled.img`
 function Logo() {
     return (
         <>
-            <ImagemLogo src="/src/assets/images/logo.svg" alt="Logo Yago Pereira" />
+            <ImagemLogo src="/public/images/logo.svg" alt="Logo Yago Pereira" />
         </>
     )
 }

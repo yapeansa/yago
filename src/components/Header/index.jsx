@@ -8,7 +8,7 @@ const Cabecalho = styled.header`
     display: flex;
     width: 100%;
     min-height: 100vh;
-    background: url('/src/assets/images/bg.jpg') center / cover no-repeat fixed;
+    background: url('/public/images/bg.jpg') center / cover no-repeat fixed;
     aside {
         flex: 50%;
         background: rgba(0, 0, 0, .8);
