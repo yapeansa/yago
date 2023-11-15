@@ -14,7 +14,7 @@ const Cabecalho = styled.header`
         flex: 50%;
         background: rgba(0, 0, 0, .8);
         display: flex;
-        gap: 5em;
+        gap: 4.5rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -35,6 +35,7 @@ const Cabecalho = styled.header`
         aside {
             height: 100vh;
             min-height: 100vh;
+            gap: 2.4rem;
         }
         .introducao {
             padding: 4rem 0;
