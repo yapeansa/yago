@@ -3,6 +3,7 @@ import { styled } from "styled-components"
 
 const SocialNetwork = styled.div`
     ul {
+        list-style-type: none;
         display: flex;
         gap: 30px;
     }
