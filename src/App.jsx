@@ -17,11 +17,11 @@ function App() {
     const [email, setEmail] = useState('Digite o seu e-mail aqui...')
     const [mensagem, setMensagem] = useState('Digite a sua mensagem aqui...')
 
-    const [facebook, setFacebook] = useState('#FFF')
-    const [twitter, setTwitter] = useState('#FFF')
-    const [github, setGithub] = useState('#FFF')
-    const [linkedin, setLinkedin] = useState('#FFF')
-    const [instagram, setInstagram] = useState('#FFF')
+    const [facebook, setFacebook] = useState('var(--branco)')
+    const [twitter, setTwitter] = useState('var(--branco)')
+    const [github, setGithub] = useState('var(--branco)')
+    const [linkedin, setLinkedin] = useState('var(--branco)')
+    const [instagram, setInstagram] = useState('var(--branco)')
 
     return (
         <main>
