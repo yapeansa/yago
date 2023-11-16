@@ -12,7 +12,8 @@ const Scroll = styled.div`
     animation-timing-function: ease-in;
     a {
         display: block;
-        background: #E44D2E;
+        background: var(--preto);
+        border: 1px solid var(--branco);
         padding: 1rem 1rem .8rem;
     }
 `
