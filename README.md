@@ -26,4 +26,11 @@ Este projeto foi desenvolvido utilizando as seguintes linguagens:
 
 ## Como iniciar o projeto na sua máquina
 
+Dentro de um diretóri ode sua preferência no seu computador, você pode clonar o projeto da seguinte maneira:
+
+1. Abra o seu terminal e faça: <br />  ```git clone git@github.com:yapeansa/yago.git```
+2. Em seguida, faça: <br /> ```cd yago```
+3. Depois, instale as dependências: <br /> ```npm install```
+4. Finalmente, digite no terminal: <br /> ```npm run dev```
+
 ...
