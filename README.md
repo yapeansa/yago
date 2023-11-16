@@ -1,4 +1,4 @@
-# Portfólio
+# Yago Pereira | Desenvolvedor Front-end
 
 Este é o meu portfólio. Desenvolvi este projeto para compartilhar meus projetos e minhas habilidades.
 O site está organizado da seguinte maneira:
@@ -26,11 +26,23 @@ Este projeto foi desenvolvido utilizando as seguintes linguagens:
 
 ## Como iniciar o projeto na sua máquina
 
-Dentro de um diretóri ode sua preferência no seu computador, você pode clonar o projeto da seguinte maneira:
+Dentro de um diretório de sua preferência no seu computador, você pode clonar o projeto da seguinte maneira:
 
-1. Abra o seu terminal e faça: <br />  ```git clone git@github.com:yapeansa/yago.git```
-2. Em seguida, faça: <br /> ```cd yago```
-3. Depois, instale as dependências: <br /> ```npm install```
-4. Finalmente, digite no terminal: <br /> ```npm run dev```
+Abra o seu terminal e faça:
+> git clone git@github.com:yapeansa/yago.git
 
-...
+Em seguida, faça:
+> cd yago
+
+Depois, instale as dependências:
+> npm install
+
+Finalmente, digite no terminal:
+> npm run dev
+
+## Contato
+
+Sinta-se à vontade para me enviar uma mensagem através dos seguintes canais:
+
+[![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yapeansa)
+[![E-mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yago.pereira@estudante.ufjf.br)
