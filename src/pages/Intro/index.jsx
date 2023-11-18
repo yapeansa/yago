@@ -18,10 +18,11 @@ const SecaoIntro = styled.section`
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         font-size: 2.5rem;
         p {
             text-align: left;
+            margin: 0 auto;
             max-width: 80%;
         }
     }

@@ -23,13 +23,16 @@ const Cabecalho = styled.header`
         padding: 2rem 0;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 960px) {
         flex-direction: column;
         min-height: auto;
+        padding: 0;
         aside {
             height: 100vh;
             min-height: 100vh;
             gap: 2.4rem;
+            align-items: center;
+            background-color: rgba(0, 0, 0, .7);
         }
         .introducao {
             padding: 4rem 0;

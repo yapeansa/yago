@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import bg from "/src/images/bg.png"
+import bg_2 from "/src/images/bg.jpg"
 
 const EstilosGlobais = createGlobalStyle`
     :root {
@@ -39,6 +40,12 @@ const EstilosGlobais = createGlobalStyle`
         font-weight: 400;
         font-size: 1.2rem;
         background: url(${bg}) center / cover no-repeat fixed;
+    }
+
+    @media screen and (max-width: 960px) {
+        body {
+            background: url(${bg_2}) center / cover no-repeat fixed;
+        }
     }
 `
 
