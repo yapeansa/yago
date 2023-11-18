@@ -10,6 +10,8 @@ O site está organizado da seguinte maneira:
 - Contato
 - Rodapé
 
+![Preview](src/images/preview.png)
+
 O Cabeçalho do site contém uma área específica para conter a logotipo e o menu de navegação e outra para conter um pequeno texto introdutório.
 Na seção Sobre, falo um pouco sobre mim para que o público me conheça melhor. A seção Formação trata de listar minhas competências como desenvolvedor e minha formação acadêmica. Na seção Projetos exibo uma lista com os projetos que desenvolvi. Por fim, em Contato é possível encontrar formas de se comunicar comigo.
 
