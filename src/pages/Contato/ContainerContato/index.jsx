@@ -22,8 +22,9 @@ const ContainerContato = styled.div`
         }
     }
     form {
-        max-width: 55%;
+        max-width: 840px;
         margin: 60px auto 0;
+        padding: 0 1.6rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -73,9 +74,6 @@ const ContainerContato = styled.div`
 
     @media screen and (max-width: 768px) {
         p {
-            max-width: 90%;
-        }
-        form {
             max-width: 90%;
         }
     }
