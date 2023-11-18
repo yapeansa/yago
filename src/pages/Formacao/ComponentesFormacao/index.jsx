@@ -2,7 +2,7 @@ import { styled } from "styled-components"
 
 const Formacoes = styled.div`
     max-width: 60%;
-    margin: 120px auto 0;
+    margin: 4rem auto 0;
     color: var(--branco);
     text-align: left;
     display: flex;
@@ -40,7 +40,7 @@ const Formacoes = styled.div`
 `
 
 const Subtitulo = styled.h3`
-    margin: 84px 0;
+    margin: 6rem 0 0;
     font-size: 2rem;
     text-transform: uppercase;
     text-decoration: underline;
@@ -53,7 +53,7 @@ const Subtitulo = styled.h3`
 const TextoCompetencias = styled.p`
     max-width: 60%;
     font-size: 1.5rem;
-    margin: 0 auto;
+    margin: 4rem auto 0;
     color: var(--branco);
 
     @media screen and (max-width: 768px) {
@@ -66,7 +66,7 @@ const Stacks = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-top: 84px;
+    margin-top: 4rem;
 `
 
 export { Formacoes, Subtitulo, TextoCompetencias, Stacks }

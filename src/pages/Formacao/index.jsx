@@ -26,6 +26,9 @@ function Formacao() {
             <Secao corDeFundo="var(--preto-secundario)">
                 <Container>
                     <Titulo corDaBorda="var(--cor-secundaria)" corDoTexto="var(--branco)">Minha formação</Titulo>
+                    <TextoCompetencias>
+                        Logo abaixo você pode conferir a minha trajetória acadêmica.
+                    </TextoCompetencias>
                     <Formacoes>
                         {cards.map(card =>
                             <div key={card.titulo}>
