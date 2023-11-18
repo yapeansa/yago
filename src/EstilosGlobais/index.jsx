@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import bg from "/src/images/bg.png"
 
 const EstilosGlobais = createGlobalStyle`
     :root {
@@ -37,6 +38,7 @@ const EstilosGlobais = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 1.2rem;
+        background: url(${bg}) center / cover no-repeat fixed;
     }
 `
 

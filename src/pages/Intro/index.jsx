@@ -3,11 +3,11 @@ import { styled } from "styled-components"
 const SecaoIntro = styled.section`
     font-family: var(--fonte-primaria);
     font-weight: 100;
-    font-size: 62px;
+    font-size: 3.4rem;
     p {
-        max-width: 70%;
-        margin: 0 auto;
-        line-height: 1.5;
+        max-width: 90%;
+        margin: 0 0 0 auto;
+        line-height: 1.8;
         text-decoration: underline;
         text-decoration-thickness: 3px;
         text-decoration-color: var(--branco);

@@ -3,10 +3,11 @@ import Logo from "../Logo"
 import Menu from "../Menu"
 import Intro from "../../pages/Intro"
 import Social from "../Social"
+import Container from "../Container"
 
 function Header(props) {
     return (
-        <>
+        <Container>
             <Cabecalho>
                 <aside>
                     <Logo />
@@ -28,7 +29,7 @@ function Header(props) {
                     <Intro />
                 </div>
             </Cabecalho>
-        </>
+        </Container>
     )
 }
 
