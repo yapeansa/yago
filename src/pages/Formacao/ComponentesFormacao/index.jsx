@@ -9,12 +9,14 @@ const Formacoes = styled.div`
     flex-direction: column;
     gap: 84px;
     div {
+        border-left: 3px solid #333;
+        padding-left: 2rem;
         h3 {
             font-size: 1.5rem;
             font-weight: 700;
         }
         h2 {
-            font-size: 1.875rem;
+            font-size: 1.84rem;
             font-weight: 700;
             margin: 15px 0;
         }
@@ -36,6 +38,10 @@ const Formacoes = styled.div`
     @media screen and (max-width: 768px) {
         text-align: center;
         max-width: 80%;
+        div {
+            border: none;
+            padding-left: 0;
+        }
     }
 `
 
