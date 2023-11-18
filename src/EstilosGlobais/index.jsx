@@ -39,12 +39,12 @@ const EstilosGlobais = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 1.2rem;
-        background: url(${bg}) center / cover no-repeat fixed;
+        background: var(--preto) url(${bg}) center / cover no-repeat fixed;
     }
 
     @media screen and (max-width: 960px) {
         body {
-            background: url(${bg_2}) center / cover no-repeat fixed;
+            background: var(--preto) url(${bg_2}) center / cover no-repeat fixed;
         }
     }
 `
