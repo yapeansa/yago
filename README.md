@@ -1,4 +1,4 @@
-# Yago Pereira | Desenvolvedor Front-end
+# Yago Pereira | Portfolio
 
 Este é o meu portfólio. Desenvolvi este projeto para compartilhar meus projetos e minhas habilidades.
 O site está organizado da seguinte maneira:
