@@ -1,10 +1,12 @@
 import { styled } from "styled-components"
 
 const Navegacao = styled.nav`
+    padding-left: 1rem;
     ol {
         list-style-type: none;
         counter-reset: list;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         li {
             font-family: var(--fonte-secundaria);
             font-weight: normal;
@@ -50,6 +52,10 @@ const Navegacao = styled.nav`
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 960px) {
+        padding: 0;
     }
 `
 
