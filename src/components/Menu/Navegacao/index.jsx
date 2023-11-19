@@ -13,7 +13,7 @@ const Navegacao = styled.nav`
             font-size: 1.75rem;
             counter-increment: list;
             display: flex;
-            gap: 45px;
+            gap: 2rem;
             color: var(--branco);
             align-items: center;
             &::before {
