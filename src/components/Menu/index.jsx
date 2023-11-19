@@ -5,7 +5,7 @@ function Menu() {
     const menu = [
         {
             nome: "HOME",
-            caminho: "#"
+            caminho: "/index.html"
         },
         {
             nome: "SOBRE MIM",

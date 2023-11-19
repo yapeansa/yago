@@ -42,6 +42,11 @@ const EstilosGlobais = createGlobalStyle`
         background: var(--preto) url(${bg}) center / cover no-repeat fixed;
     }
 
+    a {
+        text-decoration: none;
+        outline: none;
+    }
+
     @media screen and (max-width: 960px) {
         body {
             background: var(--preto) url(${bg_2}) center / cover no-repeat fixed;
