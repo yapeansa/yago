@@ -1,4 +1,8 @@
+<div align="center">
+
 # Yago Pereira | Portfolio
+
+</div>
 
 Este é o meu portfólio. Desenvolvi este projeto para compartilhar meus projetos e minhas habilidades.
 O site está organizado da seguinte maneira:
