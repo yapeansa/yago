@@ -50,7 +50,7 @@ const ContainerContato = styled.div`
             width: 100%;
             background: var(--preto-secundario);
             border: 2px solid #333;
-            padding: 1.2rem 1rem;
+            padding: 1.1rem 1rem;
             outline: none;
             color: var(--branco);
             transition: all .3s ease-in-out;
@@ -66,17 +66,21 @@ const ContainerContato = styled.div`
             resize: none;
         }
         input[type=reset], input[type=submit] {
-            max-width: 160px;
+            max-width: 140px;
             background: var(--cor-primaria);
-            border: 2px solid transparent;
+            border: 2px solid var(--preto-secundario);
+            font-family: var(--fonte-primaria);
+            font-weight: 700;
             font-size: 1.2rem;
-            font-weight: bold;
+            text-transform: uppercase;
             cursor: pointer;
             padding: 1rem;
             transition: all .3s ease-in;
+            color: var(--branco);
             &:hover {
                 background: var(--cor-secundaria);
-                color: var(--preto);
+                color: var(--preto-secundario);
+                border-color: transparent;
             }
         }
         div {
