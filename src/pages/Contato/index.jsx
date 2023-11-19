@@ -37,7 +37,7 @@ function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
                 <Container>
                     <Titulo corDaBorda="var(--cor-secundaria)" corDoTexto="var(--branco)">Contato</Titulo>
                     <ContainerContato>
-                        <p>Pronto para dar vida ao seu projeto ou para me incluir no seu time? Fale comigo através do e-mail:</p>
+                        <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Fale comigo através do e-mail:</p>
                         <a href="mailto:yago.pereira@estudante.ufjf.br">yago.pereira@estudante.ufjf.br</a>
                         <p>Ou preencha o formulário abaixo com seus dados e sua mensagem.</p>
                         <form method="post" action="https://formspree.io/f/xnqlkqnk">
