@@ -11,18 +11,33 @@ const ContainerContato = styled.div`
     a {
         color: var(--branco);
         font-size: 1.4rem;
-        text-decoration: underline;
-        text-decoration-color: var(--cor-primaria);
-        text-decoration-thickness: 3px;
         display: inline-block;
         margin: 30px 0;
         transition: all .3s ease-in;
-        &:hover {
-            text-decoration-color: var(--cor-secundaria);
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: -5.5rem;
+            top: 50%;
+            margin-top: -1px;
+            background: var(--cor-secundaria);
+            width: 4rem;
+            height: 2px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            right: -5.5rem;
+            top: 50%;
+            margin-top: -1px;
+            background: var(--cor-secundaria);
+            width: 4rem;
+            height: 2px;
         }
     }
     form {
-        max-width: 840px;
+        max-width: 800px;
         margin: 60px auto 0;
         padding: 0 1.6rem;
         display: flex;
