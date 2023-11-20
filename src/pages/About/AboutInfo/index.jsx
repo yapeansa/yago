@@ -14,6 +14,7 @@ const AboutInfo = styled.div`
         border-radius: 16px;
         line-height: 1.4;
         a {
+            text-decoration: underline;
             text-decoration-color: var(--cor-primaria);
             text-decoration-style: double;
             text-decoration-thickness: 2px;
