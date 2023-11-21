@@ -3,6 +3,7 @@ import Container from "../../components/Container"
 import Secao from "../../components/ContainerSecao"
 import Titulo from "../../components/Titulo"
 import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoSass, IoLogoNodejs, IoLogoReact } from "react-icons/io5"
+import { SiTypescript } from "react-icons/si";
 
 function Formacao() {
 
@@ -48,6 +49,7 @@ function Formacao() {
                         <IoLogoSass size={70} color="#cc6699" />
                         <IoLogoJavascript size={70} color="#f0db4f" />
                         <IoLogoNodejs size={70} color="#68a063" />
+                        <SiTypescript size={62} color="#007acc" />
                         <IoLogoReact size={70} color="#88dded" />
                     </Stacks>
                 </Container>
