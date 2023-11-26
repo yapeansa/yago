@@ -23,6 +23,22 @@ function App() {
     const [linkedin, setLinkedin] = useState('var(--branco)')
     const [instagram, setInstagram] = useState('var(--branco)')
 
+    let currentDate = new Date();
+
+    let currentYear = currentDate.getFullYear();
+
+    let currentMonth = currentDate.getMonth() + 1;
+
+    let currentDay = currentDate.getDate();
+
+    function calculaIdade() {
+
+        if (currentYear) {
+            let idadeAtual = (currentDay > 21 && currentMonth) === 11 ? (currentYear - 1993) : ((currentYear - 1993) - 1);
+            return idadeAtual;
+        }
+    }
+
     return (
         <main>
             <EstilosGlobais />
@@ -38,7 +54,7 @@ function App() {
                 setLinkedin={setLinkedin}
                 setInstagram={setInstagram}
             />
-            <About />
+            <About idade={calculaIdade} />
             <Formacao />
             <Projetos />
             <Contato nome={nome} email={email} mensagem={mensagem} setNome={setNome} setEmail={setEmail} setMensagem={setMensagem} />
