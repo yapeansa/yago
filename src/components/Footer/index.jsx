@@ -1,5 +1,5 @@
-import { styled } from "styled-components"
-import Container from "../Container"
+import { styled } from "styled-components";
+import Container from "../Container";
 import { SiLinktree } from "react-icons/si";
 
 const Rodape = styled.footer`
@@ -23,11 +23,16 @@ const Rodape = styled.footer`
 `
 
 function Footer() {
+
+    let currentDate = new Date();
+
+    let currentYear = currentDate.getFullYear();
+
     return (
         <Rodape>
             <Container>
                 <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--cor-secundaria)" /></a>
-                <p>&copy;2023 - Desenvolvido por Yago Pereira.</p>
+                <p>&copy;{currentYear} - Desenvolvido por Yago Pereira.</p>
             </Container>
         </Rodape>
     )
