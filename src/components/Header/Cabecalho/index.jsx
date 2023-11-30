@@ -11,14 +11,12 @@ const Cabecalho = styled.header`
         gap: 4.5rem;
         flex-direction: column;
         justify-content: center;
-        //align-items: center;
         padding: 2rem 0;
     }
     .introducao {
         flex-basis: 50%;
         color: var(--branco);
         display: flex;
-        //justify-content: center;
         align-items: center;
         padding: 2rem 0;
     }

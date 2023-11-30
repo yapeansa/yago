@@ -1,27 +1,27 @@
-import { useState } from 'react'
-import EstilosGlobais from './EstilosGlobais'
-import BotaoScrollTop from './components/BotaoScrollTop'
-import Header from './components/Header'
-import About from './pages/About'
-import Formacao from './pages/Formacao'
-import Projetos from './pages/Projetos'
-import Contato from './pages/Contato'
-import Footer from './components/Footer'
+import { useState } from 'react';
+import EstilosGlobais from './EstilosGlobais';
+import BotaoScrollTop from './components/BotaoScrollTop';
+import Header from './components/Header';
+import About from './pages/About';
+import Formacao from './pages/Formacao';
+import Projetos from './pages/Projetos';
+import Contato from './pages/Contato';
+import Footer from './components/Footer';
 
 function App() {
 
-    const [mostrarBotao, setMostrarBotao] = useState(false)
-    const [animar, setAnimar] = useState(false)
+    const [mostrarBotao, setMostrarBotao] = useState(false);
+    const [animar, setAnimar] = useState(false);
 
-    const [nome, setNome] = useState('Digite o seu nome aqui...')
-    const [email, setEmail] = useState('Digite o seu e-mail aqui...')
-    const [mensagem, setMensagem] = useState('Digite a sua mensagem aqui...')
+    const [nome, setNome] = useState('Digite o seu nome aqui...');
+    const [email, setEmail] = useState('Digite o seu e-mail aqui...');
+    const [mensagem, setMensagem] = useState('Digite a sua mensagem aqui...');
 
-    const [facebook, setFacebook] = useState('var(--branco)')
-    const [twitter, setTwitter] = useState('var(--branco)')
-    const [github, setGithub] = useState('var(--branco)')
-    const [linkedin, setLinkedin] = useState('var(--branco)')
-    const [instagram, setInstagram] = useState('var(--branco)')
+    const [facebook, setFacebook] = useState('var(--branco)');
+    const [twitter, setTwitter] = useState('var(--branco)');
+    const [github, setGithub] = useState('var(--branco)');
+    const [linkedin, setLinkedin] = useState('var(--branco)');
+    const [instagram, setInstagram] = useState('var(--branco)');
 
     let currentDate = new Date();
 
@@ -32,9 +32,8 @@ function App() {
     let currentDay = currentDate.getDate();
 
     function calculaIdade() {
-
         if (currentYear) {
-            let idadeAtual = (currentDay > 21 && currentMonth) === 11 ? (currentYear - 1993) : ((currentYear - 1993) - 1);
+            let idadeAtual = (currentMonth === 11 && currentDay > 21) ? (currentYear - 1993) : ((currentYear - 1993) - 1);
             return idadeAtual;
         }
     }
@@ -61,7 +60,7 @@ function App() {
             <Footer />
             <BotaoScrollTop mostrarBotao={mostrarBotao} aoRolar={setMostrarBotao} animar={animar} aoAnimar={setAnimar} />
         </main>
-    )
+    );
 }
 
-export default App
+export default App;
