@@ -1,6 +1,6 @@
-import Navegacao from "./Navegacao"
+import Navegacao from "./Navegacao";
 
-function Menu() {
+const Menu = () => {
 
     const menu = [
         {
@@ -23,7 +23,7 @@ function Menu() {
             nome: "CONTATO",
             caminho: "#contato"
         }
-    ]
+    ];
 
     return (
         <>
@@ -33,7 +33,7 @@ function Menu() {
                 </ol>
             </Navegacao>
         </>
-    )
+    );
 }
 
-export default Menu
+export default Menu;

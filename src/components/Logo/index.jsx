@@ -1,21 +1,21 @@
-import { styled } from "styled-components"
-import logo from "/src/images/logo.svg"
+import { styled } from "styled-components";
+import logo from "/src/images/logo.svg";
 
 const LinkLogo = styled.a`
     display: inline-block;
-    max-width: 10.7rem;
-`
+    max-width: 10.4rem;
+`;
 
 const ImagemLogo = styled.img`
     max-width: 100%;
-`
+`;
 
-function Logo() {
+const Logo = () => {
     return (
         <LinkLogo href="index.html">
             <ImagemLogo src={logo} alt="Logo Yago Pereira" />
         </LinkLogo>
-    )
+    );
 }
 
-export default Logo
+export default Logo;

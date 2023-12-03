@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
 const Navegacao = styled.nav`
     padding-left: 1rem;
@@ -10,7 +10,7 @@ const Navegacao = styled.nav`
         li {
             font-family: var(--fonte-secundaria);
             font-weight: normal;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             counter-increment: list;
             display: flex;
             gap: 2rem;
@@ -57,6 +57,6 @@ const Navegacao = styled.nav`
     @media screen and (max-width: 960px) {
         padding: 0;
     }
-`
+`;
 
-export default Navegacao
+export default Navegacao;
