@@ -8,7 +8,7 @@ import Projetos from './pages/Projetos';
 import Contato from './pages/Contato';
 import Footer from './components/Footer';
 
-function App() {
+const App = () => {
 
     const [mostrarBotao, setMostrarBotao] = useState(false);
     const [animar, setAnimar] = useState(false);
@@ -17,42 +17,19 @@ function App() {
     const [email, setEmail] = useState('Digite o seu e-mail aqui...');
     const [mensagem, setMensagem] = useState('Digite a sua mensagem aqui...');
 
-    const [facebook, setFacebook] = useState('var(--branco)');
-    const [twitter, setTwitter] = useState('var(--branco)');
-    const [github, setGithub] = useState('var(--branco)');
-    const [linkedin, setLinkedin] = useState('var(--branco)');
-    const [instagram, setInstagram] = useState('var(--branco)');
-
     let currentDate = new Date();
-
     let currentYear = currentDate.getFullYear();
-
     let currentMonth = currentDate.getMonth() + 1;
-
     let currentDay = currentDate.getDate();
 
     function calculaIdade() {
-        if (currentYear) {
-            let idadeAtual = (currentMonth === 11 && currentDay > 21) ? (currentYear - 1993) : ((currentYear - 1993) - 1);
-            return idadeAtual;
-        }
+        return ((currentMonth === 11 && currentDay > 21) || currentMonth > 11) ? (currentYear - 1993) : ((currentYear - 1993) - 1);
     }
 
     return (
         <main>
             <EstilosGlobais />
-            <Header
-                facebook={facebook}
-                twitter={twitter}
-                github={github}
-                linkedin={linkedin}
-                instagram={instagram}
-                setFacebook={setFacebook}
-                setTwitter={setTwitter}
-                setGithub={setGithub}
-                setLinkedin={setLinkedin}
-                setInstagram={setInstagram}
-            />
+            <Header />
             <About idade={calculaIdade} />
             <Formacao />
             <Projetos />
