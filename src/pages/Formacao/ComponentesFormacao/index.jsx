@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
 const Formacoes = styled.div`
     max-width: 60%;
@@ -9,7 +9,7 @@ const Formacoes = styled.div`
     flex-direction: column;
     gap: 84px;
     div {
-        border-left: 3px solid #333;
+        border-left: 2px solid #333;
         padding-left: 2rem;
         h3 {
             font-size: 1.5rem;
@@ -43,7 +43,7 @@ const Formacoes = styled.div`
             padding-left: 0;
         }
     }
-`
+`;
 
 const Subtitulo = styled.h3`
     margin: 6rem 0 0;
@@ -54,7 +54,7 @@ const Subtitulo = styled.h3`
     text-decoration-thickness: 3px;
     text-decoration-color: var(--cor-secundaria);
     color: var(--branco);
-`
+`;
 
 const TextoCompetencias = styled.p`
     max-width: 60%;
@@ -65,7 +65,7 @@ const TextoCompetencias = styled.p`
     @media screen and (max-width: 768px) {
         max-width: 90%;
     }
-`
+`;
 
 const Stacks = styled.div`
     display: flex;
@@ -74,6 +74,6 @@ const Stacks = styled.div`
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 4rem;
-`
+`;
 
-export { Formacoes, Subtitulo, TextoCompetencias, Stacks }
+export { Formacoes, Subtitulo, TextoCompetencias, Stacks };

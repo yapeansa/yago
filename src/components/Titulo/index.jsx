@@ -19,14 +19,14 @@ const TituloEstilizado = styled.h2`
         height: 4px;
         background-color: ${props => props.$cordaborda};
     }
-`
+`;
 
 function Titulo({ corDaBorda, corDoTexto, children }) {
     return (
         <TituloEstilizado $cordaborda={corDaBorda} $cordotexto={corDoTexto}>
             {children}
         </TituloEstilizado>
-    )
+    );
 }
 
-export default Titulo
+export default Titulo;

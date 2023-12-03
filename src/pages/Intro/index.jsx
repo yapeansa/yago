@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
 const SecaoIntro = styled.section`
     font-family: var(--fonte-primaria);
@@ -26,14 +26,14 @@ const SecaoIntro = styled.section`
             max-width: 80%;
         }
     }
-`
+`;
 
 function Intro() {
     return (
         <SecaoIntro>
             <p>Olá, mundo! Eu sou um <span className="destaque">desenvolvedor</span> web Front-end especializado no framework <span className="destaque">React</span>.</p>
         </SecaoIntro>
-    )
+    );
 }
 
-export default Intro
+export default Intro;

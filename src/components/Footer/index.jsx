@@ -3,7 +3,7 @@ import Container from "../Container";
 import { SiLinktree } from "react-icons/si";
 
 const Rodape = styled.footer`
-    background-color: var(--preto-secundario);
+    background-color: var(--preto);
     color: var(--branco);
     font-size: 1.3rem;
     padding: 0 0 4rem;
@@ -20,7 +20,7 @@ const Rodape = styled.footer`
             margin: 0 auto;
         }
     }
-`
+`;
 
 function Footer() {
 
@@ -35,7 +35,7 @@ function Footer() {
                 <p>&copy;{currentYear} - Desenvolvido por Yago Pereira.</p>
             </Container>
         </Rodape>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

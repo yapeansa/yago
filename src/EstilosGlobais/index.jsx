@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components"
-import bg from "/src/images/bg.png"
-import bg_2 from "/src/images/bg.jpg"
+import { createGlobalStyle } from "styled-components";
+import bg from "/src/images/bg.png";
+import bg_2 from "/src/images/bg.jpg";
 
 const EstilosGlobais = createGlobalStyle`
     :root {
@@ -8,9 +8,9 @@ const EstilosGlobais = createGlobalStyle`
         --preto-secundario: #121212;
         --branco: #FFFFFF;
         --branco-secundario: #EEEEEE;
-        --cor-primaria: #9400D3;
-        --roxo-secundario: #bb60e2;
-        --cor-secundaria: #FFC719;
+        --cor-primaria: #845ef7;
+        --roxo-secundario: #b197fc;
+        --cor-secundaria: #fab005;
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
     }
@@ -52,6 +52,6 @@ const EstilosGlobais = createGlobalStyle`
             background: var(--preto) url(${bg_2}) center / cover no-repeat fixed;
         }
     }
-`
+`;
 
-export default EstilosGlobais
+export default EstilosGlobais;

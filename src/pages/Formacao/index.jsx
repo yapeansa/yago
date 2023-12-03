@@ -1,8 +1,8 @@
-import { Formacoes, Subtitulo, TextoCompetencias, Stacks } from "./ComponentesFormacao"
-import Container from "../../components/Container"
-import Secao from "../../components/ContainerSecao"
-import Titulo from "../../components/Titulo"
-import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoSass, IoLogoNodejs, IoLogoReact } from "react-icons/io5"
+import { Formacoes, Subtitulo, TextoCompetencias, Stacks } from "./ComponentesFormacao";
+import Container from "../../components/Container";
+import Secao from "../../components/ContainerSecao";
+import Titulo from "../../components/Titulo";
+import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoSass, IoLogoNodejs, IoLogoReact } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 
 function Formacao() {
@@ -20,11 +20,11 @@ function Formacao() {
             titulo: 'Axioma da Escolha, Lema de Zorn e o Teorema de Zermelo: Aplicações e Equivalências.',
             link: 'https://www2.ufjf.br/matematica/wp-content/uploads/sites/393/2014/02/TCC_Yago-versao-final.pdf'
         }
-    ]
+    ];
 
     return (
         <div id="formacao">
-            <Secao corDeFundo="var(--preto-secundario)">
+            <Secao corDeFundo="var(--preto)">
                 <Container>
                     <Titulo corDaBorda="var(--cor-secundaria)" corDoTexto="var(--branco)">Minha formação</Titulo>
                     <TextoCompetencias>
@@ -44,18 +44,18 @@ function Formacao() {
                         Como desenvolvedor Front-end, possuo competência nas seguintes tecnologias:
                     </TextoCompetencias>
                     <Stacks>
-                        <IoLogoHtml5 size={70} color="#f06529" />
-                        <IoLogoCss3 size={70} color="#2965f1" />
-                        <IoLogoSass size={70} color="#cc6699" />
-                        <IoLogoJavascript size={70} color="#f0db4f" />
-                        <IoLogoNodejs size={70} color="#68a063" />
-                        <SiTypescript size={62} color="#007acc" />
-                        <IoLogoReact size={70} color="#88dded" />
+                        <IoLogoHtml5 size={65} color="#f06529" />
+                        <IoLogoCss3 size={65} color="#2965f1" />
+                        <IoLogoSass size={65} color="#cc6699" />
+                        <IoLogoJavascript size={65} color="#f0db4f" />
+                        <IoLogoNodejs size={65} color="#68a063" />
+                        <SiTypescript size={57} color="#007acc" />
+                        <IoLogoReact size={65} color="#88dded" />
                     </Stacks>
                 </Container>
             </Secao>
         </div>
-    )
+    );
 }
 
-export default Formacao
+export default Formacao;

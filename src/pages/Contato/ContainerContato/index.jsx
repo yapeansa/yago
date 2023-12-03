@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
 const ContainerContato = styled.div`
     margin: 84px 0 0;
@@ -37,7 +37,7 @@ const ContainerContato = styled.div`
         }
     }
     form {
-        max-width: 800px;
+        max-width: 850px;
         margin: 60px auto 0;
         padding: 0 1.6rem;
         display: flex;
@@ -48,9 +48,9 @@ const ContainerContato = styled.div`
             font-size: 1rem;
             display: block;
             width: 100%;
-            background: var(--preto-secundario);
+            background: var(--preto);
             border: 2px solid #333;
-            padding: 1.1rem 1rem;
+            padding: 1.2rem 1rem;
             outline: none;
             color: var(--branco);
             transition: all .3s ease-in-out;
@@ -68,7 +68,7 @@ const ContainerContato = styled.div`
         input[type=reset], input[type=submit] {
             max-width: 140px;
             background: var(--cor-primaria);
-            border: 2px solid var(--preto-secundario);
+            border: 2px solid var(--preto);
             font-family: var(--fonte-primaria);
             font-weight: 700;
             font-size: 1.2rem;
@@ -96,6 +96,6 @@ const ContainerContato = styled.div`
             max-width: 90%;
         }
     }
-`
+`;
 
-export default ContainerContato
+export default ContainerContato;

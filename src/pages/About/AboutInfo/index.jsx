@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
 const AboutInfo = styled.div`
     display: flex;
@@ -47,6 +47,6 @@ const AboutInfo = styled.div`
             order: 1;
         }
     }
-`
+`;
 
-export default AboutInfo
+export default AboutInfo;

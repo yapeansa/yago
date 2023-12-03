@@ -1,12 +1,12 @@
-import Secao from "../../components/ContainerSecao"
-import Titulo from "../../components/Titulo"
-import ContainerContato from "./ContainerContato"
-import Container from "../../components/Container"
-import { useState } from "react"
+import Secao from "../../components/ContainerSecao";
+import Titulo from "../../components/Titulo";
+import ContainerContato from "./ContainerContato";
+import Container from "../../components/Container";
+import { useState } from "react";
 
 function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
 
-    const [textoEmail, setTextoEmail] = useState('@yapeansa')
+    const [textoEmail, setTextoEmail] = useState('@yapeansa');
 
     function mudarTexto() {
         setTextoEmail('yago.pereira@estudante.ufjf.br')
@@ -20,35 +20,35 @@ function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
         switch (campo) {
             case 'nome':
                 if (nome !== '') {
-                    setNome('')
+                    setNome('');
                 } else {
-                    setNome('Digite o seu nome aqui...')
+                    setNome('Digite o seu nome aqui...');
                 }
-                break
+                break;
             case 'email':
                 if (email !== '') {
-                    setEmail('')
+                    setEmail('');
                 } else {
-                    setEmail('Digite o seu e-mail aqui...')
+                    setEmail('Digite o seu e-mail aqui...');
                 }
-                break
+                break;
             default:
                 if (mensagem !== '') {
-                    setMensagem('')
+                    setMensagem('');
                 } else {
-                    setMensagem('Digite a sua mensagem aqui...')
+                    setMensagem('Digite a sua mensagem aqui...');
                 }
-                break
+                break;
         }
     }
 
     return (
         <div id="contato">
-            <Secao corDeFundo="var(--preto-secundario)">
+            <Secao corDeFundo="var(--preto)">
                 <Container>
                     <Titulo corDaBorda="var(--cor-secundaria)" corDoTexto="var(--branco)">Contato</Titulo>
                     <ContainerContato>
-                        <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Envie-me um e-mail clicando no link abaixo:</p>
+                        <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
                         <a
                             href="mailto:yago.pereira@estudante.ufjf.br"
                             onMouseOver={mudarTexto}
@@ -95,7 +95,7 @@ function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
                 </Container>
             </Secao>
         </div>
-    )
+    );
 }
 
-export default Contato
+export default Contato;

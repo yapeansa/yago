@@ -1,8 +1,8 @@
-import AboutInfo from "./AboutInfo"
-import Container from "../../components/Container"
-import Titulo from "../../components/Titulo"
-import Secao from "../../components/ContainerSecao"
-import me from "/src/images/me.jpg"
+import AboutInfo from "./AboutInfo";
+import Container from "../../components/Container";
+import Titulo from "../../components/Titulo";
+import Secao from "../../components/ContainerSecao";
+import me from "/src/images/me.jpg";
 
 function About({ idade }) {
     return (
@@ -17,7 +17,7 @@ function About({ idade }) {
                 </Container>
             </Secao>
         </div>
-    )
+    );
 }
 
-export default About
+export default About;

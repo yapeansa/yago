@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
 const Cabecalho = styled.header`
     display: flex;
@@ -37,6 +37,6 @@ const Cabecalho = styled.header`
             height: auto;
         }
     }
-`
+`;
 
-export default Cabecalho
+export default Cabecalho;

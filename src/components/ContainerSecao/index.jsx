@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
 const ContainerSecao = styled.section`
     text-align: center;
@@ -8,7 +8,7 @@ const ContainerSecao = styled.section`
     @media screen and (max-width: 768px) {
         padding: 4rem 0;
     }
-`
+`;
 
 function Secao({ corDeFundo, children }) {
     return (
@@ -17,7 +17,7 @@ function Secao({ corDeFundo, children }) {
                 {children}
             </ContainerSecao>
         </>
-    )
+    );
 }
 
-export default Secao
+export default Secao;
