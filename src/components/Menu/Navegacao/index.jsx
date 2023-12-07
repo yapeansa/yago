@@ -42,7 +42,7 @@ const Navegacao = styled.nav`
                     width: 100%;
                     height: 100%;
                     background: var(--cor-secundaria);
-                    transition: all .3s ease-in;
+                    transition: all .3s ease;
                 }
                 &:hover {
                     color: var(--preto);
