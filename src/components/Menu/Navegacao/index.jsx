@@ -32,7 +32,7 @@ const Navegacao = styled.nav`
                 padding: 0 5px;
                 overflow: hidden;
                 z-index: 1;
-                transition: all .3s ease-in;
+                transition: all .3s ease;
                 &::before {
                     content: '';
                     z-index: -1;
