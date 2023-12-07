@@ -8,7 +8,7 @@ const Cabecalho = styled.header`
     aside {
         flex-basis: 50%;
         display: flex;
-        gap: 4.5rem;
+        gap: 3rem;
         flex-direction: column;
         justify-content: center;
         padding: 2rem 0;
