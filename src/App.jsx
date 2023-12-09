@@ -23,7 +23,12 @@ const App = () => {
     let currentDay = currentDate.getDate();
 
     function calculaIdade() {
-        return ((currentMonth === 11 && currentDay > 21) || currentMonth > 11) ? (currentYear - 1993) : ((currentYear - 1993) - 1);
+        if ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) {
+            return (currentYear - 1993);
+        }
+        else {
+            return ((currentYear - 1993) - 1);
+        }
     }
 
     return (
