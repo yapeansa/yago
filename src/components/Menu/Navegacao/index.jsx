@@ -32,7 +32,7 @@ const Navegacao = styled.nav`
                 padding: 0 5px;
                 overflow: hidden;
                 z-index: 1;
-                transition: all .3s ease;
+                transition: all .3s ease-out;
                 &::before {
                     content: '';
                     z-index: -1;
@@ -42,7 +42,7 @@ const Navegacao = styled.nav`
                     width: 100%;
                     height: 100%;
                     background: var(--cor-secundaria);
-                    transition: all .3s ease;
+                    transition: all .3s ease-out;
                 }
                 &:hover {
                     color: var(--preto);
