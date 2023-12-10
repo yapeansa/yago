@@ -10,7 +10,7 @@ const EstilosGlobais = createGlobalStyle`
         --branco-secundario: #EEEEEE;
         --cor-primaria: #845ef7;
         --roxo-secundario: #b197fc;
-        --cor-secundaria: #fab005;
+        --cor-secundaria: #fa5252;
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
     }
