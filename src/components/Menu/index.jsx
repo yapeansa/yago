@@ -29,7 +29,11 @@ const Menu = () => {
         <>
             <Navegacao>
                 <ol role="list">
-                    {menu.map(link => <li key={link.nome}><a href={link.caminho} target="_parent">{link.nome}</a></li>)}
+                    {menu.map(link =>
+                        <li key={link.nome}>
+                            <a href={link.caminho} target="_parent">{link.nome}</a>
+                        </li>
+                    )}
                 </ol>
             </Navegacao>
         </>
