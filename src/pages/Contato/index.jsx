@@ -8,12 +8,26 @@ function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
 
     const [textoEmail, setTextoEmail] = useState('@yapeansa');
 
-    function mudarTexto() {
-        setTextoEmail('yago.pereira@estudante.ufjf.br')
+    const aoAlterarTextoEmail = () => {
+        if (textoEmail === '@yapeansa') {
+            setTextoEmail('yago.pereira@estudante.ufjf.br');
+        } else {
+            setTextoEmail('@yapeansa');
+        }
     }
 
-    function retornarTexto() {
-        setTextoEmail('@yapeansa')
+    const setTextoPlaceholder = (parametro) => {
+        switch (parametro) {
+            case 'nome':
+                setPlaceholder('Digite o seu nome aqui...');
+                break;
+            case 'email':
+                setPlaceholder('Digite o seu e-mail aqui...');
+                break;
+            case 'mensagem':
+                setPlaceholder('Digite sua mensagem aqui...');
+                break;
+        }
     }
 
     function aoInteragir(campo) {
@@ -51,8 +65,8 @@ function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
                         <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
                         <a
                             href="mailto:yago.pereira@estudante.ufjf.br"
-                            onMouseOver={mudarTexto}
-                            onMouseOut={retornarTexto}>
+                            onMouseOver={aoAlterarTextoEmail}
+                            onMouseOut={aoAlterarTextoEmail}>
                             {textoEmail}
                         </a>
                         <p>Ou preencha o formulário abaixo com seus dados e sua mensagem.</p>

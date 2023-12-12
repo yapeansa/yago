@@ -25,8 +25,7 @@ const App = () => {
     function calculaIdade() {
         if ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) {
             return (currentYear - 1993);
-        }
-        else {
+        } else {
             return ((currentYear - 1993) - 1);
         }
     }
