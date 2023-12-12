@@ -17,10 +17,8 @@ const App = () => {
     const [email, setEmail] = useState('Digite o seu e-mail aqui...');
     const [mensagem, setMensagem] = useState('Digite a sua mensagem aqui...');
 
-    let currentDate = new Date();
-    let currentYear = currentDate.getFullYear();
-    let currentMonth = currentDate.getMonth() + 1;
-    let currentDay = currentDate.getDate();
+    let currentDate = new Date(), currentYear = currentDate.getFullYear(), currentMonth = currentDate.getMonth() + 1,
+    currentDay = currentDate.getDate();
 
     function calculaIdade() {
         if ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) {
