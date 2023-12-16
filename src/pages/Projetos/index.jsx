@@ -6,7 +6,8 @@ import Titulo from "../../components/Titulo"
 const Paragrafo = styled.p`
     color: var(--branco);
     font-size: 1.5rem;
-    margin: 84px 0 0;
+    margin: 3.5rem 0 0;
+    line-height: 1.5;
 `
 
 function Projetos() {

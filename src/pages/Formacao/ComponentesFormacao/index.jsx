@@ -22,14 +22,18 @@ const Formacoes = styled.div`
         }
         p {
             font-size: 1.5rem;
+            line-height: 1.5;
             a {
                 text-decoration: underline;
                 text-decoration-color: var(--cor-primaria);
                 text-decoration-thickness: 2px;
                 color: var(--branco);
                 transition: all .3s ease-in;
+                padding: 1px 0;
                 &:hover {
-                    text-decoration-color: var(--cor-secundaria);
+                    text-decoration-color: transparent;
+                    background-color: var(--cor-secundaria);
+                    color: var(--preto);
                 }
             }
         }
@@ -61,6 +65,7 @@ const TextoCompetencias = styled.p`
     font-size: 1.5rem;
     margin: 4rem auto 0;
     color: var(--branco);
+    line-height: 1.5;
 
     @media screen and (max-width: 768px) {
         max-width: 90%;
@@ -73,7 +78,7 @@ const Stacks = styled.div`
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 3.5rem;
 `;
 
 export { Formacoes, Subtitulo, TextoCompetencias, Stacks };

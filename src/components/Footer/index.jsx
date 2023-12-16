@@ -8,6 +8,7 @@ const Rodape = styled.footer`
     font-size: 1.3rem;
     padding: 0 0 4rem;
     text-align: center;
+    line-height: 1.5;
     a {
         margin-bottom: 1rem;
         display: inline-block;
