@@ -10,10 +10,9 @@ const Formacoes = styled.div`
     gap: 84px;
     div {
         padding: 1.5rem;
-        background: var(--cinza-escuro);
         border-radius: 16px;
         text-align: center;
-        border: 1px solid var(--cor-primaria);
+        border: 2px solid var(--cor-primaria);
         h3 {
             font-size: 1.5rem;
             font-weight: 700;
