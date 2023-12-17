@@ -18,14 +18,14 @@ const App = () => {
     const [mensagem, setMensagem] = useState('Digite a sua mensagem aqui...');
 
     let currentDate = new Date(), currentYear = currentDate.getFullYear(), currentMonth = currentDate.getMonth() + 1,
-    currentDay = currentDate.getDate();
+        currentDay = currentDate.getDate();
 
-    function calculaIdade() {
-        if ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) {
-            return (currentYear - 1993);
-        } else {
-            return ((currentYear - 1993) - 1);
-        }
+    const calculaIdade = () => {
+        return (
+            ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) ?
+                (currentYear - 1993) :
+                ((currentYear - 1993) - 1)
+        );
     }
 
     return (
