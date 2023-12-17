@@ -6,6 +6,7 @@ const EstilosGlobais = createGlobalStyle`
     :root {
         --preto: #000000;
         --preto-secundario: #121212;
+        --cinza-escuro: #121212;
         --branco: #FFFFFF;
         --branco-secundario: #EEEEEE;
         --cor-primaria: #845ef7;

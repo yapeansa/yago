@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const Formacoes = styled.div`
-    max-width: 60%;
+    max-width: fit-content  ;
     margin: 4rem auto 0;
     color: var(--branco);
     text-align: left;
@@ -9,8 +9,11 @@ const Formacoes = styled.div`
     flex-direction: column;
     gap: 84px;
     div {
-        border-left: 2px solid #333;
-        padding-left: 2rem;
+        padding: 1.5rem;
+        background: var(--cinza-escuro);
+        border-radius: 16px;
+        text-align: center;
+        border: 1px solid var(--cor-primaria);
         h3 {
             font-size: 1.5rem;
             font-weight: 700;
@@ -25,7 +28,7 @@ const Formacoes = styled.div`
             line-height: 1.5;
             a {
                 text-decoration: underline;
-                text-decoration-color: var(--cor-primaria);
+                text-decoration-color: var(--branco);
                 text-decoration-thickness: 2px;
                 color: var(--branco);
                 transition: all .3s ease-in;
@@ -41,11 +44,7 @@ const Formacoes = styled.div`
 
     @media screen and (max-width: 768px) {
         text-align: center;
-        max-width: 80%;
-        div {
-            border: none;
-            padding-left: 0;
-        }
+        max-width: 90%;
     }
 `;
 
