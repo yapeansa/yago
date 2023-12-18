@@ -35,7 +35,11 @@ const App = () => {
             <About idade={calculaIdade} />
             <Formacao />
             <Projetos />
-            <Contato nome={nome} email={email} mensagem={mensagem} setNome={setNome} setEmail={setEmail} setMensagem={setMensagem} />
+            <Contato
+                nome={nome} setNome={setNome}
+                email={email} setEmail={setEmail}
+                mensagem={mensagem} setMensagem={setMensagem}
+            />
             <Footer />
             <BotaoScrollTop mostrarBotao={mostrarBotao} aoRolar={setMostrarBotao} animar={animar} aoAnimar={setAnimar} />
         </main>

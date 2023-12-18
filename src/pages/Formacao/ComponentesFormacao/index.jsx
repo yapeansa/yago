@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const Formacoes = styled.div`
-    max-width: fit-content  ;
+    max-width: 750px;
     margin: 4rem auto 0;
     color: var(--branco);
     text-align: left;
