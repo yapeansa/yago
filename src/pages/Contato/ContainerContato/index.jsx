@@ -19,21 +19,21 @@ const ContainerContato = styled.div`
         &::before {
             content: '';
             position: absolute;
-            left: -5.5rem;
-            top: 50%;
-            margin-top: -1px;
-            background: var(--cor-secundaria);
-            width: 4rem;
+            left: 50%;
+            margin-left: -4.5rem;
+            top: -.5rem;
+            background: var(--cor-primaria);
+            width: 9rem;
             height: 2px;
         }
         &::after {
             content: '';
             position: absolute;
-            right: -5.5rem;
-            top: 50%;
-            margin-top: -1px;
-            background: var(--cor-secundaria);
-            width: 4rem;
+            left: 50%;
+            margin-left: -4.5rem;
+            bottom: -.5rem;
+            background: var(--cor-primaria);
+            width: 9rem;
             height: 2px;
         }
     }

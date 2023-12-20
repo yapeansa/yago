@@ -6,30 +6,6 @@ import { useState } from "react";
 
 function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
 
-    const [textoEmail, setTextoEmail] = useState('@yapeansa');
-
-    const aoAlterarTextoEmail = () => {
-        if (textoEmail === '@yapeansa') {
-            setTextoEmail('yago.pereira@estudante.ufjf.br');
-        } else {
-            setTextoEmail('@yapeansa');
-        }
-    }
-
-    const setTextoPlaceholder = (parametro) => {
-        switch (parametro) {
-            case 'nome':
-                setPlaceholder('Digite o seu nome aqui...');
-                break;
-            case 'email':
-                setPlaceholder('Digite o seu e-mail aqui...');
-                break;
-            case 'mensagem':
-                setPlaceholder('Digite sua mensagem aqui...');
-                break;
-        }
-    }
-
     function aoInteragir(campo) {
         switch (campo) {
             case 'nome':
@@ -63,11 +39,8 @@ function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
                     <Titulo corDaBorda="var(--cor-secundaria)" corDoTexto="var(--branco)">Contato</Titulo>
                     <ContainerContato>
                         <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
-                        <a
-                            href="mailto:yago.pereira@estudante.ufjf.br"
-                            onMouseOver={aoAlterarTextoEmail}
-                            onMouseOut={aoAlterarTextoEmail}>
-                            {textoEmail}
+                        <a href="mailto:yago.pereira@estudante.ufjf.br">
+                            yago.pereira@estudante.ufjf.br
                         </a>
                         <p>Ou preencha o formulário abaixo com seus dados e sua mensagem.</p>
                         <form method="post" action="https://formspree.io/f/xnqlkqnk">
