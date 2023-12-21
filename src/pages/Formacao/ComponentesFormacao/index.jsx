@@ -14,16 +14,16 @@ const Formacoes = styled.div`
         text-align: center;
         border: 2px solid var(--cor-primaria);
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
         }
         h2 {
-            font-size: 1.84rem;
+            font-size: 1.6rem;
             font-weight: 700;
             margin: 15px 0;
         }
         p {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             line-height: 1.5;
             a {
                 text-decoration: underline;

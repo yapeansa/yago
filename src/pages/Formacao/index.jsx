@@ -44,13 +44,13 @@ function Formacao() {
                         Como desenvolvedor Front-end, possuo competência nas seguintes tecnologias:
                     </TextoCompetencias>
                     <Stacks>
-                        <IoLogoHtml5 size={65} color="#f06529" />
-                        <IoLogoCss3 size={65} color="#2965f1" />
-                        <IoLogoSass size={65} color="#cc6699" />
-                        <IoLogoJavascript size={65} color="#f0db4f" />
-                        <IoLogoNodejs size={65} color="#68a063" />
-                        <SiTypescript size={57} color="#007acc" />
-                        <IoLogoReact size={65} color="#88dded" />
+                        <IoLogoHtml5 size={55} color="#f06529" />
+                        <IoLogoCss3 size={55} color="#2965f1" />
+                        <IoLogoSass size={55} color="#cc6699" />
+                        <IoLogoJavascript size={55} color="#f0db4f" />
+                        <IoLogoNodejs size={55} color="#68a063" />
+                        <SiTypescript size={47} color="#007acc" />
+                        <IoLogoReact size={55} color="#88dded" />
                     </Stacks>
                 </Container>
             </Secao>
