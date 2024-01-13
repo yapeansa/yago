@@ -72,6 +72,8 @@ const Navegacao = styled.nav`
             li {
                 &::before {
                     content: '';
+                    width: 0;
+                    display: none;
                 }
             }
         }
