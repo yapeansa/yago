@@ -15,6 +15,7 @@ const SecaoIntro = styled.section`
         .destaque {
             color: var(--third-color);
             font-weight: 700;
+            text-shadow: 0 0 5px var(--preto);
         }
     }
 

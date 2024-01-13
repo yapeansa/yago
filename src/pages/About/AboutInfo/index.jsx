@@ -9,13 +9,13 @@ const AboutInfo = styled.div`
         text-align: justify;
         max-width: 55%;
         font-size: 1.2rem;
-        border: 2px solid var(--third-color);
+        border: 2px solid var(--second-color);
         padding: 2.5rem;
         border-radius: 16px;
         line-height: 1.4;
         a {
             text-decoration: underline;
-            text-decoration-color: var(--third-color);
+            text-decoration-color: var(--first-color);
             text-decoration-style: double;
             text-decoration-thickness: 2px;
             color: var(--preto);
@@ -27,7 +27,7 @@ const AboutInfo = styled.div`
     }
     img {
         max-width: 300px;
-        border: 2px solid var(--third-color);
+        border: 2px solid var(--first-color);
         border-radius: 100%;
         padding: 1rem;
     }

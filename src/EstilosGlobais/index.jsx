@@ -4,7 +4,7 @@ import bg_2 from "/src/images/bg.jpg";
 
 const EstilosGlobais = createGlobalStyle`
     :root {
-        --preto: #0f1713;
+        --preto: #0c0a17;
         --preto-secundario: #121212;
         --cinza-escuro: #121212;
         --branco: #FFFFFF;
@@ -15,11 +15,10 @@ const EstilosGlobais = createGlobalStyle`
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 
-        --first-color: #344E41;
-        --second-color: #3A5A40;
-        --third-color: #588157;
-        --fourth-color: #A3B18A;
-        --fifth-color: #DAD7CD;
+        --first-color: #6A5ACD;
+        --second-color: #D3D3D3;
+        --third-color: #7FFFD4;
+        --fourth-color: #FFF5E1;
     }
 
     @keyframes fadeIn {

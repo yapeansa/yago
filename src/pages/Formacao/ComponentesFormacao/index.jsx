@@ -54,7 +54,7 @@ const Subtitulo = styled.h3`
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-thickness: 3px;
-    text-decoration-color: var(--fifth-color);
+    text-decoration-color: var(--first-color);
     color: var(--branco);
 `;
 
@@ -75,8 +75,9 @@ const Stacks = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.2rem;
     margin-top: 3.5rem;
+    padding: 0 .5rem;
 `;
 
 export { Formacoes, Subtitulo, TextoCompetencias, Stacks };

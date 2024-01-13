@@ -32,7 +32,7 @@ function Footer() {
     return (
         <Rodape>
             <Container>
-                <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--third-color)" /></a>
+                <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--first-color)" /></a>
                 <p>&copy;{currentYear} - Desenvolvido por Yago Pereira.</p>
             </Container>
         </Rodape>

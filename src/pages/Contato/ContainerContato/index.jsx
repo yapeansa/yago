@@ -22,7 +22,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             top: -.5rem;
-            background: var(--fourth-color);
+            background: var(--third-color);
             width: 9rem;
             height: 2px;
         }
@@ -32,7 +32,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             bottom: -.5rem;
-            background: var(--fourth-color);
+            background: var(--third-color);
             width: 9rem;
             height: 2px;
         }
