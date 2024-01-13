@@ -13,9 +13,9 @@ const Paragrafo = styled.p`
 function Projetos() {
     return (
         <div id="projetos">
-            <Secao corDeFundo="var(--cor-primaria)">
+            <Secao corDeFundo="var(--first-color)">
                 <Container>
-                    <Titulo corDaBorda="var(--roxo-secundario)" corDoTexto="var(--branco)">Projetos</Titulo>
+                    <Titulo corDaBorda="var(--fourth-color)" corDoTexto="var(--branco)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                 </Container>
             </Secao>

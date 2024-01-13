@@ -22,7 +22,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             top: -.5rem;
-            background: var(--cor-primaria);
+            background: var(--fourth-color);
             width: 9rem;
             height: 2px;
         }
@@ -32,7 +32,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             bottom: -.5rem;
-            background: var(--cor-primaria);
+            background: var(--fourth-color);
             width: 9rem;
             height: 2px;
         }
@@ -56,7 +56,7 @@ const ContainerContato = styled.div`
             color: var(--branco);
             transition: all .3s ease-in-out;
             &:focus {
-                border-color: var(--cor-secundaria);
+                border-color: var(--third-color);
             }
             &::placeholder {
                 opacity: 1;
@@ -68,18 +68,19 @@ const ContainerContato = styled.div`
         }
         input[type=reset], input[type=submit] {
             max-width: 140px;
-            background: var(--cor-primaria);
+            background: var(--first-color);
             border: 2px solid var(--preto);
             font-family: var(--fonte-primaria);
             font-weight: 700;
             font-size: 1.2rem;
             text-transform: uppercase;
             cursor: pointer;
-            padding: 1rem;
+            padding: 1.1rem 1rem;
             transition: all .3s ease-in;
             color: var(--branco);
+            border-radius: 16px;
             &:hover {
-                background: var(--cor-secundaria);
+                background: var(--third-color);
                 color: var(--preto-secundario);
                 border-color: transparent;
             }

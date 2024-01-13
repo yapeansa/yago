@@ -7,6 +7,7 @@ const Navegacao = styled.nav`
         counter-reset: list;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         li {
             font-family: var(--fonte-secundaria);
             font-weight: normal;
@@ -22,17 +23,25 @@ const Navegacao = styled.nav`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: var(--cor-primaria);
+                color: #666;
                 font-size: 3.75rem;
+                transition: all .3s ease-in-out;
+            }
+            &:hover {
+                &::before {
+                    color: var(--third-color);
+                }
             }
             a {
-                text-decoration: none;
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+                text-decoration-color: var(--third-color);
                 color: var(--branco);
                 position: relative;
                 padding: 0 5px;
                 overflow: hidden;
                 z-index: 1;
-                transition: all .3s ease-out;
+                transition: color .3s ease-out;
                 &::before {
                     content: '';
                     z-index: -1;
@@ -41,11 +50,12 @@ const Navegacao = styled.nav`
                     left: -100%;
                     width: 100%;
                     height: 100%;
-                    background: var(--cor-secundaria);
+                    background: var(--fifth-color);
                     transition: all .3s ease-out;
                 }
                 &:hover {
                     color: var(--preto);
+                    text-decoration-color: var(--fifth-color);
                     &::before {
                         left: 0;
                     }
@@ -56,6 +66,15 @@ const Navegacao = styled.nav`
 
     @media screen and (max-width: 960px) {
         padding: 0;
+        ol {
+            align-items: center;
+            gap: 2rem;
+            li {
+                &::before {
+                    content: '';
+                }
+            }
+        }
     }
 `;
 

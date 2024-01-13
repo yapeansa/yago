@@ -30,7 +30,7 @@ const Cabecalho = styled.header`
             min-height: 100vh;
             gap: 2.4rem;
             align-items: center;
-            background-color: rgba(0, 0, 0, .7);
+            background-color: rgba(15, 23, 19, .7);
         }
         .introducao {
             padding: 4rem 0;

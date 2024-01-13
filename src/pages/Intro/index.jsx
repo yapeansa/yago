@@ -13,7 +13,7 @@ const SecaoIntro = styled.section`
         text-decoration-color: var(--branco);
         text-align: right;
         .destaque {
-            color: var(--cor-secundaria);
+            color: var(--third-color);
             font-weight: 700;
         }
     }

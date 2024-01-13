@@ -4,7 +4,7 @@ import bg_2 from "/src/images/bg.jpg";
 
 const EstilosGlobais = createGlobalStyle`
     :root {
-        --preto: #000000;
+        --preto: #0f1713;
         --preto-secundario: #121212;
         --cinza-escuro: #121212;
         --branco: #FFFFFF;
@@ -14,6 +14,12 @@ const EstilosGlobais = createGlobalStyle`
         --cor-secundaria: #FFC719;
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
+
+        --first-color: #344E41;
+        --second-color: #3A5A40;
+        --third-color: #588157;
+        --fourth-color: #A3B18A;
+        --fifth-color: #DAD7CD;
     }
 
     @keyframes fadeIn {

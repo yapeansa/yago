@@ -7,10 +7,10 @@ const SocialNetwork = styled.div`
         display: flex;
         gap: 30px;
         .social {
-            color: #FFF;
+            color: var(--fourth-color);
             transition: all .3s ease-in-out;
             &:hover {
-                color: var(--cor-secundaria);
+                color: var(--third-color);
             }
         }
     }

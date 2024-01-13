@@ -36,9 +36,8 @@ const App = () => {
             <Formacao />
             <Projetos />
             <Contato
-                nome={nome} setNome={setNome}
-                email={email} setEmail={setEmail}
-                mensagem={mensagem} setMensagem={setMensagem}
+                nome={nome} email={email} mensagem={mensagem} 
+                setNome={setNome} setEmail={setEmail} setMensagem={setMensagem}
             />
             <Footer />
             <BotaoScrollTop mostrarBotao={mostrarBotao} aoRolar={setMostrarBotao} animar={animar} aoAnimar={setAnimar} />

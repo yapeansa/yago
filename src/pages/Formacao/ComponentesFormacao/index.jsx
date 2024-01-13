@@ -12,7 +12,7 @@ const Formacoes = styled.div`
         padding: 1.5rem;
         border-radius: 16px;
         text-align: center;
-        border: 2px solid var(--cor-primaria);
+        border: 2px solid var(--third-color);
         h3 {
             font-size: 1.4rem;
             font-weight: 700;
@@ -34,7 +34,7 @@ const Formacoes = styled.div`
                 padding: 1px 0;
                 &:hover {
                     text-decoration-color: transparent;
-                    background-color: var(--cor-secundaria);
+                    background-color: var(--fifth-color);
                     color: var(--preto);
                 }
             }
@@ -54,7 +54,7 @@ const Subtitulo = styled.h3`
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-thickness: 3px;
-    text-decoration-color: var(--cor-secundaria);
+    text-decoration-color: var(--fifth-color);
     color: var(--branco);
 `;
 
