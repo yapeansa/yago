@@ -39,8 +39,9 @@ const AboutInfo = styled.div`
         p {
             order: 2;
             max-width: 90%;
-            background-color: var(--branco);
+            background-color: var(--fifth-color);
             border-radius: 0;
+            border: none;
             padding: 0;
         }
         img {
