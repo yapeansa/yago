@@ -9,9 +9,6 @@ const EstilosGlobais = createGlobalStyle`
         --cinza-escuro: #121212;
         --branco: #FFFFFF;
         --branco-secundario: #EEEEEE;
-        --cor-primaria: #845ef7;
-        --roxo-secundario: #b197fc;
-        --cor-secundaria: #FFC719;
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 

@@ -29,12 +29,12 @@ const Formacoes = styled.div`
                 text-decoration: underline;
                 text-decoration-color: var(--branco);
                 text-decoration-thickness: 2px;
-                color: var(--branco);
+                color: var(--fourth-color);
                 transition: all .3s ease-in;
                 padding: 1px 0;
                 &:hover {
                     text-decoration-color: transparent;
-                    background-color: var(--fifth-color);
+                    background-color: var(--fourth-color);
                     color: var(--preto);
                 }
             }
