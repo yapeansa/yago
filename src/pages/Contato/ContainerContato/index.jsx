@@ -22,7 +22,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             top: -.5rem;
-            background: var(--third-color);
+            background: var(--primaria);
             width: 9rem;
             height: 2px;
         }
@@ -32,7 +32,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             bottom: -.5rem;
-            background: var(--third-color);
+            background: var(--primaria);
             width: 9rem;
             height: 2px;
         }
@@ -49,14 +49,14 @@ const ContainerContato = styled.div`
             font-size: 1rem;
             display: block;
             width: 100%;
-            background: var(--preto);
+            background: var(--quinternaria);
             border: 2px solid #333;
             padding: 1.2rem 1rem;
             outline: none;
             color: var(--branco);
             transition: all .3s ease-in-out;
             &:focus {
-                border-color: var(--third-color);
+                border-color: var(--primaria);
             }
             &::placeholder {
                 opacity: 1;
@@ -80,7 +80,7 @@ const ContainerContato = styled.div`
             color: var(--branco);
             border-radius: 16px;
             &:hover {
-                background: var(--third-color);
+                background: var(--primaria);
                 color: var(--preto-secundario);
                 border-color: transparent;
             }

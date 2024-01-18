@@ -10,7 +10,7 @@ const SocialNetwork = styled.div`
             color: var(--fourth-color);
             transition: all .3s ease-in-out;
             &:hover {
-                color: var(--third-color);
+                color: var(--primaria);
             }
         }
     }

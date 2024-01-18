@@ -24,7 +24,7 @@ function Formacao() {
 
     return (
         <div id="formacao">
-            <Secao corDeFundo="var(--preto)">
+            <Secao corDeFundo="var(--quinternaria)">
                 <Container>
                     <Titulo corDaBorda="var(--first-color)" corDoTexto="var(--branco)">Minha formação</Titulo>
                     <TextoCompetencias>

@@ -20,6 +20,6 @@ const Header = () => {
             </Cabecalho>
         </Container>
     );
-}
+};
 
 export default Header;

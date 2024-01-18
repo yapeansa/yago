@@ -34,7 +34,7 @@ function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
 
     return (
         <div id="contato">
-            <Secao corDeFundo="var(--preto)">
+            <Secao corDeFundo="var(--quinternaria)">
                 <Container>
                     <Titulo corDaBorda="var(--first-color)" corDoTexto="var(--branco)">Contato</Titulo>
                     <ContainerContato>

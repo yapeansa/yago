@@ -3,7 +3,7 @@ import Container from "../Container";
 import { SiLinktree } from "react-icons/si";
 
 const Rodape = styled.footer`
-    background-color: var(--preto);
+    background-color: var(--quinternaria);
     color: var(--branco);
     font-size: 1.3rem;
     padding: 0 0 4rem;

@@ -16,6 +16,12 @@ const EstilosGlobais = createGlobalStyle`
         --second-color: #D3D3D3;
         --third-color: #7FFFD4;
         --fourth-color: #FFF5E1;
+
+        --primaria: #DAA520;
+        --secundaria: #CCCCCC;
+        --terciaria: #6A5ACD;
+        --quaternaria: #FFFFFF;
+        --quinternaria: #000000;
     }
 
     @keyframes fadeIn {
