@@ -1,5 +1,5 @@
-import { styled } from "styled-components"
-import { FaArrowUp } from "react-icons/fa"
+import { styled } from "styled-components";
+import { FaArrowUp } from "react-icons/fa";
 
 const Scroll = styled.div`
     position: fixed;
@@ -13,33 +13,34 @@ const Scroll = styled.div`
     a {
         display: block;
         background: var(--preto);
-        border: 1px solid var(--branco);
+        border: 2px solid var(--branco);
         padding: 1rem 1rem .8rem;
+        border-radius: 100%;
     }
-`
+`;
 
-function BotaoScrollTop({ mostrarBotao, aoRolar, animar, aoAnimar }) {
+const BotaoScrollTop = ({ mostrarBotao, aoRolar, animar, aoAnimar }) => {
 
-    const visivel = mostrarBotao ? 'block' : 'none'
-    const animacao = animar ? 'fadeIn' : 'fadeOut'
+    const visivel = mostrarBotao ? 'block' : 'none';
+    const animacao = animar ? 'fadeIn' : 'fadeOut';
 
-    function rolagem () {
+    const rolagem = () => {
         if (document.documentElement.scrollTop > (screen.availHeight - 100)) {
             clearInterval(window.scrollEndTimer);
             window.scrollEndTimer = setTimeout(() => {
                 aoAnimar(true)
                 aoRolar(true)
-            }, 300)
+            }, 300);
         } else {
             clearInterval(window.scrollEndTimer);
             window.scrollEndTimer = setTimeout(() => {
                 aoAnimar(false)
                 setTimeout(() => aoRolar(false), 300)
-            }, 400)
+            }, 400);
         }
-    }
+    };
 
-    window.addEventListener('scroll', rolagem)
+    window.addEventListener('scroll', rolagem);
 
     return (
         <>
@@ -49,7 +50,7 @@ function BotaoScrollTop({ mostrarBotao, aoRolar, animar, aoAnimar }) {
                 </a>
             </Scroll>
         </>
-    )
-}
+    );
+};
 
-export default BotaoScrollTop
+export default BotaoScrollTop;
