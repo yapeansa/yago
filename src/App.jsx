@@ -22,9 +22,7 @@ const App = () => {
 
     const calculaIdade = () => {
         return (
-            ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) ?
-                (currentYear - 1993) :
-                ((currentYear - 1993) - 1)
+            ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) ? (currentYear - 1993) : ((currentYear - 1993) - 1)
         );
     }
 
@@ -36,7 +34,7 @@ const App = () => {
             <Formacao />
             <Projetos />
             <Contato
-                nome={nome} email={email} mensagem={mensagem} 
+                nome={nome} email={email} mensagem={mensagem}
                 setNome={setNome} setEmail={setEmail} setMensagem={setMensagem}
             />
             <Footer />

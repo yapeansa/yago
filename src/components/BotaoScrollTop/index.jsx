@@ -12,7 +12,7 @@ const Scroll = styled.div`
     animation-timing-function: ease-in;
     a {
         display: block;
-        background: var(--preto);
+        background: var(--quinternaria);
         border: 2px solid var(--branco);
         padding: 1rem 1rem .8rem;
         border-radius: 100%;
