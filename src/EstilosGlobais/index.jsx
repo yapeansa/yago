@@ -48,7 +48,7 @@ const EstilosGlobais = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 1.2rem;
-        background: var(--preto) url(${bg}) center / cover no-repeat fixed;
+        background: var(--quinternaria) url(${bg}) center / cover no-repeat fixed;
     }
 
     a {
