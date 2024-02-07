@@ -15,7 +15,6 @@ const SecaoIntro = styled.section`
         .destaque {
             color: var(--primaria);
             font-weight: 700;
-            text-shadow: 0 0 5px var(--preto);
         }
     }
 
@@ -29,12 +28,14 @@ const SecaoIntro = styled.section`
     }
 `;
 
-function Intro() {
+const Intro = () => {
     return (
         <SecaoIntro>
-            <p>Olá, mundo! Eu sou um <span className="destaque">desenvolvedor</span> web Front-end especializado no framework <span className="destaque">React</span>.</p>
+            <p>
+                Olá, mundo! Eu sou um <span className="destaque">desenvolvedor</span> web Front-end especializado no framework <span className="destaque">React</span>.
+            </p>
         </SecaoIntro>
     );
-}
+};
 
 export default Intro;
