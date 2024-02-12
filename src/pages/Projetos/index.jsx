@@ -14,6 +14,7 @@ const Paragrafo = styled.p`
 const ContainerProjetos = styled.div`
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
     .flip-card {
         flex-basis: 30%;
