@@ -33,7 +33,7 @@ const Footer = () => {
                 <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--first-color)" /></a>
                 <p>
                     &copy;{currentYear} - Desenvolvido por&nbsp;
-                    <span style={{ borderBottom: '2px solid var(--primaria)' }}>
+                    <span style={{ borderBottom: '2px solid var(--primaria)', display: 'inline-block' }}>
                         Yago Pereira
                     </span>.
                 </p>
