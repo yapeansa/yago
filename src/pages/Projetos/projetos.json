@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nome": "CodeChella",
+        "caminho": "https://codechellafestival.vercel.app/",
+        "imagem": "/galeria/codechella.png",
+        "descricao": "Um projeto desenvolvido em React."
+    },
+    {
+        "id": 2,
+        "nome": "OptimusTech",
+        "caminho": "https://optimus-tech-puce.vercel.app/",
+        "imagem": "/galeria/optimustech.png",
+        "descricao": "Um projeto desenvolvido em React."
+    }
+]

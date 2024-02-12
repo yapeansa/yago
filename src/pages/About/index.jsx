@@ -2,7 +2,7 @@ import AboutInfo from "./AboutInfo";
 import Container from "../../components/Container";
 import Titulo from "../../components/Titulo";
 import Secao from "../../components/ContainerSecao";
-import me from "/src/images/me.jpg";
+import me from "/src/assets/images/me.jpg";
 
 function About({ idade }) {
     return (

@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import logo from "/src/images/logo.svg";
+import logo from "/src/assets/images/logo.svg";
 
 const LinkLogo = styled.a`
     display: inline-block;
