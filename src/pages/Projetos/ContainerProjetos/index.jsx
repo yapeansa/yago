@@ -33,7 +33,7 @@ const ContainerProjetos = styled.div`
                 background-color: #bbb;
                 color: black;
                 img {
-                    border: 4px solid #3e3574;
+                    border: 6px solid var(--cinza);
                     width: 100%;
                     height: 300px;
                     object-fit: fit;
@@ -43,9 +43,10 @@ const ContainerProjetos = styled.div`
                 position: absolute;
                 width: 100%;
                 height: 100%;
+                border: 6px solid #333;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background-color: #3e3574;
+                background-color: var(--cinza);
                 color: white;
                 transform: rotateY(180deg);
                 display: flex;
@@ -62,10 +63,19 @@ const ContainerProjetos = styled.div`
                         display: flex;
                         gap: 1rem;
                         a {
-                            display: block;
+                            display: flex;
+                            align-items: center;
+                            gap: .6rem;
+                            text-transform: uppercase;
+                            font-size: 1rem;
                             color: var(--branco);
-                            border: 1px solid var(--branco);
+                            border: 2px solid var(--ouro-escuro);
                             padding: 6px 15px;
+                            transition: all .3s ease-in-out;
+                            &:hover {
+                                background: var(--ouro-escuro);
+                                color: var(--quinaria)
+                            }
                         }
                     }
                 }

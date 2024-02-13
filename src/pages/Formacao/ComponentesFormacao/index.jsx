@@ -12,7 +12,7 @@ const Formacoes = styled.div`
         padding: 1.5rem;
         border-radius: 16px;
         text-align: center;
-        border: 2px solid var(--primaria);
+        border: 2px solid var(--third-color);
         h3 {
             font-size: 1.4rem;
             font-weight: 700;

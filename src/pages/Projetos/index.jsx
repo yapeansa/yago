@@ -3,6 +3,7 @@ import Container from "../../components/Container";
 import Secao from "../../components/ContainerSecao";
 import Titulo from "../../components/Titulo";
 import ContainerProjetos from "./ContainerProjetos";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import projetos from "./projetos.json";
 
 const Paragrafo = styled.p`
@@ -16,9 +17,9 @@ const Projetos = () => {
 
     return (
         <div id="projetos">
-            <Secao corDeFundo="var(--first-color)">
+            <Secao corDeFundo="var(--preto)">
                 <Container>
-                    <Titulo corDaBorda="var(--preto)" corDoTexto="var(--branco)">Projetos</Titulo>
+                    <Titulo corDaBorda="var(--ouro-escuro)" corDoTexto="var(--branco)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos>
                         {projetos.map(projeto =>
@@ -36,7 +37,7 @@ const Projetos = () => {
                                                     <a href={projeto.repositorio} target="_blank">Repositório</a>
                                                 </li>
                                                 <li>
-                                                    <a href={projeto.caminho} target="_blank">Visitar</a>
+                                                    <a href={projeto.caminho} target="_blank">Visitar <FaExternalLinkAlt /></a>
                                                 </li>
                                             </ul>
                                         </div>
