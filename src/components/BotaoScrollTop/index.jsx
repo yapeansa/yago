@@ -13,7 +13,7 @@ const Scroll = styled.div`
     a {
         display: block;
         background: var(--terciaria);
-        padding: 1.4rem 1rem .4rem;
+        padding: 1.4rem 1.2rem .4rem;
     }
 `;
 
@@ -44,7 +44,7 @@ const BotaoScrollTop = ({ mostrarBotao, aoRolar, animar, aoAnimar }) => {
         <>
             <Scroll $display={visivel} $animacao={animacao}>
                 <a href="#">
-                    <FaArrowUpLong color="var(--branco)" size={28} />
+                    <FaArrowUpLong color="var(--branco)" size={27} />
                 </a>
             </Scroll>
         </>
