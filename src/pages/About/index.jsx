@@ -4,7 +4,7 @@ import Titulo from "../../components/Titulo";
 import Secao from "../../components/ContainerSecao";
 import me from "/src/assets/images/me.jpg";
 
-function About({ idade }) {
+const About = ({ idade }) => {
     return (
         <div id="sobre">
             <Secao corDeFundo="var(--preto)">
@@ -18,6 +18,6 @@ function About({ idade }) {
             </Secao>
         </div>
     );
-}
+};
 
 export default About;

@@ -5,7 +5,7 @@ import Titulo from "../../components/Titulo";
 import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoSass, IoLogoNodejs, IoLogoReact } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 
-function Formacao() {
+const Formacao = () => {
 
     const cards = [
         {
@@ -56,6 +56,6 @@ function Formacao() {
             </Secao>
         </div>
     );
-}
+};
 
 export default Formacao;

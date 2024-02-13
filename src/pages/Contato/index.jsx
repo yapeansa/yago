@@ -4,7 +4,7 @@ import ContainerContato from "./ContainerContato";
 import Container from "../../components/Container";
 import { useState } from "react";
 
-function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
+const Contato = ({ nome, email, mensagem, setNome, setEmail, setMensagem }) => {
 
     function aoInteragir(campo) {
         switch (campo) {
@@ -83,6 +83,6 @@ function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
             </Secao>
         </div>
     );
-}
+};
 
 export default Contato;

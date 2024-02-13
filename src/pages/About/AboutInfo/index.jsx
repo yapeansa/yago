@@ -10,7 +10,7 @@ const AboutInfo = styled.div`
         text-align: justify;
         max-width: 55%;
         font-size: 1.2rem;
-        border: 2px solid var(--second-color);
+        border: 2px solid var(--cinza-medio);
         padding: 2.5rem;
         border-radius: 16px;
         line-height: 1.4;
