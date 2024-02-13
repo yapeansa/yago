@@ -54,7 +54,7 @@ const Subtitulo = styled.h3`
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-thickness: 3px;
-    text-decoration-color: var(--first-color);
+    text-decoration-color: var(--ouro-escuro);
     color: var(--branco);
 `;
 

@@ -36,7 +36,7 @@ function Contato({ nome, email, mensagem, setNome, setEmail, setMensagem }) {
         <div id="contato">
             <Secao corDeFundo="var(--quinaria)">
                 <Container>
-                    <Titulo corDaBorda="var(--first-color)" corDoTexto="var(--branco)">Contato</Titulo>
+                    <Titulo corDaBorda="var(--terciaria)" corDoTexto="var(--branco)">Contato</Titulo>
                     <ContainerContato>
                         <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
                         <a href="mailto:yago.pereira@estudante.ufjf.br">

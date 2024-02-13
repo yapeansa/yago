@@ -22,7 +22,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             top: -.5rem;
-            background: var(--primaria);
+            background: var(--ouro-escuro);
             width: 9rem;
             height: 2px;
         }
@@ -32,7 +32,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             bottom: -.5rem;
-            background: var(--primaria);
+            background: var(--ouro-escuro);
             width: 9rem;
             height: 2px;
         }
@@ -49,14 +49,14 @@ const ContainerContato = styled.div`
             font-size: 1rem;
             display: block;
             width: 100%;
-            background: var(--quinternaria);
+            background: var(--quinaria);
             border: 2px solid #333;
             padding: 1.2rem 1rem;
             outline: none;
             color: var(--branco);
             transition: all .3s ease-in-out;
             &:focus {
-                border-color: var(--primaria);
+                border-color: var(--ouro-escuro);
             }
             &::placeholder {
                 opacity: 1;
@@ -68,8 +68,8 @@ const ContainerContato = styled.div`
         }
         input[type=reset], input[type=submit] {
             max-width: 140px;
-            background: var(--first-color);
-            border: 2px solid var(--preto);
+            background: var(--quinaria);
+            border: 2px solid var(--ouro-escuro);
             font-family: var(--fonte-primaria);
             font-weight: 700;
             font-size: 1.2rem;
@@ -78,11 +78,11 @@ const ContainerContato = styled.div`
             padding: 1.1rem 1rem;
             transition: all .3s ease-in;
             color: var(--branco);
-            border-radius: 16px;
+            //border-radius: 16px;
             &:hover {
-                background: var(--primaria);
+                background: var(--ouro-escuro);
                 color: var(--preto-secundario);
-                border-color: transparent;
+                border-color: var(--quinaria);
             }
         }
         div {

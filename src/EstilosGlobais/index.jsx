@@ -12,25 +12,15 @@ const EstilosGlobais = createGlobalStyle`
         --ouro-escuro: #FFA500;
         --terciaria: #6A5ACD;
         --third-color: #7FFFD4;
-
-        --preto-secundario: #121212;
-        --cinza-escuro: #121212;
         --branco: #FFFFFF;
+
         --branco-secundario: #EEEEEE;
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 
-        --first-color: #6A5ACD;
         --second-color: #D3D3D3;
-        
         --fourth-color: #FFF5E1;
-
-        
-
-        --primaria: #DAA520;
         --secundaria: #CCCCCC;
-        
-        --quaternaria: #FFFFFF;
         
     }
 

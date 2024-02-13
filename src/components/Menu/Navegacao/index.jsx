@@ -23,7 +23,7 @@ const Navegacao = styled.nav`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: var(--first-color);
+                color: var(--terciaria);
                 font-size: 3.75rem;
                 transition: all .3s ease-in-out;
             }
@@ -35,7 +35,7 @@ const Navegacao = styled.nav`
             a {
                 text-decoration: underline;
                 text-decoration-thickness: 2px;
-                text-decoration-color: var(--first-color);
+                text-decoration-color: var(--ouro-escuro);
                 color: var(--branco);
                 position: relative;
                 padding: 0 5px;

@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { FaArrowUp } from "react-icons/fa";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const Scroll = styled.div`
     position: fixed;
@@ -12,10 +12,8 @@ const Scroll = styled.div`
     animation-timing-function: ease-in;
     a {
         display: block;
-        background: var(--quinternaria);
-        border: 2px solid var(--branco);
-        padding: 1rem 1rem .8rem;
-        border-radius: 100%;
+        background: var(--terciaria);
+        padding: 1.4rem 1rem .4rem;
     }
 `;
 
@@ -46,7 +44,7 @@ const BotaoScrollTop = ({ mostrarBotao, aoRolar, animar, aoAnimar }) => {
         <>
             <Scroll $display={visivel} $animacao={animacao}>
                 <a href="#">
-                    <FaArrowUp color="var(--branco)" size={30} />
+                    <FaArrowUpLong color="var(--branco)" size={28} />
                 </a>
             </Scroll>
         </>

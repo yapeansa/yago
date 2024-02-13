@@ -5,6 +5,7 @@ const AboutInfo = styled.div`
     justify-content: space-around;
     align-items: center;
     margin-top: 112px;
+    color: var(--branco);
     p {
         text-align: justify;
         max-width: 55%;
@@ -18,7 +19,7 @@ const AboutInfo = styled.div`
             text-decoration-color: var(--first-color);
             text-decoration-style: double;
             text-decoration-thickness: 2px;
-            color: var(--preto);
+            color: var(--ouro-escuro);
         }
         .estilizado {
             font-weight: 700;
@@ -27,7 +28,7 @@ const AboutInfo = styled.div`
     }
     img {
         max-width: 300px;
-        border: 2px solid var(--first-color);
+        border: 2px solid var(--terciaria);
         border-radius: 100%;
         padding: 1rem;
     }

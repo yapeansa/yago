@@ -26,7 +26,7 @@ function Formacao() {
         <div id="formacao">
             <Secao corDeFundo="var(--quinaria)">
                 <Container>
-                    <Titulo corDaBorda="var(--first-color)" corDoTexto="var(--branco)">Minha formação</Titulo>
+                    <Titulo corDaBorda="var(--terciaria)" corDoTexto="var(--branco)">Minha formação</Titulo>
                     <TextoCompetencias>
                         Logo abaixo você pode conferir a minha trajetória acadêmica.
                     </TextoCompetencias>
