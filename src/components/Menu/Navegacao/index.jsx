@@ -29,7 +29,7 @@ const Navegacao = styled.nav`
             }
             &:hover {
                 &::before {
-                    color: var(--primaria);
+                    color: var(--ouro-escuro);
                 }
             }
             a {
