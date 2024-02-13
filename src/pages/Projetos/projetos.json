@@ -4,13 +4,23 @@
         "nome": "CodeChella",
         "caminho": "https://codechellafestival.vercel.app/",
         "imagem": "/galeria/codechella.png",
-        "descricao": "Um projeto desenvolvido em React."
+        "descricao": "Um projeto desenvolvido em React.",
+        "repositorio": "https://github.com/yapeansa/codechella"
     },
     {
         "id": 2,
         "nome": "OptimusTech",
         "caminho": "https://optimus-tech-puce.vercel.app/",
         "imagem": "/galeria/optimustech.png",
-        "descricao": "Um projeto desenvolvido em React."
+        "descricao": "Um projeto desenvolvido em React.",
+        "repositorio": "https://github.com/yapeansa/optimusTech"
+    },
+    {
+        "id": 3,
+        "nome": "Netflix (Réplica)",
+        "caminho": "https://reactflix-two-tau.vercel.app/",
+        "imagem": "/galeria/netflix.png",
+        "descricao": "Um projeto desenvolvido em React.",
+        "repositorio": "https://github.com/yapeansa/netflix-replica"
     }
 ]
