@@ -4,7 +4,7 @@ const AboutInfo = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 112px;
+    margin-top: 6rem;
     color: var(--branco);
     p {
         text-align: justify;
