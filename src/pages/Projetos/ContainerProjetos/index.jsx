@@ -51,9 +51,9 @@ const ContainerProjetos = styled.div`
                 transform: rotateY(180deg);
                 display: flex;
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: center;
                 text-align: left;
-                padding: 0 1.5rem;
+                padding: 0;
                 .info-card {
                     display: flex;
                     flex-direction: column;
