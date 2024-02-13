@@ -72,6 +72,12 @@ const ContainerProjetos = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        gap: 2rem;
+        height: 960px;
+    }
 `;
 
 export default ContainerProjetos;
