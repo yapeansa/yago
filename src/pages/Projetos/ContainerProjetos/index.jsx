@@ -30,11 +30,10 @@ const ContainerProjetos = styled.div`
                 height: 100%;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background-color: #bbb;
                 color: black;
                 cursor: pointer;
                 img {
-                    border: 6px solid var(--cinza);
+                    border: 6px solid var(--cinza-medio);
                     width: 100%;
                     height: 300px;
                     object-fit: fit;

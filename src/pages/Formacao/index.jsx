@@ -4,6 +4,7 @@ import Secao from "../../components/ContainerSecao";
 import Titulo from "../../components/Titulo";
 import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoLogoSass, IoLogoNodejs, IoLogoReact } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
+import Markdown from "react-markdown";
 
 const Formacao = () => {
 
@@ -17,7 +18,7 @@ const Formacao = () => {
         {
             curso: 'Bacharel em Matemática.',
             instituição: 'Universidade Federal de Juiz de Fora, UFJF, Brasil.',
-            titulo: 'Axioma da Escolha, Lema de Zorn e o Teorema de Zermelo: Aplicações e Equivalências.',
+            titulo: 'Axioma da Escolha, Lema de Zorn e o Teorema de Zermelo:\n\n Aplicações e Equivalências.',
             link: 'https://www2.ufjf.br/matematica/wp-content/uploads/sites/393/2014/02/TCC_Yago-versao-final.pdf'
         }
     ];
@@ -35,7 +36,9 @@ const Formacao = () => {
                             <div key={card.titulo}>
                                 <h3>{card.curso}</h3>
                                 <h2>{card.instituição}</h2>
-                                <p><a href={card.link} target={card.link ? '_blank' : '_parent'}>{card.titulo}</a></p>
+                                <p><a href={card.link} target={card.link ? '_blank' : '_parent'}>
+                                    <Markdown>{card.titulo}</Markdown></a>
+                                </p>
                             </div>
                         )}
                     </Formacoes>

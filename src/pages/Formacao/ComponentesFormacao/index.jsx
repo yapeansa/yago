@@ -9,7 +9,7 @@ const Formacoes = styled.div`
     align-items: center;
     gap: 60px;
     div {
-        padding: 2rem;
+        padding: 2rem 4.5rem;
         border-radius: 16px;
         text-align: center;
         border: 2px solid var(--cinza-medio);
