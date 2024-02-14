@@ -7,6 +7,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import projetos from "./projetos.json";
 import { useState } from "react";
 import { TbArrowBack } from "react-icons/tb";
+import Markdown from "react-markdown";
 
 const Paragrafo = styled.p`
     color: var(--branco);
@@ -22,10 +23,10 @@ const Projetos = () => {
     function rotacionar(id) {
         const alvo = projects.filter(projeto => projeto.id === id);
         if (alvo[0].classe === "") {
-            alvo[0].classe = "animacao"
+            alvo[0].classe = "animacao";
             setProjects([...projetos]);
         } else {
-            alvo[0].classe = ""
+            alvo[0].classe = "";
             setProjects([...projetos]);
         }
     }
@@ -46,7 +47,7 @@ const Projetos = () => {
                                     <div className="flip-card-back">
                                         <div className="info-card">
                                             <h1>{projeto.nome}</h1>
-                                            <p>{projeto.descricao}</p>
+                                            <p><Markdown>{projeto.descricao}</Markdown></p>
                                             <ul>
                                                 <li>
                                                     <a href={projeto.repositorio} target="_blank">Repositório</a>
