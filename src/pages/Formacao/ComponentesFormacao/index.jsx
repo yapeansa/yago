@@ -1,18 +1,19 @@
 import { styled } from "styled-components";
 
 const Formacoes = styled.div`
-    max-width: 750px;
+    //max-width: 750px;
     margin: 4rem auto 0;
     color: var(--branco);
-    text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 84px;
+    align-items: center;
+    gap: 60px;
     div {
-        padding: 1.5rem;
+        padding: 2rem;
         border-radius: 16px;
         text-align: center;
-        border: 2px solid var(--third-color);
+        border: 2px solid var(--cinza-medio);
+        width: fit-content;
         h3 {
             font-size: 1.4rem;
             font-weight: 700;
@@ -61,7 +62,7 @@ const Subtitulo = styled.h3`
 const TextoCompetencias = styled.p`
     max-width: 60%;
     font-size: 1.5rem;
-    margin: 4rem auto 0;
+    margin: 3rem auto 0;
     color: var(--branco);
     line-height: 1.5;
 
