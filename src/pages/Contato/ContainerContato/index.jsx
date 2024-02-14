@@ -57,6 +57,7 @@ const ContainerContato = styled.div`
             transition: all .3s ease-in-out;
             &:focus {
                 border-color: var(--ouro-escuro);
+                border-style: dashed;
             }
             &::placeholder {
                 opacity: 1;
