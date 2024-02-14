@@ -28,15 +28,14 @@ const Formacoes = styled.div`
             line-height: 1.5;
             a {
                 text-decoration: underline;
-                text-decoration-color: var(--branco);
+                text-decoration-color: var(--ouro-escuro);
                 text-decoration-thickness: 2px;
                 color: var(--fourth-color);
                 transition: all .3s ease-in;
-                padding: 1px 0;
+                padding: 0;
+                display: inline-block;
                 &:hover {
-                    text-decoration-color: transparent;
-                    background-color: var(--fourth-color);
-                    color: var(--preto);
+                    text-decoration-color: var(--terciaria);
                 }
             }
         }
@@ -55,7 +54,7 @@ const Subtitulo = styled.h3`
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-thickness: 3px;
-    text-decoration-color: var(--ouro-escuro);
+    text-decoration-color: var(--terciaria);
     color: var(--branco);
 `;
 

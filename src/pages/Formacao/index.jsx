@@ -37,8 +37,8 @@ const Formacao = () => {
                                 <h3>{card.curso}</h3>
                                 <h2>{card.instituição}</h2>
                                 <p><a href={card.link} target={card.link ? '_blank' : '_parent'}>
-                                    <Markdown>{card.titulo}</Markdown></a>
-                                </p>
+                                    <Markdown>{card.titulo}</Markdown>
+                                </a></p>
                             </div>
                         )}
                     </Formacoes>
