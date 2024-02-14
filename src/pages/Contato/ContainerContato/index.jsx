@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const ContainerContato = styled.div`
-    margin: 84px 0 0;
+    margin: 3rem 0 0;
     line-height: 1.5;
     p {
         color: var(--branco);

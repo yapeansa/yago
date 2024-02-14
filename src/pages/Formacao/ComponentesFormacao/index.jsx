@@ -48,7 +48,7 @@ const Formacoes = styled.div`
 `;
 
 const Subtitulo = styled.h3`
-    margin: 6rem 0 0;
+    margin: 4rem 0 0;
     font-size: 2rem;
     text-transform: uppercase;
     text-decoration: underline;
