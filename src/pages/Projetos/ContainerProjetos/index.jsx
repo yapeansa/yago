@@ -11,7 +11,7 @@ const ContainerProjetos = styled.div`
         flex-basis: 30%;
         perspective: 1000px;
         width: 100%;
-        height: 300px;
+        height: 320px;
         background-color: transparent;
         /* &:hover {
             .flip-card-inner {
@@ -35,7 +35,7 @@ const ContainerProjetos = styled.div`
                 img {
                     border: 6px solid var(--cinza-medio);
                     width: 100%;
-                    height: 300px;
+                    height: 320px;
                     object-fit: fit;
                 }
             }
@@ -53,7 +53,7 @@ const ContainerProjetos = styled.div`
                 align-items: center;
                 justify-content: center;
                 text-align: left;
-                padding: 0;
+                padding: 0 1rem;
                 .info-card {
                     display: flex;
                     flex-direction: column;
@@ -95,7 +95,7 @@ const ContainerProjetos = styled.div`
     @media screen and (max-width: 500px) {
         flex-direction: column;
         gap: 2rem;
-        height: 960px;
+        height: 980px;
     }
 `;
 
