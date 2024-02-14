@@ -13,11 +13,11 @@ const ContainerProjetos = styled.div`
         width: 100%;
         height: 300px;
         background-color: transparent;
-        &:hover {
+        /* &:hover {
             .flip-card-inner {
                 transform: rotateY(180deg);
             }
-        }
+        } */
         .flip-card-inner {
             position: relative;
             width: 100%;
@@ -32,6 +32,7 @@ const ContainerProjetos = styled.div`
                 backface-visibility: hidden;
                 background-color: #bbb;
                 color: black;
+                cursor: pointer;
                 img {
                     border: 6px solid var(--cinza);
                     width: 100%;
@@ -79,9 +80,18 @@ const ContainerProjetos = styled.div`
                         }
                     }
                 }
+                .voltar {
+                    position: absolute;
+                    bottom: .5rem;
+                    right: .5rem;
+                    cursor: pointer;
+                    color: var(--branco);
+                }
             }
         }
     }
+
+    .animacao { transform: rotateY(180deg); }
 
     @media screen and (max-width: 500px) {
         flex-direction: column;

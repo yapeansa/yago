@@ -5,6 +5,8 @@ import Titulo from "../../components/Titulo";
 import ContainerProjetos from "./ContainerProjetos";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import projetos from "./projetos.json";
+import { useState } from "react";
+import { TbArrowBack } from "react-icons/tb";
 
 const Paragrafo = styled.p`
     color: var(--branco);
@@ -15,6 +17,19 @@ const Paragrafo = styled.p`
 
 const Projetos = () => {
 
+    const [projects, setProjects] = useState(projetos);
+
+    function rotacionar(id) {
+        const alvo = projects.filter(projeto => projeto.id === id);
+        if (alvo[0].classe === "") {
+            alvo[0].classe = "animacao"
+            setProjects([...projetos]);
+        } else {
+            alvo[0].classe = ""
+            setProjects([...projetos]);
+        }
+    }
+
     return (
         <div id="projetos">
             <Secao corDeFundo="var(--preto)">
@@ -22,10 +37,10 @@ const Projetos = () => {
                     <Titulo corDaBorda="var(--ouro-escuro)" corDoTexto="var(--branco)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos>
-                        {projetos.map(projeto =>
+                        {projects.map(projeto =>
                             <div className="flip-card" key={projeto.id}>
-                                <div className="flip-card-inner">
-                                    <div className="flip-card-front">
+                                <div className={`flip-card-inner ${projeto.classe}`}>
+                                    <div className="flip-card-front" onClick={() => rotacionar(projeto.id)}>
                                         <img src={projeto.imagem} alt="Avatar" />
                                     </div>
                                     <div className="flip-card-back">
@@ -40,6 +55,7 @@ const Projetos = () => {
                                                     <a href={projeto.caminho} target="_blank">Visitar <FaExternalLinkAlt /></a>
                                                 </li>
                                             </ul>
+                                            <TbArrowBack className="voltar" size={35} onClick={() => rotacionar(projeto.id)} />
                                         </div>
                                     </div>
                                 </div>

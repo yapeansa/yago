@@ -5,7 +5,8 @@
         "caminho": "https://codechellafestival.vercel.app/",
         "imagem": "/galeria/codechella.png",
         "descricao": "Um projeto desenvolvido em React.",
-        "repositorio": "https://github.com/yapeansa/codechella"
+        "repositorio": "https://github.com/yapeansa/codechella",
+        "classe": ""
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "caminho": "https://optimus-tech-puce.vercel.app/",
         "imagem": "/galeria/optimustech.png",
         "descricao": "Um projeto desenvolvido em React.",
-        "repositorio": "https://github.com/yapeansa/optimusTech"
+        "repositorio": "https://github.com/yapeansa/optimusTech",
+        "classe": ""
     },
     {
         "id": 3,
@@ -21,6 +23,7 @@
         "caminho": "https://reactflix-two-tau.vercel.app/",
         "imagem": "/galeria/netflix.png",
         "descricao": "Um projeto desenvolvido em React.",
-        "repositorio": "https://github.com/yapeansa/netflix-replica"
+        "repositorio": "https://github.com/yapeansa/netflix-replica",
+        "classe": ""
     }
 ]
