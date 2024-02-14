@@ -35,7 +35,7 @@ const ContainerProjetos = styled.div`
                 img {
                     border: 6px solid var(--cinza-medio);
                     width: 100%;
-                    height: 320px;
+                    height: 100%;
                     object-fit: fit;
                 }
             }
