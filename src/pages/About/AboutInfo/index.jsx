@@ -16,10 +16,14 @@ const AboutInfo = styled.div`
         line-height: 1.4;
         a {
             text-decoration: underline;
-            text-decoration-color: var(--first-color);
+            text-decoration-color: var(--ouro-escuro);
             text-decoration-style: double;
             text-decoration-thickness: 2px;
-            color: var(--ouro-escuro);
+            color: var(--branco);
+            transition: all .3s ease-in;
+            &:hover {
+                text-decoration-color: var(--terciaria);
+            }
         }
         .estilizado {
             font-weight: 700;
