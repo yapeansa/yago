@@ -8,6 +8,7 @@ const EstilosGlobais = createGlobalStyle`
         --cinza: #222;
         --cinza-medio: #333;
         --quinaria: #000000;
+        --cinza-claro: #CCCCCC;
         --ouro-medio: #FFB90F;
         --ouro-escuro: #FFA500;
         --terciaria: #6A5ACD;
@@ -20,7 +21,6 @@ const EstilosGlobais = createGlobalStyle`
 
         --second-color: #D3D3D3;
         --fourth-color: #FFF5E1;
-        --secundaria: #CCCCCC;
         
     }
 

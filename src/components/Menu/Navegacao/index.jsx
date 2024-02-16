@@ -27,15 +27,15 @@ const Navegacao = styled.nav`
                 font-size: 3.75rem;
                 transition: all .3s ease-in-out;
             }
-            &:hover {
+            /* &:hover {
                 &::before {
-                    color: var(--ouro-escuro);
+                    color: var(--terciaria);
                 }
-            }
+            } */
             a {
                 text-decoration: underline;
                 text-decoration-thickness: 2px;
-                text-decoration-color: var(--ouro-escuro);
+                text-decoration-color: var(--cinza-claro);
                 color: var(--branco);
                 position: relative;
                 padding: 0 5px;
@@ -50,12 +50,12 @@ const Navegacao = styled.nav`
                     left: -100%;
                     width: 100%;
                     height: 100%;
-                    background: var(--fourth-color);
+                    background: var(--ouro-escuro);
                     transition: all .3s ease-out;
                 }
                 &:hover {
                     color: var(--preto);
-                    text-decoration-color: var(--fourth-color);
+                    text-decoration-color: transparent;
                     &::before {
                         left: 0;
                     }
