@@ -44,7 +44,7 @@ const Formacoes = styled.div`
     @media screen and (max-width: 768px) {
         text-align: center;
         max-width: 90%;
-        div {
+        .minhas-formacoes {
             padding: 1.5rem;
         }
     }
