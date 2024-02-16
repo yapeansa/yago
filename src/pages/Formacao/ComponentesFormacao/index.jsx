@@ -2,28 +2,28 @@ import { styled } from "styled-components";
 
 const Formacoes = styled.div`
     //max-width: 750px;
-    margin: 4rem auto 0;
+    margin: 3rem auto 0;
     color: var(--branco);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
-    div {
+    gap: 50px;
+    .minhas-formacoes {
         padding: 2rem 4.5rem;
         border-radius: 16px;
         text-align: center;
         border: 2px solid var(--cinza-medio);
         width: fit-content;
-        h3 {
+        .curso-nome {
             font-size: 1.4rem;
             font-weight: 700;
         }
-        h2 {
+        .instituicao-nome {
             font-size: 1.6rem;
             font-weight: 700;
             margin: 15px 0;
         }
-        p {
+        .formacao-descricao {
             font-size: 1.4rem;
             line-height: 1.5;
             a {
@@ -63,7 +63,7 @@ const Subtitulo = styled.h3`
 
 const TextoCompetencias = styled.p`
     max-width: 60%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 3rem auto 0;
     color: var(--branco);
     line-height: 1.5;

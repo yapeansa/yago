@@ -11,7 +11,7 @@ import Markdown from "react-markdown";
 
 const Paragrafo = styled.p`
     color: var(--branco);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 3.5rem 0 2.5rem;
     line-height: 1.5;
 `;

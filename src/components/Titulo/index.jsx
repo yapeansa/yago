@@ -3,7 +3,7 @@ import styled from "styled-components";
 const TituloEstilizado = styled.h2`
     font-family: var(--fonte-secundaria);
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     position: relative;
     display: inline-block;

@@ -5,13 +5,13 @@ const ContainerContato = styled.div`
     line-height: 1.5;
     p {
         color: var(--branco);
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         max-width: 60%;
         margin: 0 auto;
     }
     a {
         color: var(--branco);
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         display: inline-block;
         margin: 30px 0;
         transition: all .3s ease-in;
@@ -70,7 +70,7 @@ const ContainerContato = styled.div`
         input[type=reset], input[type=submit] {
             max-width: 140px;
             background: var(--quinaria);
-            border: 2px solid var(--ouro-escuro);
+            border: 2px solid var(--terciaria);
             font-family: var(--fonte-primaria);
             font-weight: 700;
             font-size: 1.2rem;

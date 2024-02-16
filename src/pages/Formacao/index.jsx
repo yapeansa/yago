@@ -33,10 +33,10 @@ const Formacao = () => {
                     </TextoCompetencias>
                     <Formacoes>
                         {cards.map(card =>
-                            <div key={card.titulo}>
-                                <h3>{card.curso}</h3>
-                                <h2>{card.instituição}</h2>
-                                <p><a href={card.link} target={card.link ? '_blank' : '_parent'}>
+                            <div className="minhas-formacoes" key={card.titulo}>
+                                <h3 className="curso-nome">{card.curso}</h3>
+                                <h2 className="instituicao-nome">{card.instituição}</h2>
+                                <p className="formacao-descricao"><a href={card.link} target={card.link ? '_blank' : '_parent'}>
                                     <Markdown>{card.titulo}</Markdown>
                                 </a></p>
                             </div>
