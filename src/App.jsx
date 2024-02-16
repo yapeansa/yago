@@ -21,10 +21,12 @@ const App = () => {
         currentDay = currentDate.getDate();
 
     const calculaIdade = () => {
-        return (
-            ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) ? (currentYear - 1993) : ((currentYear - 1993) - 1)
-        );
-    }
+        if ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) {
+            return (currentYear - 1993);
+        } else {
+            return (currentYear - 1994);
+        }
+    };
 
     return (
         <main>
@@ -37,7 +39,7 @@ const App = () => {
                 nome={nome} email={email} mensagem={mensagem}
                 setNome={setNome} setEmail={setEmail} setMensagem={setMensagem}
             />
-            <Footer />
+            <Footer anoAtual={currentYear} />
             <BotaoScrollTop mostrarBotao={mostrarBotao} aoRolar={setMostrarBotao} animar={animar} aoAnimar={setAnimar} />
         </main>
     );

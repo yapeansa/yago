@@ -23,16 +23,13 @@ const Rodape = styled.footer`
     }
 `;
 
-const Footer = () => {
-
-    let currentDate = new Date(), currentYear = currentDate.getFullYear();
-
+const Footer = ({ anoAtual }) => {
     return (
         <Rodape>
             <Container>
                 <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--terciaria)" /></a>
                 <p>
-                    &copy;{currentYear} - Desenvolvido por&nbsp;
+                    &copy;{anoAtual} - Desenvolvido por&nbsp;
                     <span style={{ borderBottom: '2px solid var(--ouro-escuro)', display: 'inline-block' }}>
                         Yago Pereira
                     </span>.

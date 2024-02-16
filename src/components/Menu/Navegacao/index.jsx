@@ -11,7 +11,7 @@ const Navegacao = styled.nav`
         li {
             font-family: var(--fonte-secundaria);
             font-weight: normal;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             counter-increment: list;
             display: flex;
             gap: 2rem;
