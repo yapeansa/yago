@@ -37,7 +37,7 @@ const Projetos = () => {
                 <Container>
                     <Titulo corDaBorda="var(--ouro-escuro)" corDoTexto="var(--branco)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
-                    <ContainerProjetos>
+                    <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>
                             <div className="flip-card" key={projeto.id}>
                                 <div className={`flip-card-inner ${projeto.classe}`}>
@@ -47,7 +47,7 @@ const Projetos = () => {
                                     <div className="flip-card-back">
                                         <div className="info-card">
                                             <h1>{projeto.nome}</h1>
-                                            <p><Markdown>{projeto.descricao}</Markdown></p>
+                                            <Markdown>{projeto.descricao}</Markdown>
                                             <ul>
                                                 <li>
                                                     <a href={projeto.repositorio} target="_blank">Repositório</a>

@@ -95,7 +95,8 @@ const ContainerProjetos = styled.div`
     @media screen and (max-width: 500px) {
         flex-direction: column;
         gap: 2rem;
-        height: 980px;
+        flex-wrap: nowrap;
+        height: ${props => props.$tamanho};
     }
 `;
 
