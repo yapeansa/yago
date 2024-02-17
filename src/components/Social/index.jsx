@@ -1,4 +1,5 @@
-import { FaFacebook, FaTwitter, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { styled } from "styled-components";
 
 const SocialNetwork = styled.div`
@@ -27,7 +28,7 @@ const Social = () => {
                 </li>
                 <li>
                     <a href="https://twitter.com/yapeansa" target="_blank">
-                        <FaTwitter size="38" className="social" />
+                        <FaSquareXTwitter size="38" className="social" />
                     </a>
                 </li>
                 <li>
