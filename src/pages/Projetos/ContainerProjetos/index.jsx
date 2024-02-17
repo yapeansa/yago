@@ -52,11 +52,12 @@ const ContainerProjetos = styled.div`
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                text-align: left;
+                text-align: center;
                 padding: 0 1rem;
                 .info-card {
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     gap: 1.5rem;
                     ul {
                         list-style: none;
