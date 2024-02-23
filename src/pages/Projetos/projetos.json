@@ -31,7 +31,7 @@
         "nome": "Space App",
         "caminho": "https://superspaceapp.vercel.app/",
         "imagem": "/galeria/spaceapp.png",
-        "descrição": "Imagens incríveis do espaço",
+        "descricao": "Imagens incríveis do espaço",
         "repositorio": "https://github.com/yapeansa/spaceAppJs",
         "classe": ""
     },
