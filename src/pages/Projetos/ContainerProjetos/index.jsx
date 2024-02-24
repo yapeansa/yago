@@ -4,7 +4,7 @@ const ContainerProjetos = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 2.5rem;
     width: auto;
     padding: 0 1rem;
     .flip-card {
