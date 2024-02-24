@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import logo from "/src/assets/images/logo.svg";
 
-const LinkLogo = styled.a`
+const ContainerLogo = styled.div`
     display: inline-block;
     max-width: 10.4rem;
 `;
@@ -12,9 +12,9 @@ const ImagemLogo = styled.img`
 
 const Logo = () => {
     return (
-        <LinkLogo href="index.html">
+        <ContainerLogo>
             <ImagemLogo src={logo} alt="Logo Yago Pereira" />
-        </LinkLogo>
+        </ContainerLogo>
     );
 }
 
