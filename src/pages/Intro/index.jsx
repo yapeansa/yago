@@ -5,7 +5,7 @@ const SecaoIntro = styled.section`
     font-weight: 100;
     font-size: 3.4rem;
     p {
-        max-width: 90%;
+        max-width: 80%;
         margin: 0 0 0 auto;
         line-height: 1.8;
         text-decoration: underline;
@@ -15,6 +15,12 @@ const SecaoIntro = styled.section`
         .destaque {
             color: var(--ouro-escuro);
             font-weight: 700;
+        }
+    }
+
+    @media screen and (min-width: 961px) and (max-width: 1440px) {
+        p {
+            max-width: 90%;
         }
     }
 

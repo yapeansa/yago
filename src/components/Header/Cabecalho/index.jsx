@@ -4,7 +4,7 @@ const Cabecalho = styled.header`
     display: flex;
     width: 100%;
     min-height: 100vh;
-    padding: 0 3rem;
+    padding: 0;
     aside {
         flex-basis: 50%;
         display: flex;
@@ -19,6 +19,10 @@ const Cabecalho = styled.header`
         display: flex;
         align-items: center;
         padding: 2rem 0;
+    }
+
+    @media screen and (min-width: 961px) and (max-width: 1440px) {
+        padding: 0 3rem;
     }
 
     @media screen and (max-width: 960px) {
