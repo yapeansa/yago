@@ -51,7 +51,7 @@ const Navegacao = styled.nav`
                     width: 100%;
                     height: 100%;
                     background: var(--ouro-escuro);
-                    transition: all .3s ease-out;
+                    transition: all .3s ease-in-out;
                 }
                 &:hover {
                     color: var(--preto);
