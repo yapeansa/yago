@@ -49,6 +49,15 @@ const EstilosGlobais = createGlobalStyle`
         font-weight: 400;
         font-size: 1.2rem;
         background: var(--quinaria) url(${bg}) center / cover no-repeat fixed;
+        &::-webkit-scrollbar {
+            width: .6rem;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: var(--cinza);
+        }
+        &::-webkit-scrollbar-track {
+            background: var(--quinaria);
+        }
     }
 
     a {
