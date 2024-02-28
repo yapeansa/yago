@@ -34,7 +34,7 @@ const Navegacao = styled.nav`
             } */
             a {
                 text-decoration: underline;
-                text-decoration-thickness: 2px;
+                text-decoration-thickness: 1px;
                 text-decoration-color: var(--ouro-escuro);
                 color: var(--branco);
                 position: relative;
