@@ -73,6 +73,7 @@ const ContainerProjetos = styled.div`
                             border: 2px solid var(--ouro-escuro);
                             padding: 6px 15px;
                             transition: all .3s ease-in-out;
+                            border-radius: 16px;
                             &:hover {
                                 background: var(--ouro-escuro);
                                 color: var(--quinaria)
