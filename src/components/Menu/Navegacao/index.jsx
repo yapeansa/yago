@@ -34,8 +34,8 @@ const Navegacao = styled.nav`
             } */
             a {
                 text-decoration: underline;
-                text-decoration-thickness: 1px;
-                text-decoration-color: var(--ouro-escuro);
+                text-decoration-thickness: 2px;
+                text-decoration-color: var(--fourth-color);
                 color: var(--branco);
                 position: relative;
                 padding: 0 5px;
@@ -47,7 +47,7 @@ const Navegacao = styled.nav`
                     z-index: -1;
                     position: absolute;
                     top: 0;
-                    left: -100%;
+                    right: -100%;
                     width: 100%;
                     height: 100%;
                     background: var(--ouro-escuro);
@@ -57,7 +57,7 @@ const Navegacao = styled.nav`
                     color: var(--preto);
                     text-decoration-color: transparent;
                     &::before {
-                        left: 0;
+                        right: 0;
                     }
                 }
             }
