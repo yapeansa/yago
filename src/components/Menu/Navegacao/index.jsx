@@ -35,7 +35,7 @@ const Navegacao = styled.nav`
             a {
                 text-decoration: underline;
                 text-decoration-thickness: 2px;
-                text-decoration-color: var(--fourth-color);
+                text-decoration-color: var(--terciaria);
                 color: var(--branco);
                 position: relative;
                 padding: 0 5px;
