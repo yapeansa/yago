@@ -21,6 +21,11 @@ const EstilosGlobais = createGlobalStyle`
 
         --second-color: #D3D3D3;
         --fourth-color: #FFF5E1;
+
+        --primeiro: #9C27B0  #FFEB3B;
+        --segundo: #90CAF9  #CDDC39;
+        --terceiro: #757575  #424242;
+        --quarto: #F48FB1  #1976D2;
         
     }
 
