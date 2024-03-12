@@ -7,6 +7,12 @@ import Formacao from './pages/Formacao';
 import Projetos from './pages/Projetos';
 import Contato from './pages/Contato';
 import Footer from './components/Footer';
+import { styled } from 'styled-components';
+
+const ConteudoPrincipal = styled.main`
+    margin: 0;
+    padding: 0;
+`;
 
 const App = () => {
 
@@ -29,7 +35,7 @@ const App = () => {
     };
 
     return (
-        <main>
+        <ConteudoPrincipal>
             <EstilosGlobais />
             <Header />
             <About idade={calculaIdade} />
@@ -41,7 +47,7 @@ const App = () => {
             />
             <Footer anoAtual={currentYear} />
             <BotaoScrollTop mostrarBotao={mostrarBotao} aoRolar={setMostrarBotao} animar={animar} aoAnimar={setAnimar} />
-        </main>
+        </ConteudoPrincipal>
     );
 }
 
