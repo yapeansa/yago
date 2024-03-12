@@ -15,6 +15,8 @@ const EstilosGlobais = createGlobalStyle`
         --third-color: #7FFFD4;
         --branco: #FFFFFF;
 
+        --rosa: #3d4dff;
+
         --branco-secundario: #EEEEEE;
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
