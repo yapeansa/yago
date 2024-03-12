@@ -5,29 +5,29 @@ const AboutInfo = styled.div`
     justify-content: space-around;
     align-items: center;
     margin-top: 6rem;
-    color: var(--branco);
+    color: var(--preto);
     p {
         text-align: justify;
         max-width: 55%;
         font-size: 1.2rem;
-        border: 2px solid var(--cinza-medio);
+        border: 2px solid var(--cinza-claro);
         padding: 2.5rem;
         border-radius: 16px;
         line-height: 1.4;
         a {
             text-decoration: underline;
-            text-decoration-color: var(--ouro-escuro);
-            text-decoration-style: double;
+            text-decoration-color: var(--terciaria);
+            text-decoration-style: solid;
             text-decoration-thickness: 2px;
-            color: var(--branco);
+            color: var(--preto);
             transition: all .3s ease-in;
             &:hover {
-                text-decoration-color: var(--terciaria);
+                text-decoration-color: var(--ouro-escuro);
             }
         }
         .estilizado {
             font-weight: 700;
-            
+            color: var(--terciaria);
         }
     }
     img {

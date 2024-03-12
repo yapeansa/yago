@@ -6,7 +6,7 @@ const TituloEstilizado = styled.h2`
     font-size: 1.8rem;
     text-transform: uppercase;
     position: relative;
-    display: inline-block;
+    display: block;
     padding: 15px 0;
     color: ${props => props.$cordotexto ? props.$cordotexto : '#000'};
     &::before {
@@ -21,12 +21,12 @@ const TituloEstilizado = styled.h2`
     }
 `;
 
-function Titulo({ corDaBorda, corDoTexto, children }) {
+const Titulo = ({ corDaBorda, corDoTexto, children }) => {
     return (
         <TituloEstilizado $cordaborda={corDaBorda} $cordotexto={corDoTexto}>
             {children}
         </TituloEstilizado>
     );
-}
+};
 
 export default Titulo;

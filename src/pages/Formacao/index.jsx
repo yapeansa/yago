@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Formacoes, Subtitulo, TextoCompetencias, Stacks } from "./ComponentesFormacao";
+import { Formacoes, TextoCompetencias, Stacks } from "./ComponentesFormacao";
 import Container from "../../components/Container";
 import Secao from "../../components/ContainerSecao";
 import Titulo from "../../components/Titulo";
@@ -27,7 +27,7 @@ const Formacao = () => {
         <div id="formacao">
             <Secao corDeFundo="var(--quinaria)">
                 <Container>
-                    <Titulo corDaBorda="var(--ouro-escuro)" corDoTexto="var(--branco)">Minha formação</Titulo>
+                    <Titulo corDaBorda="var(--ouro-escuro)" corDoTexto="var(--branco)">Educação</Titulo>
                     <TextoCompetencias>
                         Logo abaixo você pode conferir a minha trajetória acadêmica.
                     </TextoCompetencias>
@@ -44,7 +44,7 @@ const Formacao = () => {
                             </div>
                         )}
                     </Formacoes>
-                    <Subtitulo>Competências</Subtitulo>
+                    <Titulo corDaBorda="var(--ouro-escuro)" corDoTexto="var(--branco)">Competências</Titulo>
                     <TextoCompetencias>
                         Como desenvolvedor Front-end, possuo competência nas seguintes tecnologias:
                     </TextoCompetencias>
