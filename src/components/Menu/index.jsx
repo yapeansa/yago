@@ -4,23 +4,23 @@ const Menu = () => {
 
     const menu = [
         {
-            nome: "HOME",
+            nome: "Home",
             caminho: "/index.html"
         },
         {
-            nome: "SOBRE MIM",
+            nome: "Sobre mim",
             caminho: "#sobre"
         },
         {
-            nome: "FORMAÇÃO",
+            nome: "Educação",
             caminho: "#formacao"
         },
         {
-            nome: "PROJETOS",
+            nome: "Projetos",
             caminho: "#projetos"
         },
         {
-            nome: "CONTATO",
+            nome: "Contato",
             caminho: "#contato"
         }
     ];

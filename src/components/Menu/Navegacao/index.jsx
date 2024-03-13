@@ -11,7 +11,7 @@ const Navegacao = styled.nav`
         li {
             font-family: var(--fonte-secundaria);
             font-weight: normal;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             counter-increment: list;
             display: flex;
             gap: 2rem;
@@ -42,6 +42,7 @@ const Navegacao = styled.nav`
                 overflow: hidden;
                 z-index: 1;
                 transition: color .3s ease-out;
+                text-transform: uppercase;
                 &::before {
                     content: '';
                     z-index: -1;
