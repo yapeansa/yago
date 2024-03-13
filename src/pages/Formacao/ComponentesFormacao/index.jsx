@@ -4,7 +4,7 @@ const Formacoes = styled.div`
     margin: 3rem auto 2.5rem;
     color: var(--branco);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     .minhas-formacoes {
         flex-basis: 50%;

@@ -33,9 +33,9 @@ const Projetos = () => {
 
     return (
         <div id="projetos">
-            <Secao corDeFundo="var(--preto)">
+            <Secao corDeFundo="var(--terciaria)">
                 <Container>
-                    <Titulo corDaBorda="var(--ouro-escuro)" corDoTexto="var(--branco)">Projetos</Titulo>
+                    <Titulo corDaBorda="var(--branco)" corDoTexto="var(--branco)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>

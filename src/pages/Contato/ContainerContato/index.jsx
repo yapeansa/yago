@@ -22,7 +22,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             top: -.5rem;
-            background: var(--ouro-escuro);
+            background: var(--terciaria);
             width: 9rem;
             height: 2px;
         }
@@ -32,7 +32,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -4.5rem;
             bottom: -.5rem;
-            background: var(--ouro-escuro);
+            background: var(--terciaria);
             width: 9rem;
             height: 2px;
         }
@@ -69,21 +69,20 @@ const ContainerContato = styled.div`
         }
         input[type=reset], input[type=submit] {
             max-width: 140px;
-            background: var(--quinaria);
-            border: 2px solid var(--terciaria);
+            background: linear-gradient(to bottom, #FFA500, #ffc04c);
+            border: none;
+            border-radius: 16px;
             font-family: var(--fonte-primaria);
-            font-weight: 700;
+            font-weight: 400;
             font-size: 1.2rem;
             text-transform: uppercase;
             cursor: pointer;
             padding: 1.1rem 1rem;
             transition: all .3s ease-in;
-            color: var(--branco);
+            color: var(--preto);
             //border-radius: 16px;
             &:hover {
-                background: var(--ouro-escuro);
-                color: var(--preto-secundario);
-                border-color: var(--quinaria);
+                background: linear-gradient(to top, #FFA500, #ffc04c);
             }
         }
         div {

@@ -31,9 +31,10 @@ const ContainerProjetos = styled.div`
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 color: black;
+                background: #453c83;
+                padding: 4px;
                 cursor: pointer;
                 img {
-                    border: 6px solid var(--cinza-medio);
                     width: 100%;
                     height: 100%;
                     object-fit: fit;
@@ -43,10 +44,10 @@ const ContainerProjetos = styled.div`
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                border: 6px solid #333;
+                border: 4px solid #362f66;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background-color: var(--cinza);
+                background-color: #453c83;
                 color: white;
                 transform: rotateY(180deg);
                 display: flex;
