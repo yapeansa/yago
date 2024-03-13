@@ -24,7 +24,7 @@ const ContainerProjetos = styled.div`
             height: 100%;
             transition: transform 0.8s;
             transform-style: preserve-3d;
-            box-shadow: 0 0 10px 1px var(--cinza-medio);
+            box-shadow: 0 0 10px 1px #000;
             .flip-card-front {
                 position: absolute;
                 width: 100%;
@@ -32,7 +32,7 @@ const ContainerProjetos = styled.div`
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 color: black;
-                background: var(--preto);
+                background: #000;
                 padding: 3px;
                 cursor: pointer;
                 img {
@@ -45,7 +45,7 @@ const ContainerProjetos = styled.div`
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                border: 3px solid var(--preto);
+                border: 3px solid #000;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 background-color: #1e1e1e;
