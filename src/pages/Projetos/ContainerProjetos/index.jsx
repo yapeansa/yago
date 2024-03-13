@@ -72,13 +72,14 @@ const ContainerProjetos = styled.div`
                             gap: .6rem;
                             text-transform: uppercase;
                             font-size: 1rem;
-                            color: var(--branco);
+                            color: var(--preto);
                             border: 2px solid var(--ouro-escuro);
+                            background: linear-gradient(to right, #FFA500, #ffc04c);
                             padding: 6px 15px;
                             transition: all .3s ease-in-out;
                             border-radius: 16px;
                             &:hover {
-                                background: var(--ouro-escuro);
+                                background: linear-gradient(to top, #FFA500, #ffc04c);
                                 color: var(--quinaria)
                             }
                         }
@@ -89,7 +90,7 @@ const ContainerProjetos = styled.div`
                     bottom: .5rem;
                     right: .5rem;
                     cursor: pointer;
-                    color: var(--branco);
+                    color: var(--ouro-escuro);
                 }
             }
         }
