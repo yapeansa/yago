@@ -52,7 +52,15 @@ const Formacao = () => {
                         <ul className="icon-skill">
                             {sociais.map(item =>
                                 <li key={item.id} className={item.classe}>
-                                    <a href={item.path} target="_blank" onMouseEnter={() => opacidade(item.id)} onMouseLeave={() => opacidade(item.id)}>{item.nome}</a>
+                                    <a
+                                        href={item.path}
+                                        target="_blank"
+                                        title={item.titulo}
+                                        onMouseEnter={() => opacidade(item.id)}
+                                        onMouseLeave={() => opacidade(item.id)}
+                                    >
+                                        {item.nome}
+                                    </a>
                                 </li>
                             )}
                         </ul>

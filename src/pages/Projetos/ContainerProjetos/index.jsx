@@ -48,7 +48,7 @@ const ContainerProjetos = styled.div`
                 border: 3px solid #000;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background-color: #1e1e1e;
+                background: linear-gradient(to top, #000, #1e1e1e);
                 color: white;
                 transform: rotateY(180deg);
                 display: flex;
@@ -90,7 +90,7 @@ const ContainerProjetos = styled.div`
                     bottom: .5rem;
                     right: .5rem;
                     cursor: pointer;
-                    color: var(--ouro-escuro);
+                    color: var(--branco);
                 }
             }
         }

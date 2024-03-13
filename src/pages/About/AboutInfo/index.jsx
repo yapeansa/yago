@@ -15,10 +15,7 @@ const AboutInfo = styled.div`
         border-radius: 16px;
         line-height: 1.4;
         a {
-            text-decoration: underline;
-            text-decoration-color: var(--terciaria);
-            text-decoration-style: solid;
-            text-decoration-thickness: 2px;
+            border-bottom: 2px dashed var(--terciaria);
             color: var(--preto);
             transition: all .3s ease-in;
             &:hover {
