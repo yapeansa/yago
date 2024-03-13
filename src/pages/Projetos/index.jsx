@@ -10,7 +10,7 @@ import { TbArrowBack } from "react-icons/tb";
 import Markdown from "react-markdown";
 
 const Paragrafo = styled.p`
-    color: var(--branco);
+    color: var(--preto);
     font-size: 1.3rem;
     margin: 3.5rem 0 2.5rem;
     line-height: 1.5;
@@ -33,9 +33,9 @@ const Projetos = () => {
 
     return (
         <div id="projetos">
-            <Secao corDeFundo="var(--terciaria)">
+            <Secao corDeFundo="var(--branco)">
                 <Container>
-                    <Titulo corDaBorda="var(--branco)" corDoTexto="var(--branco)">Projetos</Titulo>
+                    <Titulo corDaBorda="var(--terciaria)" corDoTexto="var(--preto)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>

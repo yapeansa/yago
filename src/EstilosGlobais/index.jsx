@@ -41,6 +41,12 @@ const EstilosGlobais = createGlobalStyle`
         to { opacity: 0; }
     }
 
+    @keyframes oscillating {
+        0% { top: .5rem; }
+        50% { top: -.5rem; }
+        100% { top: .5rem; }
+    }
+
     * {
         margin: 0;
         padding: 0;

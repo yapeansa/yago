@@ -24,6 +24,7 @@ const ContainerProjetos = styled.div`
             height: 100%;
             transition: transform 0.8s;
             transform-style: preserve-3d;
+            box-shadow: 0 0 10px 1px var(--cinza-medio);
             .flip-card-front {
                 position: absolute;
                 width: 100%;
@@ -31,8 +32,8 @@ const ContainerProjetos = styled.div`
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 color: black;
-                background: #453c83;
-                padding: 4px;
+                background: var(--preto);
+                padding: 3px;
                 cursor: pointer;
                 img {
                     width: 100%;
@@ -44,10 +45,10 @@ const ContainerProjetos = styled.div`
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                border: 4px solid #362f66;
+                border: 3px solid var(--preto);
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background-color: #453c83;
+                background-color: #1e1e1e;
                 color: white;
                 transform: rotateY(180deg);
                 display: flex;
@@ -60,6 +61,7 @@ const ContainerProjetos = styled.div`
                     flex-direction: column;
                     align-items: center;
                     gap: 1.5rem;
+                    h1 { color: var(--terciaria); }
                     ul {
                         list-style: none;
                         display: flex;
