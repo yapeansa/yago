@@ -51,6 +51,7 @@ const ContainerContato = styled.div`
             width: 100%;
             background: var(--quinaria);
             border: 2px solid #333;
+            border-radius: 25px;
             padding: 1.2rem 1rem;
             outline: none;
             color: var(--branco);
@@ -61,7 +62,7 @@ const ContainerContato = styled.div`
             }
             &::placeholder {
                 opacity: 1;
-                color: #999;
+                color: var(--branco);
             }
         }
         textarea {

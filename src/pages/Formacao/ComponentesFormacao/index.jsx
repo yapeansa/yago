@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const Formacoes = styled.div`
-    margin: 3rem auto 2.5rem;
+    margin: 3rem auto .3rem;
     color: var(--branco);
     display: flex;
     align-items: flex-start;
