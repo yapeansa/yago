@@ -12,15 +12,15 @@ const Formacao = () => {
     const [socialSk, setSocialSk] = useState(sociais);
 
     const opacidade = (id) => {
-        const encontraElemento = socialSk.filter(item => item.id !== id);
-        console.log(encontraElemento);
-        if (encontraElemento[0].classe === "") {
-            encontraElemento.forEach(item => item.classe = "opacite");
+        const alvo = socialSk.filter(item => item.id !== id);
+        alvo.forEach((elemento) => {
+            if (elemento.classe === "") {
+                elemento.classe = "opacite";
+            } else {
+                elemento.classe = "";
+            }
             setSocialSk([...socialSk]);
-        } else {
-            encontraElemento.forEach(item => item.classe = "");
-            setSocialSk([...socialSk]);
-        }
+        });
     }
 
     return (

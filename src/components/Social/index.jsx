@@ -1,51 +1,52 @@
-import { FaFacebook, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import { styled } from "styled-components";
+import redesSociais from "./LinksSociais";
+import { useState } from "react";
 
 const SocialNetwork = styled.div`
     ul {
         list-style-type: none;
         display: flex;
         gap: 30px;
-        .social {
-            color: var(--fourth-color);
+        li {
             transition: all .3s ease-in-out;
-            &:hover {
-                color: var(--ouro-escuro);
+            .social {
+                color: var(--fourth-color);
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: var(--ouro-escuro);
+                }
             }
         }
+    }
+    .lights-out {
+        opacity: .4;
     }
 `;
 
 const Social = () => {
+
+    const [mySocial, setMySocial] = useState(redesSociais);
+
+    const lightsOut = (id) => {
+        const alvo = mySocial.filter(item => item.id !== id);
+        alvo.forEach((elemento) => {
+            if(elemento.classe === "") {
+                elemento.classe = "lights-out";
+            } else {
+                elemento.classe = "";
+            }
+        });
+        setMySocial([...mySocial]);
+    };
+
     return (
         <SocialNetwork>
             <ul>
-                <li>
-                    <a href="https://facebook.com/yapeansa" target="_blank">
-                        <FaFacebook size="38" className="social" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/yapeansa" target="_blank">
-                        <FaSquareXTwitter size="38" className="social" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/yapeansa" target="_blank">
-                        <FaGithub size="38" className="social" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/in/yapeansa" target="_blank">
-                        <FaLinkedin size="38" className="social" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/yapeansa" target="_blank">
-                        <FaInstagram size="38" className="social" />
-                    </a>
-                </li>
+                {redesSociais.map(link =>
+                    <li key={link.id} className={link.classe}>
+                        <a href={link.path} target="_blank" onMouseEnter={() => lightsOut(link.id)} onMouseLeave={() => lightsOut(link.id)}>{link.label}</a>
+                    </li>
+                )}
             </ul>
         </SocialNetwork>
     );
