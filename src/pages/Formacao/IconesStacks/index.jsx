@@ -1,4 +1,4 @@
-import { TbBrandHtml5, TbBrandCss3, TbBrandSass, TbBrandJavascript, TbBrandNodejs, TbBrandTypescript, TbBrandReact } from "react-icons/tb";
+import { TbBrandHtml5, TbBrandCss3, TbBrandSass, TbBrandJavascript, TbBrandNodejs, TbBrandTypescript, TbBrandReact, TbBrandGit, TbBrandVscode } from "react-icons/tb";
 
 const sociais = [
     {
@@ -49,6 +49,20 @@ const sociais = [
         nome: <TbBrandReact size={55} color="#88dded" />,
         classe: "",
         titulo: "React"
+    },
+    {
+        id: 8,
+        path: "https://git-scm.com",
+        nome: <TbBrandGit size={55} color="#F1502F" />,
+        classe: "",
+        titulo: "Git"
+    },
+    {
+        id: 9,
+        path: "https://code.visualstudio.com",
+        nome: <TbBrandVscode size={55} color="#0078d7" />,
+        classe: "",
+        titulo: "VS Code"
     }
 ];
 
