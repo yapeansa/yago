@@ -22,7 +22,7 @@ const ContainerProjetos = styled.div`
             position: relative;
             width: 100%;
             height: 100%;
-            transition: transform 0.8s;
+            transition: transform .8s ease-in-out;
             transform-style: preserve-3d;
             box-shadow: 0 0 10px 1px #000;
             .flip-card-front {
