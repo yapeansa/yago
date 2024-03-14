@@ -38,7 +38,7 @@ const Navegacao = styled.nav`
                 text-decoration-color: var(--ouro-escuro);
                 color: var(--branco);
                 position: relative;
-                padding: 0 5px;
+                padding: .5rem;
                 overflow: hidden;
                 z-index: 1;
                 transition: color .3s ease-out;
