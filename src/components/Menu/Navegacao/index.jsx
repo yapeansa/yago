@@ -68,26 +68,17 @@ const Navegacao = styled.nav`
     @media screen and (max-width: 960px) {
         padding: 0;
         ol {
+            gap: 2rem;
             align-items: center;
-            gap: 20rem;
-            width: 90vw;
-            display: block;
             li {
-                text-align: center;
+                font-size: 1.5rem;
                 &::before {
                     content: '';
                     width: 0;
                     display: none;
                 }
-                &:first-child {
-                        border-top: 2px solid var(--ouro-escuro);
-                    }
                 a {
-                    display: block;
-                    width: 100%;
-                    border-bottom: 2px solid var(--ouro-escuro);
-                    text-decoration: none;
-                    padding: 1.3rem 0;
+                    text-decoration-color: var(--terciaria);
                 }
             }
         }

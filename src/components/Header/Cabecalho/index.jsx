@@ -34,7 +34,7 @@ const Cabecalho = styled.header`
         aside {
             height: 100vh;
             min-height: 100vh;
-            gap: 2.4rem;
+            gap: 4.5rem;
             align-items: center;
             background-color: var(--preto);
             position: absolute;
@@ -44,8 +44,6 @@ const Cabecalho = styled.header`
             z-index: 1;
             .close-menu {
                 display: block;
-                position: absolute;
-                top: 4rem;
                 cursor: pointer;
             }
         }

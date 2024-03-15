@@ -18,7 +18,7 @@ const Header = () => {
         <Container>
             <Cabecalho>
                 <aside className={`${slide ? 'slide-menu' : ''}`}>
-                    <CgClose className="close-menu" size={65} color="var(--terciaria)" onClick={acaoMenu} />
+                    <CgClose className="close-menu" size={65} color="var(--ouro-escuro)" onClick={acaoMenu} />
                     <Logo />
                     <Menu />
                     <Social />
