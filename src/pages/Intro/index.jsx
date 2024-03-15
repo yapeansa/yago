@@ -6,9 +6,9 @@ import { TbMenu2 } from "react-icons/tb";
 const SecaoIntro = styled.section`
     font-family: var(--fonte-primaria);
     font-weight: 100;
-    font-size: 3.4rem;
     p {
         max-width: 80%;
+        font-size: 3.4rem;
         margin: 0 0 0 auto;
         line-height: 1.8;
         text-decoration: underline;
@@ -36,12 +36,14 @@ const SecaoIntro = styled.section`
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 5rem;
+        gap: 3rem;
         .aparecer-logo { display: inline-block; }
         p {
             text-align: center;
             margin: 0 auto;
             max-width: 80%;
+            font-size: 2rem;
+            text-decoration-thickness: 2px;
         }
         .aparecer-social {
             display: flex;
