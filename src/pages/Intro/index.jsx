@@ -44,7 +44,6 @@ const SecaoIntro = styled.section`
             max-width: 80%;
             font-size: 2rem;
             text-decoration-thickness: 2px;
-            .destaque { color: var(--terciaria); }
         }
         .aparecer-social {
             display: flex;
@@ -55,6 +54,8 @@ const SecaoIntro = styled.section`
             right: 1.5rem;
             cursor: pointer;
             display: block;
+            padding: .5rem;
+            border: 1px solid var(--terciaria);
         }
     }
 `;
@@ -62,7 +63,7 @@ const SecaoIntro = styled.section`
 const Intro = ({ acaoMenu }) => {
     return (
         <SecaoIntro>
-            <TbMenu2 onClick={acaoMenu} className="drop-menu" size={55} color="var(--ouro-escuro)" />
+            <TbMenu2 onClick={acaoMenu} className="drop-menu" size={60} color="var(--branco)" />
             <Logo />
             <p>
                 Olá, mundo! Eu sou um <span className="destaque">desenvolvedor</span> web Front-end especializado no framework <span className="destaque">React</span>.

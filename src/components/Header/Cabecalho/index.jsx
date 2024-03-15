@@ -40,11 +40,13 @@ const Cabecalho = styled.header`
             position: absolute;
             width: 100%;
             left: -100%;
-            transition: all .3s ease-in-out;
+            transition: all .2s ease-in-out;
             z-index: 1;
             .close-menu {
                 display: block;
                 cursor: pointer;
+                padding: .5rem;
+                border: 1px solid var(--branco);
             }
         }
         .introducao {
