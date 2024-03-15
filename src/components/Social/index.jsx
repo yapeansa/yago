@@ -21,6 +21,10 @@ const SocialNetwork = styled.div`
     .lights-out {
         opacity: .4;
     }
+
+    @media screen and (max-width: 960px) {
+        display: none;
+    }
 `;
 
 const Social = () => {
@@ -40,7 +44,7 @@ const Social = () => {
     };
 
     return (
-        <SocialNetwork>
+        <SocialNetwork className="aparecer-social">
             <ul>
                 {redesSociais.map(link =>
                     <li key={link.id} className={link.classe}>

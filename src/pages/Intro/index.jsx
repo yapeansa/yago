@@ -1,4 +1,7 @@
 import { styled } from "styled-components";
+import Social from "../../components/Social";
+import Logo from "../../components/Logo";
+import { TbMenu2 } from "react-icons/tb";
 
 const SecaoIntro = styled.section`
     font-family: var(--fonte-primaria);
@@ -17,6 +20,8 @@ const SecaoIntro = styled.section`
             font-weight: 700;
         }
     }
+    .drop-menu { display: none; }
+    .aparecer-logo, .aparecer-social { display: none; }
 
     @media screen and (min-width: 961px) and (max-width: 1440px) {
         p {
@@ -26,20 +31,40 @@ const SecaoIntro = styled.section`
 
     @media screen and (max-width: 960px) {
         font-size: 2.5rem;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5rem;
+        .aparecer-logo { display: inline-block; }
         p {
-            text-align: left;
+            text-align: center;
             margin: 0 auto;
             max-width: 80%;
+        }
+        .aparecer-social {
+            display: flex;
+        }
+        .drop-menu {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            cursor: pointer;
+            display: block;
         }
     }
 `;
 
-const Intro = () => {
+const Intro = ({ acaoMenu }) => {
     return (
         <SecaoIntro>
+            <TbMenu2 onClick={acaoMenu} className="drop-menu" size={65} color="var(--terciaria)" />
+            <Logo />
             <p>
                 Olá, mundo! Eu sou um <span className="destaque">desenvolvedor</span> web Front-end especializado no framework <span className="destaque">React</span>.
             </p>
+            <Social />
         </SecaoIntro>
     );
 };

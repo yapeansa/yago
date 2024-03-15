@@ -1,36 +1,13 @@
 import Navegacao from "./Navegacao";
+import menu from "./ItensMenu";
 
 const Menu = () => {
-
-    const menu = [
-        {
-            nome: "Home",
-            caminho: "/index.html"
-        },
-        {
-            nome: "Sobre mim",
-            caminho: "#sobre"
-        },
-        {
-            nome: "Educação",
-            caminho: "#formacao"
-        },
-        {
-            nome: "Projetos",
-            caminho: "#projetos"
-        },
-        {
-            nome: "Contato",
-            caminho: "#contato"
-        }
-    ];
-
     return (
         <>
             <Navegacao>
                 <ol role="list">
                     {menu.map(link =>
-                        <li key={link.nome}>
+                        <li key={link.id}>
                             <a href={link.caminho} target="_parent">{link.nome}</a>
                         </li>
                     )}

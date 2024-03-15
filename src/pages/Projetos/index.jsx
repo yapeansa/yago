@@ -40,7 +40,7 @@ const Projetos = () => {
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>
-                            <div className="flip-card" key={projeto.id}>
+                            <div key={projeto.id} className="flip-card">
                                 <div className={`flip-card-inner ${projeto.classe}`}>
                                     <div className="flip-card-front" onClick={() => rotacionar(projeto.id)}>
                                         <img src={projeto.imagem} alt="Avatar" />

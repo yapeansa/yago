@@ -12,6 +12,7 @@ const Cabecalho = styled.header`
         flex-direction: column;
         justify-content: center;
         padding: 2rem 0;
+        .close-menu { display: none; }
     }
     .introducao {
         flex-basis: 50%;
@@ -27,18 +28,35 @@ const Cabecalho = styled.header`
 
     @media screen and (max-width: 960px) {
         flex-direction: column;
-        min-height: auto;
+        min-height: 100vh;
         padding: 0;
+        position: relative;
         aside {
             height: 100vh;
             min-height: 100vh;
             gap: 2.4rem;
             align-items: center;
-            background-color: rgba(0, 0, 0, .7);
+            background-color: var(--preto);
+            position: absolute;
+            width: 100%;
+            left: -100%;
+            transition: all .3s ease-in-out;
+            z-index: 1;
+            .close-menu {
+                display: block;
+                position: absolute;
+                top: 4rem;
+                cursor: pointer;
+            }
         }
         .introducao {
-            padding: 4rem 0;
-            height: auto;
+            position: relative;
+            background: rgba(0, 0, 0, .7);
+            height: 100%;
+            padding: 0;
+        }
+        .slide-menu {
+            left: 0;
         }
     }
 `;
