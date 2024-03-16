@@ -2,7 +2,6 @@ import Secao from "../../components/ContainerSecao";
 import Titulo from "../../components/Titulo";
 import ContainerContato from "./ContainerContato";
 import Container from "../../components/Container";
-import { useState } from "react";
 
 const Contato = ({ nome, email, mensagem, setNome, setEmail, setMensagem }) => {
 

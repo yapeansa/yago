@@ -7,11 +7,11 @@ const AboutInfo = styled.div`
     margin-top: 6rem;
     color: var(--preto);
     p {
-        text-align: justify;
+        text-align: center;
         max-width: 55%;
-        font-size: 1.2rem;
+        font-size: 1.23rem;
         border: 2px solid var(--cinza-claro);
-        padding: 2.5rem;
+        padding:  3rem;
         border-radius: 16px;
         line-height: 1.4;
         a {

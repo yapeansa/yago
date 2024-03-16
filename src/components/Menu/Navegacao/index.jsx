@@ -68,7 +68,7 @@ const Navegacao = styled.nav`
     @media screen and (max-width: 960px) {
         padding: 0;
         ol {
-            gap: 2rem;
+            gap: 1rem;
             align-items: center;
             li {
                 font-size: 1.5rem;

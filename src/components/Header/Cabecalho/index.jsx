@@ -51,7 +51,7 @@ const Cabecalho = styled.header`
         }
         .introducao {
             position: relative;
-            background: rgba(0, 0, 0, .7);
+            background: rgba(0, 0, 0, .5);
             height: 100%;
             padding: 0;
         }
