@@ -11,7 +11,7 @@ const ContainerProjetos = styled.div`
         flex-basis: 30%;
         perspective: 1000px;
         width: 100%;
-        height: 320px;
+        height: 315px;
         background-color: transparent;
         /* &:hover {
             .flip-card-inner {
@@ -97,6 +97,12 @@ const ContainerProjetos = styled.div`
     }
 
     .animacao { transform: rotateY(180deg); }
+
+    @media screen and (min-width: 501px) and (max-width: 1000px) {
+        .flip-card {
+            flex-basis: 40%;
+        }
+    }
 
     @media screen and (max-width: 500px) {
         flex-direction: column;
