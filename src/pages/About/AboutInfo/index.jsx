@@ -10,9 +10,9 @@ const AboutInfo = styled.div`
         text-align: center;
         max-width: 55%;
         font-size: 1.23rem;
-        border: 2px solid var(--cinza-claro);
+        border: 2px dashed var(--terciaria);
         padding:  3rem;
-        border-radius: 16px;
+        border-radius: 20px;
         line-height: 1.4;
         a {
             border-bottom: 2px dashed var(--terciaria);
