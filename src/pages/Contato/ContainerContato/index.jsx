@@ -3,48 +3,53 @@ import { styled } from "styled-components";
 const ContainerContato = styled.div`
     margin: 3rem 0 0;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     p {
         color: var(--branco);
         font-size: 1.3rem;
-        max-width: 60%;
+        max-width: 55%;
         margin: 0 auto;
     }
     a {
         color: var(--branco);
         font-size: 1.3rem;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
         margin: 30px 0;
         transition: all .3s ease-in;
         position: relative;
+        padding: .5rem 0;
         &::before {
             content: '';
             position: absolute;
-            left: 50%;
+            right: 0;
             margin-left: -4.5rem;
-            top: -.5rem;
-            background: var(--terciaria);
-            width: 9rem;
+            bottom: 0;
+            background: var(--quinta-cor);
+            width: 30%;
             height: 2px;
+            transition: all .3s ease-in-out;
         }
-        &::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            margin-left: -4.5rem;
-            bottom: -.5rem;
-            background: var(--terciaria);
-            width: 9rem;
-            height: 2px;
+        &:hover {
+            &::before {
+                width: 100%;
+            }
         }
     }
     form {
-        max-width: 850px;
+        width: 100%;
         margin: 60px auto 0;
-        padding: 0 1.6rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        input, textarea {
+        input[type=text], input[type=email], textarea {
+            max-width: 850px;
+            margin: 0 auto;
             font-family: var(--fonte-secundaria);
             font-size: 1rem;
             display: block;
@@ -57,7 +62,7 @@ const ContainerContato = styled.div`
             color: var(--branco);
             transition: all .3s ease-in-out;
             &:focus {
-                border-color: var(--ouro-escuro);
+                border-color: var(--quinta-cor);
                 border-style: dashed;
             }
             &::placeholder {
@@ -68,29 +73,28 @@ const ContainerContato = styled.div`
         textarea {
             resize: none;
         }
-        input[type=reset], input[type=submit] {
-            max-width: 140px;
-            background: linear-gradient(to bottom, #FFA500, #ffc04c);
-            border: 2px solid var(--ouro-escuro);
-            border-radius: 16px;
-            font-family: var(--fonte-primaria);
-            font-weight: 400;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            cursor: pointer;
-            padding: 1rem .8rem;
-            transition: all .3s ease-in;
-            color: var(--preto);
-            //border-radius: 16px;
-            &:hover {
-                background: linear-gradient(to top, #FFA500, #ffc04c);
-            }
-        }
         div {
             display: flex;
             justify-content: center;
-            flex: 1;
-            gap: 1.2rem;
+            gap: 2rem;
+            input[type=reset], input[type=submit] {
+                flex: 0 1 140px;
+                background: linear-gradient(to bottom, #FFA500, #ffc04c);
+                border: 2px solid var(--ouro-escuro);
+                border-radius: 16px;
+                font-family: var(--fonte-primaria);
+                font-weight: 400;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                padding: 1rem .8rem;
+                transition: all .3s ease-in-out;
+                color: var(--preto);
+                display: block;
+                &:hover {
+                    background: linear-gradient(to top, #FFA500, #ffc04c);
+                }
+            }
         }
     }
 

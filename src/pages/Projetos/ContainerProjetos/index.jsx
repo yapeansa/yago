@@ -4,27 +4,22 @@ const ContainerProjetos = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 3rem;
     width: auto;
     padding: 0 1rem;
     .flip-card {
-        flex-basis: 30%;
+        flex: 0 0 30%;
         perspective: 1000px;
         width: 100%;
         height: 315px;
         background-color: transparent;
-        /* &:hover {
-            .flip-card-inner {
-                transform: rotateY(180deg);
-            }
-        } */
         .flip-card-inner {
             position: relative;
             width: 100%;
             height: 100%;
-            transition: transform .8s ease-in-out;
+            transition: transform .5s ease-in-out;
             transform-style: preserve-3d;
-            box-shadow: 0 0 10px 1px #000;
+            box-shadow: 0 3px 10px 2px #999;
             .flip-card-front {
                 position: absolute;
                 width: 100%;
@@ -32,24 +27,30 @@ const ContainerProjetos = styled.div`
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 color: black;
-                background: #000;
-                padding: 3px;
+                background-color: var(--segunda-cor);
+                border: 2px solid var(--segunda-cor);
                 cursor: pointer;
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: fit;
+                    //filter: blur(5px);
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        filter: blur(0);
+                        
+                    }
                 }
             }
             .flip-card-back {
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                border: 3px solid #000;
+                border: 2px solid #000;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background: linear-gradient(to top, #000, #1e1e1e);
-                color: white;
+                background: var(--branco);
+                color: var(--segunda-cor);
                 transform: rotateY(180deg);
                 display: flex;
                 align-items: center;
@@ -73,13 +74,13 @@ const ContainerProjetos = styled.div`
                             text-transform: uppercase;
                             font-size: 1rem;
                             color: var(--preto);
-                            border: 2px solid var(--ouro-escuro);
-                            background: linear-gradient(to right, #FFA500, #ffc04c);
+                            border: 2px solid var(--primeira-cor);
+                            background: var(--branco);
                             padding: 6px 15px;
                             transition: all .3s ease-in-out;
-                            border-radius: 16px;
+                            //border-radius: 16px;
                             &:hover {
-                                background: linear-gradient(to top, #FFA500, #ffc04c);
+                                background: var(--primeira-cor);
                                 color: var(--quinaria)
                             }
                         }
@@ -90,7 +91,7 @@ const ContainerProjetos = styled.div`
                     bottom: .5rem;
                     right: .5rem;
                     cursor: pointer;
-                    color: var(--branco);
+                    color: var(--segunda-cor);
                 }
             }
         }

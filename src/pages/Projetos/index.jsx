@@ -8,10 +8,11 @@ import projetos from "./projetos.json";
 import { useState } from "react";
 import { TbArrowBack } from "react-icons/tb";
 import Markdown from "react-markdown";
+import { FaCode } from "react-icons/fa6";
 import bege from "../../assets/images/bg.jpg";
 
 const Paragrafo = styled.p`
-    color: var(--branco);
+    color: var(--segunda-cor);
     font-size: 1.3rem;
     margin: 3.5rem 0 2.5rem;
     line-height: 1.5;
@@ -34,9 +35,9 @@ const Projetos = () => {
 
     return (
         <div id="projetos">
-            <Secao corDeFundo={`url(${bege}) no-repeat center / cover fixed`}>
+            <Secao corDeFundo="var(--branco)">
                 <Container>
-                    <Titulo corDaBorda="var(--terciaria)" corDoTexto="var(--branco)">Projetos</Titulo>
+                    <Titulo corDaBorda="var(--quinta-cor)" corDoTexto="var(--segunda-cor)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>
@@ -51,7 +52,7 @@ const Projetos = () => {
                                             <Markdown>{projeto.descricao}</Markdown>
                                             <ul>
                                                 <li>
-                                                    <a href={projeto.repositorio} target="_blank">Repositório</a>
+                                                    <a href={projeto.repositorio} target="_blank">Source <FaCode /></a>
                                                 </li>
                                                 <li>
                                                     <a href={projeto.caminho} target="_blank">Visitar <FaExternalLinkAlt /></a>

@@ -2,36 +2,40 @@ import { styled } from "styled-components";
 
 const AboutInfo = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 3rem;
+    padding: 0 2.5rem;
     color: var(--preto);
-    p {
-        text-align: center;
-        max-width: 55%;
-        font-size: 1.23rem;
-        border: 2px dashed var(--terciaria);
-        padding:  3rem;
-        border-radius: 20px;
-        line-height: 1.4;
-        a {
-            border-bottom: 2px dashed var(--terciaria);
-            color: var(--preto);
-            transition: all .3s ease-in;
-            &:hover {
-                text-decoration-color: var(--ouro-escuro);
+    .text-intro {
+        flex: 0 1 55%;
+        p {
+            text-align: justify;
+            font-size: 1.3rem;
+            border: 2px dashed var(--quarta-cor);
+            padding: 2.6rem 3.5rem;
+            border-radius: 20px;
+            line-height: 1.4;
+            color: var(--segunda-cor);
+            a {
+                border-bottom: 2px solid var(--quinta-cor);
+                color: var(--preto);
+                transition: all .3s ease-in;
+            }
+            .estilizado {
+                font-weight: 700;
+                color: var(--terciaria);
             }
         }
-        .estilizado {
-            font-weight: 700;
-            color: var(--terciaria);
-        }
     }
-    img {
-        max-width: 300px;
-        border: 2px solid var(--terciaria);
-        border-radius: 100%;
-        padding: 1rem;
+    .minha-foto {
+        flex: 0 1 25%;
+        img {
+            max-width: 100%;
+            border: 2px solid var(--quinta-cor);
+            border-radius: 100%;
+            padding: 1rem;
+        }
     }
 
     @media screen and (max-width: 768px) {

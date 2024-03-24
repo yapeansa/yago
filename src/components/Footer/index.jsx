@@ -3,7 +3,7 @@ import Container from "../Container";
 import { SiLinktree } from "react-icons/si";
 
 const Rodape = styled.footer`
-    background-color: var(--quinaria);
+    background-color: var(--terceira-cor);
     color: var(--branco);
     font-size: 1.3rem;
     padding: 0 0 4rem;
@@ -27,10 +27,10 @@ const Footer = ({ anoAtual }) => {
     return (
         <Rodape>
             <Container>
-                <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--terciaria)" /></a>
+                <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--quinta-cor)" /></a>
                 <p>
                     &copy;{anoAtual} - Desenvolvido por&nbsp;
-                    <span style={{ borderBottom: '2px solid var(--terciaria)', display: 'inline-block' }}>
+                    <span style={{ borderBottom: '2px solid var(--primeira-cor)', display: 'inline-block' }}>
                         Yago Pereira
                     </span>.
                 </p>

@@ -16,7 +16,7 @@ const Formacoes = styled.div`
         .curso-nome {
             font-size: 1.4rem;
             font-weight: 700;
-            color: var(--terciaria);
+            color: var(--quinta-cor);
         }
         .instituicao-nome {
             font-size: 1.6rem;
@@ -28,14 +28,14 @@ const Formacoes = styled.div`
             line-height: 1.5;
             a {
                 text-decoration: underline;
-                text-decoration-color: var(--terciaria);
+                text-decoration-color: var(--quinta-cor);
                 text-decoration-thickness: 2px;
                 color: var(--fourth-color);
                 transition: all .3s ease-in;
                 padding: 0;
                 display: inline-block;
                 &:hover {
-                    text-decoration-color: var(--ouro-escuro);
+                    text-decoration-color: var(--primeira-cor);
                 }
             }
         }
@@ -73,6 +73,7 @@ const Stacks = styled.div`
         gap: 2.2rem;
         margin-top: 3.5rem;
         padding: 0 .5rem;
+        list-style: none;
         li {
             transition: all .3s ease;
             a {

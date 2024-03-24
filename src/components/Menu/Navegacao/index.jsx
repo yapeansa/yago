@@ -17,7 +17,6 @@ const Navegacao = styled.nav`
             gap: 2rem;
             color: var(--branco);
             align-items: center;
-            //opacity: 1;
             transition: all .3s ease-in-out;
             &::before {
                 content: counter(list);
@@ -29,19 +28,19 @@ const Navegacao = styled.nav`
                 font-size: 3.75rem;
                 transition: all .3s ease-in-out;
             }
-            /* &:hover {
+            &:hover {
                 &::before {
-                    color: var(--terciaria);
+                    color: var(--quinta-cor);
                 }
-            } */
+            }
             a {
                 text-decoration: none;
                 color: var(--branco);
                 position: relative;
-                padding: .5rem .3rem;
+                padding: .3rem 0;
                 overflow: hidden;
                 z-index: 1;
-                transition: color .3s ease-out;
+                transition: all .3s ease-out;
                 text-transform: uppercase;
                 &::before {
                     content: '';
@@ -55,8 +54,9 @@ const Navegacao = styled.nav`
                     transition: all .3s ease-in-out;
                 }
                 &:hover {
-                    color: var(--preto);
+                    color: var(--terceira-cor);
                     text-decoration-color: transparent;
+                    padding: .3rem .4rem .3rem 1.5rem;
                     &::before {
                         height: 100%;
                     }

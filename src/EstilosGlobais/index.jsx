@@ -7,20 +7,15 @@ const EstilosGlobais = createGlobalStyle`
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 
-        --primeira-cor: #FAED26;
-        --segunda-cor: #46344E;
-        --terceira-cor: #564F6F;
+        --primeira-cor: #FDC52B;
+        --segunda-cor: #2E2E2F;
+        --terceira-cor: #000000;
         --quarta-cor: #4C495D;
-        --quinta-cor: #D1D7E0;
-
-        --preto: #121212;
+        --quinta-cor: #802BB1;
         --branco: #FFF;
 
         --cinza: #222;
         --cinza-medio: #333;
-        --quinaria: #000000;
-        
-
 
         --branco-secundario: #EEEEEE;
     }
@@ -55,7 +50,7 @@ const EstilosGlobais = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 1.2rem;
-        background: var(--quinaria) url(${bg}) center / cover no-repeat fixed;
+        background: var(--terceira-cor) url(${bg}) center / cover no-repeat fixed;
         &::-webkit-scrollbar {
             width: .6rem;
         }
@@ -63,7 +58,7 @@ const EstilosGlobais = createGlobalStyle`
             background: var(--cinza);
         }
         &::-webkit-scrollbar-track {
-            background: var(--quinaria);
+            background: var(--terceira-cor);
         }
     }
 
