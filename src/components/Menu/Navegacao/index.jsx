@@ -17,13 +17,15 @@ const Navegacao = styled.nav`
             gap: 2rem;
             color: var(--branco);
             align-items: center;
+            //opacity: 1;
+            transition: all .3s ease-in-out;
             &::before {
-                content: counter(list) '.';
+                content: counter(list);
                 width: 18px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: var(--terciaria);
+                color: var(--segunda-cor);
                 font-size: 3.75rem;
                 transition: all .3s ease-in-out;
             }
@@ -33,12 +35,10 @@ const Navegacao = styled.nav`
                 }
             } */
             a {
-                text-decoration: underline;
-                text-decoration-thickness: 2px;
-                text-decoration-color: var(--ouro-escuro);
+                text-decoration: none;
                 color: var(--branco);
                 position: relative;
-                padding: .5rem;
+                padding: .5rem .3rem;
                 overflow: hidden;
                 z-index: 1;
                 transition: color .3s ease-out;
@@ -47,23 +47,24 @@ const Navegacao = styled.nav`
                     content: '';
                     z-index: -1;
                     position: absolute;
-                    top: 0;
-                    right: -100%;
+                    bottom: 0;
+                    right: 0;
                     width: 100%;
-                    height: 100%;
-                    background: var(--ouro-escuro);
+                    height: 2px;
+                    background: var(--primeira-cor);
                     transition: all .3s ease-in-out;
                 }
                 &:hover {
                     color: var(--preto);
                     text-decoration-color: transparent;
                     &::before {
-                        right: 0;
+                        height: 100%;
                     }
                 }
             }
         }
     }
+    .enfase { opacity: .4; }
 
     @media screen and (max-width: 960px) {
         padding: 0;

@@ -4,31 +4,25 @@ import bg_2 from "/src/assets/images/al_t.png";
 
 const EstilosGlobais = createGlobalStyle`
     :root {
-        --preto: #121212;
-        --cinza: #222;
-        --cinza-medio: #333;
-        --quinaria: #000000;
-        --cinza-claro: #CCCCCC;
-        --ouro-medio: #FFB90F;
-        --ouro-escuro: #FFA500;
-        --terciaria: #6A5ACD;
-        --third-color: #7FFFD4;
-        --branco: #FFFFFF;
-
-        --rosa: #3d4dff;
-
-        --branco-secundario: #EEEEEE;
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 
-        --second-color: #D3D3D3;
-        --fourth-color: #FFF5E1;
+        --primeira-cor: #FAED26;
+        --segunda-cor: #46344E;
+        --terceira-cor: #564F6F;
+        --quarta-cor: #4C495D;
+        --quinta-cor: #D1D7E0;
 
-        --primeiro: #9C27B0  #FFEB3B;
-        --segundo: #90CAF9  #CDDC39;
-        --terceiro: #757575  #424242;
-        --quarto: #F48FB1  #1976D2;
+        --preto: #121212;
+        --branco: #FFF;
+
+        --cinza: #222;
+        --cinza-medio: #333;
+        --quinaria: #000000;
         
+
+
+        --branco-secundario: #EEEEEE;
     }
 
     @keyframes fadeIn {
