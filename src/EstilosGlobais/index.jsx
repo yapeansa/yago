@@ -7,11 +7,12 @@ const EstilosGlobais = createGlobalStyle`
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 
-        --primeira-cor: #FDC52B;
+        /* --primeira-cor: #FDC52B; */
+        --primeira-cor: #2B52FD;
         --segunda-cor: #2E2E2F;
         --terceira-cor: #000000;
         --quarta-cor: #4C495D;
-        --quinta-cor: #802BB1;
+        --quinta-cor:  #FF6A00;
         --branco: #FFF;
 
         --cinza: #222;

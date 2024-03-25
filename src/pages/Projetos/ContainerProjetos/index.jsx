@@ -110,6 +110,9 @@ const ContainerProjetos = styled.div`
         gap: 2rem;
         flex-wrap: nowrap;
         height: ${props => props.$tamanho};
+        .flip-card {
+            flex: 1 1 auto;
+        }
     }
 `;
 
