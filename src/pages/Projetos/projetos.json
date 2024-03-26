@@ -19,6 +19,15 @@
     },
     {
         "id": 3,
+        "nome": "Casa Verde",
+        "caminho": "https://casa-verde-xi-two.vercel.app/",
+        "imagem": "/galeria/casa_verde.png",
+        "descricao": "As melhores plantas para quem gosta de ser feliz.\nLinguagens: HTML, CSS, Javascript",
+        "repositorio": "https://github.com/yapeansa/CasaVerde",
+        "classe": ""
+    },
+    {
+        "id": 4,
         "nome": "Netflix",
         "caminho": "https://reactflix-two-tau.vercel.app/",
         "imagem": "/galeria/netflix.png",
