@@ -3,10 +3,6 @@ import { styled } from "styled-components";
 const ContainerContato = styled.div`
     margin: 3rem 0 0;
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
     p {
         color: var(--branco);
         font-size: 1.3rem;
@@ -17,20 +13,20 @@ const ContainerContato = styled.div`
         color: var(--branco);
         font-size: 1.3rem;
         display: flex;
-        justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin: 30px 0;
+        margin: 30px auto;
         transition: all .3s ease-in;
         position: relative;
         padding: .5rem 0;
+        width: fit-content;
         &::before {
             content: '';
             position: absolute;
-            right: 0;
-            margin-left: -4.5rem;
+            left: 50%;
+            margin-left: -15%;
             bottom: 0;
-            background: var(--quinta-cor);
+            background: var(--primeira-cor);
             width: 30%;
             height: 2px;
             transition: all .3s ease-in-out;
@@ -38,17 +34,19 @@ const ContainerContato = styled.div`
         &:hover {
             &::before {
                 width: 100%;
+                left: 0;
+                margin-left: 0;
             }
         }
     }
     form {
-        width: 100%;
+        max-width: 800px;
         margin: 60px auto 0;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         input[type=text], input[type=email], textarea {
-            max-width: 850px;
+            width: 100%;
             margin: 0 auto;
             font-family: var(--fonte-secundaria);
             font-size: 1rem;
