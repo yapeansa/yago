@@ -36,7 +36,7 @@ const Cabecalho = styled.header`
             min-height: 100vh;
             gap: 4.5rem;
             align-items: center;
-            background-color: var(--preto);
+            background-color: var(--terceira-cor);
             position: absolute;
             width: 100%;
             left: -100%;
@@ -47,6 +47,7 @@ const Cabecalho = styled.header`
                 cursor: pointer;
                 padding: .5rem;
                 border: 2px solid var(--branco);
+                color: var(--primeira-cor);
             }
         }
         .introducao {

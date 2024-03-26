@@ -79,7 +79,7 @@ const Navegacao = styled.nav`
                     display: none;
                 }
                 a {
-                    text-decoration-color: var(--terciaria);
+                    text-decoration-color: var(--primeira-cor);
                 }
             }
         }

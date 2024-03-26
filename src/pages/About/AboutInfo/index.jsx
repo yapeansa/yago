@@ -42,16 +42,18 @@ const AboutInfo = styled.div`
         flex-direction: column;
         gap: 3rem;
         margin-top: 3rem;
-        p {
+        .text-intro {
             order: 2;
-            max-width: 90%;
-            background-color: var(--fifth-color);
-            border-radius: 0;
-            border: none;
-            padding: 0;
+            flex: 1 1 auto;
+            p {
+                border-radius: 0;
+                border: none;
+                padding: 0;
+            }
         }
-        img {
+        .minha-foto {
             order: 1;
+            flex: 1 1 auto;
         }
     }
 `;

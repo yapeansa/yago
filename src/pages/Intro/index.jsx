@@ -55,7 +55,8 @@ const SecaoIntro = styled.section`
             cursor: pointer;
             display: block;
             padding: .5rem;
-            border: 2px solid var(--terciaria);
+            border: 2px solid var(--branco);
+            color: var(--primeira-cor);
         }
     }
 `;
@@ -63,7 +64,7 @@ const SecaoIntro = styled.section`
 const Intro = ({ acaoMenu }) => {
     return (
         <SecaoIntro>
-            <TbMenu2 onClick={acaoMenu} className="drop-menu" size={60} color="var(--branco)" />
+            <TbMenu2 onClick={acaoMenu} className="drop-menu" size={60} />
             <Logo />
             <p>
                 Olá, mundo! Eu sou um <span className="destaque">desenvolvedor</span> web Front-end especializado no framework <span className="destaque">React</span>.

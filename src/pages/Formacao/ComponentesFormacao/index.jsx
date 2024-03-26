@@ -45,6 +45,7 @@ const Formacoes = styled.div`
         text-align: center;
         max-width: 90%;
         flex-direction: column;
+        margin: 0 auto;
         .minhas-formacoes {
             padding: 1.5rem;
             border: none;
@@ -72,7 +73,7 @@ const Stacks = styled.div`
         flex-wrap: wrap;
         gap: 2.2rem;
         margin-top: 3.5rem;
-        padding: 0 .5rem;
+        padding: 0 1rem;
         list-style: none;
         li {
             transition: all .3s ease;
