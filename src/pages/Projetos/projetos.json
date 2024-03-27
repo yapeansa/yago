@@ -4,7 +4,7 @@
         "nome": "CodeChella",
         "caminho": "https://codechellafestival.vercel.app/",
         "imagem": "/galeria/codechella.png",
-        "descricao": "Um festival para quem ama música\nLinguagens: HTML, CSS e Javascript",
+        "descricao": "Um festival para quem ama música.\nLinguagens: HTML, CSS e Javascript",
         "repositorio": "https://github.com/yapeansa/codechella",
         "classe": ""
     },
@@ -13,7 +13,7 @@
         "nome": "OptimusTech",
         "caminho": "https://optimus-tech-puce.vercel.app/",
         "imagem": "/galeria/optimustech.png",
-        "descricao": "Uma empresa de Devs para Devs\nLinguagens: HTML, CSS e Javascript",
+        "descricao": "Uma empresa de Devs para Devs.\nLinguagens: HTML, CSS e Javascript",
         "repositorio": "https://github.com/yapeansa/optimusTech",
         "classe": ""
     },
@@ -31,25 +31,25 @@
         "nome": "Netflix",
         "caminho": "https://reactflix-two-tau.vercel.app/",
         "imagem": "/galeria/netflix.png",
-        "descricao": "Uma réplica da página inicial da Netflix\nLinguagens: HTML, CSS e Javascript",
+        "descricao": "Uma réplica da página inicial da Netflix.\nLinguagens: HTML, CSS e Javascript",
         "repositorio": "https://github.com/yapeansa/netflix-replica",
         "classe": ""
     },
     {
-        "id": 4,
+        "id": 5,
         "nome": "Space App",
         "caminho": "https://superspaceapp.vercel.app/",
         "imagem": "/galeria/spaceapp.png",
-        "descricao": "Imagens incríveis do espaço",
+        "descricao": "Imagens incríveis do espaço.\nLinguagens: HTML, CSS, Javascript",
         "repositorio": "https://github.com/yapeansa/spaceAppJs",
         "classe": ""
     },
     {
-        "id:": 5,
+        "id:": 6,
         "nome": "Projeto Fokus",
         "caminho": "https://yapeansa.github.io/projetoFokus.js/",
         "imagem": "/galeria/fokus.png",
-        "descricao": "Otimize sua produtividade com o Fokus\nLinguagens: HTML, CSS e Javascript",
+        "descricao": "Otimize sua produtividade com o Fokus.\nLinguagens: HTML, CSS e Javascript",
         "repositorio": "https://github.com/yapeansa/projetoFokus.js",
         "classe": ""
     }
