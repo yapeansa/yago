@@ -67,8 +67,8 @@ const Contato = () => {
                                     required></textarea>
                             </label>
                             <div className="acoes__formulario">
-                                <input type="reset" value="Limpar" />
-                                <input type="submit" value="Enviar" />
+                                <button type="reset">Limpar</button>
+                                <button type="submit">Enviar</button>
                             </div>
                         </form>
                     </ContainerContato>

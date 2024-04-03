@@ -62,9 +62,7 @@ const ContainerContato = styled.div`
                 outline: none;
                 color: var(--branco);
                 transition: all .3s ease-in-out;
-                &:focus {
-                    border-color: var(--primeira-cor);
-                }
+                &:focus { border-color: var(--primeira-cor); }
                 &::placeholder {
                     opacity: 1;
                     color: var(--branco);
@@ -82,9 +80,7 @@ const ContainerContato = styled.div`
             outline: none;
             color: var(--branco);
             transition: all .3s ease-in-out;
-            &:focus {
-                border-color: var(--primeira-cor);
-            }
+            &:focus { border-color: var(--primeira-cor); }
             &::placeholder {
                 opacity: 1;
                 color: var(--branco);
@@ -95,10 +91,10 @@ const ContainerContato = styled.div`
             justify-content: center;
             gap: 2rem;
             flex-wrap: wrap;
-            input[type=reset], input[type=submit] {
+            button[type=reset], button[type=submit] {
                 flex: 1 1 auto;
                 background: transparent;
-                border: 2px solid var(--quinta-cor);
+                border: 1px solid var(--quinta-cor);
                 font-family: var(--fonte-primaria);
                 font-weight: 400;
                 display: block;
@@ -106,21 +102,32 @@ const ContainerContato = styled.div`
                 text-transform: uppercase;
                 cursor: pointer;
                 padding: 1rem .8rem;
-                transition: all .3s ease-in-out;
+                transition: all .2s ease-in-out;
                 color: var(--branco);
                 position: relative;
+                z-index: 1;
                 &::before {
                     content: '';
                     position: absolute;
                     left: 0;
-                    top: 0;
+                    bottom: 0;
                     width: 100%;
-                    height: 5px;
-                    background: var(--primeira-cor);
+                    height: 4px;
+                    background: var(--quinta-cor);
+                    transition: all .2s ease-in-out;
+                    z-index: -1;
                 }
                 &:hover {
-                    background: var(--quinta-cor);
                     color: var(--terceira-cor);
+                    &::before { height: 100%; }
+                }
+                &:active {
+                    border-color: var(--primeira-cor);
+                    transition: none;
+                    &::before {
+                        background: var(--primeira-cor);
+                        transition: none;
+                    }
                 }
             }
         }
