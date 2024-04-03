@@ -114,9 +114,9 @@ const ContainerContato = styled.div`
                     position: absolute;
                     left: 0;
                     top: 0;
-                    width: 50px;
+                    width: 100%;
                     height: 5px;
-                    background: var(--quinta-cor);
+                    background: var(--primeira-cor);
                 }
                 &:hover {
                     background: var(--quinta-cor);

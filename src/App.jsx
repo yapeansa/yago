@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import EstilosGlobais from './EstilosGlobais';
 import BotaoScrollTop from './components/BotaoScrollTop';
 import Header from './components/Header';
@@ -7,14 +6,12 @@ import Formacao from './pages/Formacao';
 import Projetos from './pages/Projetos';
 import Contato from './pages/Contato';
 import Footer from './components/Footer';
-import ContextoContato from './Contexto Contato';
+import ContextoContato from './Contexts/ContextoContato';
+import ContextoBotao from './Contexts/ContextoBotao';
 
 const App = () => {
 
-    const [mostrarBotao, setMostrarBotao] = useState(false);
-    const [animar, setAnimar] = useState(false);
-
-    let currentDate = new Date(), currentYear = currentDate.getFullYear(), currentMonth = currentDate.getMonth() + 1,
+    const currentDate = new Date(), currentYear = currentDate.getFullYear(), currentMonth = currentDate.getMonth() + 1,
         currentDay = currentDate.getDate();
 
     const calculaIdade = () => {
@@ -33,7 +30,9 @@ const App = () => {
                 <Contato />
             </ContextoContato>
             <Footer anoAtual={currentYear} />
-            <BotaoScrollTop mostrarBotao={mostrarBotao} aoRolar={setMostrarBotao} animar={animar} aoAnimar={setAnimar} />
+            <ContextoBotao>
+                <BotaoScrollTop />
+            </ContextoBotao>
         </main>
     );
 }
