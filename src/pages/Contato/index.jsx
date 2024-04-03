@@ -3,30 +3,40 @@ import Titulo from "../../components/Titulo";
 import ContainerContato from "./ContainerContato";
 import Container from "../../components/Container";
 import { SiGmail } from "react-icons/si";
+import { ContextoContatoCriado } from "../../Contexto Contato";
+import { useContext } from "react";
 
-const Contato = ({ nome, email, mensagem, setNome, setEmail, setMensagem }) => {
+const Contato = () => {
+
+    const [placeHolders, setPlaceHolders] = useContext(ContextoContatoCriado);
 
     function aoInteragir(campo) {
         switch (campo) {
             case 'nome':
-                if (nome !== '') {
-                    setNome('');
+                if (placeHolders.nome !== '') {
+                    placeHolders.nome = '';
+                    setPlaceHolders({...placeHolders});
                 } else {
-                    setNome('Digite o seu nome aqui...');
+                    placeHolders.nome = 'Digite o seu nome aqui...';
+                    setPlaceHolders({...placeHolders});
                 }
                 break;
             case 'email':
-                if (email !== '') {
-                    setEmail('');
+                if (placeHolders.email !== '') {
+                    placeHolders.email = '';
+                    setPlaceHolders({...placeHolders});
                 } else {
-                    setEmail('Digite o seu e-mail aqui...');
+                    placeHolders.email = 'Digite o seu e-mail aqui...';
+                    setPlaceHolders({...placeHolders});
                 }
                 break;
             default:
-                if (mensagem !== '') {
-                    setMensagem('');
+                if (placeHolders.mensagem !== '') {
+                    placeHolders.mensagem = '';
+                    setPlaceHolders({...placeHolders});
                 } else {
-                    setMensagem('Digite a sua mensagem aqui...');
+                    placeHolders.mensagem = 'Digite a sua mensagem aqui...';
+                    setPlaceHolders({...placeHolders});
                 }
                 break;
         }
@@ -50,7 +60,7 @@ const Contato = ({ nome, email, mensagem, setNome, setEmail, setMensagem }) => {
                                     name="nome"
                                     onFocus={() => aoInteragir('nome')}
                                     onBlur={() => aoInteragir('nome')}
-                                    placeholder={nome}
+                                    placeholder={placeHolders.nome}
                                     required
                                 />
                             </label>
@@ -60,7 +70,7 @@ const Contato = ({ nome, email, mensagem, setNome, setEmail, setMensagem }) => {
                                     name="email"
                                     onFocus={() => aoInteragir('email')}
                                     onBlur={() => aoInteragir('email')}
-                                    placeholder={email}
+                                    placeholder={placeHolders.email}
                                     required
                                 />
                             </label>
@@ -70,7 +80,7 @@ const Contato = ({ nome, email, mensagem, setNome, setEmail, setMensagem }) => {
                                     rows="6"
                                     onFocus={() => aoInteragir()}
                                     onBlur={() => aoInteragir()}
-                                    placeholder={mensagem}
+                                    placeholder={placeHolders.mensagem}
                                     required></textarea>
                             </label>
                             <div>

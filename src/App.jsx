@@ -8,6 +8,7 @@ import Projetos from './pages/Projetos';
 import Contato from './pages/Contato';
 import Footer from './components/Footer';
 import { styled } from 'styled-components';
+import ContextoContato from './Contexto Contato';
 
 const ConteudoPrincipal = styled.main`
     margin: 0;
@@ -18,10 +19,6 @@ const App = () => {
 
     const [mostrarBotao, setMostrarBotao] = useState(false);
     const [animar, setAnimar] = useState(false);
-
-    const [nome, setNome] = useState('Digite o seu nome aqui...');
-    const [email, setEmail] = useState('Digite o seu e-mail aqui...');
-    const [mensagem, setMensagem] = useState('Digite a sua mensagem aqui...');
 
     let currentDate = new Date(), currentYear = currentDate.getFullYear(), currentMonth = currentDate.getMonth() + 1,
         currentDay = currentDate.getDate();
@@ -41,10 +38,9 @@ const App = () => {
             <About idade={calculaIdade} />
             <Formacao />
             <Projetos />
-            <Contato
-                nome={nome} email={email} mensagem={mensagem}
-                setNome={setNome} setEmail={setEmail} setMensagem={setMensagem}
-            />
+            <ContextoContato>
+                <Contato />
+            </ContextoContato>
             <Footer anoAtual={currentYear} />
             <BotaoScrollTop mostrarBotao={mostrarBotao} aoRolar={setMostrarBotao} animar={animar} aoAnimar={setAnimar} />
         </ConteudoPrincipal>
