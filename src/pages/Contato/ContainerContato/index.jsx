@@ -26,7 +26,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -15%;
             bottom: 0;
-            background: var(--quinta-cor);
+            background: var(--primeira-cor);
             width: 30%;
             height: 2px;
             transition: all .3s ease-in-out;
