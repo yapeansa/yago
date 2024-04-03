@@ -1,26 +1,7 @@
-import { styled } from "styled-components";
 import { FaArrowUpLong } from "react-icons/fa6";
-
-const Scroll = styled.div`
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    display: ${props => props.$display};
-    animation-name: ${props => props.$animacao};
-    animation-duration: .3s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    a {
-        display: block;
-        background: var(--quinta-cor);
-        padding: 1.4rem 1.2rem .4rem;
-    }
-`;
+import EstilosScrollTop from "./EstilosScrollTop";
 
 const BotaoScrollTop = ({ mostrarBotao, aoRolar, animar, aoAnimar }) => {
-
-    const visivel = mostrarBotao ? 'block' : 'none';
-    const animacao = animar ? 'fadeIn' : 'fadeOut';
 
     const rolagem = () => {
         if (document.documentElement.scrollTop > (screen.availHeight - 100)) {
@@ -42,11 +23,11 @@ const BotaoScrollTop = ({ mostrarBotao, aoRolar, animar, aoAnimar }) => {
 
     return (
         <>
-            <Scroll $display={visivel} $animacao={animacao}>
+            <EstilosScrollTop $display={mostrarBotao ? 'block' : 'none'} $animacao={animar ? 'fadeIn' : 'fadeOut'}>
                 <a href="#">
                     <FaArrowUpLong color="var(--branco)" size={27} />
                 </a>
-            </Scroll>
+            </EstilosScrollTop>
         </>
     );
 };

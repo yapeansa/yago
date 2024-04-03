@@ -10,7 +10,7 @@ const AboutInfo = styled.div`
     .text-intro {
         flex: 0 1 55%;
         p {
-            text-align: justify;
+            text-align: center;
             font-size: 1.3rem;
             border: 2px dashed var(--quarta-cor);
             padding: 2.6rem 3.5rem;

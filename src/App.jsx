@@ -7,13 +7,7 @@ import Formacao from './pages/Formacao';
 import Projetos from './pages/Projetos';
 import Contato from './pages/Contato';
 import Footer from './components/Footer';
-import { styled } from 'styled-components';
 import ContextoContato from './Contexto Contato';
-
-const ConteudoPrincipal = styled.main`
-    margin: 0;
-    padding: 0;
-`;
 
 const App = () => {
 
@@ -24,15 +18,12 @@ const App = () => {
         currentDay = currentDate.getDate();
 
     const calculaIdade = () => {
-        if ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) {
-            return (currentYear - 1993);
-        } else {
-            return (currentYear - 1994);
-        }
+        return ((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) ?
+            (currentYear - 1993) : (currentYear - 1994);
     };
 
     return (
-        <ConteudoPrincipal>
+        <main>
             <EstilosGlobais />
             <Header />
             <About idade={calculaIdade} />
@@ -43,7 +34,7 @@ const App = () => {
             </ContextoContato>
             <Footer anoAtual={currentYear} />
             <BotaoScrollTop mostrarBotao={mostrarBotao} aoRolar={setMostrarBotao} animar={animar} aoAnimar={setAnimar} />
-        </ConteudoPrincipal>
+        </main>
     );
 }
 
