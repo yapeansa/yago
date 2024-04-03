@@ -16,7 +16,7 @@ const Formacoes = styled.div`
         .curso-nome {
             font-size: 1.4rem;
             font-weight: 700;
-            color: var(--quinta-cor);
+            color: var(--primeira-cor);
         }
         .instituicao-nome {
             font-size: 1.6rem;
@@ -28,14 +28,14 @@ const Formacoes = styled.div`
             line-height: 1.5;
             a {
                 text-decoration: underline;
-                text-decoration-color: var(--quinta-cor);
+                text-decoration-color: var(--primeira-cor);
                 text-decoration-thickness: 2px;
                 color: var(--fourth-color);
                 transition: all .3s ease-in;
                 padding: 0;
                 display: inline-block;
                 &:hover {
-                    text-decoration-color: var(--primeira-cor);
+                    text-decoration-color: var(--quinta-cor);
                 }
             }
         }

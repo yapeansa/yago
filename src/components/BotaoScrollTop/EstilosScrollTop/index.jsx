@@ -11,7 +11,7 @@ const EstilosScrollTop = styled.div`
     animation-timing-function: ease-in;
     a {
         display: block;
-        background: var(--quinta-cor);
+        background: var(--primeira-cor);
         padding: 1.4rem 1.2rem .4rem;
     }
 `;

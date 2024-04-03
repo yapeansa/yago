@@ -26,11 +26,11 @@ const Navegacao = styled.nav`
                 align-items: center;
                 color: var(--segunda-cor);
                 font-size: 3.75rem;
-                transition: all .3s ease-in-out;
+                transition: all .2s ease-in-out;
             }
             &:hover {
                 &::before {
-                    color: var(--quinta-cor);
+                    color: var(--primeira-cor);
                 }
             }
             a {
@@ -51,7 +51,7 @@ const Navegacao = styled.nav`
                     width: 100%;
                     height: 2px;
                     background: var(--primeira-cor);
-                    transition: all .3s ease-in-out;
+                    transition: all .2s ease-in-out;
                 }
                 &:hover {
                     color: var(--terceira-cor);
@@ -59,6 +59,7 @@ const Navegacao = styled.nav`
                     padding: .3rem .4rem .3rem 1.5rem;
                     &::before {
                         height: 100%;
+                        background: var(--quinta-cor);
                     }
                 }
             }

@@ -1,4 +1,3 @@
-import { styled } from "styled-components";
 import Container from "../../components/Container";
 import Secao from "../../components/ContainerSecao";
 import Titulo from "../../components/Titulo";
@@ -9,14 +8,7 @@ import { useState } from "react";
 import { TbArrowBack } from "react-icons/tb";
 import Markdown from "react-markdown";
 import { FaCode } from "react-icons/fa6";
-import bege from "../../assets/images/bg.jpg";
-
-const Paragrafo = styled.p`
-    color: var(--segunda-cor);
-    font-size: 1.3rem;
-    margin: 3.5rem 0 2.5rem;
-    line-height: 1.5;
-`;
+import Paragrafo from "./Paragrafo";
 
 const Projetos = () => {
 
@@ -24,20 +16,17 @@ const Projetos = () => {
 
     function rotacionar(id) {
         const alvo = projects.filter(projeto => projeto.id === id);
-        if (alvo[0].classe === "") {
-            alvo[0].classe = "animacao";
-            setProjects([...projetos]);
-        } else {
-            alvo[0].classe = "";
-            setProjects([...projetos]);
-        }
+        alvo.forEach(objeto => {
+            objeto.classe = objeto.classe === "" ? "animacao" : "";
+        });
+        setProjects([...projetos]);
     }
 
     return (
         <div id="projetos">
             <Secao corDeFundo="var(--branco)">
                 <Container>
-                    <Titulo corDaBorda="var(--quinta-cor)" corDoTexto="var(--segunda-cor)">Projetos</Titulo>
+                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--segunda-cor)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>
@@ -58,7 +47,9 @@ const Projetos = () => {
                                                     <a href={projeto.caminho} target="_blank">Visitar <FaExternalLinkAlt /></a>
                                                 </li>
                                             </ul>
-                                            <TbArrowBack className="voltar" size={35} onClick={() => rotacionar(projeto.id)} />
+                                            <button className="rotacao" onClick={() => rotacionar(projeto.id)}>
+                                                <TbArrowBack className="voltar" size={35} />
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

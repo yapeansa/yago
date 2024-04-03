@@ -6,25 +6,25 @@ const Menu = () => {
 
     const [enfase, setEnfase] = useState(menu);
 
-    function menuOut(id) {
+    const menuOut = (id) => {
         const alvo = enfase.filter(item => item.id !== id);
         alvo.forEach(elem => {
-            if (elem.classe === '') {
-                elem.classe = "enfase"
-                setEnfase([...enfase]);
-            } else {
-                elem.classe = '';
-                setEnfase([...enfase]);
-            }
-        })
-    }
+            elem.classe = elem.classe === '' ? "enfase" : "";
+        });
+        setEnfase([...enfase]);
+    };
 
     return (
         <>
             <Navegacao>
                 <ol role="list">
                     {enfase.map(link =>
-                        <li key={link.id} className={link.classe} onMouseEnter={() => menuOut(link.id)} onMouseLeave={() => menuOut(link.id)}>
+                        <li
+                            key={link.id}
+                            className={link.classe}
+                            onMouseEnter={() => menuOut(link.id)}
+                            onMouseLeave={() => menuOut(link.id)}
+                        >
                             <a href={link.caminho} target="_parent">{link.nome}</a>
                         </li>
                     )}
@@ -32,6 +32,6 @@ const Menu = () => {
             </Navegacao>
         </>
     );
-}
+};
 
 export default Menu;

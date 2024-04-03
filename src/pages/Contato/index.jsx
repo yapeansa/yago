@@ -10,51 +10,36 @@ const Contato = () => {
 
     const [placeHolders, setPlaceHolders] = useContext(ContextoContatoCriado);
 
-    function aoInteragir(campo) {
+    const aoInteragir = (campo) => {
         switch (campo) {
             case 'nome':
-                if (placeHolders.nome !== '') {
-                    placeHolders.nome = '';
-                    setPlaceHolders({...placeHolders});
-                } else {
-                    placeHolders.nome = 'Digite o seu nome aqui...';
-                    setPlaceHolders({...placeHolders});
-                }
+                placeHolders.nome = placeHolders.nome !== "" ? "" : "Digite o seu nome aqui...";
+                setPlaceHolders({ ...placeHolders });
                 break;
             case 'email':
-                if (placeHolders.email !== '') {
-                    placeHolders.email = '';
-                    setPlaceHolders({...placeHolders});
-                } else {
-                    placeHolders.email = 'Digite o seu e-mail aqui...';
-                    setPlaceHolders({...placeHolders});
-                }
+                placeHolders.email = placeHolders.email !== "" ? "" : "Digite o seu e-mail aqui...";
+                setPlaceHolders({ ...placeHolders });
                 break;
             default:
-                if (placeHolders.mensagem !== '') {
-                    placeHolders.mensagem = '';
-                    setPlaceHolders({...placeHolders});
-                } else {
-                    placeHolders.mensagem = 'Digite a sua mensagem aqui...';
-                    setPlaceHolders({...placeHolders});
-                }
+                placeHolders.mensagem = placeHolders.mensagem !== "" ? "" : "Digite a sua mensagem aqui...";
+                setPlaceHolders({ ...placeHolders });
                 break;
         }
-    }
+    };
 
     return (
         <div id="contato">
             <Secao corDeFundo="var(--terceira-cor)">
                 <Container>
-                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--branco)">Contato</Titulo>
+                    <Titulo corDaBorda="var(--quinta-cor)" corDoTexto="var(--branco)">Contato</Titulo>
                     <ContainerContato>
                         <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
                         <a href="mailto:yago.pereira@estudante.ufjf.br">
-                            <SiGmail size={30} color="var(--primeira-cor)" /> yago.pereira@estudante.ufjf.br
+                            <SiGmail size={30} color="var(--quinta-cor)" /> yago.pereira@estudante.ufjf.br
                         </a>
                         <p>Ou preencha o formulário abaixo com seus dados e sua mensagem.</p>
                         <form method="post" action="https://formspree.io/f/xnqlkqnk">
-                            <label>
+                            <div className="engloba_texto_email">
                                 <input
                                     type="text"
                                     name="nome"
@@ -63,8 +48,6 @@ const Contato = () => {
                                     placeholder={placeHolders.nome}
                                     required
                                 />
-                            </label>
-                            <label>
                                 <input
                                     type="email"
                                     name="email"
@@ -73,17 +56,17 @@ const Contato = () => {
                                     placeholder={placeHolders.email}
                                     required
                                 />
-                            </label>
+                            </div>
                             <label>
                                 <textarea
                                     name="mensagem"
-                                    rows="6"
+                                    rows="5"
                                     onFocus={() => aoInteragir()}
                                     onBlur={() => aoInteragir()}
                                     placeholder={placeHolders.mensagem}
                                     required></textarea>
                             </label>
-                            <div>
+                            <div className="acoes__formulario">
                                 <input type="reset" value="Limpar" />
                                 <input type="submit" value="Enviar" />
                             </div>

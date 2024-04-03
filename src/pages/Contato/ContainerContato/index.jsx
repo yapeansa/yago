@@ -26,7 +26,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -15%;
             bottom: 0;
-            background: var(--primeira-cor);
+            background: var(--quinta-cor);
             width: 30%;
             height: 2px;
             transition: all .3s ease-in-out;
@@ -40,58 +40,87 @@ const ContainerContato = styled.div`
         }
     }
     form {
-        max-width: 800px;
+        max-width: 65%;
         margin: 60px auto 0;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding: 0 1.5rem;
-        input[type=text], input[type=email], textarea {
+        .engloba_texto_email {
             width: 100%;
-            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            input[type=text], input[type=email] {
+                flex: 1 1 auto;
+                font-family: var(--fonte-secundaria);
+                font-size: 1rem;
+                background: var(--quinaria);
+                border: 2px solid var(--segunda-cor);
+                padding: 1.2rem 1rem;
+                outline: none;
+                color: var(--branco);
+                transition: all .3s ease-in-out;
+                &:focus {
+                    border-color: var(--primeira-cor);
+                }
+                &::placeholder {
+                    opacity: 1;
+                    color: var(--branco);
+                }
+            }
+        }
+        textarea {
+            resize: none;
+            width: 100%;
             font-family: var(--fonte-secundaria);
             font-size: 1rem;
-            display: block;
-            width: 100%;
             background: var(--quinaria);
-            border: 2px solid #333;
-            border-radius: 25px;
+            border: 2px solid var(--segunda-cor);
             padding: 1.2rem 1rem;
             outline: none;
             color: var(--branco);
             transition: all .3s ease-in-out;
             &:focus {
-                border-color: var(--quinta-cor);
-                border-style: dashed;
+                border-color: var(--primeira-cor);
             }
             &::placeholder {
                 opacity: 1;
                 color: var(--branco);
             }
         }
-        textarea {
-            resize: none;
-        }
-        div {
+        .acoes__formulario {
             display: flex;
             justify-content: center;
             gap: 2rem;
+            flex-wrap: wrap;
             input[type=reset], input[type=submit] {
-                flex: 0 1 140px;
-                background: linear-gradient(to bottom, #FFA500, #ffc04c);
-                border: 2px solid var(--ouro-escuro);
-                border-radius: 16px;
+                flex: 1 1 auto;
+                background: transparent;
+                border: 2px solid var(--quinta-cor);
                 font-family: var(--fonte-primaria);
                 font-weight: 400;
+                display: block;
                 font-size: 1.2rem;
                 text-transform: uppercase;
                 cursor: pointer;
                 padding: 1rem .8rem;
                 transition: all .3s ease-in-out;
-                color: var(--preto);
-                display: block;
+                color: var(--branco);
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 50px;
+                    height: 5px;
+                    background: var(--quinta-cor);
+                }
                 &:hover {
-                    background: linear-gradient(to top, #FFA500, #ffc04c);
+                    background: var(--quinta-cor);
+                    color: var(--terceira-cor);
                 }
             }
         }
@@ -100,6 +129,9 @@ const ContainerContato = styled.div`
     @media screen and (max-width: 768px) {
         p {
             max-width: 90%;
+        }
+        form {
+            max-width: 100%;
         }
     }
 `;

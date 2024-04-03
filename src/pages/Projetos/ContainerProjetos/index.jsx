@@ -46,7 +46,7 @@ const ContainerProjetos = styled.div`
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                border: 2px solid #000;
+                border: 2px solid var(--terceira-cor);
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 background: var(--branco);
@@ -62,7 +62,22 @@ const ContainerProjetos = styled.div`
                     flex-direction: column;
                     align-items: center;
                     gap: 1.5rem;
-                    h1 { color: var(--terciaria); }
+                    h1 {
+                        color: var(--terceira-cor);
+                        font-weight: 400;
+                        font-size: 2rem;
+                        padding-bottom: 4px;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 2px;
+                            background: var(--primeira-cor);
+                        }
+                    }
                     ul {
                         list-style: none;
                         display: flex;
@@ -74,24 +89,28 @@ const ContainerProjetos = styled.div`
                             text-transform: uppercase;
                             font-size: 1rem;
                             color: var(--preto);
-                            border: 2px solid var(--primeira-cor);
-                            background: var(--branco);
-                            padding: 6px 15px;
-                            transition: all .3s ease-in-out;
+                            background: linear-gradient(to right, var(--quinta-cor), #ffab10);
+                            padding: 8px 15px;
+                            //transition: all .3s ease-in-out;
                             //border-radius: 16px;
                             &:hover {
-                                background: var(--primeira-cor);
+                                background: var(--quinta-cor);
                                 color: var(--quinaria)
                             }
                         }
                     }
                 }
-                .voltar {
+                .rotacao {
                     position: absolute;
-                    bottom: .5rem;
-                    right: .5rem;
+                    bottom: 0;
+                    right: 0;
+                    border: none;
+                    background: var(--terceira-cor);
+                    padding: .3rem .4rem;
                     cursor: pointer;
-                    color: var(--segunda-cor);
+                    .voltar {
+                        color: var(--branco);
+                    }
                 }
             }
         }
