@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const Formacoes = styled.div`
-    margin: 3rem auto .3rem;
+    margin: 3rem auto 2rem;
     color: var(--branco);
     display: flex;
     align-items: flex-start;
@@ -27,15 +27,38 @@ const Formacoes = styled.div`
             font-size: 1.4rem;
             line-height: 1.5;
             a {
-                text-decoration: underline;
-                text-decoration-color: var(--primeira-cor);
-                text-decoration-thickness: 2px;
                 color: var(--fourth-color);
+                font-size: 1.4rem;
                 transition: all .3s ease-in;
                 padding: 0;
-                display: inline-block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .6rem;
+                text-transform: uppercase;
+                position: relative;
+                padding: .2rem .2rem .2rem;
+                transition: all .2s ease-in-out;
+                z-index: 1;
+                width: fit-content;
+                margin: 0 auto;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: var(--primeira-cor);
+                    transition: all .2s ease-in-out;
+                    z-index: -1;
+                }
                 &:hover {
-                    text-decoration-color: var(--quinta-cor);
+                    color: var(--terceira-cor);
+                    &::before {
+                        height: 100%;
+                        background: var(--quinta-cor);
+                    }
                 }
             }
         }

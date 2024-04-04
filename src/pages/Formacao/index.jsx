@@ -6,6 +6,7 @@ import Titulo from "../../components/Titulo";
 import Markdown from "react-markdown";
 import sociais from "./IconesStacks";
 import cards from "./Educacao";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Formacao = () => {
 
@@ -34,7 +35,7 @@ const Formacao = () => {
                                 <h2 className="instituicao-nome">{card.instituição}</h2>
                                 <span className="formacao-descricao">
                                     <a href={card.link} target={card.link ? '_blank' : '_parent'}>
-                                        <Markdown>{card.titulo}</Markdown>
+                                        <Markdown>Saiba mais</Markdown><FaArrowRight />
                                     </a>
                                 </span>
                             </div>
