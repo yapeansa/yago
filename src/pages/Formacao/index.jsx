@@ -35,13 +35,13 @@ const Formacao = () => {
                                 <h2 className="instituicao-nome">{card.instituição}</h2>
                                 <span className="formacao-descricao">
                                     <a href={card.link} target={card.link ? '_blank' : '_parent'}>
-                                        <Markdown>Saiba mais</Markdown><FaArrowRight />
+                                        <Markdown>Saiba mais</Markdown><FaArrowRight size={20} color="var(--quinta-cor)" />
                                     </a>
                                 </span>
                             </div>
                         )}
                     </Formacoes>
-                    <Titulo corDaBorda="var(--quinta-cor)" corDoTexto="var(--branco)">Minha Stack</Titulo>
+                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--branco)">Minha Stack</Titulo>
                     <TextoCompetencias>
                         Como desenvolvedor Front-end, possuo competência nas seguintes tecnologias:
                     </TextoCompetencias>

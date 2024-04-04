@@ -16,19 +16,20 @@ const Formacoes = styled.div`
         .curso-nome {
             font-size: 1.4rem;
             font-weight: 700;
-            color: var(--primeira-cor);
+            color: var(--branco);
         }
         .instituicao-nome {
             font-size: 1.6rem;
             font-weight: 700;
             margin: 15px 0;
+            color: var(--primeira-cor);
         }
         .formacao-descricao {
             font-size: 1.4rem;
             line-height: 1.5;
             a {
                 color: var(--fourth-color);
-                font-size: 1.4rem;
+                font-size: 1.25rem;
                 transition: all .3s ease-in;
                 padding: 0;
                 display: flex;
@@ -37,26 +38,28 @@ const Formacoes = styled.div`
                 gap: .6rem;
                 text-transform: uppercase;
                 position: relative;
-                padding: .2rem .2rem .2rem;
-                transition: all .2s ease-in-out;
+                padding: .2rem 0 .2rem;
+                transition: all .3s ease-in-out;
                 z-index: 1;
                 width: fit-content;
                 margin: 0 auto;
+                font-weight: 700;
                 &::before {
                     content: '';
                     position: absolute;
                     left: 0;
                     bottom: 0;
-                    width: 100%;
+                    width: 23%;
                     height: 2px;
-                    background: var(--primeira-cor);
-                    transition: all .2s ease-in-out;
+                    background: var(--quinta-cor);
+                    transition: all .3s ease-in-out;
                     z-index: -1;
                 }
                 &:hover {
-                    color: var(--terceira-cor);
                     &::before {
-                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        margin-left: 0;
                         background: var(--quinta-cor);
                     }
                 }

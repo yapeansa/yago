@@ -52,5 +52,14 @@
         "descricao": "Otimize sua produtividade com o Fokus.\nLinguagens: HTML, CSS e Javascript",
         "repositorio": "https://github.com/yapeansa/projetoFokus.js",
         "classe": ""
+    },
+    {
+        "id": 7,
+        "nome": "Culturama",
+        "caminho": "https://culturamaeventos.vercel.app/",
+        "imagem": "/galeria/culturama.png",
+        "descricao": "Cultura para dar e viver.\nLinguagens: HTML, CSS",
+        "repositorio": "https://github.com/yapeansa/culturama",
+        "classe": ""
     }
 ]
