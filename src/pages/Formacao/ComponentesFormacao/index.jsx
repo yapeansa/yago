@@ -47,9 +47,10 @@ const Formacoes = styled.div`
                 &::before {
                     content: '';
                     position: absolute;
-                    left: 0;
+                    right: 50%;
+                    //margin-right: -7.5%;
                     bottom: 0;
-                    width: 23%;
+                    width: 15%;
                     height: 2px;
                     background: var(--quinta-cor);
                     transition: all .3s ease-in-out;
@@ -58,7 +59,8 @@ const Formacoes = styled.div`
                 &:hover {
                     &::before {
                         width: 100%;
-                        left: 0;
+                        right: 0;
+                        margin-right: 0;
                         margin-left: 0;
                         background: var(--quinta-cor);
                     }
