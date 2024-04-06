@@ -15,7 +15,7 @@ const Formacoes = styled.div`
         //width: fit-content;
         .curso-nome {
             font-size: 1.4rem;
-            font-weight: 700;
+            font-weight: normal;
             color: var(--branco);
         }
         .instituicao-nome {
@@ -29,7 +29,7 @@ const Formacoes = styled.div`
             line-height: 1.5;
             a {
                 color: var(--fourth-color);
-                font-size: 1.25rem;
+                font-size: 1.22rem;
                 transition: all .3s ease-in;
                 padding: 0;
                 display: flex;
