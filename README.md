@@ -43,6 +43,15 @@ Depois, instale as dependências:
 Finalmente, digite no terminal:
 > npm run dev
 
+## ACESSO AO PROJETO
+
+Você pode acessar o projeto através do link [https://yapeansa.vercel.app](https://yapeansa.vercel.app).
+
+## DESENVOLVEDOR DO PROJETO
+
+| [<img loading="yapeansa" src="https://avatars.githubusercontent.com/yapeansa" width="115" /><br /><sub>Yago Pereira</sub>]() |
+| :---: |   
+
 ## CONTATO
 
 [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yapeansa)
