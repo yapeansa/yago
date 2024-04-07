@@ -21,7 +21,7 @@ Na seção Sobre, falo um pouco sobre mim para que o público me conheça melhor
 
 - HTML5
 - CSS3 | SASS | Styled-Components
-- Javascript | NODE | REACT
+- JAVASCRIPT | NODE | REACT
 
 ## IMAGEM DO PROJETO
 
@@ -43,7 +43,7 @@ Depois, instale as dependências:
 Finalmente, digite no terminal:
 > npm run dev
 
-## Contato
+## CONTATO
 
 [![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yapeansa)
 [![E-mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yago.pereira@estudante.ufjf.br)
