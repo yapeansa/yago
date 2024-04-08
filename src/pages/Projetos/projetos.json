@@ -47,7 +47,7 @@
     {
         "id:": 6,
         "nome": "Projeto Fokus",
-        "caminho": "https://yapeansa.github.io/projetoFokus.js/",
+        "caminho": "https://fokusprojectpomodoro.vercel.app/",
         "imagem": "/galeria/fokus.png",
         "descricao": "Otimize sua produtividade com o Fokus.\nLinguagens: HTML, CSS e Javascript",
         "repositorio": "https://github.com/yapeansa/projetoFokus.js",
