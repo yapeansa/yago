@@ -12,11 +12,11 @@ const AboutInfo = styled.div`
         p {
             text-align: center;
             font-size: 1.3rem;
-            border: 2px dashed var(--quarta-cor);
-            padding: 2.6rem 3.5rem;
-            border-radius: 20px;
+            //border: 2px solid var(--quarta-cor);
+            padding: 2.6rem;
             line-height: 1.4;
             color: var(--segunda-cor);
+            box-shadow: 4px 4px 0 6px var(--terceira-cor);
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
@@ -24,7 +24,7 @@ const AboutInfo = styled.div`
             }
             .estilizado {
                 font-weight: 700;
-                color: var(--primeira-cor);
+                color: var(--terceira-cor);
             }
         }
     }
@@ -34,7 +34,7 @@ const AboutInfo = styled.div`
             max-width: 100%;
             border: 2px solid var(--primeira-cor);
             border-radius: 100%;
-            padding: .5rem 1rem .5rem .5rem;
+            padding: .8rem;
         }
     }
 
@@ -49,6 +49,7 @@ const AboutInfo = styled.div`
                 border-radius: 0;
                 border: none;
                 padding: 0;
+                box-shadow: none;
             }
         }
         .minha-foto {
