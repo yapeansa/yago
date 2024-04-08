@@ -5,31 +5,31 @@ const redesSociais = [
     {
         id: 1,
         path: "https://facebook.com/yapeansa",
-        label: <FaFacebook size="38" className="social" />,
+        label: <FaFacebook size="35" className="social" />,
         classe: ""
     },
     {
         id: 2,
         path: "https://twitter.com/yapeansa",
-        label: <FaSquareXTwitter size="38" className="social" />,
+        label: <FaSquareXTwitter size="35" className="social" />,
         classe: ""
     },
     {
         id: 3,
         path: "https://github.com/yapeansa",
-        label: <FaGithub size="38" className="social" />,
+        label: <FaGithub size="35" className="social" />,
         classe: ""
     },
     {
         id: 4,
         path: "https://linkedin.com/in/yapeansa",
-        label: <FaLinkedin size="38" className="social" />,
+        label: <FaLinkedin size="35" className="social" />,
         classe: ""
     },
     {
         id: 5,
         path: "https://instagram.com/yapeansa",
-        label: <FaInstagram size="38" className="social" />,
+        label: <FaInstagram size="35" className="social" />,
         classe: ""
     }
 ];

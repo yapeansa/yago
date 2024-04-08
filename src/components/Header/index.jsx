@@ -10,14 +10,12 @@ import { CgClose } from "react-icons/cg";
 const Header = () => {
     const [slide, setSlide] = useState(false);
 
-    function acaoMenu() {
-        setSlide(!slide);
-    }
+    const acaoMenu = () => setSlide(!slide);
 
     return (
         <Container>
             <Cabecalho>
-                <aside className={`${slide ? 'slide-menu' : ''}`}>
+                <aside className={slide ? 'slide-menu' : ''}>
                     <CgClose className="close-menu" size={70} onClick={acaoMenu} />
                     <Logo />
                     <Menu />
