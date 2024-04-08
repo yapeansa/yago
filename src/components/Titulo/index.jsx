@@ -16,7 +16,7 @@ const TituloEstilizado = styled.h2`
         margin-left: -42px;
         bottom: 0;
         width: 84px;
-        height: 4px;
+        height: 3px;
         background-color: ${props => props.$cordaborda};
     }
 `;

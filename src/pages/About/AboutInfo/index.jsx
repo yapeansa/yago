@@ -12,11 +12,11 @@ const AboutInfo = styled.div`
         p {
             text-align: center;
             font-size: 1.3rem;
-            //border: 2px solid var(--quarta-cor);
+            border: 2px solid var(--quarta-cor);
             padding: 2.6rem;
             line-height: 1.4;
             color: var(--segunda-cor);
-            box-shadow: 4px 4px 0 6px var(--terceira-cor);
+            box-shadow: 12px 12px 0 0 var(--quarta-cor);
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
