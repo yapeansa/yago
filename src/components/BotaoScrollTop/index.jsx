@@ -1,6 +1,6 @@
 import { FaArrowUpLong } from "react-icons/fa6";
 import EstilosScrollTop from "./EstilosScrollTop";
-import { ContextoBotaoCriado } from "../../Contexts/ContextoBotao";
+import { ContextoBotaoCriado } from "@/Contexts/ContextoBotao";
 import { useContext } from "react";
 
 const BotaoScrollTop = () => {

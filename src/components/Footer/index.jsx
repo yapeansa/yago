@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import Container from "../Container";
+import Container from "@/components/Container";
 import { SiLinktree } from "react-icons/si";
 
 const Rodape = styled.footer`

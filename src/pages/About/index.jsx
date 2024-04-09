@@ -1,8 +1,8 @@
 import AboutInfo from "./AboutInfo";
-import Container from "../../components/Container";
-import Titulo from "../../components/Titulo";
-import Secao from "../../components/ContainerSecao";
-import me from "/src/assets/images/me.jpg";
+import Container from "@/components/Container";
+import Titulo from "@/components/Titulo";
+import Secao from "@/components/ContainerSecao";
+import me from "@/assets/images/me.jpg";
 
 const About = ({ idade }) => {
     return (

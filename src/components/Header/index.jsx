@@ -1,9 +1,9 @@
 import Cabecalho from "./Cabecalho";
-import Logo from "../Logo";
-import Menu from "../Menu";
-import Intro from "../../pages/Intro";
-import Social from "../Social";
-import Container from "../Container";
+import Logo from "@/components/Logo";
+import Menu from "@/components/Menu";
+import Intro from "@/pages/Intro";
+import Social from "@/components/Social";
+import Container from "@/components/Container";
 import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 

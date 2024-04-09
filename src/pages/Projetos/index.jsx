@@ -1,9 +1,9 @@
-import Container from "../../components/Container";
-import Secao from "../../components/ContainerSecao";
-import Titulo from "../../components/Titulo";
+import Container from "@/components/Container";
+import Secao from "@/components/ContainerSecao";
+import Titulo from "@/components/Titulo";
 import ContainerProjetos from "./ContainerProjetos";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import projetos from "./projetos.json";
+import projetos from "@/assets/json/projetos.json";
 import { useState } from "react";
 import { TbArrowBack } from "react-icons/tb";
 import Markdown from "react-markdown";

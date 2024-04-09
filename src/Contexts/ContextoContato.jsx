@@ -17,6 +17,6 @@ const ContextoContato = ({ children }) => {
             {children}
         </ContextoContatoCriado.Provider>
     );
-}
+};
 
 export default ContextoContato;

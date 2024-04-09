@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Formacoes, TextoCompetencias, Stacks } from "./ComponentesFormacao";
-import Container from "../../components/Container";
-import Secao from "../../components/ContainerSecao";
-import Titulo from "../../components/Titulo";
+import Container from "@/components/Container";
+import Secao from "@/components/ContainerSecao";
+import Titulo from "@/components/Titulo";
 import Markdown from "react-markdown";
 import sociais from "./IconesStacks";
 import cards from "./Educacao";
@@ -18,7 +18,7 @@ const Formacao = () => {
             elemento.classe = elemento.classe === "" ? "opacite" : "";
             setSocialSk([...socialSk]);
         });
-    }
+    };
 
     return (
         <div id="formacao">

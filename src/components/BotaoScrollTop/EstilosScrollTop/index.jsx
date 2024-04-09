@@ -9,6 +9,7 @@ const EstilosScrollTop = styled.div`
     animation-duration: .3s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
+    z-index: 1000;
     a {
         display: block;
         background: var(--primeira-cor);

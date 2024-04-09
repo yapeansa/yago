@@ -10,7 +10,7 @@ const AboutInfo = styled.div`
     .text-intro {
         flex: 0 1 55%;
         p {
-            text-align: center;
+            text-align: justify;
             font-size: 1.3rem;
             border: 2px solid var(--quarta-cor);
             padding: 2.6rem;
@@ -50,6 +50,7 @@ const AboutInfo = styled.div`
                 border: none;
                 padding: 0;
                 box-shadow: none;
+                text-align: center;
             }
         }
         .minha-foto {

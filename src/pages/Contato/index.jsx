@@ -1,9 +1,9 @@
-import Secao from "../../components/ContainerSecao";
-import Titulo from "../../components/Titulo";
+import Secao from "@/components/ContainerSecao";
+import Titulo from "@/components/Titulo";
 import ContainerContato from "./ContainerContato";
-import Container from "../../components/Container";
+import Container from "@/components/Container";
 import { SiGmail } from "react-icons/si";
-import { ContextoContatoCriado } from "../../Contexts/ContextoContato";
+import { ContextoContatoCriado } from "@/Contexts/ContextoContato";
 import { useContext } from "react";
 
 const Contato = () => {
