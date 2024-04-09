@@ -33,7 +33,7 @@ const ContainerProjetos = styled.div`
                 img {
                     width: 100%;
                     height: 100%;
-                    object-fit: fit;
+                    object-fit: cover;
                     //filter: blur(5px);
                     transition: all .3s ease-in-out;
                     &:hover {

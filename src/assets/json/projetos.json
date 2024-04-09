@@ -55,6 +55,15 @@
     },
     {
         "id": 7,
+        "nome": "Olá Mundo!",
+        "caminho": "https://olamundopontojs.vercel.app",
+        "imagem": "/galeria/hello_world.png",
+        "descricao": "Um pouco sobre mim e artigos sobre Tecnologia\nLinguagens: HTML, CSS, Javascript",
+        "repositorio": "https://github.com/yapeansa/ola-mundo.js",
+        "classe": ""
+    },
+    {
+        "id": 8,
         "nome": "Culturama",
         "caminho": "https://culturamaeventos.vercel.app/",
         "imagem": "/galeria/culturama.png",
