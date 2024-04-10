@@ -35,7 +35,7 @@ const Formacao = () => {
                                 <h2 className="instituicao-nome">{card.instituição}</h2>
                                 <span className="formacao-descricao">
                                     <a href={card.link} target={card.link ? '_blank' : '_parent'}>
-                                        <Markdown>Saiba mais</Markdown><FaArrowRight size={20} color="var(--quinta-cor)" />
+                                        <Markdown>Saiba mais</Markdown><FaArrowRight size={20} className="arrow_more" />
                                     </a>
                                 </span>
                             </div>

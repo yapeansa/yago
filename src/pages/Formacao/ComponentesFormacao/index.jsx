@@ -30,38 +30,43 @@ const Formacoes = styled.div`
             a {
                 color: var(--fourth-color);
                 font-size: 1.22rem;
-                transition: all .3s ease-in;
-                padding: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: .6rem;
                 text-transform: uppercase;
                 position: relative;
-                padding: .2rem 0 .2rem;
+                padding: .2rem .2rem 0;
                 transition: all .3s ease-in-out;
                 z-index: 1;
                 width: fit-content;
                 margin: 0 auto;
                 font-weight: 700;
+                overflow: hidden;
+                border-bottom: 2px solid var(--quinta-cor);
+                .arrow_more {
+                    color: var(--quinta-cor);
+                    transition: all .3s ease-in-out;
+                }
                 &::before {
                     content: '';
                     position: absolute;
-                    right: 50%;
+                    left: 0;
                     //margin-right: -7.5%;
-                    bottom: 0;
-                    width: 15%;
+                    bottom: -2px;
+                    width: 100%;
                     height: 2px;
                     background: var(--quinta-cor);
                     transition: all .3s ease-in-out;
                     z-index: -1;
                 }
                 &:hover {
+                    color: var(--terceira-cor);
+                    border-color: var(--terceira-cor);
+                    .arrow_more { color: var(--terceira-cor); }
                     &::before {
                         width: 100%;
-                        right: 0;
-                        margin-right: 0;
-                        margin-left: 0;
+                        height: 100%;
                         background: var(--quinta-cor);
                     }
                 }
