@@ -8,6 +8,7 @@ import Contato from './pages/Contato';
 import Footer from './components/Footer';
 import ContextoContato from './Contexts/ContextoContato';
 import ContextoBotao from './Contexts/ContextoBotao';
+import ContextoProjetos from './Contexts/ContextoProjetos';
 
 const App = () => {
 
@@ -25,7 +26,9 @@ const App = () => {
             <Header />
             <About idade={calculaIdade} />
             <Formacao />
-            <Projetos />
+            <ContextoProjetos>
+                <Projetos />
+            </ContextoProjetos>
             <ContextoContato>
                 <Contato />
             </ContextoContato>

@@ -1,26 +1,27 @@
+import { useContext } from "react";
+import { ProjetosGaleria } from "@/Contexts/ContextoProjetos";
+import Markdown from "react-markdown";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { TbArrowBack } from "react-icons/tb";
+import { FaCode } from "react-icons/fa6";
 import Container from "@/components/Container";
 import Secao from "@/components/ContainerSecao";
 import Titulo from "@/components/Titulo";
 import ContainerProjetos from "./ContainerProjetos";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import projetos from "@/assets/json/projetos.json";
-import { useState } from "react";
-import { TbArrowBack } from "react-icons/tb";
-import Markdown from "react-markdown";
-import { FaCode } from "react-icons/fa6";
+//import projetos from "@/assets/json/projetos.json";
 import Paragrafo from "./Paragrafo";
 
 const Projetos = () => {
 
-    const [projects, setProjects] = useState(projetos);
+    const [projects, setProjects] = useContext(ProjetosGaleria);
 
-    function rotacionar(id) {
+    const rotacionar = (id) => {
         const alvo = projects.filter(projeto => projeto.id === id);
         alvo.forEach(objeto => {
             objeto.classe = objeto.classe === "" ? "animacao" : "";
         });
-        setProjects([...projetos]);
-    }
+        setProjects([...projects]);
+    };
 
     return (
         <div id="projetos">
