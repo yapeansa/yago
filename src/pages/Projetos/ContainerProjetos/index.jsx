@@ -34,12 +34,6 @@ const ContainerProjetos = styled.div`
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    //filter: blur(5px);
-                    transition: all .3s ease-in-out;
-                    &:hover {
-                        filter: blur(0);
-                        
-                    }
                 }
             }
             .flip-card-back {
@@ -65,9 +59,10 @@ const ContainerProjetos = styled.div`
                     h1 {
                         color: var(--terceira-cor);
                         font-weight: 400;
-                        font-size: 2rem;
+                        font-size: 1.4rem;
                         padding-bottom: 4px;
                         position: relative;
+                        text-transform: uppercase;
                         &::before {
                             content: '';
                             position: absolute;
@@ -91,8 +86,6 @@ const ContainerProjetos = styled.div`
                             color: var(--preto);
                             background: linear-gradient(to right, var(--quinta-cor), #ffab10);
                             padding: 8px 15px;
-                            //transition: all .3s ease-in-out;
-                            //border-radius: 16px;
                             &:hover {
                                 background: var(--quinta-cor);
                                 color: var(--quinaria)

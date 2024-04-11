@@ -8,7 +8,6 @@ import Container from "@/components/Container";
 import Secao from "@/components/ContainerSecao";
 import Titulo from "@/components/Titulo";
 import ContainerProjetos from "./ContainerProjetos";
-//import projetos from "@/assets/json/projetos.json";
 import Paragrafo from "./Paragrafo";
 
 const Projetos = () => {
