@@ -9,7 +9,7 @@ const About = ({ idade }) => {
         <div id="sobre">
             <Secao corDeFundo="var(--branco)">
                 <Container>
-                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--preto)">Quem sou eu</Titulo>
+                    <Titulo corDaBorda="var(--quinta-cor)" corDoTexto="var(--preto)">Quem sou eu</Titulo>
                     <AboutInfo>
                         <div className="text-intro">
                             <p>

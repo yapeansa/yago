@@ -22,7 +22,7 @@ const Formacoes = styled.div`
             font-size: 1.6rem;
             font-weight: 700;
             margin: 15px 0;
-            color: var(--primeira-cor);
+            color: var(--quinta-cor);
         }
         .formacao-descricao {
             font-size: 1.4rem;
@@ -36,14 +36,13 @@ const Formacoes = styled.div`
                 gap: .6rem;
                 text-transform: uppercase;
                 position: relative;
-                padding: .2rem .2rem 0;
+                padding: .2rem;
                 transition: all .3s ease-in-out;
                 z-index: 1;
                 width: fit-content;
                 margin: 0 auto;
                 font-weight: 700;
                 overflow: hidden;
-                border-bottom: 2px solid var(--quinta-cor);
                 .arrow_more {
                     color: var(--quinta-cor);
                     transition: all .3s ease-in-out;
@@ -53,10 +52,10 @@ const Formacoes = styled.div`
                     position: absolute;
                     left: 0;
                     //margin-right: -7.5%;
-                    bottom: -2px;
+                    bottom: 0;
                     width: 100%;
                     height: 2px;
-                    background: var(--quinta-cor);
+                    background: linear-gradient(to left, var(--primeira-cor), var(--sexta-cor));
                     transition: all .3s ease-in-out;
                     z-index: -1;
                 }
@@ -67,7 +66,7 @@ const Formacoes = styled.div`
                     &::before {
                         width: 100%;
                         height: 100%;
-                        background: var(--quinta-cor);
+                        //background: var(--quinta-cor);
                     }
                 }
             }

@@ -24,7 +24,7 @@ const Formacao = () => {
         <div id="formacao">
             <Secao corDeFundo="var(--terceira-cor)">
                 <Container>
-                    <Titulo corDaBorda="var(--quinta-cor)" corDoTexto="var(--branco)">Educação</Titulo>
+                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--branco)">Educação</Titulo>
                     <TextoCompetencias>
                         Logo abaixo você pode conferir a minha trajetória acadêmica.
                     </TextoCompetencias>

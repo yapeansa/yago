@@ -7,11 +7,14 @@ const EstilosGlobais = createGlobalStyle`
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 
-        --primeira-cor: #9615DB;
+        /* --primeira-cor: #9615DB; */
+        --primeira-cor: #FFC94B;
         --segunda-cor: #1F2833;
         --terceira-cor: #0B0C10;
         --quarta-cor: #4C495D;
-        --quinta-cor: #FFC719;
+        /* --quinta-cor: #FFC719; */
+        --quinta-cor: #F17A7E;
+        --sexta-cor: #F9A66C;
         --branco: #FFF;
 
         --cinza: #222;
@@ -34,6 +37,12 @@ const EstilosGlobais = createGlobalStyle`
         0% { top: .5rem; }
         50% { top: -.5rem; }
         100% { top: .5rem; }
+    }
+
+    @keyframes backgroundSlide {
+        0% { background-position: 0% -50%; }
+        50% { background-position: 100% -50%; }
+        100% { background-position: 0% -50%; }
     }
 
     * {

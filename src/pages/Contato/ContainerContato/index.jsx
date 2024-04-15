@@ -26,7 +26,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -15%;
             bottom: 0;
-            background: var(--primeira-cor);
+            background: var(--quinta-cor);
             width: 30%;
             height: 2px;
             transition: all .3s ease-in-out;
@@ -62,7 +62,7 @@ const ContainerContato = styled.div`
                 outline: none;
                 color: var(--branco);
                 transition: all .3s ease-in-out;
-                &:focus { border-color: var(--primeira-cor); }
+                &:focus { border-color: var(--sexta-cor); }
                 &::placeholder {
                     opacity: 1;
                     color: var(--branco);
@@ -80,7 +80,7 @@ const ContainerContato = styled.div`
             outline: none;
             color: var(--branco);
             transition: all .3s ease-in-out;
-            &:focus { border-color: var(--primeira-cor); }
+            &:focus { border-color: var(--sexta-cor); }
             &::placeholder {
                 opacity: 1;
                 color: var(--branco);
@@ -94,7 +94,7 @@ const ContainerContato = styled.div`
             button[type=reset], button[type=submit] {
                 flex: 1 1 auto;
                 background: transparent;
-                border: 1px solid var(--quinta-cor);
+                border: 1px solid var(--sexta-cor);
                 font-family: var(--fonte-primaria);
                 font-weight: 400;
                 display: block;
@@ -113,7 +113,7 @@ const ContainerContato = styled.div`
                     bottom: 0;
                     width: 100%;
                     height: 4px;
-                    background: var(--quinta-cor);
+                    background: linear-gradient(to right, var(--sexta-cor), var(--primeira-cor));
                     transition: all .2s ease-in-out;
                     z-index: -1;
                 }

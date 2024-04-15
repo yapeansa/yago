@@ -86,9 +86,11 @@ const ContainerProjetos = styled.div`
                             color: var(--preto);
                             background: linear-gradient(to right, var(--quinta-cor), #ffab10);
                             padding: 8px 15px;
+                            transition: all .3s ease-in-out;
+                            background-size: 200%;
+                            background-position: 0 -100%;
                             &:hover {
-                                background: var(--quinta-cor);
-                                color: var(--quinaria)
+                                animation: backgroundSlide 3s ease infinite;
                             }
                         }
                     }
