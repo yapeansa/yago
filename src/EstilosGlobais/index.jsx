@@ -60,11 +60,10 @@ const EstilosGlobais = createGlobalStyle`
         &::-webkit-scrollbar-track {
             background: var(--terceira-cor);
         }
-    }
-
-    a {
-        text-decoration: none;
-        outline: none;
+        a {
+            text-decoration: none;
+            outline: none;
+        }
     }
 
     @media screen and (max-width: 960px) {
