@@ -26,7 +26,7 @@ const Projetos = () => {
         <div id="projetos">
             <Secao corDeFundo="var(--branco)">
                 <Container>
-                    <Titulo corDaBorda="var(--quinta-cor)" corDoTexto="var(--segunda-cor)">Projetos</Titulo>
+                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--segunda-cor)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>

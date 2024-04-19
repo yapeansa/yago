@@ -50,7 +50,7 @@ const Navegacao = styled.nav`
                     right: 0;
                     width: 100%;
                     height: 2px;
-                    background: var(--quinta-cor);
+                    background: var(--primeira-cor);
                     transition: all .2s ease-in-out;
                 }
                 &:hover {

@@ -36,7 +36,7 @@ const Formacoes = styled.div`
                 gap: .6rem;
                 text-transform: uppercase;
                 position: relative;
-                padding: .2rem;
+                padding: .4rem .2rem .2rem;
                 transition: all .3s ease-in-out;
                 z-index: 1;
                 width: fit-content;

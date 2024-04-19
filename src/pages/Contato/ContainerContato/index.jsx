@@ -94,7 +94,7 @@ const ContainerContato = styled.div`
             button[type=reset], button[type=submit] {
                 flex: 1 1 auto;
                 background: transparent;
-                border: 1px solid var(--sexta-cor);
+                border: 2px solid var(--primeira-cor);
                 font-family: var(--fonte-primaria);
                 font-weight: 400;
                 display: block;
@@ -106,20 +106,24 @@ const ContainerContato = styled.div`
                 color: var(--branco);
                 position: relative;
                 z-index: 1;
+                overflow: hidden;
                 &::before {
                     content: '';
                     position: absolute;
                     left: 0;
-                    bottom: 0;
+                    bottom: -4px;
                     width: 100%;
                     height: 4px;
-                    background: linear-gradient(to right, var(--sexta-cor), var(--primeira-cor));
+                    background: linear-gradient(to top, var(--primeira-cor), var(--setima-cor));
                     transition: all .2s ease-in-out;
                     z-index: -1;
                 }
                 &:hover {
                     color: var(--terceira-cor);
-                    &::before { height: 100%; }
+                    &::before {
+                        height: 100%;
+                        bottom: 0;
+                    }
                 }
                 &:active {
                     border-color: var(--primeira-cor);

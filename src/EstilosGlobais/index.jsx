@@ -6,20 +6,16 @@ const EstilosGlobais = createGlobalStyle`
     :root {
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
-
-        /* --primeira-cor: #9615DB; */
-        --primeira-cor: #FFC94B;
+        --primeira-cor: #7e22ce;
         --segunda-cor: #1F2833;
         --terceira-cor: #0B0C10;
         --quarta-cor: #4C495D;
-        /* --quinta-cor: #FFC719; */
-        --quinta-cor: #F17A7E;
+        --quinta-cor: #FFC719;
         --sexta-cor: #F9A66C;
+        --setima-cor: #c084fc;
         --branco: #FFF;
-
         --cinza: #222;
         --cinza-medio: #333;
-
         --branco-secundario: #EEEEEE;
     }
 
@@ -51,27 +47,26 @@ const EstilosGlobais = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    html, body {
+    html {
         scroll-behavior: smooth;
-    }
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 1.2rem;
-        background: var(--terceira-cor) url(${bg}) center / cover no-repeat fixed;
-        &::-webkit-scrollbar {
-            width: .6rem;
-        }
-        &::-webkit-scrollbar-thumb {
-            background: var(--cinza);
-        }
-        &::-webkit-scrollbar-track {
-            background: var(--terceira-cor);
-        }
-        a {
-            text-decoration: none;
-            outline: none;
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: var(--terceira-cor) url(${bg}) center / cover no-repeat fixed;
+            &::-webkit-scrollbar {
+                width: .6rem;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: var(--cinza);
+            }
+            &::-webkit-scrollbar-track {
+                background: var(--terceira-cor);
+            }
+            a {
+                text-decoration: none;
+                outline: none;
+            }
         }
     }
 

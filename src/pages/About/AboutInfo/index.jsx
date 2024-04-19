@@ -18,7 +18,7 @@ const AboutInfo = styled.div`
             color: var(--segunda-cor);
             box-shadow: 12px 12px 0 0 var(--quarta-cor);
             a {
-                border-bottom: 2px solid var(--quinta-cor);
+                border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
                 transition: all .3s ease-in;
             }
@@ -32,7 +32,7 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: 2px solid var(--quinta-cor);
+            border: 2px solid var(--primeira-cor);
             border-radius: 100%;
             padding: .8rem;
         }

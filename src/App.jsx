@@ -30,7 +30,7 @@ const App = () => {
             <ContextoContato>
                 <Contato />
             </ContextoContato>
-            <Footer anoAtual={currentYear} />
+            <Footer anoAtual={currentDate} />
             <ContextoBotao>
                 <BotaoScrollTop />
             </ContextoBotao>
