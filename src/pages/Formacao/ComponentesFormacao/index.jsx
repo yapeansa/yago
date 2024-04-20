@@ -16,13 +16,13 @@ const Formacoes = styled.div`
         .curso-nome {
             font-size: 1.4rem;
             font-weight: normal;
-            color: var(--branco);
+            color: var(--quinta-cor);
         }
         .instituicao-nome {
             font-size: 1.6rem;
             font-weight: 700;
             margin: 15px 0;
-            color: var(--quinta-cor);
+            color: var(--primeira-cor);
         }
         .formacao-descricao {
             font-size: 1.4rem;
@@ -37,7 +37,7 @@ const Formacoes = styled.div`
                 text-transform: uppercase;
                 position: relative;
                 padding: .4rem .2rem .2rem;
-                transition: all .3s ease-in-out;
+                transition: all .2s ease-in-out;
                 z-index: 1;
                 width: fit-content;
                 margin: 0 auto;
@@ -45,7 +45,7 @@ const Formacoes = styled.div`
                 overflow: hidden;
                 .arrow_more {
                     color: var(--quinta-cor);
-                    transition: all .3s ease-in-out;
+                    transition: all .2s ease-in-out;
                 }
                 &::before {
                     content: '';
