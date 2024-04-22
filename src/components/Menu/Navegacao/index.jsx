@@ -56,7 +56,7 @@ const Navegacao = styled.nav`
                 }
                 &:hover {
                     color: var(--terceira-cor);
-                    padding: .3rem .4rem .3rem 1.5rem;
+                    padding: .3rem .1rem .3rem 1.5rem;
                     border-color: transparent;
                     &::before {
                         width: 100%;
