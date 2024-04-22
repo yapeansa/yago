@@ -120,6 +120,7 @@ const ContainerContato = styled.div`
                 }
                 &:hover {
                     color: var(--terceira-cor);
+                    border-color: transparent;
                     &::before {
                         height: 100%;
                         bottom: 0;
