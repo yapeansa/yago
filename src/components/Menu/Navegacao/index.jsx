@@ -40,26 +40,26 @@ const Navegacao = styled.nav`
                 padding: .3rem 0;
                 overflow: hidden;
                 z-index: 1;
-                transition: all .3s ease-out;
+                transition: all .25s ease-out;
                 text-transform: uppercase;
+                border-bottom: 2px solid var(--primeira-cor);
                 &::before {
                     content: '';
                     z-index: -1;
                     position: absolute;
                     bottom: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 2px;
-                    background: var(--primeira-cor);
-                    transition: all .2s ease-in-out;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+                    background: var(--quinta-cor);
+                    transition: all .25s ease-in-out;
                 }
                 &:hover {
                     color: var(--terceira-cor);
-                    text-decoration-color: transparent;
                     padding: .3rem .4rem .3rem 1.5rem;
+                    border-color: transparent;
                     &::before {
-                        height: 100%;
-                        background: var(--quinta-cor);
+                        width: 100%;
                     }
                 }
             }
