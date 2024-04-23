@@ -71,8 +71,10 @@ const EstilosGlobais = createGlobalStyle`
     }
 
     @media screen and (max-width: 960px) {
-        body {
-            background: var(--terceira-cor) url(${bg_2}) center / cover no-repeat fixed;
+        html {
+            body {
+                background: var(--terceira-cor) url(${bg_2}) center / cover no-repeat fixed;
+            }
         }
     }
 `;

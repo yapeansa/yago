@@ -47,7 +47,7 @@ const Cabecalho = styled.header`
                 cursor: pointer;
                 padding: .5rem;
                 border: 2px solid var(--branco);
-                color: var(--primeira-cor);
+                color: var(--quinta-cor);
             }
         }
         .introducao {

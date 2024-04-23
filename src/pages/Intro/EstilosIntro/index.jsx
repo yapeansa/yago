@@ -53,7 +53,7 @@ const SecaoIntro = styled.section`
             display: block;
             padding: .5rem;
             border: 2px solid var(--branco);
-            color: var(--primeira-cor);
+            color: var(--quinta-cor);
         }
     }
 `;
