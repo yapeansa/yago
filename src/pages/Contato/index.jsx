@@ -43,6 +43,7 @@ const Contato = () => {
                                 <input
                                     type="text"
                                     name="nome"
+                                    minLength={3}
                                     onFocus={() => aoInteragir('nome')}
                                     onBlur={() => aoInteragir('nome')}
                                     placeholder={placeHolders.nome}
@@ -51,6 +52,7 @@ const Contato = () => {
                                 <input
                                     type="email"
                                     name="email"
+                                    minLength={11}
                                     onFocus={() => aoInteragir('email')}
                                     onBlur={() => aoInteragir('email')}
                                     placeholder={placeHolders.email}
@@ -61,6 +63,7 @@ const Contato = () => {
                                 <textarea
                                     name="mensagem"
                                     rows="5"
+                                    minLength={200}
                                     onFocus={() => aoInteragir()}
                                     onBlur={() => aoInteragir()}
                                     placeholder={placeHolders.mensagem}
