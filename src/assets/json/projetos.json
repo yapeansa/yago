@@ -70,5 +70,14 @@
         "descricao": "Cultura para dar e viver.\nLinguagens: HTML, CSS",
         "repositorio": "https://github.com/yapeansa/culturama",
         "classe": ""
+    },
+    {
+        "id": 9,
+        "nome": "Alura Newsletter",
+        "caminho": "https://letteraluranews.vercel.app/",
+        "imagem": "/galeria/letter_alura.png",
+        "descricao": "Uma newsletter que preza por profundidade de informação.",
+        "repositorio": "https://github.com/yapeansa/projeto-aluranewsletter",
+        "classe": ""
     }
 ]
