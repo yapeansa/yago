@@ -7,26 +7,31 @@ const BotaoScrollTop = () => {
 
     const [acoesBotao, setAcoesBotao] = useContext(ContextoBotaoCriado);
 
-    const rolagem = () => {
-        if (document.documentElement.scrollTop > (screen.availHeight - 100)) {
-            clearInterval(window.scrollEndTimer);
-            window.scrollEndTimer = setTimeout(() => {
-                setAcoesBotao({animar: true, mostrarBotao: true});
-            }, 300);
-        } else {
-            clearInterval(window.scrollEndTimer);
-            window.scrollEndTimer = setTimeout(() => {
-                setAcoesBotao({...acoesBotao, animar: false});
-                setTimeout(() => setAcoesBotao({...acoesBotao, mostrarBotao: false}), 300);
-            }, 400);
-        }
-    };
+    const aparecerBotao = () => {
+        clearInterval(window.scrollEndTimer);
+        window.scrollEndTimer = setTimeout(() => {
+            setAcoesBotao({ animar: true, mostrarBotao: true });
+        }, 300);
+    }
+
+    const desaparecerBotao = () => {
+        clearInterval(window.scrollEndTimer);
+        window.scrollEndTimer = setTimeout(() => {
+            setAcoesBotao({ ...acoesBotao, animar: false });
+            setTimeout(() => setAcoesBotao({ ...acoesBotao, mostrarBotao: false }), 300);
+        }, 400);
+    }
+
+    const rolagem = () => (window.scrollY > (screen.availHeight - 100)) ? aparecerBotao() : desaparecerBotao();
 
     window.addEventListener('scroll', rolagem);
 
+    const mostrarEsconder = acoesBotao.mostrarBotao ? 'block' : 'none';
+    const animarToggle = acoesBotao.animar ? 'fadeIn' : 'fadeOut';
+
     return (
         <>
-            <EstilosScrollTop $display={acoesBotao.mostrarBotao ? 'block' : 'none'} $animacao={acoesBotao.animar ? 'fadeIn' : 'fadeOut'}>
+            <EstilosScrollTop $display={mostrarEsconder} $animacao={animarToggle}>
                 <a href="#">
                     <FaArrowUpLong color="var(--branco)" size={27} />
                 </a>
