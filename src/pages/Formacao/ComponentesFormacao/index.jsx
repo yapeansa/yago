@@ -116,7 +116,7 @@ const Stacks = styled.div`
     }
     .opacite {
         opacity: .4;
-        
+        filter: grayscale(100%);
     }
 `;
 
