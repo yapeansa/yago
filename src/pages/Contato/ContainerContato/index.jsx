@@ -138,11 +138,8 @@ const ContainerContato = styled.div`
                     }
                 }
                 &:active {
-                    border-color: var(--primeira-cor);
-                    transition: none;
                     &::before {
-                        background: var(--primeira-cor);
-                        transition: none;
+                        background: linear-gradient(to right, var(--setima-cor), var(--primeira-cor));
                     }
                 }
             }
