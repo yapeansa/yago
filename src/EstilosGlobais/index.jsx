@@ -11,7 +11,7 @@ const EstilosGlobais = createGlobalStyle`
         --terceira-cor: #0B0C10;
         --quarta-cor: #4C495D;
         --quinta-cor: #FFC719;
-        --sexta-cor: #F9A66C;
+        --sexta-cor: #ff6738;
         --setima-cor: #c084fc;
         --branco: #FFF;
         --cinza: #222;

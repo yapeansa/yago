@@ -80,7 +80,7 @@ const ContainerContato = styled.div`
             outline: none;
             color: var(--branco);
             transition: all .3s ease-in-out;
-            &:focus { border-color: var(--sexta-cor); }
+            &:focus { border-color: var(--quinta-cor); }
             &::placeholder {
                 opacity: 1;
                 color: var(--branco);

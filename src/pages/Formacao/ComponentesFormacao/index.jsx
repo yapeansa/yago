@@ -12,11 +12,14 @@ const Formacoes = styled.div`
         text-align: center;
         border-right: 1px solid var(--cinza-medio);
         &:last-child { border: none; }
-        //width: fit-content;
         .curso-nome {
             font-size: 1.4rem;
             font-weight: normal;
-            color: var(--quinta-cor);
+            //color: var(--quinta-cor);
+            background: linear-gradient(to right, var(--sexta-cor), var(--quinta-cor));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .instituicao-nome {
             font-size: 1.6rem;
