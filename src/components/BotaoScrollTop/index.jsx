@@ -30,13 +30,11 @@ const BotaoScrollTop = () => {
     const animarToggle = acoesBotao.animar ? "fadeIn" : "fadeOut";
 
     return (
-        <>
-            <EstilosScrollTop $display={mostrarEsconder} $animacao={animarToggle}>
-                <a href="#">
-                    <FaArrowUpLong color="var(--branco)" size={27} />
-                </a>
-            </EstilosScrollTop>
-        </>
+        <EstilosScrollTop $display={mostrarEsconder} $animacao={animarToggle}>
+            <a href="#">
+                <FaArrowUpLong color="var(--branco)" size={27} />
+            </a>
+        </EstilosScrollTop>
     );
 };
 
