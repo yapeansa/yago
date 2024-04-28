@@ -6,10 +6,14 @@ const ContextoProjetos = ({ children }) => {
 
     const [projects, setProjects] = useState([]);
 
+    async function pegarDados() {
+        const dados = await fetch('https://raw.githubusercontent.com/yapeansa/yago/main/src/assets/json/projetos.json');
+        const resposta = await dados.json();
+        setProjects(resposta);
+    }
+
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/yapeansa/yago/main/src/assets/json/projetos.json')
-            .then(resposta => resposta.json())
-            .then(dados => setProjects(dados));
+        pegarDados();
     }, []);
 
     return (
