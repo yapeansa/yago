@@ -62,7 +62,7 @@ const ContainerContato = styled.div`
                 outline: none;
                 color: var(--branco);
                 transition: all .3s ease-in-out;
-                &:focus { border-color: var(--sexta-cor); }
+                &:focus { border-color: var(--quinta-cor); }
                 &::placeholder {
                     opacity: 1;
                     color: var(--branco);
@@ -94,7 +94,10 @@ const ContainerContato = styled.div`
             button[type=reset], button[type=submit] {
                 flex: 1 1 auto;
                 background: transparent;
-                border: 2px solid var(--primeira-cor);
+                border-left: 4px solid var(--primeira-cor);
+                border-right: 4px solid var(--setima-cor);
+                border-bottom: none;
+                border-top: none;
                 font-family: var(--fonte-primaria);
                 font-weight: 400;
                 display: block;
@@ -111,16 +114,24 @@ const ContainerContato = styled.div`
                     content: '';
                     position: absolute;
                     left: 0;
-                    bottom: -4px;
+                    bottom: 0;
                     width: 100%;
                     height: 4px;
-                    background: linear-gradient(to top, var(--primeira-cor), var(--setima-cor));
+                    background: linear-gradient(to right, var(--primeira-cor), var(--setima-cor));
                     transition: all .2s ease-in-out;
                     z-index: -1;
                 }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 4px;
+                    background: linear-gradient(to right, var(--primeira-cor), var(--setima-cor));
+                }
                 &:hover {
                     color: var(--terceira-cor);
-                    border-color: transparent;
                     &::before {
                         height: 100%;
                         bottom: 0;

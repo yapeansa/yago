@@ -22,12 +22,12 @@ const BotaoScrollTop = () => {
         }, 400);
     }
 
-    const rolagem = () => (window.scrollY > (screen.availHeight - 100)) ? aparecerBotao() : desaparecerBotao();
+    const aoRolar = () => (window.scrollY > (screen.availHeight - 100)) ? aparecerBotao() : desaparecerBotao();
 
-    window.addEventListener('scroll', rolagem);
+    window.addEventListener('scroll', aoRolar);
 
-    const mostrarEsconder = acoesBotao.mostrarBotao ? 'block' : 'none';
-    const animarToggle = acoesBotao.animar ? 'fadeIn' : 'fadeOut';
+    const mostrarEsconder = acoesBotao.mostrarBotao ? "block" : "none";
+    const animarToggle = acoesBotao.animar ? "fadeIn" : "fadeOut";
 
     return (
         <>
