@@ -6,8 +6,12 @@ import { FaCode } from "react-icons/fa6";
 const MeusProjetos = ({ conteudoCard }) => {
     return (
         // definindo a estrutura dos cards projetos
-        <div key={conteudoCard.projeto.id} className="flip-card">
-            <div className={`flip-card-inner ${conteudoCard.projeto.classe}`}>
+        <div
+            className="flip-card"
+            onMouseEnter={() => conteudoCard.tomDeCinza(conteudoCard.projeto.id)}
+            onMouseLeave={() => conteudoCard.tomDeCinza(conteudoCard.projeto.id)}
+        >
+            <div className={`flip-card-inner ${conteudoCard.projeto.classe} ${conteudoCard.projeto.escalaCinza}`}>
                 <div className="flip-card-front" onClick={() => conteudoCard.rotacionar(conteudoCard.projeto.id)}>
                     <img src={conteudoCard.projeto.imagem} alt="Avatar" />
                 </div>
@@ -23,7 +27,7 @@ const MeusProjetos = ({ conteudoCard }) => {
                                 <a href={conteudoCard.projeto.caminho} target="_blank">Visitar <FaExternalLinkAlt /></a>
                             </li>
                         </ul>
-                        <button className="rotacao" onClick={() => conteudoCard.rotacionar(conteudoCard.projeto.id)}>
+                        <button className="aciona-rotacao" onClick={() => conteudoCard.rotacionar(conteudoCard.projeto.id)}>
                             <TbArrowBack className="voltar" size={35} />
                         </button>
                     </div>

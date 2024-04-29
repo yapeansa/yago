@@ -95,7 +95,7 @@ const ContainerProjetos = styled.div`
                         }
                     }
                 }
-                .rotacao {
+                .aciona-rotacao {
                     position: absolute;
                     bottom: 0;
                     right: 0;
@@ -111,7 +111,9 @@ const ContainerProjetos = styled.div`
         }
     }
 
-    .animacao { transform: rotateY(180deg); }
+    .rotacionar { transform: rotateY(180deg); }
+
+    .gray { filter: grayscale(100%); }
 
     @media screen and (min-width: 501px) and (max-width: 1000px) {
         .flip-card {

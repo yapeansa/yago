@@ -14,7 +14,20 @@ const Projetos = () => {
     const rotacionar = (id) => {
         const alvo = projects.filter(projeto => projeto.id === id);
         alvo.forEach(objeto => {
-            objeto.classe = objeto.classe === "" ? "animacao" : "";
+            objeto.classe = objeto.classe === "" ? "rotacionar" : "";
+        });
+        setProjects([...projects]);
+    };
+
+    const tomDeCinza = (id) => {
+        const alvo = projects.filter(projeto => projeto.id !== id);
+        alvo.forEach(projeto => {
+            if (projeto.escalaCinza.includes('gray')) {
+                const novaClasse = projeto.escalaCinza.replace("gray", '');
+                projeto.escalaCinza = novaClasse;
+            } else {
+                projeto.escalaCinza = `${projeto.escalaCinza} gray`;
+            }
         });
         setProjects([...projects]);
     };
@@ -27,7 +40,10 @@ const Projetos = () => {
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>
-                            <MeusProjetos key={Number(projeto.id)} conteudoCard={{projeto, rotacionar}} />
+                            <MeusProjetos
+                                key={Number(projeto.id)}
+                                conteudoCard={{ projeto, rotacionar, tomDeCinza }}
+                            />
                         )}
                     </ContainerProjetos>
                 </Container>
