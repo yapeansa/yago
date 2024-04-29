@@ -22,12 +22,7 @@ const Projetos = () => {
     const tomDeCinza = (id) => {
         const alvo = projects.filter(projeto => projeto.id !== id);
         alvo.forEach(projeto => {
-            if (projeto.escalaCinza.includes('gray')) {
-                const novaClasse = projeto.escalaCinza.replace("gray", '');
-                projeto.escalaCinza = novaClasse;
-            } else {
-                projeto.escalaCinza = `${projeto.escalaCinza} gray`;
-            }
+            projeto.escalaCinza = (projeto.escalaCinza.includes('gray')) ? '' : 'gray';
         });
         setProjects([...projects]);
     };

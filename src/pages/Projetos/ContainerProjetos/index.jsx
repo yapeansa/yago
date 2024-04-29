@@ -30,6 +30,7 @@ const ContainerProjetos = styled.div`
                 background-color: var(--segunda-cor);
                 border: 2px solid var(--segunda-cor);
                 cursor: pointer;
+                transition: all .5s ease-in-out;
                 img {
                     width: 100%;
                     height: 100%;
