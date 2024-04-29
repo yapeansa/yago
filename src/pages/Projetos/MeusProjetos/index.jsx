@@ -12,8 +12,12 @@ const MeusProjetos = ({ conteudoCard }) => {
             onMouseLeave={() => conteudoCard.tomDeCinza(conteudoCard.projeto.id)}
         >
             <div className={`flip-card-inner ${conteudoCard.projeto.classe}`}>
-                <div className={`flip-card-front ${conteudoCard.projeto.escalaCinza}`} onClick={() => conteudoCard.rotacionar(conteudoCard.projeto.id)}>
-                    <img src={conteudoCard.projeto.imagem} alt="Avatar" />
+                <div className="flip-card-front" onClick={() => conteudoCard.rotacionar(conteudoCard.projeto.id)}>
+                    <img
+                        src={conteudoCard.projeto.imagem}
+                        alt={conteudoCard.projeto.nome}
+                        className={`${conteudoCard.projeto.escalaCinza}`}
+                    />
                 </div>
                 <div className="flip-card-back">
                     <div className="info-card">

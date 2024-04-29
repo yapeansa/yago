@@ -30,11 +30,11 @@ const ContainerProjetos = styled.div`
                 background-color: var(--segunda-cor);
                 border: 2px solid var(--segunda-cor);
                 cursor: pointer;
-                transition: all .5s ease-in-out;
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    transition: all .5s ease-in-out;
                 }
             }
             .flip-card-back {
@@ -114,7 +114,7 @@ const ContainerProjetos = styled.div`
 
     .rotacionar { transform: rotateY(180deg); }
 
-    .gray { filter: grayscale(100%); }
+    .gray { filter: sepia(50%) blur(3px); }
 
     @media screen and (min-width: 501px) and (max-width: 1000px) {
         .flip-card {
