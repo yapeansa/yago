@@ -13,21 +13,21 @@ const TituloEstilizado = styled.h2`
         content: '<';
         position: absolute;
         left: -2.5rem;
-        top: -.3rem;
+        top: .3rem;
         color: var(--primeira-cor);
         font-family: var(--fonte-primaria);
         font-weight: normal;
-        font-size: 4rem;
+        font-size: 3rem;
     }
     &::after {
         content: '/>';
         position: absolute;
         right: -4rem;
-        top: -.3rem;
+        top: .3rem;
         color: var(--primeira-cor);
         font-family: var(--fonte-primaria);
         font-weight: normal;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 `;
 
