@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 const TituloEstilizado = styled.h2`
     font-family: var(--fonte-secundaria);
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-transform: uppercase;
     position: relative;
     display: inline-block;
@@ -12,22 +12,22 @@ const TituloEstilizado = styled.h2`
     &::before {
         content: '<';
         position: absolute;
-        left: -2.5rem;
-        top: .3rem;
+        left: -2rem;
+        top: .5rem;
         color: var(--primeira-cor);
         font-family: var(--fonte-primaria);
         font-weight: normal;
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
     &::after {
         content: '/>';
         position: absolute;
-        right: -4rem;
-        top: .3rem;
+        right: -3.1rem;
+        top: .5rem;
         color: var(--primeira-cor);
         font-family: var(--fonte-primaria);
         font-weight: normal;
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
 `;
 
