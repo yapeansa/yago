@@ -35,6 +35,7 @@ const ContainerProjetos = styled.div`
                     height: 100%;
                     object-fit: cover;
                     transition: all .5s ease-in-out;
+                    pointer-events: none;
                 }
             }
             .flip-card-back {
