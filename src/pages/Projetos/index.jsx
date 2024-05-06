@@ -13,9 +13,7 @@ const Projetos = () => {
 
     const rotacionar = (id) => {
         const alvo = projects.filter(projeto => projeto.id === id);
-        alvo.forEach(objeto => {
-            objeto.classe = objeto.classe === "" ? "rotacionar" : "";
-        });
+        alvo[0].classe = alvo[0].classe === "" ? "rotacionar" : "";
         setProjects([...projects]);
     };
 
@@ -31,7 +29,7 @@ const Projetos = () => {
         <div id="projetos">
             <Secao corDeFundo="var(--branco)">
                 <Container>
-                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--segunda-cor)">Projetos</Titulo>
+                    <Titulo corDaBorda="var(--cor-quinaria)" corDoTexto="var(--segunda-cor)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>

@@ -29,13 +29,13 @@ const Contato = () => {
 
     return (
         <div id="contato">
-            <Secao corDeFundo="var(--terceira-cor)">
+            <Secao corDeFundo="var(--darker)">
                 <Container>
-                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--branco)">Contato</Titulo>
+                    <Titulo corDaBorda="var(--cor-quinaria)" corDoTexto="var(--branco)">Contato</Titulo>
                     <ContainerContato>
                         <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
                         <a href="mailto:yago.pereira@estudante.ufjf.br">
-                            <SiGmail size={30} color="var(--primeira-cor)" /> yago.pereira@estudante.ufjf.br
+                            <SiGmail size={30} color="var(--cor-primaria)" /> yago.pereira@estudante.ufjf.br
                         </a>
                         <p>Ou preencha o formulário abaixo com seus dados e sua mensagem.</p>
                         <form method="post" action="https://formspree.io/f/xnqlkqnk">

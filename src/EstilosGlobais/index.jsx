@@ -6,17 +6,16 @@ const EstilosGlobais = createGlobalStyle`
     :root {
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
-        --primeira-cor: #7e22ce;
-        --segunda-cor: #1F2833;
-        --terceira-cor: #0B0C10;
-        --quarta-cor: #4C495D;
-        --quinta-cor: #FFC719;
-        --sexta-cor: #ff6738;
-        --setima-cor: #c084fc;
-        --branco: #FFF;
+        --cor-primaria: #FFC107;
+        --cor-secundaria: #F44336;
+        --cor-terciaria: #00BCD4;
+        --cor-quaternaria: #1F2833;
+        --cor-quinaria: #2196F3;
+        --darker: #0B0C10;
+        --branco: #FFFFFF;
+
         --cinza: #222;
         --cinza-medio: #333;
-        --branco-secundario: #EEEEEE;
     }
 
     @keyframes fadeIn {
@@ -27,18 +26,6 @@ const EstilosGlobais = createGlobalStyle`
     @keyframes fadeOut {
         from { opacity: 1; }
         to { opacity: 0; }
-    }
-
-    @keyframes oscillating {
-        0% { top: .5rem; }
-        50% { top: -.5rem; }
-        100% { top: .5rem; }
-    }
-
-    @keyframes backgroundSlide {
-        0% { background-position: 0% -50%; }
-        50% { background-position: 100% -50%; }
-        100% { background-position: 0% -50%; }
     }
 
     * {
@@ -53,7 +40,7 @@ const EstilosGlobais = createGlobalStyle`
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             font-size: 1.2rem;
-            background: var(--terceira-cor) url(${bg}) center / cover no-repeat fixed;
+            background: var(--darker) url(${bg}) center / cover no-repeat fixed;
             &::-webkit-scrollbar {
                 width: .6rem;
             }
@@ -61,7 +48,7 @@ const EstilosGlobais = createGlobalStyle`
                 background: var(--cinza);
             }
             &::-webkit-scrollbar-track {
-                background: var(--terceira-cor);
+                background: var(--darker);
             }
             a {
                 text-decoration: none;

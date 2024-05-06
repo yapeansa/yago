@@ -14,7 +14,7 @@ const TituloEstilizado = styled.h2`
         position: absolute;
         left: -2rem;
         top: .5rem;
-        color: var(--primeira-cor);
+        color: ${props => props.$cordaborda ? props.$cordaborda : '#000'};
         font-family: var(--fonte-primaria);
         font-weight: normal;
         font-size: 2.7rem;
@@ -24,7 +24,7 @@ const TituloEstilizado = styled.h2`
         position: absolute;
         right: -3.1rem;
         top: .5rem;
-        color: var(--primeira-cor);
+        color: ${props => props.$cordaborda ? props.$cordaborda : '#000'};
         font-family: var(--fonte-primaria);
         font-weight: normal;
         font-size: 2.7rem;

@@ -13,8 +13,9 @@ const SecaoIntro = styled.section`
         text-decoration-color: var(--branco);
         text-align: right;
         .destaque {
-            color: var(--quinta-cor);
+            color: var(--cor-quinaria);
             font-weight: 700;
+            font-style: italic;
         }
     }
     .drop-menu { display: none; }

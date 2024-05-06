@@ -28,7 +28,7 @@ const ContainerProjetos = styled.div`
                 backface-visibility: hidden;
                 color: black;
                 background-color: var(--segunda-cor);
-                border: 2px solid var(--segunda-cor);
+                border: 2px solid var(--darker);
                 cursor: pointer;
                 img {
                     width: 100%;
@@ -42,7 +42,7 @@ const ContainerProjetos = styled.div`
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                border: 2px solid var(--terceira-cor);
+                //border: 2px solid var(--terceira-cor);
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 background: var(--branco);
@@ -72,7 +72,7 @@ const ContainerProjetos = styled.div`
                             bottom: 0;
                             width: 100%;
                             height: 2px;
-                            background: var(--primeira-cor);
+                            background: var(--cor-quinaria);
                         }
                     }
                     ul {
@@ -86,13 +86,34 @@ const ContainerProjetos = styled.div`
                             text-transform: uppercase;
                             font-size: 1rem;
                             color: var(--preto);
-                            background: linear-gradient(to right, var(--quinta-cor), #ffab10);
                             padding: 8px 15px;
-                            transition: all .3s ease-in-out;
-                            background-size: 200%;
-                            background-position: 0 -100%;
+                            position: relative;
+                            border-left: 3px solid var(--cor-secundaria);
+                            border-right: 3px solid var(--cor-primaria);
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 3px;
+                                background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
+                                transition: .3s ease-in-out;
+                                z-index: -1;
+                            }
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                width: 100%;
+                                height: 3px;
+                                background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
+                            }
                             &:hover {
-                                animation: backgroundSlide 3s ease infinite;
+                                &::before {
+                                    height: 100%;
+                                }
                             }
                         }
                     }
@@ -102,7 +123,7 @@ const ContainerProjetos = styled.div`
                     bottom: 0;
                     right: 0;
                     border: none;
-                    background: var(--terceira-cor);
+                    background: var(--darker);
                     padding: .3rem .4rem;
                     cursor: pointer;
                     .voltar {
@@ -115,7 +136,7 @@ const ContainerProjetos = styled.div`
 
     .rotacionar { transform: rotateY(180deg); }
 
-    .gray { filter: sepia(50%) blur(3px); }
+    .gray { filter: sepia(50%) blur(2px); }
 
     @media screen and (min-width: 501px) and (max-width: 1000px) {
         .flip-card {

@@ -24,13 +24,13 @@ const Navegacao = styled.nav`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: var(--segunda-cor);
+                color: var(--cor-quaternaria);
                 font-size: 3.75rem;
                 transition: all .35s ease-in-out;
             }
             &:hover {
                 &::before {
-                    color: var(--primeira-cor);
+                    color: var(--cor-quinaria);
                 }
             }
             a {
@@ -42,7 +42,7 @@ const Navegacao = styled.nav`
                 z-index: 1;
                 transition: all .35s ease-out;
                 text-transform: uppercase;
-                border-bottom: 2px solid var(--primeira-cor);
+                border-bottom: 2px solid var(--cor-quinaria);
                 &::before {
                     content: '';
                     z-index: -1;
@@ -51,11 +51,11 @@ const Navegacao = styled.nav`
                     left: 0;
                     width: 0;
                     height: 100%;
-                    background: var(--quinta-cor);
+                    background: var(--cor-primaria);
                     transition: all .35s ease-in-out;
                 }
                 &:hover {
-                    color: var(--terceira-cor);
+                    color: var(--cor-quaternaria);
                     padding: .3rem .1rem .3rem 1.5rem;
                     border-color: transparent;
                     &::before {

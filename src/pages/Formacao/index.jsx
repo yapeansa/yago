@@ -22,9 +22,9 @@ const Formacao = () => {
 
     return (
         <div id="formacao">
-            <Secao corDeFundo="var(--terceira-cor)">
+            <Secao corDeFundo="var(--darker)">
                 <Container>
-                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--branco)">Educação</Titulo>
+                    <Titulo corDaBorda="var(--cor-quinaria)" corDoTexto="var(--branco)">Educação</Titulo>
                     <TextoCompetencias>
                         Logo abaixo você pode conferir a minha trajetória acadêmica.
                     </TextoCompetencias>
@@ -41,7 +41,7 @@ const Formacao = () => {
                             </div>
                         )}
                     </Formacoes>
-                    <Titulo corDaBorda="var(--primeira-cor)" corDoTexto="var(--branco)">Minha Stack</Titulo>
+                    <Titulo corDaBorda="var(--cor-quinaria)" corDoTexto="var(--branco)">Minha Stack</Titulo>
                     <TextoCompetencias>
                         Como desenvolvedor Front-end, possuo competência nas seguintes tecnologias:
                     </TextoCompetencias>

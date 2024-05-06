@@ -16,7 +16,7 @@ const Formacoes = styled.div`
             font-size: 1.4rem;
             font-weight: normal;
             //color: var(--quinta-cor);
-            background: linear-gradient(to right, var(--sexta-cor), var(--quinta-cor));
+            background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -25,14 +25,14 @@ const Formacoes = styled.div`
             font-size: 1.6rem;
             font-weight: 700;
             margin: 15px 0;
-            color: var(--primeira-cor);
+            color: var(--cor-quinaria);
         }
         .formacao-descricao {
             font-size: 1.4rem;
             line-height: 1.5;
             a {
                 color: var(--fourth-color);
-                font-size: 1.22rem;
+                font-size: 1.2rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -48,28 +48,25 @@ const Formacoes = styled.div`
                 overflow: hidden;
                 .arrow_more {
                     color: var(--quinta-cor);
-                    transition: all .2s ease-in-out;
+                    transition: all .05s ease-in-out;
                 }
                 &::before {
                     content: '';
                     position: absolute;
                     left: 0;
-                    //margin-right: -7.5%;
                     bottom: 0;
                     width: 100%;
                     height: 2px;
-                    background: linear-gradient(to left, var(--primeira-cor), var(--sexta-cor));
-                    transition: all .3s ease-in-out;
+                    background: linear-gradient(to left, var(--cor-secundaria), var(--cor-primaria));
+                    transition: all .2s ease-in-out;
                     z-index: -1;
                 }
                 &:hover {
-                    color: var(--terceira-cor);
-                    border-color: var(--terceira-cor);
+                    color: var(--darker);
                     .arrow_more { color: var(--terceira-cor); }
                     &::before {
                         width: 100%;
                         height: 100%;
-                        //background: var(--quinta-cor);
                     }
                 }
             }

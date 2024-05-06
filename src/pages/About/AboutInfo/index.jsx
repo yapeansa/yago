@@ -12,11 +12,11 @@ const AboutInfo = styled.div`
         p {
             text-align: justify;
             font-size: 1.3rem;
-            border: 2px solid var(--quarta-cor);
+            border: 2px solid var(--cor-quaternaria);
             padding: 2.6rem;
             line-height: 1.4;
             color: var(--segunda-cor);
-            box-shadow: 12px 12px 0 0 var(--quarta-cor);
+            box-shadow: 12px 12px 0 0 var(--cor-quaternaria);
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
@@ -32,7 +32,7 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: 2px solid var(--primeira-cor);
+            border: 2px solid var(--cor-quinaria);
             border-radius: 100%;
             padding: .8rem;
         }

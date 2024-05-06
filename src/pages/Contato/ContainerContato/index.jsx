@@ -26,7 +26,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -15%;
             bottom: 0;
-            background: var(--quinta-cor);
+            background: var(--cor-quinaria);
             width: 30%;
             height: 2px;
             transition: all .3s ease-in-out;
@@ -57,12 +57,12 @@ const ContainerContato = styled.div`
                 font-family: var(--fonte-secundaria);
                 font-size: 1rem;
                 background: var(--quinaria);
-                border: 2px solid var(--segunda-cor);
+                border: 2px solid var(--cor-quaternaria);
                 padding: 1.2rem 1rem;
                 outline: none;
                 color: var(--branco);
                 transition: all .3s ease-in-out;
-                &:focus { border-color: var(--quinta-cor); }
+                &:focus { border-color: var(--cor-quinaria); }
                 &::placeholder {
                     opacity: 1;
                     color: var(--branco);
@@ -75,12 +75,12 @@ const ContainerContato = styled.div`
             font-family: var(--fonte-secundaria);
             font-size: 1rem;
             background: var(--quinaria);
-            border: 2px solid var(--segunda-cor);
+            border: 2px solid var(--cor-quaternaria);
             padding: 1.2rem 1rem;
             outline: none;
             color: var(--branco);
             transition: all .3s ease-in-out;
-            &:focus { border-color: var(--quinta-cor); }
+            &:focus { border-color: var(--cor-quinaria); }
             &::placeholder {
                 opacity: 1;
                 color: var(--branco);
@@ -94,17 +94,17 @@ const ContainerContato = styled.div`
             button[type=reset], button[type=submit] {
                 flex: 1 1 auto;
                 background: transparent;
-                border-left: 4px solid var(--primeira-cor);
-                border-right: 4px solid var(--setima-cor);
-                border-bottom: none;
-                border-top: none;
+                border-top: 4px solid var(--cor-terciaria);
+                border-bottom: 4px solid var(--cor-quinaria);
+                border-right: none;
+                border-left: none;
                 font-family: var(--fonte-primaria);
                 font-weight: 400;
                 display: block;
                 font-size: 1.2rem;
                 text-transform: uppercase;
                 cursor: pointer;
-                padding: 1rem .8rem;
+                padding: .8rem;
                 transition: all .2s ease-in-out;
                 color: var(--branco);
                 position: relative;
@@ -114,32 +114,27 @@ const ContainerContato = styled.div`
                     content: '';
                     position: absolute;
                     left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 4px;
-                    background: linear-gradient(to right, var(--primeira-cor), var(--setima-cor));
-                    transition: all .2s ease-in-out;
+                    top: 0;
+                    width: 4px;
+                    height: 100%;
+                    background: linear-gradient(to top, var(--cor-quinaria), var(--cor-terciaria));
+                    transition: all .3s ease-out;
                     z-index: -1;
                 }
                 &::after {
                     content: '';
                     position: absolute;
-                    left: 0;
+                    right: 0;
                     top: 0;
-                    width: 100%;
-                    height: 4px;
-                    background: linear-gradient(to right, var(--primeira-cor), var(--setima-cor));
+                    width: 4px;
+                    height: 100%;
+                    background: linear-gradient(to top, var(--cor-quinaria), var(--cor-terciaria));
                 }
                 &:hover {
                     color: var(--terceira-cor);
                     &::before {
-                        height: 100%;
+                        width: 100%;
                         bottom: 0;
-                    }
-                }
-                &:active {
-                    &::before {
-                        background: linear-gradient(to right, var(--setima-cor), var(--primeira-cor));
                     }
                 }
             }
