@@ -60,7 +60,7 @@ const EstilosGlobais = createGlobalStyle`
     @media screen and (max-width: 960px) {
         html {
             body {
-                background: var(--terceira-cor) url(${bg_2}) center / cover no-repeat fixed;
+                background: var(--darker) url(${bg_2}) center / cover no-repeat fixed;
             }
         }
     }
