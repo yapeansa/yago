@@ -55,8 +55,8 @@ const SecaoIntro = styled.section`
             cursor: pointer;
             display: block;
             padding: .5rem;
-            border: 2px solid var(--branco);
-            color: var(--quinta-cor);
+            border: 2px solid var(--cor-primaria);
+            color: var(--cor-quinaria);
         }
     }
 `;

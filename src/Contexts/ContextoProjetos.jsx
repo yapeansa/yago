@@ -7,9 +7,16 @@ const ContextoProjetos = ({ children }) => {
     const [projects, setProjects] = useState([]);
 
     async function pegarDados() {
-        const dados = await fetch('https://raw.githubusercontent.com/yapeansa/yago/main/src/assets/json/projetos.json');
-        const resposta = await dados.json();
-        setProjects(resposta);
+        try {
+            const dados = await fetch('https://raw.githubusercontent.com/yapeansa/yago/main/src/assets/json/projetos.json');
+            const resposta = await dados.json();
+            setProjects(resposta);
+        } catch(erro) {
+            console.log(`${erro.name}: Não foi possivel carregar 'Projetos'`);
+            throw erro;
+        } finally {
+            console.log("Processo concluído.");
+        }
     }
 
     useEffect(() => {
