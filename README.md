@@ -1,27 +1,18 @@
 <div align="center">
 
-# Yago Pereira | Portfolio
+# PORTFOLIO | YAGO PEREIRA
 
 </div>
 
-Este é o meu portfólio. Desenvolvi este projeto para compartilhar meus projetos e minhas habilidades.
-O site está organizado da seguinte maneira:
-
-- Cabeçalho: Logo + Menu / Intro
-- Sobre
-- Formação
-- Projetos
-- Contato
-- Rodapé
-
-O Cabeçalho do site contém uma área específica para conter a logotipo e o menu de navegação e outra para conter um pequeno texto introdutório.
-Na seção Sobre, falo um pouco sobre mim para que o público me conheça melhor. A seção Formação trata de listar minhas competências como desenvolvedor e minha formação acadêmica. Na seção Projetos exibo uma lista com os projetos que desenvolvi. Por fim, em Contato é possível encontrar formas de se comunicar comigo.
+Este é o meu portfolio pessoal. Aqui eu compartilho minha formação acadêmica e todos os meus projetos pessoais, colocando em prática diversos conceitos de desenvolvimento web Front-end.
 
 ## TECNOLOGIAS UTILIZADAS
 
 - HTML5
-- CSS3 | SASS | Styled-Components
+- CSS3 | SASS | STYLED-COMPONENTS
 - JAVASCRIPT | NODE | REACT
+- STATE MANAGEMENT
+- API
 
 ## IMAGEM DO PROJETO
 
@@ -47,10 +38,10 @@ Finalmente, digite no terminal:
 
 Você pode acessar o projeto através do link [https://yapeansa.vercel.app](https://yapeansa.vercel.app).
 
-## DESENVOLVEDOR DO PROJETO
+<!-- ## DESENVOLVEDOR DO PROJETO
 
 | [<img loading="yapeansa" src="https://avatars.githubusercontent.com/yapeansa" width="115" /><br /><sub>Yago Pereira</sub>]() |
-| :---: |   
+| :---: |    -->
 
 ## CONTATO
 
