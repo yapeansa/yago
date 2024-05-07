@@ -42,7 +42,6 @@ const ContainerProjetos = styled.div`
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                //border: 2px solid var(--terceira-cor);
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 background: var(--branco);
@@ -120,11 +119,17 @@ const ContainerProjetos = styled.div`
                 }
                 .aciona-rotacao {
                     position: absolute;
-                    bottom: 0;
-                    right: 0;
+                    bottom: .5rem;
+                    right: .5rem;
                     border: none;
                     background: var(--darker);
-                    padding: .3rem .4rem;
+                    padding: .2rem .3rem;
+                    border-radius: 100%;
+                    &:hover {
+                        .voltar {
+                            animation: spin .9s ease-in-out;
+                        }
+                    }
                     cursor: pointer;
                     .voltar {
                         color: var(--branco);

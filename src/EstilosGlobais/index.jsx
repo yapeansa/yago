@@ -28,6 +28,11 @@ const EstilosGlobais = createGlobalStyle`
         to { opacity: 0; }
     }
 
+    @keyframes spin {
+        from { transform: rotateZ(0deg); }
+        to { transform: rotateZ(360deg); }
+    }
+
     * {
         margin: 0;
         padding: 0;
