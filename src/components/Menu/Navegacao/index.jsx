@@ -17,7 +17,7 @@ const Navegacao = styled.nav`
             gap: 2rem;
             color: var(--branco);
             align-items: center;
-            transition: all .35s ease-in-out;
+            transition: all .25s ease-in-out;
             &::before {
                 content: counter(list);
                 width: 18px;
@@ -26,7 +26,7 @@ const Navegacao = styled.nav`
                 align-items: center;
                 color: var(--cor-quaternaria);
                 font-size: 3.75rem;
-                transition: all .35s ease-in-out;
+                transition: all .25s ease-in-out;
             }
             &:hover {
                 &::before {
@@ -40,7 +40,7 @@ const Navegacao = styled.nav`
                 padding: .3rem 0;
                 overflow: hidden;
                 z-index: 1;
-                transition: all .35s ease-out;
+                transition: all .25s ease-out;
                 text-transform: uppercase;
                 border-bottom: 2px solid var(--cor-quinaria);
                 &::before {
@@ -52,7 +52,7 @@ const Navegacao = styled.nav`
                     width: 0;
                     height: 100%;
                     background: var(--cor-primaria);
-                    transition: all .35s ease-in-out;
+                    transition: all .25s ease-in-out;
                 }
                 &:hover {
                     color: var(--cor-quaternaria);
