@@ -10,9 +10,19 @@ const EstilosGlobais = createGlobalStyle`
         --cor-secundaria: #F44336;
         --cor-terciaria: #00BCD4;
         --cor-quaternaria: #1F2833;
-        --cor-quinaria: #2196F3;
+        --cor-quinaria: #8A2BE2;
         --darker: #0B0C10;
+        --lavender: #E6E6FA;
         --branco: #FFFFFF;
+
+        /* Lavender: #E6E6FA
+        Lilac: #C8A2C8
+        Violet: #8A2BE2
+        Mauve: #BA55D3
+        Plum: #8E4585
+        Amethyst: #9966CC
+        Orchid: #DA70D6
+        Magenta: #FF00FF */
 
         --cinza: #222;
         --cinza-medio: #333;

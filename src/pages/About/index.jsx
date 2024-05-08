@@ -7,7 +7,7 @@ import me from "@/assets/images/me.jpg";
 const About = ({ idade }) => {
     return (
         <div id="sobre">
-            <Secao corDeFundo="var(--branco)">
+            <Secao corDeFundo="var(--lavender)">
                 <Container>
                     <Titulo corDaBorda="var(--cor-quinaria)" corDoTexto="var(--preto)">Quem sou eu</Titulo>
                     <AboutInfo>

@@ -27,7 +27,7 @@ const Projetos = () => {
 
     return (
         <div id="projetos">
-            <Secao corDeFundo="var(--branco)">
+            <Secao corDeFundo="var(--lavender)">
                 <Container>
                     <Titulo corDaBorda="var(--cor-quinaria)" corDoTexto="var(--segunda-cor)">Projetos</Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>

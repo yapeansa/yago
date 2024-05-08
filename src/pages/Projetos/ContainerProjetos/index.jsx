@@ -122,7 +122,7 @@ const ContainerProjetos = styled.div`
                     bottom: .5rem;
                     right: .5rem;
                     border: none;
-                    background: var(--darker);
+                    background: var(--cor-quinaria);
                     padding: .2rem .3rem;
                     border-radius: 100%;
                     &:hover {
@@ -141,7 +141,7 @@ const ContainerProjetos = styled.div`
 
     .rotacionar { transform: rotateY(180deg); }
 
-    .gray { filter: sepia(50%) blur(2px); }
+    .gray { filter: grayscale(100%) brightness(70%) saturate(180%); }
 
     @media screen and (min-width: 501px) and (max-width: 1000px) {
         .flip-card {

@@ -47,7 +47,7 @@ const Formacoes = styled.div`
                 font-weight: 700;
                 overflow: hidden;
                 .arrow_more {
-                    color: var(--quinta-cor);
+                    color: var(--cor-primaria);
                     transition: all .05s ease-in-out;
                 }
                 &::before {
@@ -57,7 +57,7 @@ const Formacoes = styled.div`
                     bottom: 0;
                     width: 100%;
                     height: 2px;
-                    background: linear-gradient(to left, var(--cor-secundaria), var(--cor-primaria));
+                    background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
                     transition: all .2s ease-in-out;
                     z-index: -1;
                 }
