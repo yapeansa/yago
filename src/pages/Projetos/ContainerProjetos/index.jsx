@@ -127,7 +127,7 @@ const ContainerProjetos = styled.div`
                     border-radius: 100%;
                     &:hover {
                         .voltar {
-                            animation: spin .9s ease-in-out;
+                            animation: spin .6s ease-in-out;
                         }
                     }
                     cursor: pointer;
