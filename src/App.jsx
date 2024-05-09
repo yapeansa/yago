@@ -12,7 +12,9 @@ import ContextoProjetos from './Contexts/ContextoProjetos';
 
 const App = () => {
 
-    const currentDate = new Date(), currentYear = currentDate.getFullYear(), currentMonth = currentDate.getMonth() + 1,
+    const currentDate = new Date(),
+        currentYear = currentDate.getFullYear(),
+        currentMonth = currentDate.getMonth() + 1,
         currentDay = currentDate.getDate();
 
     const calculaIdade = () => (((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) ?

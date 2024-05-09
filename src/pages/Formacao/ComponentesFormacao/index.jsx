@@ -77,7 +77,7 @@ const Formacoes = styled.div`
         text-align: center;
         max-width: 90%;
         flex-direction: column;
-        margin: 0 auto;
+        margin: 0 auto 1.7rem;
         .minhas-formacoes {
             padding: 1.5rem;
             border: none;
@@ -94,6 +94,7 @@ const TextoCompetencias = styled.p`
 
     @media screen and (max-width: 768px) {
         max-width: 90%;
+        margin: 1.5rem auto 0;
     }
 `;
 

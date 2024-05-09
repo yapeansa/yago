@@ -38,7 +38,7 @@ const AboutInfo = styled.div`
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         flex-direction: column;
         gap: 3rem;
         margin-top: 3rem;
@@ -56,6 +56,9 @@ const AboutInfo = styled.div`
         .minha-foto {
             order: 1;
             flex: 1 1 auto;
+            img {
+                max-width: 70%;
+            }
         }
     }
 `;
