@@ -48,7 +48,7 @@ const Formacoes = styled.div`
                 overflow: hidden;
                 .arrow_more {
                     color: var(--cor-primaria);
-                    transition: all .05s ease-in-out;
+                    transition: all .2s ease-in-out;
                 }
                 &::before {
                     content: '';
@@ -63,7 +63,7 @@ const Formacoes = styled.div`
                 }
                 &:hover {
                     color: var(--darker);
-                    .arrow_more { color: var(--terceira-cor); }
+                    .arrow_more { color: var(--darker); }
                     &::before {
                         width: 100%;
                         height: 100%;
