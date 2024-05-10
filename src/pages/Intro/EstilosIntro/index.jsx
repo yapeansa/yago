@@ -56,7 +56,7 @@ const SecaoIntro = styled.section`
             display: block;
             padding: .5rem;
             border: 2px solid var(--cor-primaria);
-            color: var(--cor-quinaria);
+            color: var(--cor-terciaria);
         }
     }
 `;

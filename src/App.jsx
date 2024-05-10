@@ -21,7 +21,7 @@ const App = () => {
         (currentYear - 1993) : (currentYear - 1994));
 
     return (
-        <main>
+        <main id="wrap">
             <EstilosGlobais />
             <Header />
             <About idade={calculaIdade} />
