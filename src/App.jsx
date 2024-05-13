@@ -12,19 +12,12 @@ import ContextoProjetos from './Contexts/ContextoProjetos';
 
 const App = () => {
 
-    const currentDate = new Date(),
-        currentYear = currentDate.getFullYear(),
-        currentMonth = currentDate.getMonth() + 1,
-        currentDay = currentDate.getDate();
-
-    const calculaIdade = () => (((currentMonth === 11 && currentDay > 21) || (currentMonth > 11)) ?
-        (currentYear - 1993) : (currentYear - 1994));
-
+    const currentDate = new Date();
     return (
         <main id="wrap">
             <EstilosGlobais />
             <Header />
-            <About idade={calculaIdade} />
+            <About />
             <Formacao />
             <ContextoProjetos>
                 <Projetos />

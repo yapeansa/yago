@@ -4,7 +4,7 @@ import Titulo from "@/components/Titulo";
 import Secao from "@/components/ContainerSecao";
 import me from "@/assets/images/me.jpg";
 
-const About = ({ idade }) => {
+const About = () => {
     return (
         <div id="sobre">
             <Secao corDeFundo="var(--lavender)">
@@ -13,7 +13,7 @@ const About = ({ idade }) => {
                     <AboutInfo>
                         <div className="text-intro">
                             <p>
-                                Olá, meu nome é <span className="estilizado">Yago Pereira</span> e tenho {idade()} anos. Sou um desenvolvedor front-end com habilidade autodidata, com grande disposição em aprender novas tecnologias e com sólidos conhecimentos em HTML, CSS e Javascript. Me aperfeiçoei no desenvolvimento front-end na intituição de ensino <a href="https://www.alura.com.br" target="_blank">Alura</a> onde pude me aprofundar na linguagem <span className="estilizado">Javascript</span> e mergulhar no framework <span className="estilizado">React</span>.
+                                Olá, meu nome é <span className="estilizado">Yago</span>! Sou um desenvolvedor <span className="estilizado">Front-end</span> em transição de carreira. Busco aplicar as habilidades e conhecimentos adquiridos da minha formação de <span className="estilizado">Matemático</span> ao mundo do desenvolvimento web. Autodidata e vindo de um ambiente que valoriza a pesquisa, prezo pela evolução constante dos meus conhecimentos e por compartilhar os mesmos com as pessoas ao meu redor.
                             </p>
                         </div>
                         <div className="minha-foto">
