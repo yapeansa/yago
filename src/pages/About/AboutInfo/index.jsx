@@ -32,7 +32,10 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: 2px solid var(--cor-quinaria);
+            border-right: 2px solid var(--cor-quinaria);
+            border-bottom: 2px solid var(--cor-quinaria);
+            border-left: 2px solid var(--cor-terciaria);
+            border-top: 2px solid var(--cor-terciaria);
             border-radius: 100%;
             padding: .8rem;
         }

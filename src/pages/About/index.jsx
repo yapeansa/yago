@@ -9,7 +9,12 @@ const About = () => {
         <div id="sobre">
             <Secao corDeFundo="var(--lavender)">
                 <Container>
-                    <Titulo corDaBorda="var(--cor-quinaria)" corDoTexto="var(--preto)">Quem sou eu</Titulo>
+                    <Titulo
+                        corDaBorda="linear-gradient(to right, var(--cor-quinaria), var(--cor-terciaria))"
+                        corDoTexto="var(--preto)"
+                    >
+                        Quem sou eu
+                    </Titulo>
                     <AboutInfo>
                         <div className="text-intro">
                             <p>

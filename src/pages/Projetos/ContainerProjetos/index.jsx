@@ -122,12 +122,16 @@ const ContainerProjetos = styled.div`
                     bottom: .5rem;
                     right: .5rem;
                     border: none;
-                    background: var(--cor-quinaria);
-                    padding: .2rem .3rem;
+                    background: linear-gradient(to bottom, var(--darker), var(--cinza-medio));
+                    width: 3rem;
+                    height: 3rem;
                     border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     &:hover {
                         .voltar {
-                            animation: spin .6s ease-in-out;
+                            animation: spin .5s ease-in-out;
                         }
                     }
                     cursor: pointer;

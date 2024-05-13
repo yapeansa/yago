@@ -1,4 +1,7 @@
 import EstilosGlobais from './EstilosGlobais';
+import ContextoContato from './Contexts/ContextoContato';
+import ContextoBotao from './Contexts/ContextoBotao';
+import ContextoProjetos from './Contexts/ContextoProjetos';
 import BotaoScrollTop from './components/BotaoScrollTop';
 import Header from './components/Header';
 import About from './pages/About';
@@ -6,9 +9,6 @@ import Formacao from './pages/Formacao';
 import Projetos from './pages/Projetos';
 import Contato from './pages/Contato';
 import Footer from './components/Footer';
-import ContextoContato from './Contexts/ContextoContato';
-import ContextoBotao from './Contexts/ContextoBotao';
-import ContextoProjetos from './Contexts/ContextoProjetos';
 
 const App = () => {
 

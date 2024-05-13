@@ -50,7 +50,12 @@ const Contato = () => {
         <div id="contato">
             <Secao corDeFundo="var(--darker)">
                 <Container>
-                    <Titulo corDaBorda="var(--cor-quinaria)" corDoTexto="var(--branco)">Contato</Titulo>
+                    <Titulo
+                        corDaBorda="linear-gradient(to right, var(--cor-quinaria), var(--cor-terciaria))"
+                        corDoTexto="var(--branco)"
+                    >
+                        Contato
+                    </Titulo>
                     <ContainerContato>
                         <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
                         <a href="mailto:yapeansa@gmail.com">

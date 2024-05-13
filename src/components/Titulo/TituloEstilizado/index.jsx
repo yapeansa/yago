@@ -10,24 +10,14 @@ const TituloEstilizado = styled.h2`
     padding: 15px 0;
     color: ${props => props.$cordotexto ? props.$cordotexto : '#000'};
     &::before {
-        content: '<';
+        content: '';
         position: absolute;
-        left: -2rem;
-        top: .5rem;
-        color: ${props => props.$cordaborda ? props.$cordaborda : '#000'};
-        font-family: var(--fonte-primaria);
-        font-weight: normal;
-        font-size: 2.7rem;
-    }
-    &::after {
-        content: '/>';
-        position: absolute;
-        right: -3.1rem;
-        top: .5rem;
-        color: ${props => props.$cordaborda ? props.$cordaborda : '#000'};
-        font-family: var(--fonte-primaria);
-        font-weight: normal;
-        font-size: 2.7rem;
+        left: 50%;
+        margin-left: -22.5%;
+        bottom: 0;
+        width: 45%;
+        height: 4px;
+        background: ${props => props.$cordaborda ? props.$cordaborda : '#000'};
     }
 `;
 

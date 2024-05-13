@@ -29,7 +29,12 @@ const Projetos = () => {
         <div id="projetos">
             <Secao corDeFundo="var(--lavender)">
                 <Container>
-                    <Titulo corDaBorda="var(--cor-quinaria)" corDoTexto="var(--segunda-cor)">Projetos</Titulo>
+                    <Titulo
+                        corDaBorda="linear-gradient(to right, var(--cor-quinaria), var(--cor-terciaria))"
+                        corDoTexto="var(--segunda-cor)"
+                    >
+                        Projetos
+                    </Titulo>
                     <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
                     <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                         {projects.map(projeto =>
