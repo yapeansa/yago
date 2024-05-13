@@ -13,10 +13,10 @@ const EstilosGlobais = createGlobalStyle`
         --cor-quinaria: #8A2BE2;
         --darker: #0B0C10;
         --lavender: #E6E6FA;
+        --lavender-strong: #b7b7fa;
         --branco: #FFFFFF;
-
-        --cinza: #222;
-        --cinza-medio: #333;
+        --cinza: #CCCCCC;
+        --cinza-medio: #222;
     }
 
     @keyframes fadeIn {

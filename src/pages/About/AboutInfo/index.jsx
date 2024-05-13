@@ -32,9 +32,9 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border-right: 3px solid var(--cor-terciaria);
+            border-right: 3px solid var(--lavender-strong);
             border-bottom: 3px solid var(--cor-quinaria);
-            border-left: 3px solid var(--cor-terciaria);
+            border-left: 3px solid var(--lavender-strong);
             border-top: 3px solid var(--cor-quinaria);
             border-radius: 100%;
             padding: .8rem;
