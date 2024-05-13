@@ -42,7 +42,7 @@ const Navegacao = styled.nav`
                 z-index: 1;
                 transition: all .25s ease-out;
                 text-transform: uppercase;
-                border-bottom: 2px solid var(--cor-quinaria);
+                //border-bottom: 2px solid var(--cor-quinaria);
                 &::before {
                     content: '';
                     z-index: -1;
@@ -54,12 +54,25 @@ const Navegacao = styled.nav`
                     background: var(--cor-primaria);
                     transition: all .25s ease-in-out;
                 }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: linear-gradient(to right, var(--cor-quinaria), var(--cor-terciaria));
+                    transition: all .25s ease-in-out;
+                }
                 &:hover {
                     color: var(--cor-quaternaria);
                     padding: .3rem .1rem .3rem 1.5rem;
                     border-color: transparent;
                     &::before {
                         width: 100%;
+                    }
+                    &::after {
+                        width: 0;
                     }
                 }
             }

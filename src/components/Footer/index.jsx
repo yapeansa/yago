@@ -1,33 +1,12 @@
-import { styled } from "styled-components";
+import Rodape from "./EstilosRodape";
 import Container from "@/components/Container";
 import { SiLinktree } from "react-icons/si";
-
-const Rodape = styled.footer`
-    background-color: var(--darker);
-    color: var(--branco);
-    font-size: 1.3rem;
-    padding: 0 0 4rem;
-    text-align: center;
-    line-height: 1.5;
-    a {
-        margin-bottom: 1rem;
-        display: inline-block;
-    }
-
-    @media screen and (max-width: 768px) {
-        padding: 0 0 7rem;
-        p {
-            max-width: 80%;
-            margin: 0 auto;
-        }
-    }
-`;
 
 const Footer = ({ anoAtual }) => {
     return (
         <Rodape>
             <Container>
-                <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--cor-quinaria)" /></a>
+                <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--cor-primaria)" /></a>
                 <p>
                     &copy;{anoAtual.getFullYear()} - Desenvolvido por&nbsp;
                     <span style={{ borderBottom: '2px solid var(--cor-primaria)', display: 'inline-block' }}>

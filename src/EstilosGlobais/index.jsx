@@ -15,15 +15,6 @@ const EstilosGlobais = createGlobalStyle`
         --lavender: #E6E6FA;
         --branco: #FFFFFF;
 
-        /* Lavender: #E6E6FA
-        Lilac: #C8A2C8
-        Violet: #8A2BE2
-        Mauve: #BA55D3
-        Plum: #8E4585
-        Amethyst: #9966CC
-        Orchid: #DA70D6
-        Magenta: #FF00FF */
-
         --cinza: #222;
         --cinza-medio: #333;
     }
