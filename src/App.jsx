@@ -13,6 +13,7 @@ import ContextoProjetos from './Contexts/ContextoProjetos';
 const App = () => {
 
     const currentDate = new Date();
+    
     return (
         <main id="wrap">
             <EstilosGlobais />
