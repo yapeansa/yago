@@ -7,7 +7,7 @@ import ContainerContato from "./ContainerContato";
 import Container from "@/components/Container";
 import { SiGmail } from "react-icons/si";
 
-const Contato = () => {
+const Contato = ({ setEnviado }) => {
 
     const [placeHolders, setPlaceHolders] = useContext(ContextoContatoCriado);
 
@@ -28,6 +28,16 @@ const Contato = () => {
         }
     };
 
+    const confirmacao = () => {
+        setEnviado({ display: "block", animation: "fadeIn .5s ease-in-out" });
+        setTimeout(() => {
+            setEnviado({ animation: "fadeOut .5s ease-in-out"});
+        }, 3500);
+        setTimeout(() => {
+            setEnviado({ display: "none", });
+        }, 4000);
+    };
+
     // Here, we're using React EmailJS to send e-mail from contact form.
 
     const form = useRef();
@@ -39,7 +49,8 @@ const Contato = () => {
             publicKey: 'o5T1d5IHXaJyiTE7D',
         })
             .then(() => {
-                console.log('SUCCESS!');
+                //console.log('SUCCESS!');
+                confirmacao();
                 e.target.reset();
             }, (error) => {
                 console.log('FAILED...', error.text);
@@ -87,7 +98,7 @@ const Contato = () => {
                                 <textarea
                                     name="message"
                                     rows="5"
-                                    minLength={200}
+                                    //minLength={200}
                                     onFocus={() => aoInteragir()}
                                     onBlur={() => aoInteragir()}
                                     placeholder={placeHolders.mensagem}

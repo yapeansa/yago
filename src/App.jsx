@@ -9,8 +9,17 @@ import Formacao from './pages/Formacao';
 import Projetos from './pages/Projetos';
 import Contato from './pages/Contato';
 import Footer from './components/Footer';
+import { useState } from 'react';
+import EmailEnviado from './components/CaixaEmailEnviado';
 
 const App = () => {
+
+    const estadoInicial = {
+        display: "none",
+        animation: ""
+    };
+
+    const [enviado, setEnviado] = useState(estadoInicial);
 
     const currentDate = new Date();
     
@@ -24,12 +33,13 @@ const App = () => {
                 <Projetos />
             </ContextoProjetos>
             <ContextoContato>
-                <Contato />
+                <Contato setEnviado={setEnviado} />
             </ContextoContato>
             <Footer anoAtual={currentDate} />
             <ContextoBotao>
                 <BotaoScrollTop />
             </ContextoBotao>
+            <EmailEnviado enviado={enviado} />
         </main>
     );
 };
