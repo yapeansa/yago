@@ -33,7 +33,7 @@ const App = () => {
                 <Projetos />
             </ContextoProjetos>
             <ContextoContato>
-                <Contato setEnviado={setEnviado} />
+                <Contato enviado={enviado} setEnviado={setEnviado} />
             </ContextoContato>
             <Footer anoAtual={currentDate} />
             <ContextoBotao>

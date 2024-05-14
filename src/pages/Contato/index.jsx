@@ -7,7 +7,7 @@ import ContainerContato from "./ContainerContato";
 import Container from "@/components/Container";
 import { SiGmail } from "react-icons/si";
 
-const Contato = ({ setEnviado }) => {
+const Contato = ({ enviado, setEnviado }) => {
 
     const [placeHolders, setPlaceHolders] = useContext(ContextoContatoCriado);
 
@@ -28,13 +28,17 @@ const Contato = ({ setEnviado }) => {
         }
     };
 
-    const confirmacao = () => {
-        setEnviado({ display: "block", animation: "fadeIn .5s ease-in-out" });
+    const confirmacaoDeEnvio = () => {
+        enviado.display = "block";
+        enviado.animation = "fadeIn .5s ease-in-out";
+        setEnviado({ ...enviado });
         setTimeout(() => {
-            setEnviado({ animation: "fadeOut .5s ease-in-out"});
+            enviado.animation = "fadeOut .5s ease-in-out";
+            setEnviado({ ...enviado });
         }, 3500);
         setTimeout(() => {
-            setEnviado({ display: "none", });
+            enviado.display = "none";
+            setEnviado({ ...enviado });
         }, 4000);
     };
 
@@ -49,9 +53,9 @@ const Contato = ({ setEnviado }) => {
             publicKey: 'o5T1d5IHXaJyiTE7D',
         })
             .then(() => {
-                //console.log('SUCCESS!');
-                confirmacao();
+                console.log('SUCCESS!');
                 e.target.reset();
+                confirmacaoDeEnvio();
             }, (error) => {
                 console.log('FAILED...', error.text);
             },);
