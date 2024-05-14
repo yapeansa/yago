@@ -11,6 +11,8 @@ const Contato = ({ enviado, setEnviado }) => {
 
     const [placeHolders, setPlaceHolders] = useContext(ContextoContatoCriado);
 
+    // The function below deals with the placeholders
+
     const aoInteragir = (campo) => {
         switch (campo) {
             case 'nome':
@@ -27,6 +29,8 @@ const Contato = ({ enviado, setEnviado }) => {
                 break;
         }
     };
+
+    // Below, we have the function that informes the user that the email was successfully sended.
 
     const confirmacaoDeEnvio = () => {
         enviado.display = "block";
@@ -102,7 +106,7 @@ const Contato = ({ enviado, setEnviado }) => {
                                 <textarea
                                     name="message"
                                     rows="5"
-                                    //minLength={200}
+                                    minLength={100}
                                     onFocus={() => aoInteragir()}
                                     onBlur={() => aoInteragir()}
                                     placeholder={placeHolders.mensagem}
