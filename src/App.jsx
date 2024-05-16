@@ -14,15 +14,12 @@ import EmailEnviado from './components/CaixaEmailEnviado';
 
 const App = () => {
 
-    const estadoInicial = {
-        display: "none",
-        animation: ""
-    };
+    const estadoInicial = { display: "none", animation: "" };
 
     const [enviado, setEnviado] = useState(estadoInicial);
 
     const currentDate = new Date();
-    
+
     return (
         <main id="wrap">
             <EstilosGlobais />

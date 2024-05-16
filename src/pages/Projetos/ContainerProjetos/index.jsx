@@ -7,6 +7,7 @@ const ContainerProjetos = styled.div`
     gap: 3rem;
     width: auto;
     padding: 0 1rem;
+    border-radius: 16px;
     .flip-card {
         flex: 0 0 30%;
         perspective: 1000px;

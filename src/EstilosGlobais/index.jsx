@@ -51,7 +51,7 @@ const EstilosGlobais = createGlobalStyle`
                 width: .6rem;
             }
             &::-webkit-scrollbar-thumb {
-                background: var(--cinza);
+                background: var(--cinza-medio);
             }
             &::-webkit-scrollbar-track {
                 background: var(--darker);
