@@ -24,7 +24,7 @@ const Formacoes = styled.div`
         .instituicao-nome {
             font-size: 1.6rem;
             font-weight: 700;
-            margin: 15px 0;
+            margin: 1.3rem 0;
             color: var(--cor-quinaria);
         }
         .formacao-descricao {
@@ -39,13 +39,15 @@ const Formacoes = styled.div`
                 gap: .6rem;
                 text-transform: uppercase;
                 position: relative;
-                padding: .4rem .2rem .2rem;
+                padding: .4rem .5rem;
                 transition: all .2s ease-in-out;
                 z-index: 1;
                 width: fit-content;
                 margin: 0 auto;
                 font-weight: 700;
                 overflow: hidden;
+                border-left: 2px solid var(--cor-secundaria);
+                border-right: 2px solid var(--cor-primaria);
                 .arrow_more {
                     color: var(--cor-primaria);
                     transition: all .2s ease-in-out;
@@ -60,6 +62,15 @@ const Formacoes = styled.div`
                     background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
                     transition: all .2s ease-in-out;
                     z-index: -1;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
                 }
                 &:hover {
                     color: var(--darker);
