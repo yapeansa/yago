@@ -12,12 +12,14 @@ const SecaoIntro = styled.section`
         text-decoration-thickness: 3px;
         text-decoration-color: var(--branco);
         text-align: right;
+        text-shadow: 0 0 5px var(--darker);
         .destaque {
             background: linear-gradient(to left, var(--cor-quinaria), var(--cor-terciaria));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 700;
+            text-shadow: none;
         }
     }
     .drop-menu { display: none; }
