@@ -13,7 +13,6 @@ const ContainerProjetos = styled.div`
         width: 100%;
         height: 315px;
         background-color: transparent;
-        border-radius: 16px;
         .flip-card-inner {
             position: relative;
             width: 100%;
@@ -29,7 +28,7 @@ const ContainerProjetos = styled.div`
                 backface-visibility: hidden;
                 color: black;
                 background-color: var(--segunda-cor);
-                border: 2px solid var(--darker);
+                border: 6px solid var(--branco);
                 cursor: pointer;
                 img {
                     width: 100%;
@@ -65,15 +64,7 @@ const ContainerProjetos = styled.div`
                         padding-bottom: 4px;
                         position: relative;
                         text-transform: uppercase;
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            left: 0;
-                            bottom: 0;
-                            width: 100%;
-                            height: 2px;
-                            background: var(--cor-quinaria);
-                        }
+                        border-bottom: 3px solid var(--cor-quinaria);
                     }
                     ul {
                         list-style: none;
