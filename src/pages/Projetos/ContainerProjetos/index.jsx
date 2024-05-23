@@ -137,7 +137,7 @@ const ContainerProjetos = styled.div`
 
     .rotacionar { transform: rotateY(180deg); }
 
-    .gray { filter: grayscale(100%) brightness(70%) saturate(180%); }
+    .gray { filter: contrast(50%) saturate(0%); }
 
     @media screen and (min-width: 501px) and (max-width: 1000px) {
         .flip-card {
