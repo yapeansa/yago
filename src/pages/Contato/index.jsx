@@ -70,7 +70,7 @@ const Contato = ({ enviado, setEnviado }) => {
             <Secao corDeFundo="var(--darker)">
                 <Container>
                     <Titulo
-                        corDaBorda="linear-gradient(to right, var(--cor-quinaria), var(--cor-terciaria))"
+                        corDaBorda="var(--cor-quinaria)"
                         corDoTexto="var(--branco)"
                     >
                         Contato

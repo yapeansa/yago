@@ -13,9 +13,9 @@ const TituloEstilizado = styled.h2`
         content: '';
         position: absolute;
         left: 50%;
-        margin-left: -22.5%;
+        margin-left: calc(-40% / 2);
         bottom: 0;
-        width: 45%;
+        width: 40%;
         height: 4px;
         background: ${props => props.$cordaborda ? props.$cordaborda : '#000'};
     }

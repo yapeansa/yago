@@ -8,7 +8,7 @@ const EstilosGlobais = createGlobalStyle`
         --fonte-secundaria: 'Montserrat', sans-serif;
         --cor-primaria: #FFC107;
         --cor-secundaria: #F44336;
-        --cor-terciaria: #00BCD4;
+        --cor-terciaria: #a976da;
         --cor-quaternaria: #1F2833;
         --cor-quinaria: #8A2BE2;
         --darker: #0B0C10;

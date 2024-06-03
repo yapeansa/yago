@@ -10,7 +10,7 @@ const About = () => {
             <Secao corDeFundo="var(--lavender)">
                 <Container>
                     <Titulo
-                        corDaBorda="linear-gradient(to right, var(--cor-quinaria), var(--cor-terciaria))"
+                        corDaBorda="var(--cor-quinaria)"
                         corDoTexto="var(--preto)"
                     >
                         Quem sou eu

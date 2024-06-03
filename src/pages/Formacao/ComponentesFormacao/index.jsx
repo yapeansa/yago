@@ -15,11 +15,7 @@ const Formacoes = styled.div`
         .curso-nome {
             font-size: 1.4rem;
             font-weight: normal;
-            //color: var(--quinta-cor);
-            background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--cor-primaria);
         }
         .instituicao-nome {
             font-size: 1.6rem;

@@ -61,7 +61,7 @@ const Navegacao = styled.nav`
                     right: 0;
                     width: 100%;
                     height: 2px;
-                    background: linear-gradient(to right, var(--cor-quinaria), var(--cor-terciaria));
+                    background: var(--cor-quinaria);
                     transition: all .25s ease-in-out;
                 }
                 &:hover {
