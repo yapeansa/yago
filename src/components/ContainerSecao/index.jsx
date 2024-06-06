@@ -10,14 +10,12 @@ const ContainerSecao = styled.section`
     }
 `;
 
-function Secao({ corDeFundo, children }) {
+const Secao = ({ corDeFundo, children, id }) => {
     return (
-        <>
-            <ContainerSecao $cordefundo={corDeFundo}>
-                {children}
-            </ContainerSecao>
-        </>
+        <ContainerSecao $cordefundo={corDeFundo} id={id}>
+            {children}
+        </ContainerSecao>
     );
-}
+};
 
 export default Secao;

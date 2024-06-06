@@ -26,27 +26,25 @@ const Projetos = () => {
     };
 
     return (
-        <div id="projetos">
-            <Secao corDeFundo="var(--lavender)">
-                <Container>
-                    <Titulo
-                        corDaBorda="var(--cor-quinaria)"
-                        corDoTexto="var(--segunda-cor)"
-                    >
-                        Projetos
-                    </Titulo>
-                    <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
-                    <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
-                        {projects.map(projeto =>
-                            <MeusProjetos
-                                key={Number(projeto.id)}
-                                conteudoCard={{ projeto, rotacionar, tomDeCinza }}
-                            />
-                        )}
-                    </ContainerProjetos>
-                </Container>
-            </Secao>
-        </div>
+        <Secao corDeFundo="var(--lavender)" id="projetos">
+            <Container>
+                <Titulo
+                    corDaBorda="var(--cor-quinaria)"
+                    corDoTexto="var(--segunda-cor)"
+                >
+                    Projetos
+                </Titulo>
+                <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
+                <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
+                    {projects.map(projeto =>
+                        <MeusProjetos
+                            key={Number(projeto.id)}
+                            conteudoCard={{ projeto, rotacionar, tomDeCinza }}
+                        />
+                    )}
+                </ContainerProjetos>
+            </Container>
+        </Secao>
     );
 };
 

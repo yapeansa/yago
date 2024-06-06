@@ -66,61 +66,59 @@ const Contato = ({ enviado, setEnviado }) => {
     };
 
     return (
-        <div id="contato">
-            <Secao corDeFundo="var(--darker)">
-                <Container>
-                    <Titulo
-                        corDaBorda="var(--cor-quinaria)"
-                        corDoTexto="var(--branco)"
-                    >
-                        Contato
-                    </Titulo>
-                    <ContainerContato>
-                        <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
-                        <a href="mailto:yapeansa@gmail.com">
-                            <SiGmail size={30} color="var(--cor-primaria)" /> yapeansa@gmail.com
-                        </a>
-                        <p>Ou preencha o formulário abaixo com seus dados e sua mensagem.</p>
-                        <form ref={form} onSubmit={sendEmail}>
-                            <div className="engloba_texto_email">
-                                <input
-                                    type="text"
-                                    name="user_name"
-                                    minLength={3}
-                                    onFocus={() => aoInteragir('nome')}
-                                    onBlur={() => aoInteragir('nome')}
-                                    placeholder={placeHolders.nome}
-                                    required
-                                />
-                                <input
-                                    type="email"
-                                    name="user_email"
-                                    minLength={11}
-                                    onFocus={() => aoInteragir('email')}
-                                    onBlur={() => aoInteragir('email')}
-                                    placeholder={placeHolders.email}
-                                    required
-                                />
-                            </div>
-                            <label>
-                                <textarea
-                                    name="message"
-                                    rows="5"
-                                    minLength={100}
-                                    onFocus={() => aoInteragir()}
-                                    onBlur={() => aoInteragir()}
-                                    placeholder={placeHolders.mensagem}
-                                    required></textarea>
-                            </label>
-                            <div className="acoes__formulario">
-                                <button type="reset">Limpar</button>
-                                <button type="submit">Enviar</button>
-                            </div>
-                        </form>
-                    </ContainerContato>
-                </Container>
-            </Secao>
-        </div>
+        <Secao corDeFundo="var(--darker)" id="contato">
+            <Container>
+                <Titulo
+                    corDaBorda="var(--cor-quinaria)"
+                    corDoTexto="var(--branco)"
+                >
+                    Contato
+                </Titulo>
+                <ContainerContato>
+                    <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
+                    <a href="mailto:yapeansa@gmail.com">
+                        <SiGmail size={30} color="var(--cor-primaria)" /> yapeansa@gmail.com
+                    </a>
+                    <p>Ou preencha o formulário abaixo com seus dados e sua mensagem.</p>
+                    <form ref={form} onSubmit={sendEmail}>
+                        <div className="engloba_texto_email">
+                            <input
+                                type="text"
+                                name="user_name"
+                                minLength={3}
+                                onFocus={() => aoInteragir('nome')}
+                                onBlur={() => aoInteragir('nome')}
+                                placeholder={placeHolders.nome}
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="user_email"
+                                minLength={11}
+                                onFocus={() => aoInteragir('email')}
+                                onBlur={() => aoInteragir('email')}
+                                placeholder={placeHolders.email}
+                                required
+                            />
+                        </div>
+                        <label>
+                            <textarea
+                                name="message"
+                                rows="5"
+                                minLength={100}
+                                onFocus={() => aoInteragir()}
+                                onBlur={() => aoInteragir()}
+                                placeholder={placeHolders.mensagem}
+                                required></textarea>
+                        </label>
+                        <div className="acoes__formulario">
+                            <button type="reset">Limpar</button>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </ContainerContato>
+            </Container>
+        </Secao>
     );
 };
 

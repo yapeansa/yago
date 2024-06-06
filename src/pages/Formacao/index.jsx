@@ -21,60 +21,58 @@ const Formacao = () => {
     };
 
     return (
-        <div id="formacao">
-            <Secao corDeFundo="var(--darker)">
-                <Container>
-                    <Titulo
-                        corDaBorda="var(--cor-quinaria)"
-                        corDoTexto="var(--branco)"
-                    >
-                        Educação
-                    </Titulo>
-                    <TextoCompetencias>
-                        Logo abaixo você pode conferir a minha trajetória acadêmica.
-                    </TextoCompetencias>
-                    <Formacoes>
-                        {cards.map(card =>
-                            <div className="minhas-formacoes" key={card.id}>
-                                <h3 className="curso-nome">{card.curso}</h3>
-                                <h2 className="instituicao-nome">{card.instituição}</h2>
-                                <span className="formacao-descricao">
-                                    <a href={card.link} target={card.link ? '_blank' : '_parent'}>
-                                        <Markdown>Saiba mais</Markdown><FaArrowRight size={20} className="arrow_more" />
-                                    </a>
-                                </span>
-                            </div>
+        <Secao corDeFundo="var(--darker)" id="formacao">
+            <Container>
+                <Titulo
+                    corDaBorda="var(--cor-quinaria)"
+                    corDoTexto="var(--branco)"
+                >
+                    Educação
+                </Titulo>
+                <TextoCompetencias>
+                    Logo abaixo você pode conferir a minha trajetória acadêmica.
+                </TextoCompetencias>
+                <Formacoes>
+                    {cards.map(card =>
+                        <div className="minhas-formacoes" key={card.id}>
+                            <h3 className="curso-nome">{card.curso}</h3>
+                            <h2 className="instituicao-nome">{card.instituição}</h2>
+                            <span className="formacao-descricao">
+                                <a href={card.link} target={card.link ? '_blank' : '_parent'}>
+                                    <Markdown>Saiba mais</Markdown><FaArrowRight size={20} className="arrow_more" />
+                                </a>
+                            </span>
+                        </div>
+                    )}
+                </Formacoes>
+                <Titulo
+                    corDaBorda="var(--cor-quinaria)"
+                    corDoTexto="var(--branco)"
+                >
+                    Minha Stack
+                </Titulo>
+                <TextoCompetencias>
+                    Como desenvolvedor Front-end, possuo competência nas seguintes tecnologias:
+                </TextoCompetencias>
+                <Stacks>
+                    <ul className="icon-skill">
+                        {sociais.map(item =>
+                            <li key={item.id} className={item.classe}>
+                                <a
+                                    href={item.path}
+                                    target="_blank"
+                                    title={item.titulo}
+                                    onMouseEnter={() => opacidade(item.id)}
+                                    onMouseLeave={() => opacidade(item.id)}
+                                >
+                                    {item.nome}
+                                </a>
+                            </li>
                         )}
-                    </Formacoes>
-                    <Titulo
-                        corDaBorda="var(--cor-quinaria)"
-                        corDoTexto="var(--branco)"
-                    >
-                        Minha Stack
-                    </Titulo>
-                    <TextoCompetencias>
-                        Como desenvolvedor Front-end, possuo competência nas seguintes tecnologias:
-                    </TextoCompetencias>
-                    <Stacks>
-                        <ul className="icon-skill">
-                            {sociais.map(item =>
-                                <li key={item.id} className={item.classe}>
-                                    <a
-                                        href={item.path}
-                                        target="_blank"
-                                        title={item.titulo}
-                                        onMouseEnter={() => opacidade(item.id)}
-                                        onMouseLeave={() => opacidade(item.id)}
-                                    >
-                                        {item.nome}
-                                    </a>
-                                </li>
-                            )}
-                        </ul>
-                    </Stacks>
-                </Container>
-            </Secao>
-        </div>
+                    </ul>
+                </Stacks>
+            </Container>
+        </Secao>
     );
 };
 
