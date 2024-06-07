@@ -51,7 +51,7 @@ const AboutInfo = styled.div`
                 border: none;
                 padding: 0;
                 box-shadow: none;
-                text-align: center;
+                text-align: justify;
             }
         }
         .minha-foto {
