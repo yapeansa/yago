@@ -59,8 +59,8 @@ const SecaoIntro = styled.section`
             cursor: pointer;
             display: block;
             padding: .5rem;
-            border: 2px solid var(--cor-primaria);
-            color: var(--cor-terciaria);
+            border: 2px solid var(--troisieme);
+            color: var(--premiere);
         }
     }
 `;

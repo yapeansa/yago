@@ -91,9 +91,6 @@ const Navegacao = styled.nav`
                     width: 0;
                     display: none;
                 }
-                a {
-                    text-decoration-color: var(--primeira-cor);
-                }
             }
         }
     }
