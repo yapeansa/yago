@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 const Formacoes = styled.div`
     margin: 3rem auto 2rem;
-    color: var(--branco);
+    color: var(--troisieme);
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -10,24 +10,24 @@ const Formacoes = styled.div`
         flex-basis: 50%;
         padding: 2rem 2rem;
         text-align: center;
-        border-right: 1px solid var(--cinza-medio);
         &:last-child { border: none; }
         .curso-nome {
             font-size: 1.4rem;
             font-weight: normal;
-            color: var(--cor-primaria);
+            color: var(--premiere);
+            display: inline-block;
         }
         .instituicao-nome {
             font-size: 1.6rem;
             font-weight: 700;
             margin: 1.3rem 0;
-            color: var(--cor-quinaria);
+            color: var(--cinquieme);
         }
         .formacao-descricao {
             font-size: 1.4rem;
             line-height: 1.5;
             a {
-                color: var(--fourth-color);
+                color: var(--cinquieme);
                 font-size: 1.2rem;
                 display: flex;
                 justify-content: center;
@@ -36,34 +36,23 @@ const Formacoes = styled.div`
                 text-transform: uppercase;
                 position: relative;
                 padding: .4rem .2rem .2rem;
-                transition: all .2s ease-in-out;
+                transition: all .3s ease-in-out;
                 z-index: 1;
                 width: fit-content;
                 margin: 0 auto;
+                padding: .5rem 1rem .4rem;
                 font-weight: 700;
                 overflow: hidden;
+                border: 2px solid var(--premiere);
+                border-radius: 8px;
                 .arrow_more {
                     color: var(--cor-primaria);
-                    transition: all .2s ease-in-out;
-                }
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 2px;
-                    background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
-                    transition: all .2s ease-in-out;
-                    z-index: -1;
+                    transition: all .3s ease-in-out;
                 }
                 &:hover {
-                    color: var(--darker);
-                    .arrow_more { color: var(--darker); }
-                    &::before {
-                        width: 100%;
-                        height: 100%;
-                    }
+                    color: var(--deuxieme);
+                    background: var(--premiere);
+                    .arrow_more { color: var(--deuxieme); }
                 }
             }
         }
@@ -76,7 +65,6 @@ const Formacoes = styled.div`
         margin: 0 auto 1.7rem;
         .minhas-formacoes {
             padding: 1.5rem;
-            border: none;
         }
     }
 `;
@@ -85,7 +73,7 @@ const TextoCompetencias = styled.p`
     max-width: 60%;
     font-size: 1.3rem;
     margin: 3rem auto 0;
-    color: var(--branco);
+    color: var(--troisieme);
     line-height: 1.5;
 
     @media screen and (max-width: 768px) {
@@ -105,9 +93,9 @@ const Stacks = styled.div`
         padding: 0 1rem;
         list-style: none;
         li {
-            transition: all .3s ease;
+            transition: all .5s ease-in-out;
             a {
-                transition: all .3s ease;
+                transition: all .5s ease-in-out;
             }
         }
     }

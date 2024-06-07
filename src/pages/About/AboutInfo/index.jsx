@@ -12,11 +12,11 @@ const AboutInfo = styled.div`
         p {
             text-align: justify;
             font-size: 1.3rem;
-            border: 3px solid var(--cor-quaternaria);
+            border: 3px solid var(--deuxieme);
             padding: 2.6rem;
             line-height: 1.4;
-            color: var(--segunda-cor);
-            box-shadow: 1rem 1rem 0 0 var(--cor-quaternaria);
+            color: var(--darker);
+            border-radius: 8px;
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
@@ -24,7 +24,9 @@ const AboutInfo = styled.div`
             }
             .estilizado {
                 font-weight: 700;
-                color: var(--terceira-cor);
+                color: var(--premiere);
+                background: var(--deuxieme);
+                padding: 0 .2rem;
             }
         }
     }
@@ -32,10 +34,7 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border-right: 3px solid var(--lavender-strong);
-            border-bottom: 3px solid var(--cor-quinaria);
-            border-left: 3px solid var(--lavender-strong);
-            border-top: 3px solid var(--cor-quinaria);
+            border: 3px solid var(--deuxieme);
             border-radius: 100%;
             padding: .8rem;
         }

@@ -6,18 +6,18 @@ import me from "@/assets/images/me.jpg";
 
 const About = () => {
     return (
-        <Secao corDeFundo="var(--lavender)" id="sobre">
+        <Secao corDeFundo="var(--premiere)" id="sobre">
             <Container>
                 <Titulo
-                    corDaBorda="var(--cor-quinaria)"
-                    corDoTexto="var(--preto)"
+                    corDaBorda="var(--deuxieme)"
+                    corDoTexto="var(--deuxieme)"
                 >
                     Quem sou eu
                 </Titulo>
                 <AboutInfo>
                     <div className="text-intro">
                         <p>
-                            Olá, meu nome é <span className="estilizado">Yago</span>! Sou um desenvolvedor <span className="estilizado">Front-end</span> em transição de carreira. Busco aplicar as habilidades e conhecimentos adquiridos da minha formação de <span className="estilizado">Matemático</span> ao mundo do desenvolvimento web. Autodidata e vindo de um ambiente que valoriza a pesquisa, prezo pela evolução constante dos meus conhecimentos e por compartilhar os mesmos com as pessoas ao meu redor.
+                            Olá, meu nome é <strong className="estilizado">Yago</strong>! Sou um desenvolvedor <strong className="estilizado">Front-end</strong> em transição de carreira. Busco aplicar as habilidades e conhecimentos adquiridos da minha formação de <strong className="estilizado">Matemático</strong> ao mundo do desenvolvimento web. Autodidata e vindo de um ambiente que valoriza a pesquisa, prezo pela evolução constante dos meus conhecimentos e por compartilhar os mesmos com as pessoas ao meu redor.
                         </p>
                     </div>
                     <div className="minha-foto">

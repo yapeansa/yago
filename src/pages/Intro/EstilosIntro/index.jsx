@@ -7,19 +7,21 @@ const SecaoIntro = styled.section`
         max-width: 80%;
         font-size: 3.4rem;
         margin: 0 0 0 auto;
+        color: var(--troisieme);
         line-height: 1.8;
         text-decoration: underline;
-        text-decoration-thickness: 3px;
-        text-decoration-color: var(--branco);
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--troisieme);
         text-align: right;
         text-shadow: 0 0 5px var(--darker);
         .destaque {
-            background: linear-gradient(to left, var(--cor-quinaria), var(--cor-terciaria));
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--premiere);
+            background-color: var(--deuxieme);
             font-weight: 700;
             text-shadow: none;
+            padding: 0 .3rem;
+            display: inline-block;
+            line-height: 1;
         }
     }
     .drop-menu { display: none; }

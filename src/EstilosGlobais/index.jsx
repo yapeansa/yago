@@ -6,16 +6,14 @@ const EstilosGlobais = createGlobalStyle`
     :root {
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
-        --cor-primaria: #FFC107;
-        --cor-secundaria: #F44336;
-        --cor-terciaria: #a976da;
+
+        --premiere: #cef520;
+        --deuxieme: #141414;
+        --troisieme: #f4f2f2;
+        --noir: #000000;
+
         --cor-quaternaria: #1F2833;
-        --cor-quinaria: #8A2BE2;
         --darker: #0B0C10;
-        --lavender: #E6E6FA;
-        --lavender-strong: #b7b7fa;
-        --branco: #FFFFFF;
-        --cinza: #CCCCCC;
         --cinza-medio: #222;
     }
 

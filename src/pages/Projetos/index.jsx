@@ -26,11 +26,11 @@ const Projetos = () => {
     };
 
     return (
-        <Secao corDeFundo="var(--lavender)" id="projetos">
+        <Secao corDeFundo="var(--noir)" id="projetos">
             <Container>
                 <Titulo
-                    corDaBorda="var(--cor-quinaria)"
-                    corDoTexto="var(--segunda-cor)"
+                    corDaBorda="var(--premiere)"
+                    corDoTexto="var(--troisieme)"
                 >
                     Projetos
                 </Titulo>

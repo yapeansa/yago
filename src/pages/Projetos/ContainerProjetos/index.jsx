@@ -19,7 +19,7 @@ const ContainerProjetos = styled.div`
             height: 100%;
             transition: transform .5s ease-in-out;
             transform-style: preserve-3d;
-            box-shadow: 0 3px 10px 2px #999;
+            box-shadow: 0 0 .5rem 0 var(--premiere);
             .flip-card-front {
                 position: absolute;
                 width: 100%;
@@ -27,8 +27,8 @@ const ContainerProjetos = styled.div`
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 color: black;
-                background-color: var(--segunda-cor);
-                border: 6px solid var(--branco);
+                background-color: var(--deuxieme);
+                border: 2px solid var(--premiere);
                 cursor: pointer;
                 img {
                     width: 100%;
@@ -44,27 +44,30 @@ const ContainerProjetos = styled.div`
                 height: 100%;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background: var(--branco);
-                color: var(--segunda-cor);
+                background: var(--deuxieme);
+                color: var(--troisieme);
                 transform: rotateY(180deg);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
                 padding: 0 1rem;
+                border: 2px solid var(--premiere);
                 .info-card {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     gap: 1.5rem;
                     h1 {
-                        color: var(--terceira-cor);
+                        color: var(--troisieme);
                         font-weight: 400;
                         font-size: 1.4rem;
-                        padding-bottom: 4px;
                         position: relative;
                         text-transform: uppercase;
-                        border-bottom: 3px solid var(--cor-quinaria);
+                        text-decoration: underline;
+                        text-decoration-thickness: 3px;
+                        text-decoration-color: var(--premiere);
+                        text-decoration-style: wavy;
                     }
                     ul {
                         list-style: none;
@@ -76,35 +79,17 @@ const ContainerProjetos = styled.div`
                             gap: .6rem;
                             text-transform: uppercase;
                             font-size: 1rem;
-                            color: var(--preto);
+                            color: var(--deuxieme);
                             padding: 8px 15px;
                             position: relative;
-                            border-left: 3px solid var(--cor-secundaria);
-                            border-right: 3px solid var(--cor-primaria);
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                left: 0;
-                                top: 0;
-                                width: 100%;
-                                height: 3px;
-                                background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
-                                transition: .3s ease-in-out;
-                                z-index: -1;
-                            }
-                            &::after {
-                                content: '';
-                                position: absolute;
-                                left: 0;
-                                bottom: 0;
-                                width: 100%;
-                                height: 3px;
-                                background: linear-gradient(to right, var(--cor-secundaria), var(--cor-primaria));
-                            }
+                            border: 3px solid var(--deuxieme);
+                            background: var(--premiere);
+                            border-radius: 10px;
+                            transition: all .3s ease-in-out;
                             &:hover {
-                                &::before {
-                                    height: 100%;
-                                }
+                                border-color: var(--premiere);
+                                color: var(--troisieme);
+                                background: var(--deuxieme);
                             }
                         }
                     }
@@ -114,7 +99,8 @@ const ContainerProjetos = styled.div`
                     bottom: .5rem;
                     right: .5rem;
                     border: none;
-                    background: linear-gradient(to bottom, var(--darker), var(--cinza-medio));
+                    background: var(--deuxieme);
+                    border: 2px solid var(--premiere);
                     width: 3rem;
                     height: 3rem;
                     border-radius: 100%;
@@ -128,7 +114,7 @@ const ContainerProjetos = styled.div`
                     }
                     cursor: pointer;
                     .voltar {
-                        color: var(--branco);
+                        color: var(--premiere);
                     }
                 }
             }

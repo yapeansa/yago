@@ -12,7 +12,7 @@ const BotaoScrollTop = () => {
         window.scrollEndTimer = setTimeout(() => {
             setAcoesBotao({ animar: true, mostrarBotao: true });
         }, 300);
-    }
+    };
 
     const desaparecerBotao = () => {
         clearInterval(window.scrollEndTimer);
@@ -20,7 +20,7 @@ const BotaoScrollTop = () => {
             setAcoesBotao({ ...acoesBotao, animar: false });
             setTimeout(() => setAcoesBotao({ ...acoesBotao, mostrarBotao: false }), 300);
         }, 400);
-    }
+    };
 
     const aoRolar = () => (window.scrollY > (screen.availHeight - 100)) ? aparecerBotao() : desaparecerBotao();
 
@@ -32,7 +32,7 @@ const BotaoScrollTop = () => {
     return (
         <EstilosScrollTop $display={mostrarEsconder} $animacao={animarToggle}>
             <a href="#">
-                <FaArrowUpLong color="var(--branco)" size={27} />
+                <FaArrowUpLong color="var(--troisieme)" size={27} />
             </a>
         </EstilosScrollTop>
     );

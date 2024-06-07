@@ -21,11 +21,11 @@ const Formacao = () => {
     };
 
     return (
-        <Secao corDeFundo="var(--darker)" id="formacao">
+        <Secao corDeFundo="var(--deuxieme)" id="formacao">
             <Container>
                 <Titulo
-                    corDaBorda="var(--cor-quinaria)"
-                    corDoTexto="var(--branco)"
+                    corDaBorda="var(--premiere)"
+                    corDoTexto="var(--troisieme)"
                 >
                     Educação
                 </Titulo>
@@ -46,8 +46,8 @@ const Formacao = () => {
                     )}
                 </Formacoes>
                 <Titulo
-                    corDaBorda="var(--cor-quinaria)"
-                    corDoTexto="var(--branco)"
+                    corDaBorda="var(--premiere)"
+                    corDoTexto="var(--troisieme)"
                 >
                     Minha Stack
                 </Titulo>

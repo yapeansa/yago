@@ -6,6 +6,7 @@ import Titulo from "@/components/Titulo";
 import ContainerContato from "./ContainerContato";
 import Container from "@/components/Container";
 import { SiGmail } from "react-icons/si";
+import { IoIosSend } from "react-icons/io";
 
 const Contato = ({ enviado, setEnviado }) => {
 
@@ -66,18 +67,18 @@ const Contato = ({ enviado, setEnviado }) => {
     };
 
     return (
-        <Secao corDeFundo="var(--darker)" id="contato">
+        <Secao corDeFundo="linear-gradient(to bottom, var(--deuxieme), var(--noir))" id="contato">
             <Container>
                 <Titulo
-                    corDaBorda="var(--cor-quinaria)"
-                    corDoTexto="var(--branco)"
+                    corDaBorda="var(--premiere)"
+                    corDoTexto="var(--troisieme)"
                 >
                     Contato
                 </Titulo>
                 <ContainerContato>
                     <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
                     <a href="mailto:yapeansa@gmail.com">
-                        <SiGmail size={30} color="var(--cor-primaria)" /> yapeansa@gmail.com
+                        <SiGmail size={30} color="var(--premiere)" /> yapeansa@gmail.com
                     </a>
                     <p>Ou preencha o formulário abaixo com seus dados e sua mensagem.</p>
                     <form ref={form} onSubmit={sendEmail}>
@@ -113,7 +114,7 @@ const Contato = ({ enviado, setEnviado }) => {
                         </label>
                         <div className="acoes__formulario">
                             <button type="reset">Limpar</button>
-                            <button type="submit">Enviar</button>
+                            <button type="submit">Enviar <IoIosSend size={27} class="send_bullet" /></button>
                         </div>
                     </form>
                 </ContainerContato>

@@ -2,7 +2,7 @@ const menu = [
     {
         id: 1,
         nome: "Home",
-        caminho: "/index.html",
+        caminho: "/",
         classe: ''
     },
     {

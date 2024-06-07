@@ -15,7 +15,7 @@ const Navegacao = styled.nav`
             counter-increment: list;
             display: flex;
             gap: 2rem;
-            color: var(--branco);
+            color: var(--troisieme);
             align-items: center;
             transition: all .25s ease-in-out;
             &::before {
@@ -30,7 +30,7 @@ const Navegacao = styled.nav`
             }
             &:hover {
                 &::before {
-                    color: var(--cor-quinaria);
+                    color: var(--premiere);
                 }
             }
             a {
@@ -42,7 +42,6 @@ const Navegacao = styled.nav`
                 z-index: 1;
                 transition: all .25s ease-out;
                 text-transform: uppercase;
-                //border-bottom: 2px solid var(--cor-quinaria);
                 &::before {
                     content: '';
                     z-index: -1;
@@ -51,7 +50,7 @@ const Navegacao = styled.nav`
                     left: 0;
                     width: 0;
                     height: 100%;
-                    background: var(--cor-primaria);
+                    background: var(--premiere);
                     transition: all .25s ease-in-out;
                 }
                 &::after {
@@ -61,7 +60,7 @@ const Navegacao = styled.nav`
                     right: 0;
                     width: 100%;
                     height: 2px;
-                    background: var(--cor-quinaria);
+                    background: var(--premiere);
                     transition: all .25s ease-in-out;
                 }
                 &:hover {
