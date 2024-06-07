@@ -6,16 +6,15 @@ const AboutInfo = styled.div`
     align-items: center;
     margin-top: 3rem;
     padding: 0 2.5rem;
-    color: var(--preto);
+    color: var(--troisieme);
     .text-intro {
         flex: 0 1 55%;
         p {
             text-align: center;
             font-size: 1.3rem;
-            border: 3px solid var(--deuxieme);
+            border: 2px solid var(--premiere);
             padding: 2.6rem;
-            line-height: 1.4;
-            color: var(--darker);
+            line-height: 1.5;
             border-radius: 9px;
             a {
                 border-bottom: 2px solid var(--primeira-cor);
@@ -24,8 +23,8 @@ const AboutInfo = styled.div`
             }
             .estilizado {
                 font-weight: 700;
-                color: var(--premiere);
-                background: var(--deuxieme);
+                color: var(--deuxieme);
+                background: var(--premiere);
                 padding: 0 .2rem;
             }
         }
@@ -34,7 +33,7 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: 3px solid var(--deuxieme);
+            border: 2px solid var(--premiere);
             border-radius: 100%;
             padding: .8rem;
         }
