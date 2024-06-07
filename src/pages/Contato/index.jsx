@@ -76,11 +76,11 @@ const Contato = ({ enviado, setEnviado }) => {
                     Contato
                 </Titulo>
                 <ContainerContato>
-                    <p>Pronto para trazer vida ao seu projeto ou para me incluir no seu time? Você pode me enviar um e-mail através do seguinte endereço:</p>
+                    <p>Pronto para trazer vida ao seu projeto? Você pode falar comigo enviando-me um e-mail através do seguinte endereço:</p>
                     <a href="mailto:yapeansa@gmail.com">
                         <SiGmail size={30} color="var(--premiere)" /> yapeansa@gmail.com
                     </a>
-                    <p>Ou preencha o formulário abaixo com seus dados e sua mensagem.</p>
+                    <p>Ou, se preferir, preencha o formulário a seguir com os seus dados e sua mensagem.</p>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="engloba_texto_email">
                             <input

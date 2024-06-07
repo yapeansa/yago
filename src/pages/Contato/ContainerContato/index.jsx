@@ -6,7 +6,7 @@ const ContainerContato = styled.div`
     p {
         color: var(--troisieme);
         font-size: 1.3rem;
-        max-width: 55%;
+        max-width: 60%;
         margin: 0 auto;
     }
     a {
@@ -15,7 +15,7 @@ const ContainerContato = styled.div`
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin: 30px auto;
+        margin: 1rem auto 1.5rem;
         transition: all .3s ease-in;
         position: relative;
         padding: .5rem 0;
