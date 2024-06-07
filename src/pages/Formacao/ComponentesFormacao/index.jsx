@@ -21,13 +21,13 @@ const Formacoes = styled.div`
             font-size: 1.6rem;
             font-weight: 700;
             margin: 1.3rem 0;
-            color: var(--cinquieme);
+            color: var(--troisieme);
         }
         .formacao-descricao {
             font-size: 1.4rem;
             line-height: 1.5;
             a {
-                color: var(--cinquieme);
+                color: var(--troisieme);
                 font-size: 1.2rem;
                 display: flex;
                 justify-content: center;
@@ -46,7 +46,7 @@ const Formacoes = styled.div`
                 border: 2px solid var(--premiere);
                 border-radius: 8px;
                 .arrow_more {
-                    color: var(--cor-primaria);
+                    color: var(--premiere);
                     transition: all .3s ease-in-out;
                 }
                 &:hover {

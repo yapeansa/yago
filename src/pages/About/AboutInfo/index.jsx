@@ -10,13 +10,13 @@ const AboutInfo = styled.div`
     .text-intro {
         flex: 0 1 55%;
         p {
-            text-align: justify;
+            text-align: center;
             font-size: 1.3rem;
             border: 3px solid var(--deuxieme);
             padding: 2.6rem;
             line-height: 1.4;
             color: var(--darker);
-            border-radius: 8px;
+            border-radius: 9px;
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
