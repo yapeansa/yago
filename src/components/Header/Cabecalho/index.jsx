@@ -8,7 +8,7 @@ const Cabecalho = styled.header`
     aside {
         flex-basis: 50%;
         display: flex;
-        gap: 3rem;
+        gap: 5rem;
         flex-direction: column;
         justify-content: center;
         padding: 2rem 0;
@@ -34,7 +34,7 @@ const Cabecalho = styled.header`
         aside {
             height: 100vh;
             min-height: 100vh;
-            gap: 4.5rem;
+            gap: 7rem;
             align-items: center;
             background-color: var(--darker);
             position: absolute;

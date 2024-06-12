@@ -5,17 +5,17 @@ const ContainerContato = styled.div`
     line-height: 1.5;
     p {
         color: var(--troisieme);
-        font-size: 1.3rem;
+        font-size: 2rem;
         max-width: 60%;
         margin: 0 auto;
     }
     a {
         color: var(--troisieme);
-        font-size: 1.3rem;
+        font-size: 2rem;
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin: 1rem auto 1.5rem;
+        margin: 2.5rem auto 3rem;
         transition: all .3s ease-in;
         position: relative;
         padding: .5rem 0;
@@ -44,21 +44,21 @@ const ContainerContato = styled.div`
         margin: 60px auto 0;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 0 1.5rem;
         .engloba_texto_email {
             width: 100%;
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 1.5rem;
             input[type=text], input[type=email] {
                 flex: 1 1 auto;
                 font-family: var(--fonte-secundaria);
-                font-size: 1rem;
+                font-size: 1.7rem;
                 background: transparent;
-                border: 2px solid var(--cor-quaternaria);
-                padding: 1.2rem 1rem;
+                border: .2rem solid var(--cor-quaternaria);
+                padding: 1.8rem 1.2rem;
                 outline: none;
                 color: var(--troisieme);
                 transition: all .3s ease-in-out;
@@ -73,10 +73,10 @@ const ContainerContato = styled.div`
             resize: none;
             width: 100%;
             font-family: var(--fonte-secundaria);
-            font-size: 1rem;
+            font-size: 1.8rem;
             background: transparent;
-            border: 2px solid var(--cor-quaternaria);
-            padding: 1.2rem 1rem;
+            border: .2rem solid var(--cor-quaternaria);
+            padding: 1.5rem 1rem;
             outline: none;
             color: var(--troisieme);
             transition: all .3s ease-in-out;
@@ -92,22 +92,26 @@ const ContainerContato = styled.div`
             gap: 2rem;
             flex-wrap: wrap;
             button[type=reset], button[type=submit] {
-                flex: 1 1 auto;
+                flex: 1 1 40%;
+
                 background: transparent;
                 font-family: var(--fonte-primaria);
-                border: 3px solid var(--premiere);
-                border-radius: 10px;
                 font-weight: 400;
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: var(--troisieme);
+
+                border: .3rem solid var(--premiere);
+                border-radius: 10px;
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
-                font-size: 1.2rem;
-                text-transform: uppercase;
+                
                 cursor: pointer;
-                padding: .8rem;
+                padding: 1rem;
                 transition: all .3s ease-in-out;
-                color: var(--troisieme);
                 position: relative;
                 z-index: 1;
                 overflow: hidden;

@@ -4,12 +4,14 @@ import bg_2 from "@/assets/images/bg_2.jpg";
 
 const EstilosGlobais = createGlobalStyle`
     :root {
+        font-size: 62.5%;
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 
-        --premiere: #cef520;
+        --premiere: #35E6E9;
         --deuxieme: #141414;
         --troisieme: #f4f2f2;
+        --quatrieme: #FF5678;
         --noir: #000000;
 
         --cor-quaternaria: #1F2833;
@@ -43,7 +45,7 @@ const EstilosGlobais = createGlobalStyle`
         body {
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             background: var(--darker) url(${bg}) center / cover no-repeat fixed;
             &::-webkit-scrollbar {
                 width: .6rem;

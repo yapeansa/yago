@@ -11,11 +11,11 @@ const AboutInfo = styled.div`
         flex: 0 1 55%;
         p {
             text-align: center;
-            font-size: 1.3rem;
-            border: 2px solid var(--premiere);
-            padding: 2.6rem;
+            font-size: 2rem;
+            border: .2rem solid var(--premiere);
+            padding: 3.6rem;
             line-height: 1.5;
-            border-radius: 9px;
+            border-radius: .9rem;
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
@@ -26,6 +26,7 @@ const AboutInfo = styled.div`
                 color: var(--deuxieme);
                 background: var(--premiere);
                 padding: 0 .2rem;
+                border-radius: .8rem;
             }
         }
     }
@@ -33,9 +34,9 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: 2px solid var(--premiere);
+            border: .2rem solid var(--premiere);
             border-radius: 100%;
-            padding: .8rem;
+            padding: 1.2rem;
         }
     }
 

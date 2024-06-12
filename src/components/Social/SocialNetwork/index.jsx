@@ -4,7 +4,7 @@ const SocialNetwork = styled.div`
     ul {
         list-style-type: none;
         display: flex;
-        gap: 1.6rem;
+        gap: 2.5rem;
         li {
             transition: all .3s ease-in-out;
             .social {

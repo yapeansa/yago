@@ -11,7 +11,7 @@ const Navegacao = styled.nav`
         li {
             font-family: var(--fonte-secundaria);
             font-weight: normal;
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             counter-increment: list;
             display: flex;
             gap: 2rem;
@@ -20,12 +20,12 @@ const Navegacao = styled.nav`
             transition: all .25s ease-in-out;
             &::before {
                 content: counter(list);
-                width: 18px;
+                width: 3rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 color: var(--cor-quaternaria);
-                font-size: 3.75rem;
+                font-size: 6rem;
                 transition: all .25s ease-in-out;
             }
             &:hover {
@@ -82,10 +82,10 @@ const Navegacao = styled.nav`
     @media screen and (max-width: 960px) {
         padding: 0;
         ol {
-            gap: 1rem;
+            gap: 2rem;
             align-items: center;
             li {
-                font-size: 1.5rem;
+                font-size: 3rem;
                 &::before {
                     content: '';
                     width: 0;

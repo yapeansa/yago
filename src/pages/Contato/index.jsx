@@ -114,7 +114,7 @@ const Contato = ({ enviado, setEnviado }) => {
                         </label>
                         <div className="acoes__formulario">
                             <button type="reset">Limpar</button>
-                            <button type="submit">Enviar <IoIosSend size={27} class="send_bullet" /></button>
+                            <button type="submit">Enviar <IoIosSend size={27} className="send_bullet" /></button>
                         </div>
                     </form>
                 </ContainerContato>

@@ -12,15 +12,15 @@ const Formacoes = styled.div`
         text-align: center;
         &:last-child { border: none; }
         .curso-nome {
-            font-size: 1.4rem;
+            font-size: 2rem;
             font-weight: normal;
             color: var(--premiere);
             display: inline-block;
         }
         .instituicao-nome {
-            font-size: 1.6rem;
+            font-size: 2.4rem;
             font-weight: 700;
-            margin: 1.3rem 0;
+            margin: 2.5rem 0;
             color: var(--troisieme);
         }
         .formacao-descricao {
@@ -28,19 +28,18 @@ const Formacoes = styled.div`
             line-height: 1.5;
             a {
                 color: var(--troisieme);
-                font-size: 1.2rem;
+                font-size: 1.8rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: .6rem;
+                gap: 1rem;
                 text-transform: uppercase;
                 position: relative;
-                padding: .4rem .2rem .2rem;
                 transition: all .3s ease-in-out;
                 z-index: 1;
                 width: fit-content;
                 margin: 0 auto;
-                padding: .5rem 1rem .4rem;
+                padding: .9rem 1.5rem .8rem;
                 font-weight: 700;
                 overflow: hidden;
                 border: 2px solid var(--premiere);
@@ -71,8 +70,8 @@ const Formacoes = styled.div`
 
 const TextoCompetencias = styled.p`
     max-width: 60%;
-    font-size: 1.3rem;
-    margin: 3rem auto 0;
+    font-size: 2rem;
+    margin: 3.5rem auto 0;
     color: var(--troisieme);
     line-height: 1.5;
 
@@ -89,7 +88,7 @@ const Stacks = styled.div`
         align-items: center;
         flex-wrap: wrap;
         gap: 2.2rem;
-        margin-top: 3.5rem;
+        margin-top: 4rem;
         padding: 0 1rem;
         list-style: none;
         li {

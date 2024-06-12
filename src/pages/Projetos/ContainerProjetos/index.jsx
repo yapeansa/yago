@@ -28,7 +28,7 @@ const ContainerProjetos = styled.div`
                 backface-visibility: hidden;
                 color: black;
                 background-color: var(--deuxieme);
-                border: 2px solid var(--premiere);
+                border: .3rem solid var(--premiere);
                 cursor: pointer;
                 img {
                     width: 100%;
@@ -52,7 +52,7 @@ const ContainerProjetos = styled.div`
                 justify-content: center;
                 text-align: center;
                 padding: 0 1rem;
-                border: 2px solid var(--premiere);
+                border: .2rem solid var(--premiere);
                 .info-card {
                     display: flex;
                     flex-direction: column;
@@ -61,13 +61,17 @@ const ContainerProjetos = styled.div`
                     h1 {
                         color: var(--troisieme);
                         font-weight: 400;
-                        font-size: 1.4rem;
+                        font-size: 2.4rem;
                         position: relative;
                         text-transform: uppercase;
                         text-decoration: underline;
-                        text-decoration-thickness: 3px;
+                        text-decoration-thickness: .3rem;
                         text-decoration-color: var(--premiere);
                         text-decoration-style: wavy;
+                    }
+                    p {
+                        font-size: 1.8rem;
+                        margin: 1.5rem 0 1rem;
                     }
                     ul {
                         list-style: none;
@@ -78,7 +82,7 @@ const ContainerProjetos = styled.div`
                             align-items: center;
                             gap: .6rem;
                             text-transform: uppercase;
-                            font-size: 1rem;
+                            font-size: 1.52rem;
                             color: var(--deuxieme);
                             padding: 8px 15px;
                             position: relative;
@@ -96,13 +100,13 @@ const ContainerProjetos = styled.div`
                 }
                 .aciona-rotacao {
                     position: absolute;
-                    bottom: .5rem;
-                    right: .5rem;
+                    bottom: 1.2rem;
+                    right: 1.2rem;
                     border: none;
                     background: var(--deuxieme);
                     border: 2px solid var(--premiere);
-                    width: 3rem;
-                    height: 3rem;
+                    width: 4rem;
+                    height: 4rem;
                     border-radius: 100%;
                     display: flex;
                     justify-content: center;

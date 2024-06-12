@@ -3,8 +3,8 @@ import { styled } from "styled-components";
 const Rodape = styled.footer`
     background-color: var(--noir);
     color: var(--troisieme);
-    font-size: 1.3rem;
-    padding: 0 0 4rem;
+    font-size: 1.9rem;
+    padding: 0 0 6rem;
     text-align: center;
     line-height: 1.5;
     a {

@@ -5,15 +5,17 @@ const SecaoIntro = styled.section`
     font-weight: 100;
     p {
         max-width: 80%;
-        font-size: 3.4rem;
+        font-size: 5.3rem;
         margin: 0 0 0 auto;
         color: var(--troisieme);
         line-height: 1.8;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-        text-decoration-color: var(--troisieme);
         text-align: right;
         text-shadow: 0 0 5px var(--darker);
+        .corpo-t {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: var(--troisieme);
+        }
         .destaque {
             color: var(--premiere);
             background-color: var(--deuxieme);
@@ -45,8 +47,8 @@ const SecaoIntro = styled.section`
         p {
             text-align: center;
             margin: 0 auto;
-            max-width: 80%;
-            font-size: 2rem;
+            max-width: 90%;
+            font-size: 3.7rem;
             text-decoration-thickness: 2px;
         }
         .aparecer-social {
@@ -54,12 +56,12 @@ const SecaoIntro = styled.section`
         }
         .drop-menu {
             position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
+            top: 2rem;
+            right: 2rem;
             cursor: pointer;
             display: block;
             padding: .5rem;
-            border: 2px solid var(--troisieme);
+            border: .2rem solid var(--troisieme);
             color: var(--premiere);
         }
     }

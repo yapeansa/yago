@@ -3,7 +3,7 @@ import logo from "@/assets/images/logo.svg";
 
 const ContainerLogo = styled.div`
     display: inline-block;
-    max-width: 9.8rem;
+    max-width: 15rem;
     @media screen and (max-width: 960px) {
         display: none;
     }
