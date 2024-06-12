@@ -12,7 +12,7 @@ const AboutInfo = styled.div`
         p {
             text-align: center;
             font-size: 2rem;
-            border: .2rem solid var(--quatrieme);
+            border: .6rem double var(--quatrieme);
             padding: 3.6rem;
             line-height: 1.5;
             border-radius: .9rem;
@@ -52,7 +52,7 @@ const AboutInfo = styled.div`
                 border: none;
                 padding: 0;
                 box-shadow: none;
-                text-align: justify;
+                text-align: center;
             }
         }
         .minha-foto {

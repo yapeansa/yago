@@ -61,8 +61,8 @@ const SecaoIntro = styled.section`
             cursor: pointer;
             display: block;
             padding: .5rem;
-            border: .2rem solid var(--troisieme);
-            color: var(--premiere);
+            border: .2rem solid var(--quatrieme);
+            color: var(--troisieme);
         }
     }
 `;
