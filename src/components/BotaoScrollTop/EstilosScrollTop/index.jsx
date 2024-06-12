@@ -13,7 +13,7 @@ const EstilosScrollTop = styled.div`
     a {
         display: block;
         background: var(--noir);
-        border: .2rem solid var(--premiere);
+        border: .2rem solid var(--quatrieme);
         padding: 1.8rem 1.3rem .5rem;
     }
 `;

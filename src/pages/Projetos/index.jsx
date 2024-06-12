@@ -29,7 +29,7 @@ const Projetos = () => {
         <Secao corDeFundo="var(--noir)" id="projetos">
             <Container>
                 <Titulo
-                    corDaBorda="var(--premiere)"
+                    corDaBorda="var(--quatrieme)"
                     corDoTexto="var(--troisieme)"
                 >
                     Projetos

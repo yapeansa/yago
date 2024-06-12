@@ -14,7 +14,7 @@ const Formacoes = styled.div`
         .curso-nome {
             font-size: 2rem;
             font-weight: normal;
-            color: var(--premiere);
+            color: var(--quatrieme);
             display: inline-block;
         }
         .instituicao-nome {
@@ -35,22 +35,22 @@ const Formacoes = styled.div`
                 gap: 1rem;
                 text-transform: uppercase;
                 position: relative;
-                transition: all .3s ease-in-out;
+                transition: all .35s ease-in-out;
                 z-index: 1;
                 width: fit-content;
                 margin: 0 auto;
                 padding: .9rem 1.5rem .8rem;
                 font-weight: 700;
                 overflow: hidden;
-                border: 2px solid var(--premiere);
+                border: .2rem solid var(--quatrieme);
                 border-radius: 8px;
                 .arrow_more {
-                    color: var(--premiere);
-                    transition: all .3s ease-in-out;
+                    color: var(--quatrieme);
+                    transition: all .35s ease-in-out;
                 }
                 &:hover {
                     color: var(--deuxieme);
-                    background: var(--premiere);
+                    background: var(--quatrieme);
                     .arrow_more { color: var(--deuxieme); }
                 }
             }

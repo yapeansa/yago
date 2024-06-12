@@ -26,7 +26,7 @@ const ContainerContato = styled.div`
             left: 50%;
             margin-left: -15%;
             bottom: 0;
-            background: var(--premiere);
+            background: var(--quatrieme);
             width: 30%;
             height: 2px;
             transition: all .3s ease-in-out;
@@ -62,7 +62,7 @@ const ContainerContato = styled.div`
                 outline: none;
                 color: var(--troisieme);
                 transition: all .3s ease-in-out;
-                &:focus { border-color: var(--premiere); }
+                &:focus { border-color: var(--quatrieme); }
                 &::placeholder {
                     opacity: 1;
                     color: var(--troisieme);
@@ -80,7 +80,7 @@ const ContainerContato = styled.div`
             outline: none;
             color: var(--troisieme);
             transition: all .3s ease-in-out;
-            &:focus { border-color: var(--premiere); }
+            &:focus { border-color: var(--quatrieme); }
             &::placeholder {
                 opacity: 1;
                 color: var(--troisieme);
@@ -101,7 +101,7 @@ const ContainerContato = styled.div`
                 text-transform: uppercase;
                 color: var(--troisieme);
 
-                border: .3rem solid var(--premiere);
+                border: .3rem solid var(--quatrieme);
                 border-radius: 10px;
 
                 display: flex;
@@ -116,12 +116,12 @@ const ContainerContato = styled.div`
                 z-index: 1;
                 overflow: hidden;
                 .send_bullet {
-                    color: var(--premiere);
+                    color: var(--quatrieme);
                     transition: all .3s ease-in-out;
                 }
                 &:hover {
                     color: var(--deuxieme);
-                    background: var(--premiere);
+                    background: var(--quatrieme);
                     .send_bullet { color: var(--deuxieme); }
                 }
             }

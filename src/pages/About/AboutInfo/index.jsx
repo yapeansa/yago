@@ -12,7 +12,7 @@ const AboutInfo = styled.div`
         p {
             text-align: center;
             font-size: 2rem;
-            border: .2rem solid var(--premiere);
+            border: .2rem solid var(--quatrieme);
             padding: 3.6rem;
             line-height: 1.5;
             border-radius: .9rem;
@@ -24,8 +24,8 @@ const AboutInfo = styled.div`
             .estilizado {
                 font-weight: 700;
                 color: var(--deuxieme);
-                background: var(--premiere);
-                padding: 0 .2rem;
+                background: var(--quatrieme);
+                padding: 0 .3rem;
                 border-radius: .8rem;
             }
         }
@@ -34,7 +34,7 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: .2rem solid var(--premiere);
+            border: .2rem solid var(--quatrieme);
             border-radius: 100%;
             padding: 1.2rem;
         }

@@ -17,7 +17,7 @@ const SecaoIntro = styled.section`
             text-decoration-color: var(--troisieme);
         }
         .destaque {
-            color: var(--premiere);
+            color: var(--quatrieme);
             background-color: var(--deuxieme);
             font-weight: 700;
             text-shadow: none;

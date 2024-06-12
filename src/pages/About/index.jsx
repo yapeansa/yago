@@ -9,7 +9,7 @@ const About = () => {
         <Secao corDeFundo="linear-gradient(to bottom, var(--noir), var(--deuxieme))" id="sobre">
             <Container>
                 <Titulo
-                    corDaBorda="var(--premiere)"
+                    corDaBorda="var(--quatrieme)"
                     corDoTexto="var(--troisieme)"
                 >
                     Quem sou eu

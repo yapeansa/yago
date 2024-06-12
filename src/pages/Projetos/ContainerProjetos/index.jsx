@@ -4,9 +4,9 @@ const ContainerProjetos = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 3.5rem;
     width: auto;
-    padding: 0 1rem;
+    padding: 0 .5rem;
     .flip-card {
         flex: 0 0 30%;
         perspective: 1000px;
@@ -19,7 +19,6 @@ const ContainerProjetos = styled.div`
             height: 100%;
             transition: transform .5s ease-in-out;
             transform-style: preserve-3d;
-            box-shadow: 0 0 .5rem 0 var(--premiere);
             .flip-card-front {
                 position: absolute;
                 width: 100%;
@@ -28,7 +27,7 @@ const ContainerProjetos = styled.div`
                 backface-visibility: hidden;
                 color: black;
                 background-color: var(--deuxieme);
-                border: .3rem solid var(--premiere);
+                border: .3rem solid var(--quatrieme);
                 cursor: pointer;
                 img {
                     width: 100%;
@@ -52,7 +51,7 @@ const ContainerProjetos = styled.div`
                 justify-content: center;
                 text-align: center;
                 padding: 0 1rem;
-                border: .2rem solid var(--premiere);
+                border: .2rem solid var(--quatrieme);
                 .info-card {
                     display: flex;
                     flex-direction: column;
@@ -66,7 +65,7 @@ const ContainerProjetos = styled.div`
                         text-transform: uppercase;
                         text-decoration: underline;
                         text-decoration-thickness: .3rem;
-                        text-decoration-color: var(--premiere);
+                        text-decoration-color: var(--quatrieme);
                         text-decoration-style: wavy;
                     }
                     p {
@@ -87,11 +86,11 @@ const ContainerProjetos = styled.div`
                             padding: 8px 15px;
                             position: relative;
                             border: 3px solid var(--deuxieme);
-                            background: var(--premiere);
+                            background: var(--quatrieme);
                             border-radius: 10px;
                             transition: all .3s ease-in-out;
                             &:hover {
-                                border-color: var(--premiere);
+                                border-color: var(--quatrieme);
                                 color: var(--troisieme);
                                 background: var(--deuxieme);
                             }
@@ -104,7 +103,7 @@ const ContainerProjetos = styled.div`
                     right: 1.2rem;
                     border: none;
                     background: var(--deuxieme);
-                    border: 2px solid var(--premiere);
+                    border: 2px solid var(--quatrieme);
                     width: 4rem;
                     height: 4rem;
                     border-radius: 100%;
@@ -118,7 +117,7 @@ const ContainerProjetos = styled.div`
                     }
                     cursor: pointer;
                     .voltar {
-                        color: var(--premiere);
+                        color: var(--quatrieme);
                     }
                 }
             }

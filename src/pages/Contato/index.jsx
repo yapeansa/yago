@@ -70,7 +70,7 @@ const Contato = ({ enviado, setEnviado }) => {
         <Secao corDeFundo="linear-gradient(to bottom, var(--deuxieme), var(--noir))" id="contato">
             <Container>
                 <Titulo
-                    corDaBorda="var(--premiere)"
+                    corDaBorda="var(--quatrieme)"
                     corDoTexto="var(--troisieme)"
                 >
                     Contato
@@ -78,7 +78,7 @@ const Contato = ({ enviado, setEnviado }) => {
                 <ContainerContato>
                     <p>Pronto para trazer vida ao seu projeto? Você pode falar comigo enviando-me um e-mail através do seguinte endereço:</p>
                     <a href="mailto:yapeansa@gmail.com">
-                        <SiGmail size={30} color="var(--premiere)" /> yapeansa@gmail.com
+                        <SiGmail size={30} color="var(--quatrieme)" /> yapeansa@gmail.com
                     </a>
                     <p>Ou, se preferir, preencha o formulário a seguir com os seus dados e sua mensagem.</p>
                     <form ref={form} onSubmit={sendEmail}>

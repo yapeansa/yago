@@ -24,7 +24,7 @@ const Formacao = () => {
         <Secao corDeFundo="linear-gradient(to bottom, var(--noir), var(--deuxieme))" id="formacao">
             <Container>
                 <Titulo
-                    corDaBorda="var(--premiere)"
+                    corDaBorda="var(--quatrieme)"
                     corDoTexto="var(--troisieme)"
                 >
                     Educação
@@ -46,7 +46,7 @@ const Formacao = () => {
                     )}
                 </Formacoes>
                 <Titulo
-                    corDaBorda="var(--premiere)"
+                    corDaBorda="var(--quatrieme)"
                     corDoTexto="var(--troisieme)"
                 >
                     Minha Stack
