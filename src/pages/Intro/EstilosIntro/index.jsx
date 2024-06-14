@@ -11,16 +11,14 @@ const SecaoIntro = styled.section`
         line-height: 1.8;
         text-align: right;
         text-shadow: 0 0 5px var(--darker);
-        .corpo-t {
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-            text-decoration-color: var(--troisieme);
-        }
+        text-decoration: underline;
+        text-decoration-thickness: .2rem;
         .destaque {
             color: var(--quatrieme);
-            background-color: rgba(0, 0, 0, .5);
+            background-color: rgba(0, 0, 0, .7);
             font-weight: 700;
             text-shadow: none;
+            text-decoration: none;
             padding: 0 .3rem;
             display: inline-block;
             line-height: 1;
