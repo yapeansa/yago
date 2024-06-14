@@ -24,7 +24,7 @@ const Navegacao = styled.nav`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: var(--cor-quaternaria);
+                color: var(--cinza-medio);
                 font-size: 6rem;
                 transition: all .25s ease-in-out;
             }
@@ -50,7 +50,7 @@ const Navegacao = styled.nav`
                     left: 0;
                     width: 0;
                     height: 100%;
-                    background: var(--quatrieme);
+                    background: var(--premiere);
                     transition: all .25s ease-in-out;
                 }
                 &::after {
@@ -64,7 +64,7 @@ const Navegacao = styled.nav`
                     transition: all .25s ease-in-out;
                 }
                 &:hover {
-                    color: var(--cor-quaternaria);
+                    color: var(--noir);
                     padding: .3rem .1rem .3rem 1.5rem;
                     border-color: transparent;
                     &::before {

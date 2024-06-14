@@ -6,11 +6,11 @@ import me from "@/assets/images/me.jpg";
 
 const About = () => {
     return (
-        <Secao corDeFundo="linear-gradient(to bottom, var(--noir), var(--deuxieme))" id="sobre">
+        <Secao corDeFundo="var(--troisieme)" id="sobre">
             <Container>
                 <Titulo
                     corDaBorda="var(--quatrieme)"
-                    corDoTexto="var(--troisieme)"
+                    corDoTexto="var(--deuxieme)"
                 >
                     Quem sou eu
                 </Titulo>

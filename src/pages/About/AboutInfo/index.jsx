@@ -6,16 +6,16 @@ const AboutInfo = styled.div`
     align-items: center;
     margin-top: 3rem;
     padding: 0 2.5rem;
-    color: var(--troisieme);
+    color: var(--deuxieme);
     .text-intro {
         flex: 0 1 55%;
         p {
             text-align: center;
             font-size: 2rem;
-            border: .6rem double var(--quatrieme);
+            border: .7rem double var(--cinza-medio);
             padding: 3.6rem;
             line-height: 1.5;
-            border-radius: .9rem;
+            border-radius: 1rem;
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
@@ -23,10 +23,10 @@ const AboutInfo = styled.div`
             }
             .estilizado {
                 font-weight: 700;
-                color: var(--deuxieme);
+                color: var(--troisieme);
                 background: var(--quatrieme);
                 padding: 0 .3rem;
-                border-radius: .8rem;
+                //border-radius: .8rem;
             }
         }
     }

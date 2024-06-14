@@ -26,15 +26,15 @@ const Projetos = () => {
     };
 
     return (
-        <Secao corDeFundo="var(--noir)" id="projetos">
+        <Secao corDeFundo="var(--troisieme)" id="projetos">
             <Container>
                 <Titulo
                     corDaBorda="var(--quatrieme)"
-                    corDoTexto="var(--troisieme)"
+                    corDoTexto="var(--deuxieme)"
                 >
                     Projetos
                 </Titulo>
-                <Paragrafo>Aqui estão alguns dos meus projetos.</Paragrafo>
+                <Paragrafo>Conheça alguns dos meus projetos.</Paragrafo>
                 <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                     {projects.map(projeto =>
                         <MeusProjetos

@@ -8,10 +8,10 @@ const EstilosGlobais = createGlobalStyle`
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 
-        --premiere: #35E6E9;
+        --premiere: #FFBF00;
         --deuxieme: #141414;
         --troisieme: #f4f2f2;
-        --quatrieme: #FF5678;
+        --quatrieme: #9F00FF;
         --noir: #000000;
 
         --cor-quaternaria: #1F2833;

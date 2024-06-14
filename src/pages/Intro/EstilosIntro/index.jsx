@@ -18,7 +18,7 @@ const SecaoIntro = styled.section`
         }
         .destaque {
             color: var(--quatrieme);
-            background-color: var(--deuxieme);
+            background-color: rgba(0, 0, 0, .5);
             font-weight: 700;
             text-shadow: none;
             padding: 0 .3rem;

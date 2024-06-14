@@ -27,7 +27,7 @@ const ContainerProjetos = styled.div`
                 backface-visibility: hidden;
                 color: black;
                 background-color: var(--deuxieme);
-                border: .3rem solid var(--quatrieme);
+                border: .3rem solid var(--noir);
                 cursor: pointer;
                 img {
                     width: 100%;
@@ -43,22 +43,22 @@ const ContainerProjetos = styled.div`
                 height: 100%;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background: var(--deuxieme);
-                color: var(--troisieme);
+                background: var(--troisieme);
+                color: var(--deuxieme);
                 transform: rotateY(180deg);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
                 padding: 0 1rem;
-                border: .2rem solid var(--quatrieme);
+                border: .3rem solid var(--noir);
                 .info-card {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     gap: 1.5rem;
                     h1 {
-                        color: var(--troisieme);
+                        color: var(--deuxieme);
                         font-weight: 400;
                         font-size: 2.4rem;
                         position: relative;
@@ -82,17 +82,17 @@ const ContainerProjetos = styled.div`
                             gap: .6rem;
                             text-transform: uppercase;
                             font-size: 1.52rem;
-                            color: var(--deuxieme);
+                            color: var(--troisieme);
                             padding: 8px 15px;
                             position: relative;
-                            border: 3px solid var(--deuxieme);
+                            border: 3px solid var(--troisieme);
                             background: var(--quatrieme);
                             border-radius: 10px;
                             transition: all .3s ease-in-out;
                             &:hover {
                                 border-color: var(--quatrieme);
-                                color: var(--troisieme);
-                                background: var(--deuxieme);
+                                color: var(--deuxieme);
+                                background: var(--troisieme);
                             }
                         }
                     }
@@ -102,7 +102,7 @@ const ContainerProjetos = styled.div`
                     bottom: 1.2rem;
                     right: 1.2rem;
                     border: none;
-                    background: var(--deuxieme);
+                    background: transparent;
                     border: 2px solid var(--quatrieme);
                     width: 4rem;
                     height: 4rem;
@@ -117,7 +117,7 @@ const ContainerProjetos = styled.div`
                     }
                     cursor: pointer;
                     .voltar {
-                        color: var(--quatrieme);
+                        color: var(--deuxieme);
                     }
                 }
             }

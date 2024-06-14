@@ -21,7 +21,7 @@ const Formacao = () => {
     };
 
     return (
-        <Secao corDeFundo="linear-gradient(to bottom, var(--noir), var(--deuxieme))" id="formacao">
+        <Secao corDeFundo="linear-gradient(to top, var(--noir), var(--cinza-medio))" id="formacao">
             <Container>
                 <Titulo
                     corDaBorda="var(--quatrieme)"
