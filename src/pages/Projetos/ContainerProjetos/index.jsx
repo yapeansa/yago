@@ -83,11 +83,11 @@ const ContainerProjetos = styled.div`
                             text-transform: uppercase;
                             font-size: 1.52rem;
                             color: var(--troisieme);
-                            padding: 8px 15px;
+                            padding: .9rem 2rem .7rem;
                             position: relative;
-                            border: 3px solid var(--troisieme);
+                            border: .3rem solid var(--quatrieme);
                             background: var(--quatrieme);
-                            border-radius: 10px;
+                            border-radius: 1.6rem;
                             transition: all .3s ease-in-out;
                             &:hover {
                                 border-color: var(--quatrieme);
@@ -102,8 +102,8 @@ const ContainerProjetos = styled.div`
                     bottom: 1.2rem;
                     right: 1.2rem;
                     border: none;
-                    background: transparent;
-                    border: 2px solid var(--quatrieme);
+                    background: var(--deuxieme);
+                    border: .2rem solid var(--deuxieme);
                     width: 4rem;
                     height: 4rem;
                     border-radius: 100%;
@@ -117,7 +117,7 @@ const ContainerProjetos = styled.div`
                     }
                     cursor: pointer;
                     .voltar {
-                        color: var(--deuxieme);
+                        color: var(--troisieme);
                     }
                 }
             }

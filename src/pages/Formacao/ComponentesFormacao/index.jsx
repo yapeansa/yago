@@ -39,19 +39,19 @@ const Formacoes = styled.div`
                 z-index: 1;
                 width: fit-content;
                 margin: 0 auto;
-                padding: .9rem 1.5rem .8rem;
+                padding: .9rem 1.5rem .7rem;
                 font-weight: 700;
                 overflow: hidden;
-                border: .2rem solid var(--premiere);
+                border: .2rem solid var(--quatrieme);
                 border-radius: 8px;
                 .arrow_more {
-                    color: var(--premiere);
+                    color: var(--quatrieme);
                     transition: all .35s ease-in-out;
                 }
                 &:hover {
-                    color: var(--noir);
-                    background: var(--premiere);
-                    .arrow_more { color: var(--noir); }
+                    color: var(--troisieme);
+                    background: var(--quatrieme);
+                    .arrow_more { color: var(--troisieme); }
                 }
             }
         }

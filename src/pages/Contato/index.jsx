@@ -67,7 +67,7 @@ const Contato = ({ enviado, setEnviado }) => {
     };
 
     return (
-        <Secao corDeFundo="linear-gradient(to bottom, var(--deuxieme), var(--noir))" id="contato">
+        <Secao corDeFundo="var(--noir)" id="contato">
             <Container>
                 <Titulo
                     corDaBorda="var(--quatrieme)"
