@@ -12,10 +12,10 @@ const AboutInfo = styled.div`
         p {
             text-align: center;
             font-size: 2rem;
-            border: .7rem double var(--cinza-medio);
+            border: .7rem solid #ccc;
             padding: 3.6rem;
             line-height: 1.5;
-            border-radius: 1rem;
+            border-radius: 1.2rem;
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
@@ -23,10 +23,9 @@ const AboutInfo = styled.div`
             }
             .estilizado {
                 font-weight: 700;
-                color: var(--troisieme);
-                background: var(--quatrieme);
+                color: var(--deuxieme);
+                border: .1rem solid var(--deuxieme);
                 padding: 0 .3rem;
-                //border-radius: .8rem;
             }
         }
     }
@@ -34,7 +33,7 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: .2rem solid var(--quatrieme);
+            border: .2rem dashed var(--deuxieme);
             border-radius: 100%;
             padding: 1.2rem;
         }
