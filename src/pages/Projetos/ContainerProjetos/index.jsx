@@ -26,8 +26,9 @@ const ContainerProjetos = styled.div`
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
                 color: black;
-                background-color: var(--deuxieme);
-                border: .3rem solid var(--noir);
+                background-color: var(--branco);
+                padding: .5rem;
+                border: .1rem solid var(--noir);
                 cursor: pointer;
                 img {
                     width: 100%;
@@ -43,30 +44,42 @@ const ContainerProjetos = styled.div`
                 height: 100%;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background: var(--troisieme);
+                background: var(--branco);
                 color: var(--deuxieme);
                 transform: rotateY(180deg);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                padding: 0 1rem;
-                border: .3rem solid var(--noir);
+                padding: .5rem;
+                border: .1rem solid var(--quatrieme);
                 .info-card {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    justify-content: center;
                     gap: 1.5rem;
+                    height: 100%;
+                    background: var(--branco);
+                    border: .1rem solid var(--quatrieme);
+                    padding: 0 .9rem;
                     h1 {
                         color: var(--deuxieme);
                         font-weight: 400;
                         font-size: 2.4rem;
                         position: relative;
                         text-transform: uppercase;
-                        text-decoration: underline;
-                        text-decoration-thickness: .3rem;
-                        text-decoration-color: var(--quatrieme);
-                        text-decoration-style: wavy;
+                        position: relative;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: -.7rem;
+                            left: 50%;
+                            margin-left: calc(-30% / 2);
+                            background: var(--quatrieme);
+                            height: .3rem;
+                            width: 30%;
+                        }
                     }
                     p {
                         font-size: 1.8rem;

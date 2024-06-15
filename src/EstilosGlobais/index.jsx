@@ -17,6 +17,7 @@ const EstilosGlobais = createGlobalStyle`
         --cor-quaternaria: #1F2833;
         --darker: #0B0C10;
         --cinza-medio: #222;
+        --branco: #FFFFFF;
     }
 
     @keyframes fadeIn {
