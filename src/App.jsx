@@ -14,8 +14,7 @@ import EmailEnviado from './components/CaixaEmailEnviado';
 
 const App = () => {
 
-    const estadoInicial = { display: "none", animation: "" },
-        [enviado, setEnviado] = useState(estadoInicial);
+    const [enviado, setEnviado] = useState({ display: "none", animation: "" });
 
     return (
         <main id="wrap">
