@@ -14,11 +14,8 @@ import EmailEnviado from './components/CaixaEmailEnviado';
 
 const App = () => {
 
-    const estadoInicial = { display: "none", animation: "" };
-
-    const [enviado, setEnviado] = useState(estadoInicial);
-
-    const currentDate = new Date();
+    const estadoInicial = { display: "none", animation: "" },
+        [enviado, setEnviado] = useState(estadoInicial);
 
     return (
         <main id="wrap">
@@ -26,16 +23,13 @@ const App = () => {
             <Header />
             <About />
             <Formacao />
-            <ContextoProjetos>
-                <Projetos />
-            </ContextoProjetos>
+            <ContextoProjetos><Projetos /></ContextoProjetos>
             <ContextoContato>
                 <Contato enviado={enviado} setEnviado={setEnviado} />
             </ContextoContato>
-            <Footer anoAtual={currentDate} />
-            <ContextoBotao>
-                <BotaoScrollTop />
-            </ContextoBotao>
+            <Footer anoAtual={new Date()} />
+
+            <ContextoBotao><BotaoScrollTop /></ContextoBotao>
             <EmailEnviado enviado={enviado} />
         </main>
     );

@@ -1,11 +1,12 @@
 import { styled } from "styled-components";
 
 const Formacoes = styled.div`
-    margin: 3rem auto 2rem;
-    color: var(--troisieme);
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
+    margin: 3rem auto 2rem;
+    color: var(--troisieme);
     .minhas-formacoes {
         flex-basis: 50%;
         padding: 2rem 2rem;
@@ -15,33 +16,45 @@ const Formacoes = styled.div`
             font-size: 2rem;
             font-weight: normal;
             color: var(--premiere);
+
             display: inline-block;
         }
         .instituicao-nome {
             font-size: 2.4rem;
             font-weight: 700;
+
             margin: 2.5rem 0;
-            color: var(--troisieme);
+            a {
+                color: var(--troisieme);
+                text-decoration: underline;
+                text-decoration-color: var(--quatrieme);
+                text-decoration-thickness: .2rem;
+            }
         }
         .formacao-descricao {
             font-size: 1.4rem;
             line-height: 1.5;
             a {
-                color: var(--troisieme);
-                font-size: 1.8rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
+
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: var(--troisieme);
                 text-transform: uppercase;
+
                 position: relative;
                 transition: all .35s ease-in-out;
                 z-index: 1;
+                overflow: hidden;
+
                 width: fit-content;
+
                 margin: 0 auto;
                 padding: .9rem 1.5rem .7rem;
-                font-weight: 700;
-                overflow: hidden;
+                
                 border: .2rem solid var(--quatrieme);
                 border-radius: 8px;
                 .arrow_more {
@@ -51,7 +64,9 @@ const Formacoes = styled.div`
                 &:hover {
                     color: var(--troisieme);
                     background: var(--quatrieme);
-                    .arrow_more { color: var(--troisieme); }
+                    .arrow_more {
+                        color: var(--troisieme);
+                    }
                 }
             }
         }

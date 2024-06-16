@@ -36,7 +36,9 @@ const Formacao = () => {
                     {cards.map(card =>
                         <div className="minhas-formacoes" key={card.id}>
                             <h3 className="curso-nome">{card.curso}</h3>
-                            <h2 className="instituicao-nome">{card.instituição}</h2>
+                            <h2 className="instituicao-nome">
+                                <a href="https://www2.ufjf.br/ufjf/" target="_blank">{card.instituição}</a>
+                            </h2>
                             <span className="formacao-descricao">
                                 <a href={card.link} target={card.link ? '_blank' : '_parent'}>
                                     <Markdown>Saiba mais</Markdown><FaArrowRight size={20} className="arrow_more" />
