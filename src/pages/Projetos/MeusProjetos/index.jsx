@@ -7,7 +7,7 @@ const MeusProjetos = ({ conteudoCard }) => {
     return (
         // definindo a estrutura dos cards projetos
         <div
-            className="flip-card"
+            className={`flip-card ${conteudoCard.projeto.escalaCinza}`}
             onMouseEnter={() => conteudoCard.tomDeCinza(conteudoCard.projeto.id)}
             onMouseLeave={() => conteudoCard.tomDeCinza(conteudoCard.projeto.id)}
         >
@@ -16,7 +16,6 @@ const MeusProjetos = ({ conteudoCard }) => {
                     <img
                         src={conteudoCard.projeto.imagem}
                         alt={conteudoCard.projeto.nome}
-                        className={`${conteudoCard.projeto.escalaCinza}`}
                     />
                 </div>
                 <div className="flip-card-back">

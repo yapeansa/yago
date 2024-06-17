@@ -12,6 +12,7 @@ const ContainerProjetos = styled.div`
         perspective: 1000px;
         width: 100%;
         height: 315px;
+        transition: all .5s ease-in-out;
         background-color: transparent;
         .flip-card-inner {
             position: relative;
@@ -34,7 +35,6 @@ const ContainerProjetos = styled.div`
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    transition: all .5s ease-in-out;
                     pointer-events: none;
                 }
             }
