@@ -52,7 +52,7 @@ const ContainerProjetos = styled.div`
                 justify-content: center;
                 text-align: center;
                 padding: .5rem;
-                border: .1rem solid var(--quatrieme);
+                border: .2rem solid var(--deuxieme);
                 .info-card {
                     display: flex;
                     flex-direction: column;
@@ -61,7 +61,7 @@ const ContainerProjetos = styled.div`
                     gap: 1.5rem;
                     height: 100%;
                     background: var(--branco);
-                    border: .1rem solid var(--quatrieme);
+                    //border: .1rem solid #ccc;
                     padding: 0 .9rem;
                     h1 {
                         color: var(--deuxieme);
@@ -105,7 +105,7 @@ const ContainerProjetos = styled.div`
                             &:hover {
                                 border-color: var(--quatrieme);
                                 color: var(--deuxieme);
-                                background: var(--troisieme);
+                                background: var(--branco);
                             }
                         }
                     }
