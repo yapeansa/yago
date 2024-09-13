@@ -1,7 +1,7 @@
 const cards = [
     {
         id: 1,
-        curso: 'Mestrado em andamento em Matemática',
+        curso: 'Mestrado em Matemática',
         instituição: 'Universidade Federal de Juiz de Fora, UFJF, Brasil',
         titulo: 'Álgebras de Banach zLpd',
         link: "https://repositorio.ufjf.br/jspui/bitstream/ufjf/17348/1/yagopereiradosanjossantos.pdf"
