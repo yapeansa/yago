@@ -23,11 +23,8 @@ const App = () => {
             <About />
             <Formacao />
             <ContextoProjetos><Projetos /></ContextoProjetos>
-            <ContextoContato>
-                <Contato enviado={enviado} setEnviado={setEnviado} />
-            </ContextoContato>
+            <ContextoContato><Contato enviado={enviado} setEnviado={setEnviado} /></ContextoContato>
             <Footer anoAtual={new Date()} />
-
             <ContextoBotao><BotaoScrollTop /></ContextoBotao>
             <EmailEnviado enviado={enviado} />
         </main>

@@ -14,7 +14,7 @@ const SecaoIntro = styled.section`
         text-decoration: underline;
         text-decoration-thickness: .2rem;
         .destaque {
-            color: var(--quatrieme);
+            color: var(--quatrieme-demie);
             background-color: rgba(0, 0, 0, .7);
             font-weight: 700;
             text-shadow: none;

@@ -9,6 +9,7 @@ const AboutInfo = styled.div`
     color: var(--deuxieme);
     .text-intro {
         flex: 0 1 55%;
+        z-index: 1;
         p {
             text-align: center;
             font-size: 2rem;
@@ -24,8 +25,25 @@ const AboutInfo = styled.div`
             .estilizado {
                 font-weight: 700;
                 color: var(--deuxieme);
-                border: .1rem solid var(--deuxieme);
                 padding: 0 .3rem;
+                position: relative;
+                overflow: hidden;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 35%;
+                    background: var(--quatrieme-demie);
+                    z-index: -1;
+                    transition: all .3s ease-in-out;
+                }
+                &:hover {
+                    &::before {
+                        height: 100%;
+                    }
+                }
             }
         }
     }

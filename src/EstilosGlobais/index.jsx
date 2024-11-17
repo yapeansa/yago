@@ -11,7 +11,8 @@ const EstilosGlobais = createGlobalStyle`
         --premiere: #FFBF00;
         --deuxieme: #141414;
         --troisieme: #f4f2f2;
-        --quatrieme: #9F00FF;
+        --quatrieme: #3572EF;
+        --quatrieme-demie: #3ABEF9;
         --noir: #000000;
 
         --cor-quaternaria: #1F2833;

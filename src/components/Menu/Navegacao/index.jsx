@@ -50,7 +50,7 @@ const Navegacao = styled.nav`
                     left: 0;
                     width: 0;
                     height: 100%;
-                    background: var(--premiere);
+                    background: linear-gradient(to right, var(--quatrieme), var(--quatrieme-demie));
                     transition: all .25s ease-in-out;
                 }
                 &::after {
@@ -60,7 +60,7 @@ const Navegacao = styled.nav`
                     right: 0;
                     width: 100%;
                     height: 2px;
-                    background: var(--quatrieme);
+                    background: linear-gradient(to right, var(--quatrieme), var(--quatrieme-demie));
                     transition: all .25s ease-in-out;
                 }
                 &:hover {
