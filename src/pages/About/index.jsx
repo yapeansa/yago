@@ -9,7 +9,7 @@ const About = () => {
         <Secao corDeFundo="var(--troisieme)" id="sobre">
             <Container>
                 <Titulo
-                    corDaBorda="var(--quatrieme)"
+                    corDaBorda="linear-gradient(to right, transparent, var(--quatrieme-demie), transparent)"
                     corDoTexto="var(--deuxieme)"
                 >
                     Quem sou eu
@@ -17,7 +17,7 @@ const About = () => {
                 <AboutInfo>
                     <div className="text-intro">
                         <p>
-                            Olá, meu nome é <strong className="estilizado">Yago</strong>. Sou um desenvolvedor <strong className="estilizado">Front-end</strong> em transição de carreira. Busco aplicar as habilidades e conhecimentos adquiridos da minha formação de <strong className="estilizado">Matemático</strong> ao mundo do desenvolvimento web. Autodidata e vindo de um ambiente que valoriza a pesquisa, prezo pela evolução constante dos meus conhecimentos e por compartilhar os mesmos com as pessoas ao meu redor.
+                            Olá, meu nome é <strong className="estilizado">Yago</strong>. Sou matemático e desenvolvedor web <strong className="estilizado">Front-end</strong> buscando aplicar minhas habilidades e conhecimentos para elaborar soluções para diversos problemas relacionados a tecnologia. Autodidata e vindo de um ambiente que valoriza a pesquisa, prezo pela evolução constante dos meus conhecimentos e por compartilhar os mesmos com as pessoas ao meu redor.
                         </p>
                     </div>
                     <div className="minha-foto">
