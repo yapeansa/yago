@@ -30,7 +30,7 @@ const Navegacao = styled.nav`
             }
             &:hover {
                 &::before {
-                    color: var(--quatrieme);
+                    color: var(--premiere);
                 }
             }
             a {
@@ -50,7 +50,7 @@ const Navegacao = styled.nav`
                     left: 0;
                     width: 0;
                     height: 100%;
-                    background: linear-gradient(to right, var(--quatrieme), var(--quatrieme-demie));
+                    background: linear-gradient(to right, var(--premiere), var(--premiere));
                     transition: all .25s ease-in-out;
                 }
                 &::after {
@@ -60,7 +60,7 @@ const Navegacao = styled.nav`
                     right: 0;
                     width: 100%;
                     height: 2px;
-                    background: linear-gradient(to right, var(--quatrieme), var(--quatrieme-demie));
+                    background: linear-gradient(to right, var(--quatrieme), var(--quatrieme));
                     transition: all .25s ease-in-out;
                 }
                 &:hover {

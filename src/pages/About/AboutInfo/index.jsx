@@ -13,10 +13,10 @@ const AboutInfo = styled.div`
         p {
             text-align: center;
             font-size: 2rem;
-            border: .7rem solid #ccc;
+            border: .2rem solid #ccc;
             padding: 3.6rem;
             line-height: 1.5;
-            border-radius: 1.2rem;
+            /* border-radius: 1.2rem; */
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
@@ -51,7 +51,7 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: .2rem dashed var(--deuxieme);
+            border: .2rem solid #ccc;
             border-radius: 100%;
             padding: 1.2rem;
         }

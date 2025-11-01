@@ -9,7 +9,7 @@ const Intro = ({ acaoMenu }) => {
             <TbMenu2 onClick={acaoMenu} className="drop-menu" size={60} />
             <Logo />
             <p>
-                Olá, mundo! Eu sou um <strong className="destaque">desenvolvedor</strong> web Front-end especializado na biblioteca <strong className="destaque">React</strong>.
+                Hello, world! I'm a <strong className="destaque">mathematician</strong> currently specializing in computational modeling.
             </p>
             <Social />
         </SecaoIntro>

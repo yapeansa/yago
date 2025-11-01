@@ -11,7 +11,7 @@ const SocialNetwork = styled.div`
                 color: var(--troisieme);
                 transition: all .3s ease-in-out;
                 &:hover {
-                    color: var(--quatrieme-demie);
+                    color: var(--premiere);
                 }
             }
         }
