@@ -8,7 +8,7 @@ const Footer = ({ anoAtual }) => {
             <Container>
                 <a href="http://linktr.ee/yapeansa" target="_blank"><SiLinktree size={35} color="var(--premiere)" /></a>
                 <p>
-                    &copy;{anoAtual.getFullYear()} - Desenvolvido por&nbsp;
+                    &copy;{anoAtual.getFullYear()} - Developed by&nbsp;
                     <span style={{ borderBottom: '2px dashed var(--premiere)', display: 'inline-block' }}>
                         Yago Pereira
                     </span>.
