@@ -60,7 +60,7 @@ const Navegacao = styled.nav`
                     right: 0;
                     width: 100%;
                     height: 2px;
-                    background: linear-gradient(to right, var(--quatrieme), var(--quatrieme));
+                    background: var(--quatrieme);
                     transition: all .25s ease-in-out;
                 }
                 &:hover {

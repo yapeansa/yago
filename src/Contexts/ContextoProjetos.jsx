@@ -12,10 +12,10 @@ const ContextoProjetos = ({ children }) => {
             const resposta = await dados.json();
             setProjects(resposta);
         } catch(erro) {
-            console.log(`${erro.name}: Não foi possivel carregar 'Projetos'`);
+            console.log(`${erro.name}: It ws not possible to load 'Projects'`);
             throw erro;
         } finally {
-            console.log("Processo concluído.");
+            console.log("Process successfully concluded.");
         }
     }
 

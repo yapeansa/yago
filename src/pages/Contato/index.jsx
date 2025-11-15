@@ -17,15 +17,15 @@ const Contato = ({ enviado, setEnviado }) => {
     const aoInteragir = (campo) => {
         switch (campo) {
             case 'nome':
-                placeHolders.nome = placeHolders.nome !== "" ? "" : "Your name here...";
+                placeHolders.nome = placeHolders.nome !== "" ? "" : "Type your name here...";
                 setPlaceHolders({ ...placeHolders });
                 break;
             case 'email':
-                placeHolders.email = placeHolders.email !== "" ? "" : "Your e-mail here...";
+                placeHolders.email = placeHolders.email !== "" ? "" : "Type your e-mail here...";
                 setPlaceHolders({ ...placeHolders });
                 break;
             default:
-                placeHolders.mensagem = placeHolders.mensagem !== "" ? "" : "Your message here...";
+                placeHolders.mensagem = placeHolders.mensagem !== "" ? "" : "Type your message here...";
                 setPlaceHolders({ ...placeHolders });
                 break;
         }
