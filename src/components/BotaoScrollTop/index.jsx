@@ -29,9 +29,15 @@ const BotaoScrollTop = () => {
     const mostrarEsconder = acoesBotao.mostrarBotao ? "block" : "none";
     const animarToggle = acoesBotao.animar ? "fadeIn" : "fadeOut";
 
+    const rollUp = (e) => {
+        e.preventDefault();
+        const pullUp = document.getElementById('wrap');
+        pullUp.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
     return (
         <EstilosScrollTop $display={mostrarEsconder} $animacao={animarToggle}>
-            <a href="#">
+            <a href="" onClick={(e) => rollUp(e)}>
                 <FaArrowUpLong color="var(--troisieme)" size={27} />
             </a>
         </EstilosScrollTop>

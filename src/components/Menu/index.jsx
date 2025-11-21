@@ -14,6 +14,15 @@ const Menu = () => {
         setEnfase([...enfase]);
     };
 
+    const navigate = (e, id) => {
+        e.preventDefault();
+        const alvo = enfase.filter(item => item.id === id);
+        const obj_name = alvo[0].caminho;
+        const obj_target = document.getElementById(obj_name);
+        obj_target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setEnfase([...enfase]);
+    }
+
     return (
         <>
             <Navegacao>
@@ -25,7 +34,7 @@ const Menu = () => {
                             onMouseEnter={() => menuOut(link.id)}
                             onMouseLeave={() => menuOut(link.id)}
                         >
-                            <a href={link.caminho} target="_parent">{link.nome}</a>
+                            <a href="" onClick={(e) => navigate(e, link.id)} target="_parent">{link.nome}</a>
                         </li>
                     )}
                 </ol>
