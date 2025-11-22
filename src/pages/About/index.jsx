@@ -18,7 +18,7 @@ const About = () => {
                     <div className="text-intro">
                         <p>
                             {/* Olá, meu nome é <strong className="estilizado">Yago</strong>. Sou matemático e desenvolvedor web <strong className="estilizado">Front-end</strong> buscando aplicar minhas habilidades e conhecimentos para elaborar soluções para diversos problemas relacionados a tecnologia. Autodidata e vindo de um ambiente que valoriza a pesquisa, prezo pela evolução constante dos meus conhecimentos e por compartilhar os mesmos com as pessoas ao meu redor. */}
-                            Coming soon... I have to write something here. But I still don't know what to put on the text.
+                            Coming soon...
                         </p>
                     </div>
                     <div className="minha-foto">
