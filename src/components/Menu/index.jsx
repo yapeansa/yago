@@ -21,7 +21,7 @@ const Menu = () => {
         const obj_target = document.getElementById(obj_name);
         obj_target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         setEnfase([...enfase]);
-    }
+    };
 
     return (
         <>
@@ -34,7 +34,7 @@ const Menu = () => {
                             onMouseEnter={() => menuOut(link.id)}
                             onMouseLeave={() => menuOut(link.id)}
                         >
-                            <a href="" onClick={(e) => navigate(e, link.id)} target="_parent">{link.nome}</a>
+                            <a href="" onClick={(e) => navigate(e, link.id)}>{link.nome}</a>
                         </li>
                     )}
                 </ol>

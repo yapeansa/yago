@@ -8,6 +8,13 @@ const EstilosGlobais = createGlobalStyle`
         --fonte-primaria: 'Roboto', sans-serif;
         --fonte-secundaria: 'Montserrat', sans-serif;
 
+        --primeira: #FFBF00;
+        --segunda: #8A2BE2;
+        --terceira: #462be2;
+        --quarta: ;
+        --preto: #000;
+        --branco: #FFF;
+
         --premiere: #FFBF00;
         --deuxieme: #141414;
         --troisieme: #f4f2f2;
@@ -18,7 +25,6 @@ const EstilosGlobais = createGlobalStyle`
         --cor-quaternaria: #1F2833;
         --darker: #0B0C10;
         --cinza-medio: #222;
-        --branco: #FFFFFF;
     }
 
     @keyframes fadeIn {

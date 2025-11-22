@@ -15,7 +15,7 @@ const Navegacao = styled.nav`
             counter-increment: list;
             display: flex;
             gap: 2rem;
-            color: var(--troisieme);
+            color: var(--branco);
             align-items: center;
             transition: all .25s ease-in-out;
             &::before {
@@ -30,7 +30,7 @@ const Navegacao = styled.nav`
             }
             &:hover {
                 &::before {
-                    color: var(--premiere);
+                    color: var(--primeira);
                 }
             }
             a {
@@ -50,7 +50,7 @@ const Navegacao = styled.nav`
                     left: 0;
                     width: 0;
                     height: 100%;
-                    background: linear-gradient(to right, var(--premiere), var(--premiere));
+                    background: var(--primeira);
                     transition: all .25s ease-in-out;
                 }
                 &::after {
@@ -60,7 +60,7 @@ const Navegacao = styled.nav`
                     right: 0;
                     width: 100%;
                     height: 2px;
-                    background: var(--quatrieme);
+                    background: linear-gradient(to left, var(--segunda), var(--terceira));
                     transition: all .25s ease-in-out;
                 }
                 &:hover {

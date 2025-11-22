@@ -8,10 +8,10 @@ const SocialNetwork = styled.div`
         li {
             transition: all .3s ease-in-out;
             .social {
-                color: var(--troisieme);
+                color: var(--branco);
                 transition: all .3s ease-in-out;
                 &:hover {
-                    color: var(--premiere);
+                    color: var(--primeira);
                 }
             }
         }
