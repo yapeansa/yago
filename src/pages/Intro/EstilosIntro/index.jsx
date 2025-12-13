@@ -3,18 +3,25 @@ import { styled } from "styled-components";
 const SecaoIntro = styled.section`
     font-family: var(--fonte-primaria);
     font-weight: 100;
+    /* display: flex; */
     p {
         max-width: 80%;
         font-size: 5.3rem;
         margin: 0 0 0 auto;
         color: var(--troisieme);
-        line-height: 1.8;
+        line-height: 1.6;
         text-align: right;
         text-shadow: 0 0 5px var(--darker);
-        text-decoration: underline;
+        background: #000;
+        display: inline;
+        /* text-decoration: underline; */
         text-decoration-thickness: .2rem;
         .destaque {
-            color: var(--terceira);
+            background: linear-gradient(to left, var(--segunda), var(--terceira));
+            -webkit-backgroud: linear-gradient(to left, var(--segunda), var(--terceira));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             background-color: rgba(0, 0, 0, .6);
             font-weight: 700;
             text-shadow: none;
@@ -48,6 +55,7 @@ const SecaoIntro = styled.section`
             max-width: 90%;
             font-size: 3.7rem;
             text-decoration-thickness: 2px;
+            background: none;
         }
         .aparecer-social {
             display: flex;

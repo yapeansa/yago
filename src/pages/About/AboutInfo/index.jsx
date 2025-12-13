@@ -12,10 +12,31 @@ const AboutInfo = styled.div`
         z-index: 1;
         p {
             text-align: center;
-            font-size: 2rem;
-            border: .2rem solid #ccc;
+            font-size: 1.9rem;
+            border-left: .2rem solid var(--terceira);
+            border-right: .2rem solid var(--segunda);
+            /* border: .2rem solid #ccc; */
             padding: 3.6rem;
             line-height: 1.5;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: .2rem;
+                background: linear-gradient(to right, var(--terceira), var(--segunda));
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: .2rem;
+                background: linear-gradient(to right, var(--terceira), var(--segunda));
+            }
             /* border-radius: 1.2rem; */
             a {
                 border-bottom: 2px solid var(--primeira-cor);
@@ -51,9 +72,9 @@ const AboutInfo = styled.div`
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: .2rem solid #ccc;
+            border: 1px solid var(--cinza-medio);
             border-radius: 100%;
-            padding: 1.2rem;
+            padding: 1rem;
         }
     }
 

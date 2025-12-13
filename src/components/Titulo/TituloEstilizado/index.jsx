@@ -7,7 +7,7 @@ const TituloEstilizado = styled.h2`
     text-transform: uppercase;
     position: relative;
     display: inline-block;
-    padding: 15px 0;
+    padding: 1rem 0;
     color: ${props => props.$cordotexto ? props.$cordotexto : '#000'};
     &::before {
         content: '';
@@ -16,7 +16,7 @@ const TituloEstilizado = styled.h2`
         margin-left: calc(-60% / 2);
         bottom: 0;
         width: 60%;
-        height: 4px;
+        height: .2rem;
         background: ${props => props.$cordaborda ? props.$cordaborda : '#000'};
     }
 `;
