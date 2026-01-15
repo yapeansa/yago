@@ -6,7 +6,7 @@ const AboutInfo = styled.div`
     align-items: center;
     margin-top: 3rem;
     padding: 0 2.5rem;
-    color: var(--deuxieme);
+    color: var(--cinza-escuro);
     .text-intro {
         flex: 0 1 55%;
         z-index: 1;

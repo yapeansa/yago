@@ -54,7 +54,7 @@ const Contato = ({ enviado, setEnviado }) => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_oumd0lp', 'template_e8zek0j', form.current, {
+        emailjs.sendForm('service_c66jb2p', 'template_e8zek0j', form.current, {
             publicKey: 'o5T1d5IHXaJyiTE7D',
         })
             .then(() => {

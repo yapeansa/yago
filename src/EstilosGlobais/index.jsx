@@ -14,10 +14,11 @@ const EstilosGlobais = createGlobalStyle`
         --quarta: ;
         --preto: #000;
         --branco: #FFF;
+        --cinza-escuro: #333;
 
         --premiere: #FFBF00;
         --deuxieme: #141414;
-        --troisieme: #f4f2f2;
+        --troisieme: #cfcfcf;
         --quatrieme: #8A2BE2;
         --quatrieme-demie: #8A2BE2;
         --noir: #000000;
