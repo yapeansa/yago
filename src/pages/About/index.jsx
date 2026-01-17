@@ -1,8 +1,8 @@
-import AboutInfo from "./AboutInfo";
-import Container from "@/components/Container";
-import Titulo from "@/components/Titulo";
-import Secao from "@/components/ContainerSecao";
-import me from "@/assets/images/me.jpg";
+import AboutInfo from "./AboutInfo"
+import Container from "@/components/Container"
+import Titulo from "@/components/Titulo"
+import Secao from "@/components/ContainerSecao"
+import me from "@/assets/images/me.jpg"
 
 const About = () => {
     return (
@@ -17,8 +17,13 @@ const About = () => {
                 <AboutInfo>
                     <div className="text-intro">
                         <p>
-                            {/* Olá, meu nome é <strong className="estilizado">Yago</strong>. Sou matemático e desenvolvedor web <strong className="estilizado">Front-end</strong> buscando aplicar minhas habilidades e conhecimentos para elaborar soluções para diversos problemas relacionados a tecnologia. Autodidata e vindo de um ambiente que valoriza a pesquisa, prezo pela evolução constante dos meus conhecimentos e por compartilhar os mesmos com as pessoas ao meu redor. */}
-                            Coming soon...
+                            Sou um profissional metódico e detalhista, com perfil técnico e analítico. Minha abordagem é fundamentada na precisão, na organização e na busca constante pela qualidade no que faço. Tenho facilidade para lidar com sistemas, dados e processos complexos, sempre com paciência e persistência para resolver problemas de forma eficaz.
+                        </p>
+                        <p>
+                            No ambiente de trabalho, valorizo a clareza, a consistência e a entrega de resultados confiáveis. Sou comprometido com minhas tarefas e mantenho o foco mesmo em projetos de longo prazo. Acredito que a excelência está nos detalhes, e por isso dedico atenção cuidadosa a cada etapa do processo.
+                        </p>
+                        <p>
+                            Além das habilidades técnicas, busco construir relações profissionais sólidas e positivas, sempre com respeito e discrição. Estou em constante desenvolvimento para equilibrar minha natural cautela com maior flexibilidade e capacidade de adaptação, sem abrir mão da minha essência: ser alguém em quem se pode confiar para fazer bem feito.
                         </p>
                     </div>
                     <div className="minha-foto">
@@ -27,7 +32,7 @@ const About = () => {
                 </AboutInfo>
             </Container>
         </Secao>
-    );
-};
+    )
+}
 
-export default About;
+export default About

@@ -1,43 +1,20 @@
-import { styled } from "styled-components";
+import { styled } from "styled-components"
 
 const AboutInfo = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 3rem;
-    padding: 0 2.5rem;
+    padding: 2rem 2.5rem 0;
     color: var(--cinza-escuro);
     .text-intro {
         flex: 0 1 55%;
         z-index: 1;
         p {
-            text-align: center;
+            text-align: left;
+            margin-bottom: 2rem;
             font-size: 1.9rem;
-            border-left: .2rem solid var(--terceira);
-            border-right: .2rem solid var(--segunda);
             /* border: .2rem solid #ccc; */
-            padding: 3.6rem;
-            line-height: 1.5;
-            position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: .2rem;
-                background: linear-gradient(to right, var(--terceira), var(--segunda));
-            }
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: .2rem;
-                background: linear-gradient(to right, var(--terceira), var(--segunda));
-            }
-            /* border-radius: 1.2rem; */
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
@@ -101,6 +78,6 @@ const AboutInfo = styled.div`
             }
         }
     }
-`;
+`
 
-export default AboutInfo;
+export default AboutInfo
