@@ -9,7 +9,7 @@ const Intro = ({ acaoMenu }) => {
             <TbMenu2 onClick={acaoMenu} className="drop-menu" size={60} />
             <Logo />
             <p>
-                Hello, world! I'm a <strong className="destaque">mathematician</strong> currently specializing in computational modeling.
+                Precisão que <strong className="destaque">transforma</strong> dados em resultados. Análise meticulosa, <strong className="destaque">soluções</strong> confiáveis.
             </p>
             <Social />
         </SecaoIntro>

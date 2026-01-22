@@ -32,9 +32,9 @@ const Projetos = () => {
                     corDaBorda="var(--quatrieme)"
                     corDoTexto="var(--deuxieme)"
                 >
-                    Projects
+                    Projetos
                 </Titulo>
-                <Paragrafo>Coming soon</Paragrafo>
+                <Paragrafo>Em breve...</Paragrafo>
                 <ContainerProjetos $tamanho={`${projects.length * 336}px`}>
                     {/* {projects.map(projeto =>
                         <MeusProjetos

@@ -12,9 +12,11 @@ const AboutInfo = styled.div`
         z-index: 1;
         p {
             text-align: left;
-            margin-bottom: 2rem;
+            padding: 3rem 3rem 0;
             font-size: 1.9rem;
-            /* border: .2rem solid #ccc; */
+            border: .15rem solid #ccc;
+            border-top: none;
+            border-bottom: none;
             a {
                 border-bottom: 2px solid var(--primeira-cor);
                 color: var(--preto);
@@ -44,12 +46,21 @@ const AboutInfo = styled.div`
                 }
             }
         }
+        p:first-child {
+            border: .15rem solid #ccc;
+            border-bottom: none;
+        }
+        p:last-child {
+            border: .15rem solid #ccc;
+            border-top: none;
+            padding-bottom: 3rem;
+        }
     }
     .minha-foto {
         flex: 0 1 25%;
         img {
             max-width: 100%;
-            border: 1px solid var(--cinza-medio);
+            border: 1px solid #ccc;
             border-radius: 100%;
             padding: 1rem;
         }

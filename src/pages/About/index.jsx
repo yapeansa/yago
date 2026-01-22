@@ -12,7 +12,7 @@ const About = () => {
                     corDaBorda="linear-gradient(to right, var(--terceira), var(--segunda))"
                     corDoTexto="var(--deuxieme)"
                 >
-                    About Me
+                    Sobre Mim
                 </Titulo>
                 <AboutInfo>
                     <div className="text-intro">

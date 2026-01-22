@@ -17,15 +17,15 @@ const Contato = ({ enviado, setEnviado }) => {
     const aoInteragir = (campo) => {
         switch (campo) {
             case 'nome':
-                placeHolders.nome = placeHolders.nome !== "" ? "" : "Type your name here...";
+                placeHolders.nome = placeHolders.nome !== "" ? "" : "Digite seu nome aqui...";
                 setPlaceHolders({ ...placeHolders });
                 break;
             case 'email':
-                placeHolders.email = placeHolders.email !== "" ? "" : "Type your e-mail here...";
+                placeHolders.email = placeHolders.email !== "" ? "" : "Digite seu e-mail aqui...";
                 setPlaceHolders({ ...placeHolders });
                 break;
             default:
-                placeHolders.mensagem = placeHolders.mensagem !== "" ? "" : "Type your message here...";
+                placeHolders.mensagem = placeHolders.mensagem !== "" ? "" : "Digite sua mensagem aqui...";
                 setPlaceHolders({ ...placeHolders });
                 break;
         }
@@ -73,14 +73,14 @@ const Contato = ({ enviado, setEnviado }) => {
                     corDaBorda="var(--quatrieme)"
                     corDoTexto="var(--troisieme)"
                 >
-                    Contact
+                    Contato
                 </Titulo>
                 <ContainerContato>
-                    <p>Ready to bring life for your projects? You can get in touch with me sending me a message through my e-mail address</p>
+                    <p>Você pode me enviar um e-mail através do seguinte endereço:</p>
                     <a href="mailto:yapeansa@gmail.com">
                         <SiGmail size={30} color="var(--premiere)" /> yapeansa@gmail.com
                     </a>
-                    <p>Or, if you like, you can fill the form below with your information and your message</p>
+                    <p>Ou, se você preferir, pode me enviar uma mensagem preenchendo o formulário a seguir</p>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="engloba_texto_email">
                             <input
@@ -113,8 +113,8 @@ const Contato = ({ enviado, setEnviado }) => {
                                 required></textarea>
                         </label>
                         <div className="acoes__formulario">
-                            <button type="reset">Reset</button>
-                            <button type="submit">Send <IoIosSend size={27} className="send_bullet" /></button>
+                            <button type="reset">Limpar</button>
+                            <button type="submit">Enviar <IoIosSend size={27} className="send_bullet" /></button>
                         </div>
                     </form>
                 </ContainerContato>

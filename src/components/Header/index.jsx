@@ -1,16 +1,16 @@
-import Cabecalho from "./Cabecalho";
-import Logo from "@/components/Logo";
-import Menu from "@/components/Menu";
-import Intro from "@/pages/Intro";
-import Social from "@/components/Social";
-import Container from "@/components/Container";
-import { useState } from "react";
-import { CgClose } from "react-icons/cg";
+import Cabecalho from "./Cabecalho"
+import Logo from "@/components/Logo"
+import Menu from "@/components/Menu"
+import Intro from "@/pages/Intro"
+import Social from "@/components/Social"
+import Container from "@/components/Container"
+import { useState } from "react"
+import { CgClose } from "react-icons/cg"
 
 const Header = () => {
-    const [slide, setSlide] = useState(false);
+    const [slide, setSlide] = useState(false)
 
-    const acaoMenu = () => setSlide(!slide);
+    const acaoMenu = () => setSlide(!slide)
 
     return (
         <Container>
@@ -26,7 +26,7 @@ const Header = () => {
                 </div>
             </Cabecalho>
         </Container>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header

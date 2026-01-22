@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 
 const initialState = {
-    nome: "Type your name here...",
-    email: "Type your e-mail here...",
-    mensagem: "Type your message here..."
+    nome: "Digite seu nome aqui...",
+    email: "Digite seu e-mail aqui...",
+    mensagem: "Digite sua mensagem aqui..."
 };
 
 export const ContextoContatoCriado = createContext();

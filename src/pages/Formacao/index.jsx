@@ -27,10 +27,10 @@ const Formacao = () => {
                     corDaBorda="linear-gradient(to right, transparent, var(--quatrieme-demie), transparent)"
                     corDoTexto="var(--troisieme)"
                 >
-                    Education
+                    Formação Acadêmica
                 </Titulo>
                 <TextoCompetencias>
-                    You can check below my academic trajectory
+                    Aqui está um pequeno resumo da minha trajetória acadêmica
                 </TextoCompetencias>
                 <Formacoes>
                     {cards.map(card =>
@@ -41,7 +41,7 @@ const Formacao = () => {
                             </h2>
                             <span className="formacao-descricao">
                                 <a href={card.link} target={card.link ? '_blank' : '_parent'}>
-                                    <Markdown>Read more</Markdown><FaArrowRight size={20} className="arrow_more" />
+                                    <Markdown>Leia mais</Markdown><FaArrowRight size={20} className="arrow_more" />
                                 </a>
                             </span>
                         </div>
@@ -51,10 +51,10 @@ const Formacao = () => {
                     corDaBorda="linear-gradient(to right, transparent, var(--quatrieme-demie), transparent)"
                     corDoTexto="var(--troisieme)"
                 >
-                    Minha Stack
+                    Tecnologias
                 </Titulo>
                 <TextoCompetencias>
-                    As a front-end web developer, I have knowledge on the following technologies
+                    Abaixo segue uma lista de ferramentas nas quais possuo conhecimento
                 </TextoCompetencias>
                 <Stacks>
                     <ul className="icon-skill">

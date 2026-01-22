@@ -7,25 +7,25 @@ const menu = [
     },
     {
         id: 2,
-        nome: "About me",
+        nome: "Sobre mim",
         caminho: "sobre",
         classe: ''
     },
     {
         id: 3,
-        nome: "Education",
+        nome: "Educação",
         caminho: "formacao",
         classe: ''
     },
     {
         id: 4,
-        nome: "Projects",
+        nome: "Projetos",
         caminho: "projetos",
         classe: ''
     },
     {
         id: 5,
-        nome: "Contact",
+        nome: "Contato",
         caminho: "contato",
         classe: ''
     }
